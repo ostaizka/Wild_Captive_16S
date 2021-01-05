@@ -1,6 +1,3 @@
-#Download the data
-sftp antton.alberdi@snm.ku.dk@io.erda.dk:microbiome_reanalysis
-pass: Oaizpurua1234
 #Load the data
 #Genus level
 
@@ -26,29 +23,18 @@ library("ggpubr")
 library(dmetar)
 library(meta)
 
-#Metadata from airtable(subset)
-#metadata <- read.table("/Users/ostaizka/reanalysis/Wild-Captive-Grid.csv", header=T, row.names=1,check.names=F, sep=",")
-#colnames(metadata) <- c("Datafiles", "Selected", "Origin", "Species", "Order", "Class", "Latitude", "Longitude", "Study", "16S region", "F Primer", 
-#                        "R Primer", "Read-length", "Archived F", "Processing status", "Status")
-#metadata$Origin <- gsub("Zoo","Captivity",metadata$Origin)
-#metadata$Origin <- gsub("Laboratory","Captivity",metadata$Origin)
-#metadata$Origin <- gsub("Domestic","Captivity",metadata$Origin)
-#hierarchy_all <- tibble::rownames_to_column(metadata, "Samples")
-
-
 #Metadata from airtable
 metadata <- read.table("/Users/ostaizka/reanalysis/Datafiles-Grid.csv", header=T, row.names=1,check.names=F, sep="\t")
 names(metadata)[names(metadata) == "Species (from Individuals)"] <- "Species"
 names(metadata)[names(metadata) == "Origin (from Individual)"] <- "Origin"
 names(metadata)[names(metadata) == "Study (from Individuals)"] <- "Study"
+#colnames(metadata) <- c("Datafiles", "Selected", "Origin", "Species", "Order", "Class", "Latitude", "Longitude", "Study", "16S_region", "F_Primer", 
+#                        "R_Primer", "Read_length", "Archived_F", "Processing_status", "Status")
 colnames(metadata.filtered) <- gsub(" ","_",colnames(metadata.filtered))
 metadata$Origin <- gsub("Zoo","Captivity",metadata$Origin)
 metadata$Origin <- gsub("Laboratory","Captivity",metadata$Origin)
 metadata$Origin <- gsub("Domestic","Captivity",metadata$Origin)
 hierarchy_all <- tibble::rownames_to_column(metadata, "Samples")
-
-#hierarchy_all1 <- read.table("/Users/ostaizka/reanalysis/hierarchy_all.tsv", header=T, row.names=1,check.names=F, sep="\t")
-
 
 #code names
 setwd("~/reanalysis/Species")
@@ -67,8 +53,6 @@ list.dirs <- function(path=".", pattern=NULL, all.dirs=FALSE,
 code.list <- list.dirs()
 
 ####GET TABLES####
-length(code.list)
-
 setwd("~/reanalysis/Species")
 for (code in code.list){
   print(code)
@@ -167,8 +151,6 @@ for (code in code.list){
 }
 
 ####Diversity analysis based on abundace####
-#select one
-#code="EQKI"
 taxa = "Genus"
 summary_q0 <- c()
 for (code in code.list){
@@ -260,18 +242,10 @@ dev.off()
 saveRDS(meta_q0.raw, paste("~/reanalysis/Results/Diversity/",taxa,"/meta_q0_",taxa,".RData",sep=""))
 
 
-
 #The box represents the effect size (in this case, OR) of each study. 
 #The bigger the box means the study weighted more (i.e., bigger sample size).
 #The diamond shape represents the pooled OR of all studies. We can see the diamond cross the vertical line OR = 1, which indicates no significance for the association as the diamond almost equalized in both sides. We can confirm this also from the 95% confidence interval that includes one and the p value > 0.05.
 #For heterogeneity, we see that I2 = 0%, which means no heterogeneity is detected; the study is relatively homogenous (it is rare in the real study). To evaluate publication bias related to the meta-analysis of adverse events of arthralgia, we can use the metabias function from the R meta package
-
-#Check metaanalysis_example.R for editing
-## Detecting outliers & influential cases
-#library(dmetar)
-#meta_q0.raw$lower.random
-#meta_q0.raw$upper.random
-#find.outliers(meta_q0.raw)
 
 #q=1
 summary_q1 <- as.data.frame(summary_q1)
@@ -294,7 +268,6 @@ forest(meta_q1.raw,col.diamond = "blue",col.diamond.lines = "black",text.random 
        lab.e = "Captivity",lab.c="Wild")
 dev.off()
 saveRDS(meta_q1.raw,paste("/Users/ostaizka/reanalysis/Results/Diversity/",taxa,"/meta_q1_",taxa,".RData",sep=""))
-
 
 #q=2
 summary_q2
@@ -319,12 +292,8 @@ forest(meta_q2.raw,col.diamond = "blue",col.diamond.lines = "black",text.random 
 dev.off()
 saveRDS(meta_q2.raw,paste("/Users/ostaizka/reanalysis/Results/Diversity/",taxa,"/meta_q2_",taxa,".RData",sep=""))
 
-#sortvar=TE,
 
-#meta_q2.raw$lower.random
-#meta_q2.raw$upper.random
-#find.outliers(meta_q2.raw)
-#q=0 subsample
+#q=0 subsample (Primates)
 taxa = "Genus"
 summary_q0.subset <- c()
 sublist <- c("RHBR","PYNE","PAAN","PATR","GOGO")
@@ -346,7 +315,6 @@ for (code in sublist){
 colnames(summary_q0.subset) <- c("n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
 rownames(summary_q0.subset) <- sublist
 write.table(summary_q0.subset, paste("~/reanalysis/Results/Diversity/",taxa,"/summaryq0_subset",taxa,".tsv",sep=""))
-
 
 summary_q0.subset <- as.data.frame(summary_q0.subset)
 meta_q0sub_ready <- tibble::rownames_to_column(summary_q0.subset,"Author")
@@ -370,7 +338,7 @@ forest(meta_q0_sub.raw,col.diamond = "blue",col.diamond.lines = "black",text.ran
 dev.off()
 saveRDS(meta_q0_sub.raw, paste("~/reanalysis/Results/Diversity/",taxa,"/meta_q0_sub_",taxa,".RData",sep=""))
 
-#q1tree subset
+#q1tree subset (Primates)
 taxa = "Genus"
 summary_q1tree_sub <- c()
 sublist <- c("RHBR","PYNE","PAAN","PATR","GOGO")
@@ -685,8 +653,7 @@ summary_all <- tibble::column_to_rownames(summary_all, "Row.names")
 write.table(summary_all, paste("~/reanalysis/Results/Diversity/",taxa,"/summary_all_",taxa,".tsv",sep=""))
 
 
-
-#### Merging all tables in one ####
+#### Merging all tables in one to analyse the differences between species ####
 #all individuals of different species in one table
 #Genus level
 setwd("~/reanalysis")
