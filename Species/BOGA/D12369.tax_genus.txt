@@ -1,0 +1,72 @@
+Taxa	Counts
+[Eubacterium] brachy group	192
+[Eubacterium] coprostanoligenes group	1812
+[Eubacterium] ventriosum group	322
+[Ruminococcus] gauvreauii group	135
+[Ruminococcus] torques group	325
+Acetitomaculum	378
+Acholeplasma	730
+Acidovorax	308
+Acinetobacter	312
+Alishewanella	3059
+Alistipes	1168
+Alloprevotella	388
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	2089
+Altererythrobacter	138
+Anaerocolumna	198
+Aquabacterium	183
+Arthrobacter	603
+Bacillus	14191
+Bacteroides	352
+Brevundimonas	769
+Candidatus Saccharimonas	2042
+Caryophanon	118
+Cellulosimicrobium	142
+Cellvibrio	507
+Christensenellaceae R-7 group	4042
+Clostridium sensu stricto 3	494
+Comamonas	7806
+Coprococcus 1	159
+Defluviimonas	310
+Delftia	346
+Devosia	507
+dgA-11 gut group	171
+Dorea	643
+Escherichia-Shigella	2307
+Family XIII AD3011 group	408
+Flavobacterium	7645
+Fluviicola	1067
+Gordonibacter	75
+Halomonas	363
+Ketogulonicigenium	433
+Lachnospiraceae AC2044 group	991
+Lachnospiraceae NK3A20 group	1472
+Leucobacter	611
+Lysinibacillus	71510
+Methanobrevibacter	755
+Mogibacterium	198
+Nocardioides	7094
+Paenibacillus	3821
+Parasutterella	202
+Phascolarctobacterium	142
+Prevotellaceae UCG-003	161
+Prevotellaceae UCG-004	639
+Pseudacidovorax	273
+Pseudomonas	3786
+Psychrobacillus	5186
+Rhodococcus	368
+Rikenellaceae RC9 gut group	4341
+Romboutsia	753
+Ruminococcaceae UCG-005	16063
+Ruminococcaceae UCG-009	193
+Ruminococcaceae UCG-010	6555
+Ruminococcaceae UCG-013	968
+Solibacillus	18354
+Sphingobacterium	557
+Sphingopyxis	997
+Stenotrophomonas	14816
+Streptomyces	109
+Taibaiella	768
+Unclassified	31627
+uncultured bacterium	3460
+uncultured Bacteroidales bacterium	367

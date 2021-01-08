@@ -1,0 +1,55 @@
+Taxa	Counts
+[Eubacterium] brachy group	460
+[Eubacterium] coprostanoligenes group	6354
+[Eubacterium] nodatum group	648
+[Ruminococcus] torques group	1013
+Acetitomaculum	329
+Agathobacter	399
+Alistipes	7385
+Alloprevotella	1327
+Anaeroplasma	310
+Bacillus	4373
+Bacteroides	837
+Candidatus Saccharimonas	2139
+Candidatus Soleaferrea	335
+Christensenellaceae R-7 group	2543
+Clostridium sensu stricto 1	2009
+Coprococcus 3	1791
+dgA-11 gut group	597
+Dorea	397
+Escherichia-Shigella	182
+Faecalitalea	688
+Family XIII AD3011 group	861
+Lachnoclostridium 10	766
+Lachnospiraceae FCS020 group	6011
+Lachnospiraceae NK3A20 group	319
+Lachnospiraceae NK4A136 group	1628
+Lachnospiraceae UCG-001	413
+Lachnospiraceae UCG-010	475
+Lysinibacillus	14304
+Mailhella	370
+Methanobrevibacter	4152
+Methanosphaera	442
+Negativibacillus	335
+Olsenella	418
+Oscillospira	409
+Paeniclostridium	125
+Parasutterella	883
+Prevotellaceae UCG-003	281
+Prevotellaceae UCG-004	3497
+Rikenellaceae RC9 gut group	13001
+Romboutsia	14721
+Roseburia	4064
+Ruminiclostridium	965
+Ruminococcaceae NK4A214 group	575
+Ruminococcaceae UCG-005	55289
+Ruminococcaceae UCG-009	937
+Ruminococcaceae UCG-010	103318
+Ruminococcaceae UCG-013	5127
+Ruminococcaceae UCG-014	240
+Solibacillus	763
+Terrisporobacter	223
+Tyzzerella 4	1324
+Unclassified	29223
+uncultured bacterium	15005
+uncultured Bacteroidales bacterium	1049

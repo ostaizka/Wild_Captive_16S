@@ -1,0 +1,33 @@
+Taxa	Counts
+[Ruminococcus] gnavus group	177
+Acinetobacter	9
+Actinomyces	16
+Allobaculum	32
+Alloprevotella	8
+Bifidobacterium	12
+Capnocytophaga	7
+Clostridium sensu stricto 1	1325
+Collinsella	8264
+Corynebacterium	13
+Corynebacterium 1	4
+Enterococcus	378
+Fusobacterium	22
+Granulicatella	34
+Haemophilus	16
+Holdemanella	46
+Lachnoclostridium	5
+Lactobacillus	62
+Lautropia	8
+Mycoplasma	4
+Neisseria	10
+Paeniclostridium	696
+Peptoclostridium	4
+Peptoniphilus	43
+Peptostreptococcus	63
+Prevotella	27
+Prevotella 7	11
+Rothia	11
+Slackia	5
+Streptococcus	24
+Unclassified	46
+Veillonella	10

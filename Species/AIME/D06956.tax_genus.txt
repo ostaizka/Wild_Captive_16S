@@ -1,0 +1,16 @@
+Taxa	Counts
+Chryseobacterium	10
+Clostridium sensu stricto 1	4969
+Duganella	77
+Escherichia-Shigella	96
+Flavobacterium	52
+Janthinobacterium	5193
+Massilia	811
+Pedobacter	382
+Pseudomonas	20057
+Serratia	207
+Sphingomonas	10
+Streptococcus	21
+Terrisporobacter	109
+Turicibacter	492
+Unclassified	116

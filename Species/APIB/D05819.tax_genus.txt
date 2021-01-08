@@ -1,0 +1,9 @@
+Taxa	Counts
+Aeromonas	4531
+Cetobacterium	24766
+Paraclostridium	2806
+Plesiomonas	3018
+Romboutsia	27
+Sarcina	80
+Turicibacter	30
+Unclassified	182

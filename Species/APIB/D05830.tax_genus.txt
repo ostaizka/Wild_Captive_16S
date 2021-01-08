@@ -1,0 +1,30 @@
+Taxa	Counts
+Bdellovibrio	15
+Candidatus Competibacter	6
+Candidatus Contendobacter	9
+Candidatus Saccharibacteria bacterium RAAC3_TM7_1	6
+Cetobacterium	7
+Corynebacterium 1	8
+Cyanobacterium PCC-10605	9
+Cyanobium PCC-6307	52
+Defluviicoccus	15
+Desulfobacterium	13
+Desulforhopalus	6
+Gleocapsa	6
+Halochromatium	23
+Hyphomicrobium	4
+Ilumatobacter	10
+Limnothrix	6
+Planococcus	6
+Rubribacterium	12
+Sandaracinobacter	7
+Spirulina CCC Snake P-Y-85	3
+Sva0081 sediment group	10
+Synechococcus MBIC10613	125
+Tabrizicola	8
+Thiocapsa	34
+Thiohalocapsa	61
+Tropicimonas	8
+Unclassified	1203
+uncultured bacterium	31
+Vibrio	30

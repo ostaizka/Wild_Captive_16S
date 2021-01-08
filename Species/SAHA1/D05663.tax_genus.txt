@@ -1,0 +1,20 @@
+Taxa	Counts
+Cellulosilyticum	93
+Cetobacterium	585
+Citrobacter	3949
+Clostridium sensu stricto 1	16418
+Clostridium sensu stricto 13	457
+Edwardsiella	3489
+Enterobacter	5012
+Epulopiscium	16515
+Escherichia-Shigella	972
+Fusobacterium	116644
+Hafnia-Obesumbacterium	857
+Helicobacter	196
+Paeniclostridium	2165
+Plesiomonas	17920
+Proteus	459
+Romboutsia	508
+Sarcina	1512
+Terrisporobacter	484
+Unclassified	3972

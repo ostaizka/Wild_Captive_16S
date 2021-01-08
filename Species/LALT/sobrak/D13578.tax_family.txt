@@ -1,0 +1,41 @@
+Taxa	Counts
+Acidaminococcaceae	38
+Agrostemma githago (corn cockle)	31
+Akkermansiaceae	508
+Anaeroplasmataceae	448
+Atopobiaceae	54
+Bacteroidaceae	1270
+Bacteroidales RF16 group	3689
+Burkholderiaceae	34
+Candidatus Melainabacteria bacterium MEL.A1	73
+Christensenellaceae	1114
+Clostridiales vadinBB60 group	5933
+Dermatophilaceae	44
+Dysgonomonadaceae	20
+Elusimicrobiaceae	123
+Erysipelotrichaceae	22
+F082	268
+Family XIII	70
+Gracilibacteraceae	70
+gut metagenome	20
+Lachnospiraceae	3269
+Leptotrichiaceae	21
+Methanobacteriaceae	113
+Methanocorpusculaceae	104
+Methanomethylophilaceae	109
+Muribaculaceae	151
+p-2534-18B5 gut group	2044
+Paludibacteraceae	144
+Peptococcaceae	130
+Prevotellaceae	2143
+Pseudomonadaceae	76
+Puniceicoccaceae	13
+Rikenellaceae	9104
+Ruminococcaceae	32854
+Tannerellaceae	328
+Unclassified	8170
+uncultured bacterium	6028
+uncultured rumen bacterium	215
+unidentified	187
+vadinBE97	397
+Victivallaceae	10

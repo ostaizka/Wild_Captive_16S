@@ -1,0 +1,6 @@
+Taxa	Counts
+Aeromonas	425
+Mycoplasma	16344
+Paraclostridium	154
+Unclassified	13817
+Vibrio	47

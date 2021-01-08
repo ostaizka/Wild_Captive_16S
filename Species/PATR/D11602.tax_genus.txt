@@ -1,0 +1,84 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	19863
+[Eubacterium] eligens group	591
+[Eubacterium] xylanophilum group	952
+[Ruminococcus] gauvreauii group	1538
+28-4	2736
+Acetitomaculum	5476
+Agathobacter	794
+Alloprevotella	453
+Anaerovibrio	1627
+Bifidobacterium	3430
+Blautia	8471
+Campylobacter	390
+Candidatus Methanomethylophilus	604
+Candidatus Saccharimonas	856
+Candidatus Soleaferrea	636
+Cerasicoccus	1624
+Christensenellaceae R-7 group	18825
+Clostridium sensu stricto 1	19556
+Collinsella	2554
+Coprococcus 3	2051
+Coriobacteriaceae UCG-003	18905
+dgA-11 gut group	5106
+Dialister	5079
+Dorea	1512
+Enterorhabdus	1817
+Erysipelotrichaceae UCG-006	5020
+Faecalibacterium	3510
+Faecalitalea	1158
+Family XIII AD3011 group	1984
+Fournierella	945
+Fusicatenibacter	1129
+gut metagenome	1308
+Holdemanella	864
+horsej-a03	3338
+Intestinibacter	3178
+Lachnoclostridium	1883
+Lachnospira	560
+Lachnospiraceae ND3007 group	10336
+Lachnospiraceae NK3A20 group	15077
+Lachnospiraceae NK4A136 group	14467
+Lachnospiraceae UCG-002	661
+Lachnospiraceae UCG-003	730
+Lachnospiraceae UCG-008	4754
+Marvinbryantia	565
+metagenome	663
+Methanobrevibacter	1885
+Oribacterium	6932
+Oscillibacter	241
+Oscillospira	343
+p-1088-a5 gut group	1032
+Phascolarctobacterium	12915
+Phoenicibacter	2368
+Prevotella 1	3955
+Prevotella 2	18532
+Prevotella 9	57135
+Prevotellaceae UCG-003	4192
+Rikenellaceae RC9 gut group	55964
+Roseburia	2061
+Ruminiclostridium 6	649
+Ruminiclostridium 9	1581
+Ruminococcaceae NK4A214 group	13468
+Ruminococcaceae UCG-002	11289
+Ruminococcaceae UCG-003	1242
+Ruminococcaceae UCG-005	11966
+Ruminococcaceae UCG-008	3514
+Ruminococcaceae UCG-009	328
+Ruminococcaceae UCG-010	16899
+Ruminococcaceae UCG-013	455
+Ruminococcaceae UCG-014	14138
+Ruminococcus 1	4781
+Ruminococcus 2	623
+Solobacterium	7333
+Sphaerochaeta	2028
+Subdoligranulum	7801
+Succinivibrio	6205
+Sutterella	3857
+Terrisporobacter	1475
+Treponema 2	41437
+Turicibacter	428
+Unclassified	322580
+uncultured bacterium	70655
+uncultured rumen bacterium	8307
+Z20	865

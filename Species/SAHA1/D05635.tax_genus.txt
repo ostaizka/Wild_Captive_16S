@@ -1,0 +1,25 @@
+Taxa	Counts
+Actinomyces	202
+Bacillus	127
+Bacteroides	227
+Campylobacter	253
+Cetobacterium	63391
+Clostridium sensu stricto 1	8754
+Clostridium sensu stricto 13	298
+Edwardsiella	2983
+Enterobacter	3006
+Epulopiscium	11336
+Escherichia-Shigella	900
+Fusobacterium	22771
+Helicobacter	79
+Herbinix	83
+Paeniclostridium	2615
+Peptoclostridium	192
+Peptoniphilus	181
+Peptostreptococcus	2539
+Plesiomonas	44308
+Pygmaiobacter	75
+Romboutsia	903
+Sarcina	1075
+Terrisporobacter	746
+Unclassified	5022

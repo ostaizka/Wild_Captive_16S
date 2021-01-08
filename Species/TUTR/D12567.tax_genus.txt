@@ -1,0 +1,17 @@
+Taxa	Counts
+Actinobacillus	924
+Angelakisella	22
+Bacteroides	7
+Candidatus Arthromitus	16
+Cetobacterium	29
+Clostridium sensu stricto 1	22
+Fusobacterium	16
+Helicobacter	25
+Ilumatobacter	10
+Paeniclostridium	239
+Phocoenobacter	242
+Ruegeria	3
+Sedimentitalea	23
+Thalassobius	9
+Tyzzerella 3	128
+Unclassified	364

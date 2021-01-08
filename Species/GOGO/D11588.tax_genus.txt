@@ -1,0 +1,57 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	41082
+[Eubacterium] hallii group	7829
+Acetitomaculum	963
+Agathobacter	408
+Anaerofustis	430
+Anaerostipes	1720
+Bifidobacterium	1472
+Blautia	2202
+Butyricicoccus	370
+Candidatus Methanomethylophilus	1765
+Candidatus Saccharimonas	4493
+Christensenellaceae R-7 group	22474
+Clostridium sensu stricto 1	506
+Collinsella	456
+Coriobacteriaceae UCG-003	7060
+Erysipelotrichaceae UCG-003	4867
+Erysipelotrichaceae UCG-004	3258
+Faecalibacterium	1078
+Family XIII AD3011 group	14339
+Family XIII UCG-001	4424
+Fibrobacter	13993
+Holdemanella	1958
+Lachnoclostridium 10	832
+Lachnospira	653
+Lachnospiraceae FCS020 group	9492
+Lachnospiraceae ND3007 group	31420
+Lachnospiraceae NK3A20 group	1495
+Lachnospiraceae NK4A136 group	3199
+Lachnospiraceae UCG-002	472
+Lachnospiraceae UCG-008	766
+Libanicoccus	3394
+p-1088-a5 gut group	2951
+Papillibacter	437
+Phascolarctobacterium	808
+Prevotella 9	974
+Pseudobutyrivibrio	18768
+Rikenellaceae RC9 gut group	42619
+Roseburia	5267
+Ruminococcaceae NK4A214 group	34305
+Ruminococcaceae UCG-002	3099
+Ruminococcaceae UCG-005	10219
+Ruminococcaceae UCG-008	15196
+Ruminococcaceae UCG-010	26109
+Ruminococcaceae UCG-013	348
+Ruminococcaceae UCG-014	30179
+Ruminococcus 1	4692
+Slackia	2563
+Solobacterium	3548
+Sphaerochaeta	1932
+Subdoligranulum	846
+Succinivibrio	837
+Sutterella	608
+Treponema 2	3189
+Unclassified	539004
+uncultured bacterium	37044
+Z20	3784

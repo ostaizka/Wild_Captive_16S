@@ -1,0 +1,100 @@
+Taxa	Counts
+[Bacteroides] pectinophilus group	26
+[Eubacterium] coprostanoligenes group	99
+[Eubacterium] eligens group	15
+[Eubacterium] hallii group	199
+[Eubacterium] xylanophilum group	6
+[Ruminococcus] gauvreauii group	57
+[Ruminococcus] torques group	32
+Acidaminococcus	216
+Actinoplanes	3
+Agathobacter	47
+Alloprevotella	124
+Anaerostipes	126
+Bacteroides	14
+Bifidobacterium	760
+Blautia	274
+Butyricicoccus	42
+Butyrivibrio	6
+Christensenellaceae R-7 group	39
+Clostridium sensu stricto 1	646
+Collinsella	305
+Coprococcus 1	26
+Coprococcus 2	163
+Desulfovibrio	29
+dgA-11 gut group	5
+Dialister	496
+Dorea	193
+Enterococcus	45
+Enterorhabdus	28
+Erysipelotrichaceae UCG-003	40
+Erysipelotrichaceae UCG-004	5
+Escherichia-Shigella	506
+Faecalibacterium	722
+Family XIII AD3011 group	13
+Family XIII UCG-001	5
+Fibrobacter	21
+Fusicatenibacter	79
+Helicobacter	57
+Intestinibacter	24
+Lachnoclostridium	25
+Lachnoclostridium 12	21
+Lachnospiraceae AC2044 group	7
+Lachnospiraceae FCS020 group	22
+Lachnospiraceae NC2004 group	4
+Lachnospiraceae ND3007 group	96
+Lachnospiraceae NK3A20 group	115
+Lachnospiraceae NK4A136 group	69
+Lachnospiraceae UCG-001	24
+Lachnospiraceae UCG-004	10
+Lachnospiraceae UCG-008	346
+Lachnospiraceae UCG-010	5
+Lactobacillus	389
+Lactococcus	38
+Leptotrichia	8
+Libanicoccus	31
+Mannheimia	12
+Marvinbryantia	44
+Megasphaera	47
+Methylobacterium	9
+Mitsuokella	6
+Mycoplasma	3
+Niastella	2
+Olsenella	17
+Oribacterium	126
+Oxalobacter	5
+Pediococcus	10
+Prevotella 2	34
+Prevotella 7	84
+Prevotella 9	1155
+Prevotellaceae NK3B31 group	54
+Prevotellaceae UCG-003	47
+Prevotellaceae UCG-004	3
+Rikenellaceae RC9 gut group	15
+Romboutsia	9
+Roseburia	97
+Ruminiclostridium 5	10
+Ruminiclostridium 6	13
+Ruminiclostridium 9	24
+Ruminococcaceae NK4A214 group	45
+Ruminococcaceae UCG-002	65
+Ruminococcaceae UCG-005	127
+Ruminococcaceae UCG-008	325
+Ruminococcaceae UCG-010	19
+Ruminococcaceae UCG-013	22
+Ruminococcaceae UCG-014	124
+Ruminococcus 1	23
+Ruminococcus 2	8
+Senegalimassilia	24
+Slackia	39
+Solirubrobacter	2
+Solobacterium	230
+Sphingomonas	2
+Streptococcus	30
+Subdoligranulum	159
+Succinivibrio	8
+Terrisporobacter	13
+Treponema 2	44
+Unclassified	702
+uncultured bacterium	121
+Veillonella	2

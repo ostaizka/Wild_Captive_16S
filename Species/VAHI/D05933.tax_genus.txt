@@ -1,0 +1,7 @@
+Taxa	Counts
+Bilateria	78
+Bradyrhizobium	17
+Mycoplasma	2350
+Paracoccus	6
+Pseudomonas	26
+Unclassified	1863

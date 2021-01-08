@@ -1,0 +1,53 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	11
+[Eubacterium] hallii group	13
+[Ruminococcus] gauvreauii group	6
+[Ruminococcus] torques group	9
+Acidaminococcus	129
+Alloprevotella	57
+Anaerostipes	4
+Bifidobacterium	8996
+Blautia	36
+Bryobacter	3
+Butyricicoccus	17
+Catenibacterium	277
+Christensenellaceae R-7 group	2
+Collinsella	398
+Coprococcus 1	22
+Coprococcus 2	4
+Dialister	369
+Dorea	66
+Enterorhabdus	5
+Faecalibacterium	29
+Family XIII AD3011 group	2
+Fusicatenibacter	2
+Helicobacter	2
+Holdemanella	12
+Lachnoclostridium	10
+Lachnospiraceae AC2044 group	13
+Lachnospiraceae ND3007 group	3
+Lachnospiraceae NK3A20 group	18
+Lachnospiraceae UCG-004	842
+Lachnospiraceae UCG-008	62
+Lactobacillus	180
+Mannheimia	7
+Megasphaera	699
+Mitsuokella	236
+Olsenella	5
+Oribacterium	6
+Prevotella 7	18
+Prevotella 9	153
+Prevotellaceae NK3B31 group	4
+Prevotellaceae UCG-003	3
+Roseburia	7
+Ruminococcaceae NK4A214 group	8
+Ruminococcaceae UCG-002	12
+Ruminococcaceae UCG-004	5
+Ruminococcaceae UCG-005	34
+Ruminococcaceae UCG-013	10
+Ruminococcus 1	8
+Senegalimassilia	13
+Solobacterium	49
+Streptococcus	12
+Subdoligranulum	24
+Unclassified	248

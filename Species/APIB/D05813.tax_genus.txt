@@ -1,0 +1,13 @@
+Taxa	Counts
+Aeromonas	14499
+Cetobacterium	37839
+Clostridium sensu stricto 1	873
+Cyanobium PCC-6307	299
+Leptolyngbya ANT.L52.2	239
+Paraclostridium	107
+Plesiomonas	1380
+Romboutsia	2022
+Rubribacterium	38
+Shewanella	189
+Unclassified	1953
+Vibrio	134

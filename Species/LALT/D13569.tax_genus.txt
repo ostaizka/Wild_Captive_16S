@@ -1,0 +1,64 @@
+Taxa	Counts
+[Clostridium] innocuum group	494
+[Eubacterium] brachy group	504
+[Eubacterium] coprostanoligenes group	50
+[Eubacterium] fissicatena group	204
+[Eubacterium] nodatum group	195
+Actinomyces	146
+Akkermansia	32952
+Alistipes	2084
+Anaerotruncus	2065
+Anaerovorax	1133
+Bacteroides	25317
+Bifidobacterium	21945
+Bilophila	837
+Blautia	7776
+Butyricicoccus	133
+Candidatus Soleaferrea	205
+Christensenellaceae R-7 group	8235
+Clostridioides	476
+Clostridium sensu stricto 2	124
+Collinsella	4308
+Corynebacterium	152
+Cuneatibacter	169
+Defluviitaleaceae UCG-011	660
+DTU089	501
+Eggerthella	2014
+Eisenbergiella	2081
+Enterobacter	1377
+Enterococcus	520
+Erysipelatoclostridium	443
+Escherichia-Shigella	2156
+Eubacterium	824
+Flavonifractor	320
+Fusobacterium	722
+GCA-900066225	105
+GCA-900066575	115
+GCA-900066755	1278
+Gordonibacter	55
+Holdemania	61
+Hungatella	7206
+Intestinibacter	264
+Lachnoclostridium	21722
+Lachnospiraceae FE2018 group	86
+Lactococcus	3945
+Lawsonella	1078
+Leuconostoc	70
+Marvinbryantia	665
+Methanomassiliicoccus	344
+Morganella	49
+Murimonas	62
+Oscillibacter	1849
+Parabacteroides	10524
+Phascolarctobacterium	784
+Robinsoniella	146
+Ruminiclostridium	140
+Ruminiclostridium 1	182
+Ruminiclostridium 5	2471
+Ruminiclostridium 6	78
+Ruminococcaceae NK4A214 group	12325
+Ruminococcaceae UCG-005	4375
+Ruminococcus 1	5594
+Streptococcus	1909
+UBA1819	2096
+Unclassified	6937

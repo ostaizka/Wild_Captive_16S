@@ -1,0 +1,5 @@
+Taxa	Counts
+Labrenzia	5
+Phocoenobacter	2317
+Sedimentitalea	7
+Unclassified	30

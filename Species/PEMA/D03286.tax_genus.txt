@@ -1,0 +1,40 @@
+Taxa	Counts
+[Eubacterium] nodatum group	3
+Alistipes	65
+Anaerostipes	378
+ASF356	45
+Bilophila	11
+Blautia	56
+Butyricicoccus	48
+Desulfovibrio	58
+Eisenbergiella	9
+Family XIII UCG-001	24
+GCA-900066575	363
+Helicobacter	339
+Lachnoclostridium	308
+Lachnospiraceae FCS020 group	128
+Lachnospiraceae NC2004 group	83
+Lachnospiraceae NK4A136 group	11665
+Lachnospiraceae UCG-001	890
+Lachnospiraceae UCG-006	85
+Lachnospiraceae UCG-008	566
+Lactobacillus	423
+Mucispirillum	567
+Oscillibacter	1882
+Parabacteroides	37
+Roseburia	187
+Ruminiclostridium	1222
+Ruminiclostridium 5	91
+Ruminiclostridium 6	15
+Ruminiclostridium 9	1214
+Ruminococcaceae UCG-003	289
+Ruminococcaceae UCG-005	13
+Ruminococcaceae UCG-009	18
+Ruminococcaceae UCG-014	100
+Ruminococcus 1	1203
+Tyzzerella	27
+Tyzzerella 3	30
+UBA1819	35
+Unclassified	5490
+uncultured bacterium	443
+unidentified	5

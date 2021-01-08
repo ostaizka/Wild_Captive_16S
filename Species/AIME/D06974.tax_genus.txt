@@ -1,0 +1,17 @@
+Taxa	Counts
+Acinetobacter	2705
+Chryseobacterium	82
+Clostridium sensu stricto 1	418
+Comamonas	256
+Enterobacter	300
+Escherichia-Shigella	182
+Flavobacterium	42
+Hafnia-Obesumbacterium	21297
+Pseudomonas	23013
+Rahnella	164
+Raoultella	18
+Sarcina	38
+Serratia	5694
+Terrisporobacter	20
+Turicibacter	8
+Unclassified	4439

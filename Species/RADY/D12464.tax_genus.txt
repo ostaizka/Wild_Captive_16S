@@ -1,0 +1,41 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	262
+[Eubacterium] brachy group	59
+[Eubacterium] fissicatena group	154
+[Ruminococcus] torques group	16
+Acinetobacter	9
+Aeromonas	26
+Akkermansia	514
+Alistipes	140
+Anaerotruncus	117
+Arthrobacter	61
+Bacteroides	1867
+Blautia	183
+Cetobacterium	311
+Chryseobacterium	8
+Citrobacter	4315
+Clostridioides	465
+Desulfovibrio	22
+Enterobacter	5340
+Enterococcus	126
+Erysipelatoclostridium	225
+Eubacterium	53
+Fusobacterium	19
+Gordonibacter	212
+Hafnia-Obesumbacterium	58
+Lachnoclostridium	12565
+Lachnoclostridium 5	889
+Lactococcus	833
+Laribacter	25
+Mobilitalea	116
+Morganella	677
+Parabacteroides	151
+Paraeggerthella	18
+Providencia	16
+Raoultibacter	10
+Rhodococcus	13
+Robinsoniella	440
+Ruminiclostridium 5	10
+Ruminococcaceae UCG-008	67
+Unclassified	13989
+Vagococcus	858

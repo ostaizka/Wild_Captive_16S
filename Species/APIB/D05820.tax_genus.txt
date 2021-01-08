@@ -1,0 +1,30 @@
+Taxa	Counts
+Actinoplanes	549
+Aeromonas	10292
+Arthrospira PCC-7345	513
+Candidatus Chloroploca	71
+Cetobacterium	10885
+Chitinibacter	84
+Cyanobium PCC-6307	1705
+Desulfomicrobium	382
+Desulfovibrio	443
+Lamprocystis	367
+Leptolyngbya ANT.L52.2	680
+Limnothrix	998
+Luteolibacter	2773
+Nodosilinea PCC-7104	227
+Plesiomonas	740
+Roseofilum AO1-A	4126
+Rubribacterium	1290
+Shewanella	890
+Snowella 0TU37S04	228
+Synechocystis SAG 90.79	153
+Tabrizicola	173
+Terrimicrobium	1297
+Thiobaca	270
+Thiocapsa	317
+Thiocystis	151
+Tropicimonas	181
+Unclassified	8692
+uncultured bacterium	531
+uncultured Bacteroidetes bacterium	385

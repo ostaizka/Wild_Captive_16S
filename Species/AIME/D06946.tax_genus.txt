@@ -1,0 +1,23 @@
+Taxa	Counts
+1174-901-12	10
+Actinobacillus	20
+Actinomyces	7
+Bacillus	13
+Bacteroides	19
+Cellulosilyticum	20
+Clostridium sensu stricto 1	7553
+Enterobacter	11
+Escherichia-Shigella	8839
+Labrys	3
+Lautropia	17
+Methylobacterium	4
+Neisseria	5
+Paeniclostridium	189
+Paraclostridium	21
+Pseudomonas	5
+Romboutsia	448
+Streptococcus	1210
+Terrisporobacter	825
+Triticum aestivum (bread wheat)	327
+Turicibacter	2177
+Unclassified	7125

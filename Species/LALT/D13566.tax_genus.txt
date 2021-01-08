@@ -1,0 +1,87 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	224
+[Eubacterium] eligens group	94
+[Eubacterium] fissicatena group	32
+[Eubacterium] nodatum group	95
+[Ruminococcus] gauvreauii group	544
+[Ruminococcus] torques group	187
+Akkermansia	105
+Alistipes	645
+Anaerofilum	35
+Anaerostipes	1321
+Bacteroides	2564
+Bilophila	46
+Blautia	306
+Butyricimonas	114
+Caldicoprobacter	41
+Candidatus Soleaferrea	155
+Cellulosilyticum	65
+Christensenellaceae R-7 group	13439
+Clostridium sensu stricto 1	1747
+Collinsella	46
+Coprococcus 1	194
+Coprococcus 3	93
+Desulfovibrio	58
+Enterorhabdus	186
+Erysipelotrichaceae UCG-003	268
+Erysipelotrichaceae UCG-004	103
+Escherichia-Shigella	72
+Faecalibacterium	57
+Family XIII AD3011 group	988
+Family XIII UCG-001	30
+Fibrobacter	103
+Fusicatenibacter	63
+GCA-900066575	484
+gut metagenome	30
+Holdemania	102
+Hydrogenoanaerobacterium	131
+Intestinibacter	208
+Intestinimonas	45
+Lachnoclostridium	28
+Lachnospiraceae AC2044 group	108
+Lachnospiraceae FCS020 group	133
+Lachnospiraceae NC2004 group	87
+Lachnospiraceae NK4A136 group	1148
+Lachnospiraceae UCG-008	12
+Lactobacillus	16
+Marvinbryantia	135
+Methanobrevibacter	432
+Mobilitalea	39
+Mogibacterium	140
+Odoribacter	41
+Oscillibacter	296
+Oxalobacter	46
+p-1088-a5 gut group	115
+Parabacteroides	563
+Paraeggerthella	131
+Peptococcus	33
+Phascolarctobacterium	1798
+Prevotella 1	47
+Prevotella 9	91
+Pygmaiobacter	39
+Rikenellaceae RC9 gut group	742
+Ruminiclostridium 1	114
+Ruminiclostridium 6	238
+Ruminiclostridium 9	128
+Ruminococcaceae NK4A214 group	2020
+Ruminococcaceae UCG-002	11901
+Ruminococcaceae UCG-004	104
+Ruminococcaceae UCG-005	7367
+Ruminococcaceae UCG-008	16
+Ruminococcaceae UCG-009	145
+Ruminococcaceae UCG-010	3081
+Ruminococcaceae UCG-011	97
+Ruminococcaceae UCG-013	78
+Ruminococcaceae UCG-014	3397
+Ruminococcaceae V9D2013 group	33
+Ruminococcus 1	2595
+Streptococcus	43
+Subdoligranulum	37
+Terrisporobacter	163
+Treponema 2	410
+UBA1819	265
+Unclassified	16886
+uncultured bacterium	4334
+uncultured organism	38
+uncultured rumen bacterium	182
+Victivallis	80

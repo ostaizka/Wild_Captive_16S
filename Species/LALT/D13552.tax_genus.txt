@@ -1,0 +1,11 @@
+Taxa	Counts
+Adhaeribacter	6
+Christensenellaceae R-7 group	2
+Lachnospiraceae AC2044 group	3
+Microvirga	3
+Papillibacter	3
+Ruminococcaceae NK4A214 group	2
+Ruminococcaceae UCG-014	5
+Treponema 2	8
+Unclassified	138
+uncultured bacterium	8

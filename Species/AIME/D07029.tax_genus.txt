@@ -1,0 +1,23 @@
+Taxa	Counts
+Actinobacillus	1646
+Aggregatibacter	50
+Campylobacter	252
+Clostridium sensu stricto 1	3215
+Escherichia-Shigella	6480
+Helicobacter	117
+Lachnospiraceae UCG-007	3
+metagenome	18
+Neisseria	13
+Paeniclostridium	36
+Paraclostridium	15
+Pedobacter	4
+Pseudomonas	13
+Romboutsia	7
+Ruminococcaceae UCG-014	111
+Sarcina	22
+Streptococcus	11560
+Terrisporobacter	28
+Triticum aestivum (bread wheat)	19
+Unclassified	2908
+Veillonella	1415
+Weissella	652

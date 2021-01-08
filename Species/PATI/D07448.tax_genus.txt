@@ -1,0 +1,48 @@
+Taxa	Counts
+[Ruminococcus] gnavus group	115
+[Ruminococcus] torques group	48
+Acetitomaculum	6
+Acidovorax	148
+Aeromicrobium	7
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	4
+Bifidobacterium	2
+Blautia	312
+Bosea	14
+Brevundimonas	189
+Burkholderia-Caballeronia-Paraburkholderia	18
+Caenimonas	9
+Clostridium sensu stricto 1	5118
+Clostridium sensu stricto 7	176
+Collinsella	6730
+Coprococcus 2	7
+Devosia	19
+Ensifer	5
+Enterococcus	91
+Escherichia-Shigella	22
+Fusobacterium	33
+Gemella	59
+Hydrogenophaga	21
+Lachnoclostridium	32
+Lactobacillus	944
+Lutispora	6
+Methyloversatilis	23
+Novosphingobium	20
+Paeniclostridium	5050
+Peptoclostridium	135
+Peptostreptococcus	858
+Phascolarctobacterium	8
+Prevotella 7	3
+Pseudomonas	505
+Ramlibacter	37
+Ruminiclostridium 5	3
+Ruminococcus 1	10
+Slackia	23
+Sphingomonas	39
+Sphingopyxis	5
+Sphingorhabdus	18
+Sphingosinicella	6
+Streptococcus	510
+SWB02	4
+Terrisporobacter	20
+Unclassified	1163
+uncultured bacterium	81

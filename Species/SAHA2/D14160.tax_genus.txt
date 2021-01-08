@@ -1,0 +1,42 @@
+Taxa	Counts
+Acinetobacter	101
+Aeromonas	71
+Afipia	49
+Aminobacter	100
+Bradyrhizobium	177
+Brevundimonas	56
+Cetobacterium	166
+Clostridium sensu stricto 1	3163
+Clostridium sensu stricto 13	104
+Clostridium sensu stricto 15	128
+Epulopiscium	434
+Erysipelothrix	774
+Escherichia-Shigella	200
+Falsochrobactrum	96
+Fusobacterium	584
+Gallicola	319
+Hathewaya	215
+Helicobacter	78
+Hoeflea	471
+Ignatzschineria	44
+Luteimonas	35
+Lysinibacillus	186
+Myroides	67
+Paeniclostridium	294
+Paenochrobactrum	377
+Paraclostridium	76
+Paracoccus	222
+Parafrigoribacterium	21
+Peptoniphilus	1100
+Peptostreptococcus	1403
+Plesiomonas	173
+Plot4-2H12	8
+Pseudochrobactrum	1765
+Pseudomonas	220
+Psychrobacter	539
+Romboutsia	1499
+Stenotrophomonas	90
+Terrisporobacter	1663
+Turicibacter	NA
+Unclassified	1755
+Xanthobacter	118

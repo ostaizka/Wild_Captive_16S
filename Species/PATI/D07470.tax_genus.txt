@@ -1,0 +1,30 @@
+Taxa	Counts
+[Ruminococcus] gnavus group	638
+[Ruminococcus] torques group	13
+Bacteroides	1910
+Blautia	1110
+Brevundimonas	5
+Campylobacter	1680
+Clostridium sensu stricto 1	2208
+Clostridium sensu stricto 13	87
+Clostridium sensu stricto 4	76
+Clostridium sensu stricto 7	34
+Collinsella	1604
+Desulfovibrio	26
+Dietzia	20
+Escherichia-Shigella	7290
+Fusobacterium	5863
+Kocuria	19
+Lachnoclostridium	746
+Paeniclostridium	1877
+Paraclostridium	3
+Peptoclostridium	867
+Peptostreptococcus	147
+Romboutsia	177
+Ruminiclostridium 5	8
+Slackia	22
+Streptococcus	37
+Sutterella	76
+Terrisporobacter	67
+Unclassified	556
+uncultured bacterium	11

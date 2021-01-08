@@ -1,0 +1,71 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	31
+[Eubacterium] brachy group	8
+[Eubacterium] coprostanoligenes group	22
+[Eubacterium] fissicatena group	66
+Acidisphaera	8
+Acidovorax	39
+Acinetobacter	321
+Aeromonas	74
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	21
+Anaerocolumna	9
+Anaerosporobacter	4
+Anaerotruncus	17
+Arthrobacter	8
+Bacillus	207
+Bacteroides	293
+Blautia	11
+Brevundimonas	11
+Budvicia	32
+Burkholderia-Caballeronia-Paraburkholderia	38
+Buttiauxella	14
+Carnobacterium	50
+Christensenella	13
+Citrobacter	302
+Clostridioides	236
+Clostridium sensu stricto 1	173
+Delftia	8
+Enterobacter	1716
+Enterococcus	63
+Erwinia	29
+Erysipelatoclostridium	88
+Eubacterium	2775
+Flavobacterium	5
+Frigoribacterium	7
+Gordonibacter	338
+Hafnia-Obesumbacterium	1128
+Herbaspirillum	261
+Kaistia	30
+Klebsiella	2488
+Lachnoclostridium	138
+Lachnospiraceae AC2044 group	11
+Lachnospiraceae NC2004 group	14
+Lactococcus	1035
+Lelliottia	88
+Leucobacter	10
+Methylobacterium	29
+Mycoplasma	17
+Ochrobactrum	19
+Paenibacillus	12
+Parabacteroides	20
+Pseudarthrobacter	563
+Pseudoclavibacter	15
+Pseudomonas	51
+Raoultella	625
+Raoultibacter	108
+Rhodococcus	126
+Robinsoniella	159
+Roseburia	19
+Ruminiclostridium	5
+Ruminiclostridium 9	11
+Ruminococcaceae UCG-008	7
+Serratia	29
+Sphingobium	7
+Stenotrophomonas	16
+Tyzzerella	9
+Unclassified	33068
+uncultured alpha proteobacterium	297
+uncultured bacterium	36
+Ureaplasma	17
+Vagococcus	34
+Yersinia	23

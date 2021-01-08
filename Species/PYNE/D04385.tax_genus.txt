@@ -1,0 +1,56 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	1626
+[Eubacterium] eligens group	35
+[Eubacterium] oxidoreducens group	427
+[Ruminococcus] torques group	895
+Agathobacter	57
+Anaerosporobacter	20
+Blautia	1291
+Campylobacter	24
+Candidatus Soleaferrea	48
+Christensenellaceae R-7 group	2405
+Coprococcus 3	300
+Dendrobium catenatum	23
+DNF00809	29
+Enterorhabdus	126
+Faecalibacterium	49
+Family XIII AD3011 group	62
+Family XIII UCG-001	101
+Fibrobacter	137
+Flavonifractor	123
+Intestinimonas	36
+Lachnoclostridium	1569
+Lachnoclostridium 10	24
+Lachnospiraceae AC2044 group	125
+Lachnospiraceae FCS020 group	130
+Lachnospiraceae ND3007 group	71
+Lachnospiraceae NK4A136 group	1837
+Lachnospiraceae UCG-001	453
+Lachnospiraceae UCG-004	84
+Lachnospiraceae UCG-008	126
+Lachnospiraceae XPB1014 group	21
+Marvinbryantia	24
+Oxalobacter	26
+Papillibacter	32
+Parasutterella	49
+Peptococcus	17
+Romboutsia	79
+Roseburia	589
+Ruminiclostridium	567
+Ruminiclostridium 5	73
+Ruminiclostridium 6	565
+Ruminiclostridium 9	219
+Ruminococcaceae NK4A214 group	3741
+Ruminococcaceae UCG-002	622
+Ruminococcaceae UCG-003	25
+Ruminococcaceae UCG-005	9818
+Ruminococcaceae UCG-009	176
+Ruminococcaceae UCG-010	1649
+Ruminococcaceae UCG-011	315
+Ruminococcaceae UCG-013	2408
+Ruminococcaceae UCG-014	6768
+Ruminococcus 1	2142
+Ruminococcus 2	563
+Tyzzerella 4	189
+Unclassified	15667
+uncultured Coriobacteriaceae bacterium	32

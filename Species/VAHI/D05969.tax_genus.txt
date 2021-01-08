@@ -1,0 +1,7 @@
+Taxa	Counts
+Aeromonas	133
+Brevinema	76
+Mycoplasma	20904
+Pseudomonas	69
+Unclassified	2446
+Vibrio	175

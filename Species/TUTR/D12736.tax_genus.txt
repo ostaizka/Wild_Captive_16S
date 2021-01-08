@@ -1,0 +1,9 @@
+Taxa	Counts
+Actinobacillus	60
+Campylobacter	225
+Cetobacterium	6
+Clostridium sensu stricto 1	19
+Escherichia-Shigella	16
+Paraclostridium	25
+Photobacterium	1573
+Pseudoalteromonas	22

@@ -1,0 +1,25 @@
+Taxa	Counts
+Bacteroides	1641
+Cellulosilyticum	84
+Cetobacterium	17648
+Clostridium sensu stricto 1	5466
+Clostridium sensu stricto 13	661
+Edwardsiella	465
+Enterobacter	436
+Epulopiscium	5082
+Escherichia-Shigella	258
+Faecalitalea	68
+Fusobacterium	70865
+Helicobacter	206
+Lachnoclostridium	48
+Myroides	85
+Paeniclostridium	5524
+Paraeggerthella	87
+Peptoniphilus	475
+Peptostreptococcus	637
+Plesiomonas	2428
+Psychrobacter	184
+Romboutsia	87
+Sarcina	823
+Terrisporobacter	88
+Unclassified	7527

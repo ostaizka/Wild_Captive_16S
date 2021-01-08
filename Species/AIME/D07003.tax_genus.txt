@@ -1,0 +1,18 @@
+Taxa	Counts
+Actinobacillus	329
+Aggregatibacter	7
+Bergeyella	5
+Clostridium sensu stricto 1	503
+Enterococcus	11
+Escherichia-Shigella	11122
+Lactobacillus	97
+Lactococcus	133
+Leuconostoc	11
+Moraxella	4
+Necropsobacter	1688
+Neisseria	97
+Raoultella	7
+Streptococcus	14616
+Unclassified	1024
+Veillonella	16
+Weissella	280

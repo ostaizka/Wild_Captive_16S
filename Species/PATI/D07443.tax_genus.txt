@@ -1,0 +1,6 @@
+Taxa	Counts
+Bacillus	164
+Lysinibacillus	10499
+Psychrobacillus	16
+Solibacillus	969
+Viridibacillus	23

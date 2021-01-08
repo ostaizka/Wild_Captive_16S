@@ -1,0 +1,32 @@
+Taxa	Counts
+Acinetobacter	53
+Aeromonas	28
+Asaccharospora	253
+Cetobacterium	127
+Citrobacter	115
+Clostridium sensu stricto 1	7386
+Epulopiscium	17
+Escherichia-Shigella	233
+Fusobacterium	3498
+Lysinibacillus	295
+Moellerella	302
+Morganella	781
+Ochrobactrum	24
+Paeniclostridium	1830
+Paraclostridium	610
+Peptostreptococcus	20
+Plesiomonas	217
+Proteus	394
+Providencia	459
+Pseudochrobactrum	11
+Pseudomonas	353
+Psychrobacter	88
+Romboutsia	1234
+Ruminococcaceae UCG-011	91
+Sarcina	57
+Serratia	61
+Terrisporobacter	576
+Unclassified	1066
+Vagococcus	470
+Vibrio	170
+Wohlfahrtiimonas	24

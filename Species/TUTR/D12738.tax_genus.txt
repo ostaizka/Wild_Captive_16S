@@ -1,0 +1,10 @@
+Taxa	Counts
+Actinobacillus	324
+Cetobacterium	142
+Clostridium sensu stricto 1	120
+Escherichia-Shigella	25
+Helicobacter	7
+Paraclostridium	485
+Photobacterium	685
+Romboutsia	29
+Vibrio	383

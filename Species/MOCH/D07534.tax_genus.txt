@@ -1,0 +1,98 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	31
+[Eubacterium] brachy group	20
+[Eubacterium] coprostanoligenes group	1310
+[Eubacterium] nodatum group	28
+[Eubacterium] oxidoreducens group	10
+[Eubacterium] ruminantium group	115
+[Eubacterium] xylanophilum group	38
+[Ruminococcus] torques group	40
+28-4	34
+Agathobacter	20
+Akkermansia	9
+Aliiroseovarius	14
+Alistipes	2785
+Anaerosporobacter	15
+Anaerostipes	37
+Bacillus	11
+Bacteroides	2348
+Blautia	71
+Candidatus Alysiosphaera	8
+Candidatus Soleaferrea	87
+Candidatus Stoquefichus	26
+Christensenellaceae R-7 group	896
+Clostridium sensu stricto 1	53
+Coprococcus 2	176
+Coprococcus 3	156
+Coxiella	7
+Defluviitaleaceae UCG-011	17
+dgA-11 gut group	25
+Dorea	46
+Eisenbergiella	13
+Erysipelotrichaceae UCG-004	24
+Escherichia-Shigella	434
+Family XIII AD3011 group	29
+Halioglobus	22
+Halocynthiibacter	11
+Halomonas	57
+Ilumatobacter	14
+Intestinimonas	7
+Lachnoclostridium	107
+Lachnoclostridium 10	152
+Lachnospira	29
+Lachnospiraceae AC2044 group	811
+Lachnospiraceae FCS020 group	179
+Lachnospiraceae NC2004 group	17
+Lachnospiraceae NK4A136 group	820
+Lachnospiraceae NK4B4 group	40
+Lachnospiraceae UCG-001	61
+Lachnospiraceae UCG-004	15
+Lachnospiraceae UCG-008	165
+Lactobacillus	5
+Mailhella	34
+Methanobrevibacter	162
+Motilimonas	99
+Odoribacter	22
+Oscillibacter	53
+Papillibacter	14
+Parasutterella	55
+Phascolarctobacterium	169
+Prevotella 1	534
+Prevotellaceae Ga6A1 group	197
+Prevotellaceae UCG-004	1835
+Pseudoalteromonas	8
+Pseudomonas	24
+Rikenellaceae RC9 gut group	2897
+Romboutsia	35
+Roseburia	266
+Ruegeria	67
+Ruminiclostridium	22
+Ruminiclostridium 1	133
+Ruminiclostridium 6	68
+Ruminiclostridium 9	61
+Ruminococcaceae NK4A214 group	154
+Ruminococcaceae UCG-002	188
+Ruminococcaceae UCG-005	6312
+Ruminococcaceae UCG-007	20
+Ruminococcaceae UCG-009	100
+Ruminococcaceae UCG-010	4548
+Ruminococcaceae UCG-011	44
+Ruminococcaceae UCG-013	421
+Ruminococcaceae UCG-014	829
+Ruminococcus 1	1248
+Ruminococcus 2	54
+Sharpea	43
+Shewanella	32
+Shuttleworthia	7
+Spongiimonas	19
+Tenacibaculum	32
+Treponema 2	1981
+Turicibacter	18
+Tyzzerella	15
+Tyzzerella 4	177
+Unclassified	3620
+uncultured bacterium	1968
+uncultured rumen bacterium	20
+unidentified rumen bacterium RFN47	16
+Vibrio	29
+Victivallis	27

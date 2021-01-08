@@ -1,0 +1,5 @@
+Taxa	Counts
+Aeromonas	378
+Mycoplasma	36202
+Romboutsia	249
+Unclassified	22294

@@ -1,0 +1,7 @@
+Taxa	Counts
+Aeromonas	17760
+Cetobacterium	9152
+Leptolyngbya ANT.L52.2	73
+Roseofilum AO1-A	137
+Shewanella	210
+Unclassified	156

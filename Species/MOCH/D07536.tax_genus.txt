@@ -1,0 +1,89 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	28
+[Eubacterium] coprostanoligenes group	830
+[Eubacterium] nodatum group	21
+[Eubacterium] oxidoreducens group	23
+[Eubacterium] ruminantium group	202
+[Eubacterium] xylanophilum group	52
+[Ruminococcus] torques group	55
+28-4	6
+Acetitomaculum	62
+Aliidiomarina	34
+Alistipes	2434
+Anaeroplasma	25
+Anaerosporobacter	238
+Anaerostipes	46
+Anaerovorax	24
+ASF356	18
+Bacteroides	4706
+Blautia	89
+Campylobacter	73
+Candidatus Soleaferrea	36
+Candidatus Stoquefichus	193
+Christensenellaceae R-7 group	1344
+Coprococcus 2	482
+Coprococcus 3	384
+Corynebacterium 1	19
+Coxiella	6
+Defluviitaleaceae UCG-011	23
+dgA-11 gut group	113
+Dorea	37
+Eisenbergiella	25
+Escherichia-Shigella	47
+Family XIII AD3011 group	46
+Gilliamella	12
+Halomonas	224
+Ilumatobacter	16
+Kandleria	16
+Lachnoclostridium	129
+Lachnoclostridium 10	249
+Lachnospiraceae AC2044 group	1218
+Lachnospiraceae FCS020 group	21
+Lachnospiraceae NK4A136 group	722
+Lachnospiraceae NK4B4 group	16
+Lachnospiraceae UCG-001	185
+Lachnospiraceae UCG-008	80
+Lachnospiraceae UCG-010	54
+Lysinimicrobium	14
+Mailhella	115
+Marinospirillum	23
+Marvinbryantia	96
+Methylobacterium	27
+Motilimonas	90
+Oceanisphaera	36
+Oligella	26
+Oscillibacter	44
+Papillibacter	11
+Parabacteroides	20
+Parasutterella	66
+Phascolarctobacterium	194
+Prevotella 1	614
+Prevotellaceae Ga6A1 group	148
+Prevotellaceae UCG-004	2808
+Pseudomonas	259
+Rikenellaceae RC9 gut group	4155
+Romboutsia	14
+Roseburia	280
+Roseovarius	7
+Ruminiclostridium 1	125
+Ruminiclostridium 6	38
+Ruminiclostridium 9	116
+Ruminococcaceae NK4A214 group	113
+Ruminococcaceae UCG-002	117
+Ruminococcaceae UCG-004	16
+Ruminococcaceae UCG-005	6607
+Ruminococcaceae UCG-009	96
+Ruminococcaceae UCG-010	3305
+Ruminococcaceae UCG-011	51
+Ruminococcaceae UCG-013	791
+Ruminococcaceae UCG-014	663
+Ruminococcus 1	716
+Ruminococcus 2	19
+Shewanella	103
+Shuttleworthia	17
+Streptococcus	173
+Treponema 2	463
+Tyzzerella	22
+Tyzzerella 4	361
+Unclassified	4604
+uncultured bacterium	3580

@@ -1,0 +1,47 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	3
+Acidovorax	281
+Acinetobacter	32
+Advenella	13
+Alloprevotella	13
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	20
+Arthrobacter	100
+Brevundimonas	1263
+Carnobacterium	12
+Chryseobacterium	283
+Clostridium sensu stricto 1	195
+Conyzicola	30
+Delftia	48
+Devosia	50
+Dyadobacter	53
+Enterobacter	4
+Flavobacterium	3181
+Frondihabitans	19
+Gemmobacter	152
+Herminiimonas	33
+Janthinobacterium	1283
+Massilia	64
+Myroides	311
+Noviherbaspirillum	18
+Oerskovia	19
+Pedobacter	3667
+Plantibacter	11
+Polaromonas	20
+Polymorphobacter	2
+Prevotella 9	43
+Pseudarthrobacter	114
+Pseudochrobactrum	7
+Pseudomonas	1776
+Ramlibacter	5
+Rhodoferax	478
+Rubellimicrobium	19
+Ruminococcaceae UCG-002	2
+Serratia	36
+Sphingobacterium	139
+Stenotrophomonas	218
+Subtercola	61
+Sutterella	5
+Tardiphaga	4
+Terrisporobacter	12
+Unclassified	67
+Variovorax	26

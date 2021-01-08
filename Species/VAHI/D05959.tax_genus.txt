@@ -1,0 +1,12 @@
+Taxa	Counts
+Aeromonas	1343
+Bilateria	19
+Cetobacterium	6191
+Clostridium sensu stricto 1	207
+Mycoplasma	123
+Paraclostridium	2645
+Plesiomonas	462
+Pseudomonas	10
+Shewanella	67
+Unclassified	1372
+Vibrio	423

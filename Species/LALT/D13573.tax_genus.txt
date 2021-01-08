@@ -1,0 +1,68 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	2287
+[Eubacterium] nodatum group	78
+[Eubacterium] ruminantium group	67
+[Eubacterium] ventriosum group	29
+[Ruminococcus] gauvreauii group	21
+[Ruminococcus] torques group	150
+Anaerofustis	26
+Anaerosporobacter	3527
+Arthrobacter	11
+Caldicoprobacter	70
+Campylobacter	115
+Candidatus Methanoplasma	342
+Candidatus Soleaferrea	360
+Christensenellaceae R-7 group	7424
+Clostridium sensu stricto 1	389
+Coprococcus 3	25
+Erysipelotrichaceae UCG-004	148
+Family XIII AD3011 group	430
+Fibrobacter	607
+GCA-900066575	18
+Howardella	11
+Intestinibacter	299
+Lachnoclostridium	141
+Lachnospiraceae AC2044 group	191
+Lachnospiraceae NC2004 group	25
+Lachnospiraceae ND3007 group	18
+Lachnospiraceae NK4A136 group	125
+Lachnospiraceae UCG-002	33
+Lachnospiraceae UCG-004	57
+Lachnospiraceae UCG-007	36
+Lachnospiraceae UCG-008	25
+Marvinbryantia	29
+Methanobrevibacter	58
+Methanocorpusculum	650
+Methanosphaera	16
+Mogibacterium	115
+Oscillospira	16
+Oxalobacter	358
+p-1088-a5 gut group	108
+Papillibacter	1872
+Parabacteroides	46
+Peptococcus	67
+Phascolarctobacterium	186
+Prevotella 1	19
+Prevotellaceae UCG-003	121
+Prevotellaceae UCG-004	218
+Rikenellaceae RC9 gut group	2875
+Ruminiclostridium 5	151
+Ruminiclostridium 9	13
+Ruminococcaceae NK4A214 group	750
+Ruminococcaceae UCG-002	137
+Ruminococcaceae UCG-004	63
+Ruminococcaceae UCG-005	1509
+Ruminococcaceae UCG-008	12
+Ruminococcaceae UCG-009	12
+Ruminococcaceae UCG-010	2129
+Ruminococcaceae UCG-013	339
+Ruminococcaceae UCG-014	2064
+Ruminococcaceae V9D2013 group	76
+Ruminococcus 2	27
+S5-A14a	13
+Sarcina	85
+Terrisporobacter	494
+Treponema 2	3734
+Unclassified	31957
+uncultured bacterium	6507
+uncultured rumen bacterium	76

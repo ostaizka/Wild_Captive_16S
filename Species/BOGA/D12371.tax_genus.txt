@@ -1,0 +1,43 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	3861
+Acinetobacter	1957
+Agathobacter	628
+Akkermansia	109
+Alistipes	4516
+Alloprevotella	1669
+Anaeroplasma	323
+Bacillus	2254
+Bacteroides	851
+Candidatus Soleaferrea	279
+dgA-11 gut group	401
+Dorea	117
+Escherichia-Shigella	736
+Family XIII AD3011 group	148
+Flavobacterium	225
+Intestinimonas	259
+Lachnoclostridium 10	386
+Lachnospiraceae NK4A136 group	1179
+Lysinibacillus	11220
+Mailhella	194
+Methanobrevibacter	431
+Negativibacillus	121
+Oscillospira	236
+Parasutterella	479
+Prevotellaceae UCG-004	2193
+Rikenellaceae RC9 gut group	14178
+Romboutsia	271
+Roseburia	1397
+Ruminiclostridium	488
+Ruminobacter	680
+Ruminococcaceae UCG-005	26181
+Ruminococcaceae UCG-009	203
+Ruminococcaceae UCG-010	47710
+Ruminococcaceae UCG-013	2536
+Ruminococcaceae UCG-014	246
+Solibacillus	3569
+Treponema 2	294
+Unclassified	19334
+uncultured bacterium	11112
+uncultured Bacteroidales bacterium	903
+uncultured Parabacteroides sp.	143
+XBB1006	313

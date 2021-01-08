@@ -1,0 +1,95 @@
+Taxa	Counts
+[Eubacterium] brachy group	19
+[Eubacterium] coprostanoligenes group	967
+[Eubacterium] nodatum group	30
+[Eubacterium] oxidoreducens group	37
+[Eubacterium] ruminantium group	120
+[Eubacterium] xylanophilum group	39
+[Ruminococcus] gauvreauii group	17
+[Ruminococcus] torques group	30
+Acetitomaculum	10
+Agathobacter	13
+Akkermansia	11
+Alistipes	1347
+Anaerosporobacter	56
+Anaerostipes	108
+Bacteroides	3264
+Bifidobacterium	28
+Blautia	113
+Butyrivibrio	28
+Candidatus Soleaferrea	73
+Candidatus Stoquefichus	97
+Cerasicoccus	33
+Cetobacterium	30
+Christensenellaceae R-7 group	1650
+Clostridium sensu stricto 1	15
+Coprococcus 1	6
+Coprococcus 2	164
+Coprococcus 3	226
+dgA-11 gut group	73
+Dorea	46
+Eisenbergiella	9
+Elusimicrobium	24
+Escherichia-Shigella	12
+Family XIII AD3011 group	26
+Fibrobacter	749
+GCA-900066575	39
+Halomonas	61
+Kandleria	31
+Lachnoclostridium	79
+Lachnoclostridium 10	164
+Lachnospiraceae AC2044 group	394
+Lachnospiraceae FCS020 group	97
+Lachnospiraceae NC2004 group	18
+Lachnospiraceae NK3A20 group	7
+Lachnospiraceae NK4A136 group	1186
+Lachnospiraceae NK4B4 group	36
+Lachnospiraceae UCG-001	124
+Lachnospiraceae UCG-004	16
+Lachnospiraceae UCG-008	75
+Mailhella	38
+Marvinbryantia	122
+Methanocorpusculum	99
+Methylobacterium	9
+Motilimonas	106
+Nocardia	18
+Olsenella	14
+Oscillibacter	56
+Papillibacter	16
+Parabacteroides	12
+Parasutterella	19
+Phascolarctobacterium	29
+Photobacterium	21
+Prevotella 1	42
+Prevotellaceae Ga6A1 group	250
+Prevotellaceae UCG-001	164
+Prevotellaceae UCG-003	91
+Prevotellaceae UCG-004	1914
+Pseudomonas	19
+Rikenellaceae RC9 gut group	1807
+Romboutsia	66
+Roseburia	368
+Ruminiclostridium 1	256
+Ruminiclostridium 6	47
+Ruminiclostridium 9	47
+Ruminococcaceae NK4A214 group	206
+Ruminococcaceae UCG-002	98
+Ruminococcaceae UCG-005	6025
+Ruminococcaceae UCG-007	30
+Ruminococcaceae UCG-009	138
+Ruminococcaceae UCG-010	3616
+Ruminococcaceae UCG-011	152
+Ruminococcaceae UCG-013	697
+Ruminococcaceae UCG-014	930
+Ruminococcus 1	402
+Ruminococcus 2	180
+Sharpea	67
+Shewanella	19
+Shuttleworthia	26
+Streptococcus	38
+Treponema 2	2240
+Turicibacter	19
+Tyzzerella 4	155
+Unclassified	4305
+uncultured bacterium	1952
+unidentified rumen bacterium RFN47	407

@@ -1,0 +1,24 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	18
+28-4	11
+Alistipes	11
+Coprococcus 2	196
+Desulfovibrio	50
+Family XIII UCG-001	59
+GCA-900066575	40
+Helicobacter	143
+Lachnoclostridium	41
+Lachnospiraceae FCS020 group	51
+Lachnospiraceae NC2004 group	52
+Lachnospiraceae NK4A136 group	4130
+Lachnospiraceae UCG-001	49
+Lachnospiraceae UCG-008	228
+Lactobacillus	17125
+Oscillibacter	82
+Ruminiclostridium	73
+Ruminiclostridium 9	192
+Ruminococcaceae UCG-005	14
+Ruminococcaceae UCG-014	14
+Ruminococcus 1	539
+Unclassified	6216
+uncultured bacterium	2762

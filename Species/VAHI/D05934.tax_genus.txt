@@ -1,0 +1,13 @@
+Taxa	Counts
+Aeromonas	6930
+Cetobacterium	40344
+Clostridium sensu stricto 1	2047
+Epulopiscium	967
+Mycoplasma	978
+Paraclostridium	236
+Plesiomonas	590
+Romboutsia	186
+Sarcina	262
+Unclassified	6765
+uncultured bacterium	942
+Vibrio	15063

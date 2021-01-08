@@ -1,0 +1,94 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	9
+[Eubacterium] brachy group	4
+[Eubacterium] coprostanoligenes group	2257
+[Eubacterium] nodatum group	69
+[Eubacterium] oxidoreducens group	11
+[Eubacterium] ruminantium group	10
+[Eubacterium] saphenum group	52
+[Eubacterium] xylanophilum group	21
+[Ruminococcus] gauvreauii group	40
+[Ruminococcus] gnavus group	54
+[Ruminococcus] torques group	191
+Acetitomaculum	48
+Acinetobacter	65
+Agathobacter	8
+Akkermansia	2719
+Alistipes	50
+Alloprevotella	88
+Anaerosporobacter	6
+Anaerostipes	94
+Bacteroides	367
+Blautia	150
+Candidatus Methanogranum	112
+Candidatus Soleaferrea	105
+Christensenellaceae R-7 group	1364
+Coprococcus 3	164
+Defluviitaleaceae UCG-011	31
+Desulfovibrio	178
+Dielma	14
+DNF00809	14
+Dorea	142
+Elusimicrobium	47
+Enterorhabdus	36
+Faecalibacterium	12
+Family XIII AD3011 group	434
+Family XIII UCG-001	35
+Flavonifractor	15
+Fusicatenibacter	114
+Helicobacter	8
+Hydrogenoanaerobacterium	10
+Intestinibacter	286
+Intestinimonas	105
+Kurthia	11
+Lachnobacterium sp. wal 14165	548
+Lachnoclostridium	205
+Lachnoclostridium 10	81
+Lachnoclostridium 5	28
+Lachnospiraceae AC2044 group	223
+Lachnospiraceae FCS020 group	17
+Lachnospiraceae NC2004 group	713
+Lachnospiraceae ND3007 group	7
+Lachnospiraceae NK4A136 group	755
+Lachnospiraceae UCG-001	393
+Lachnospiraceae UCG-006	18
+Lachnospiraceae UCG-008	87
+Lactonifactor	19
+Mailhella	12
+Marvinbryantia	108
+Methanobrevibacter	6
+Murimonas	8
+Olsenella	13
+p-1088-a5 gut group	73
+Papillibacter	27
+Parabacteroides	9
+Parvibacter	73
+Peptococcus	9
+Phascolarctobacterium	51
+Prevotella 1	2378
+Prevotella 7	154
+Prevotellaceae UCG-001	769
+Prevotellaceae UCG-003	73
+Rikenellaceae RC9 gut group	199
+Roseburia	452
+Ruminiclostridium	47
+Ruminiclostridium 5	59
+Ruminiclostridium 6	25
+Ruminiclostridium 9	82
+Ruminococcaceae NK4A214 group	1231
+Ruminococcaceae UCG-002	208
+Ruminococcaceae UCG-003	24
+Ruminococcaceae UCG-005	2698
+Ruminococcaceae UCG-009	41
+Ruminococcaceae UCG-010	1126
+Ruminococcaceae UCG-013	144
+Ruminococcaceae UCG-014	696
+Ruminococcus 1	565
+Ruminococcus 2	238
+Sphaerochaeta	8
+Succinivibrio	25
+Treponema 2	1296
+Tyzzerella 3	8
+Tyzzerella 4	36
+Unclassified	5813
+uncultured bacterium	1164

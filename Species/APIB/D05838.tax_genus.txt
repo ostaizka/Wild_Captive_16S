@@ -1,0 +1,12 @@
+Taxa	Counts
+Aeromonas	3877
+Cyanobium PCC-6307	37
+GKS98 freshwater group	5
+Lactococcus	11
+Roseofilum AO1-A	97
+Shewanella	120
+Synechococcus CC9902	13
+Terrimicrobium	41
+Unclassified	NA
+uncultured bacterium	219
+Vibrio	10816

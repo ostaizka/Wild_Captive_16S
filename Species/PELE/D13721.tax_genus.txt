@@ -1,0 +1,58 @@
+Taxa	Counts
+[Bacteroides] pectinophilus group	26
+[Eubacterium] coprostanoligenes group	126
+[Eubacterium] nodatum group	3
+A2	2
+Achromobacter	2
+Acinetobacter	58
+Aerococcus	16
+Aeromonas	2
+Alistipes	18
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	3
+Bacillus	5
+Bacteroides	21
+Blautia	3
+Butyricicoccus	3
+Carnobacterium	16
+Chryseobacterium	2
+Exiguobacterium	3
+GCA-900066575	4
+Gemella	6
+Glutamicibacter	5
+gut metagenome	162
+Hafnia-Obesumbacterium	4
+Jeotgalibaca	7
+Jeotgalicoccus	11
+JGI 0001001-H03	2
+Kurthia	1419
+Lachnospiraceae NK4A136 group	288
+Lachnospiraceae UCG-001	33
+Lachnospiraceae UCG-006	6
+Lactobacillus	92
+Lelliottia	3
+Macrococcus	7
+Marvinbryantia	4
+Muribacter	3
+Odoribacter	8
+Oscillibacter	11
+Pantoea	2
+Planomicrobium	11
+Prevotellaceae Ga6A1 group	22
+Prevotellaceae UCG-001	6
+Pseudomonas	2
+Psychrobacter	4
+Roseburia	10
+Ruminiclostridium	11
+Ruminiclostridium 9	21
+Ruminococcaceae UCG-003	4
+Ruminococcaceae UCG-005	4
+Ruminococcaceae UCG-014	35
+Ruminococcus 1	9
+Solibacillus	30
+Staphylococcus	3
+Treponema 2	12
+Unclassified	6433
+uncultured bacterium	6753
+uncultured Bacteroidales bacterium	848
+uncultured organism	38
+unidentified	31

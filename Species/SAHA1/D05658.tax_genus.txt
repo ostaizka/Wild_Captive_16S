@@ -1,0 +1,19 @@
+Taxa	Counts
+Bergeyella	21
+Cetobacterium	8057
+Clostridium sensu stricto 1	39369
+Clostridium sensu stricto 13	120
+Edwardsiella	321
+Enterobacter	298
+Epulopiscium	4249
+Escherichia-Shigella	1158
+Fusobacterium	19744
+Paeniclostridium	10765
+Paraclostridium	33
+Peptostreptococcus	8285
+Plesiomonas	26566
+Pseudomonas	292
+Romboutsia	3979
+Sarcina	211
+Terrisporobacter	1579
+Unclassified	2520

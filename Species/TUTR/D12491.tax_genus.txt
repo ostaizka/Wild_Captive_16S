@@ -1,0 +1,5 @@
+Taxa	Counts
+Cetobacterium	405
+Clostridium sensu stricto 1	515
+Paeniclostridium	57
+Peptoclostridium	11

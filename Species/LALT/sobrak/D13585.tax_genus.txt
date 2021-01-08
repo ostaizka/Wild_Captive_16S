@@ -1,0 +1,55 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	3171
+[Eubacterium] ruminantium group	1084
+[Ruminococcus] gauvreauii group	64
+Anaerosporobacter	97
+Blautia	68
+Campylobacter	496
+Candidatus Methanomethylophilus	60
+Candidatus Methanoplasma	1917
+Candidatus Soleaferrea	638
+Cellulosilyticum	366
+Christensenellaceae R-7 group	11011
+Clostridium sensu stricto 1	422
+Coprococcus 1	143
+Family XIII AD3011 group	1065
+Fibrobacter	268
+Intestinibacter	2161
+Lachnoclostridium	365
+Lachnospiraceae AC2044 group	147
+Lachnospiraceae FCS020 group	117
+Lachnospiraceae NC2004 group	118
+Lachnospiraceae ND3007 group	184
+Lachnospiraceae NK4A136 group	1054
+Lachnospiraceae UCG-002	80
+Lachnospiraceae UCG-007	614
+Lachnospiraceae UCG-008	69
+Marvinbryantia	483
+Methanocorpusculum	1987
+Mogibacterium	112
+Oscillibacter	258
+p-1088-a5 gut group	86
+Papillibacter	2685
+Peptococcus	268
+Phascolarctobacterium	684
+Prevotellaceae UCG-003	257
+Prevotellaceae UCG-004	541
+Rikenellaceae RC9 gut group	284
+Ruminiclostridium 5	922
+Ruminococcaceae NK4A214 group	3363
+Ruminococcaceae UCG-002	76
+Ruminococcaceae UCG-004	115
+Ruminococcaceae UCG-005	4900
+Ruminococcaceae UCG-008	129
+Ruminococcaceae UCG-010	5255
+Ruminococcaceae UCG-011	61
+Ruminococcaceae UCG-013	81
+Ruminococcaceae UCG-014	5828
+Ruminococcus 2	371
+Sarcina	1270
+Streptococcus	729
+Subdoligranulum	66
+Terrisporobacter	220
+Treponema 2	19863
+Unclassified	110659
+uncultured bacterium	21553

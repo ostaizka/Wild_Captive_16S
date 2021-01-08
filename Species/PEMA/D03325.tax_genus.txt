@@ -1,0 +1,9 @@
+Taxa	Counts
+Alistipes	313
+Helicobacter	346
+Lachnospiraceae NK4A136 group	281
+Lactobacillus	600
+Ruminiclostridium 9	34
+Ruminococcaceae UCG-014	87
+Unclassified	14306
+uncultured bacterium	7476

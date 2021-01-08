@@ -1,0 +1,58 @@
+Taxa	Counts
+[Eubacterium] brachy group	27
+[Eubacterium] coprostanoligenes group	1129
+[Eubacterium] oxidoreducens group	406
+[Eubacterium] xylanophilum group	224
+[Ruminococcus] torques group	426
+Acetitomaculum	22
+Akkermansia	45
+Alistipes	434
+Anaerosporobacter	54
+Bacteroides	1175
+Blautia	541
+Candidatus Soleaferrea	25
+Christensenellaceae R-7 group	671
+Coprococcus 2	1199
+Coprococcus 3	107
+Desulfovibrio	30
+Dorea	69
+Escherichia-Shigella	277
+Faecalibacterium	712
+Family XIII AD3011 group	92
+Family XIII UCG-001	33
+Flavonifractor	9
+Helicobacter	28
+Lachnoclostridium	764
+Lachnospiraceae AC2044 group	13
+Lachnospiraceae FCS020 group	76
+Lachnospiraceae NC2004 group	249
+Lachnospiraceae NK4A136 group	881
+Lachnospiraceae UCG-001	150
+Lachnospiraceae UCG-003	38
+Marvinbryantia	171
+Parabacteroides	64
+Phascolarctobacterium	28
+Prevotella 1	49
+Prevotellaceae UCG-001	157
+Prevotellaceae UCG-003	2992
+Prevotellaceae UCG-004	46
+Roseburia	484
+Ruminiclostridium	26
+Ruminiclostridium 5	51
+Ruminiclostridium 6	314
+Ruminiclostridium 9	205
+Ruminococcaceae NK4A214 group	159
+Ruminococcaceae UCG-002	998
+Ruminococcaceae UCG-003	19
+Ruminococcaceae UCG-005	8108
+Ruminococcaceae UCG-009	362
+Ruminococcaceae UCG-010	439
+Ruminococcaceae UCG-013	652
+Ruminococcaceae UCG-014	566
+Ruminococcus 1	4274
+Ruminococcus 2	44
+Shuttleworthia	12
+Treponema 2	48
+Tyzzerella 4	194
+Unclassified	21693
+uncultured bacterium	1218

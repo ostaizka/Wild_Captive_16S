@@ -1,0 +1,16 @@
+Taxa	Counts
+Acetitomaculum	44
+Alistipes	211
+Candidatus Saccharimonas	286
+Desulfovibrio	114
+Lachnoclostridium	419
+Lachnospiraceae NK4A136 group	34892
+Lachnospiraceae UCG-006	184
+Lactobacillus	213
+Odoribacter	60
+Ruminiclostridium	266
+Ruminiclostridium 5	21
+Ruminiclostridium 6	1880
+Ruminiclostridium 9	74
+Unclassified	4432
+uncultured bacterium	1760

@@ -1,0 +1,26 @@
+Taxa	Counts
+Acinetobacter	26
+Blautia	77
+Campylobacter	4
+Clostridium sensu stricto 1	NA
+Clostridium sensu stricto 13	459
+Clostridium sensu stricto 2	80
+Clostridium sensu stricto 4	19
+Clostridium sensu stricto 7	37
+Epulopiscium	NA
+Erysipelatoclostridium	9
+Escherichia-Shigella	168
+Faecalitalea	63
+Fusobacterium	11
+Helicobacter	13
+Kurthia	3
+Ochrobactrum	2
+Paeniclostridium	564
+Parvimonas	13
+Peptoclostridium	33
+Romboutsia	1362
+Ruminococcaceae UCG-011	200
+Sarcina	21
+Terrisporobacter	2641
+Turicibacter	68
+Unclassified	3043

@@ -1,0 +1,12 @@
+Taxa	Counts
+Caryophanon	305
+Clostridium sensu stricto 1	464
+Lysinibacillus	219
+Paenisporosarcina	11
+Pedobacter	46
+Pseudomonas	14209
+Serratia	567
+Streptococcus	411
+Subtercola	23
+Turicibacter	51
+Unclassified	21

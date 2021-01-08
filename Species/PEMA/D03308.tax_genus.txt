@@ -1,0 +1,22 @@
+Taxa	Counts
+[Bacteroides] pectinophilus group	154
+[Eubacterium] nodatum group	23
+[Eubacterium] ruminantium group	64
+Alistipes	165
+Anaerosporobacter	104
+Coprococcus 3	28
+GCA-900066575	26
+Helicobacter	151
+Intestinimonas	16
+Lachnospiraceae NK4A136 group	3085
+Lactobacillus	459
+Oscillibacter	86
+Ruminiclostridium 6	8
+Ruminiclostridium 9	176
+Ruminococcaceae UCG-003	61
+Ruminococcaceae UCG-010	18
+Ruminococcaceae UCG-014	96
+Ruminococcus 1	13
+Turicibacter	63
+Unclassified	18255
+uncultured bacterium	6041

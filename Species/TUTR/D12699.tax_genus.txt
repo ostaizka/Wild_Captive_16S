@@ -1,0 +1,9 @@
+Taxa	Counts
+Actinobacillus	241
+Cetobacterium	36
+Clostridium sensu stricto 1	14
+Phocoenobacter	12
+Photobacterium	124
+Romboutsia	68
+Unclassified	8
+Vibrio	953

@@ -1,0 +1,62 @@
+Taxa	Counts
+Acinetobacter	27
+Actinomadura	192
+Alkalicoccus	20
+Alkaliphilus	6
+Ammoniphilus	7
+Anaerocolumna	61
+Anoxybacillus	111
+Arthrobacter	18
+Bacillus	1246
+Candidatus Udaeobacter	5
+Candidatus Xiphinematobacter	7
+Cellulosimicrobium	15
+Clostridium sensu stricto 1	174
+Clostridium sensu stricto 13	4
+Clostridium sensu stricto 16	48
+Clostridium sensu stricto 5	81
+Cohnella	5
+Comamonas	2542
+Conexibacter	48
+Coprococcus 3	2
+Empedobacter	110
+Enterococcus	70
+Erysipelothrix	431
+Escherichia-Shigella	13
+Georgenia	7
+Glutamicibacter	44
+Gordonia	1304
+Knoellia	7
+Kurthia	173
+Lactococcus	88
+Leucobacter	6913
+Lysinibacillus	107
+Mesorhizobium	159
+Micromonospora	59
+Paenibacillus	116
+Paeniclostridium	6
+Paeniglutamicibacter	3
+Patulibacter	125
+Paucisalibacillus	9
+Proteiniborus	42
+Pseudogracilibacillus	94
+Psychrobacillus	43
+Rhodococcus	15
+Romboutsia	324
+Ruminococcaceae UCG-014	4
+Rummeliibacillus	7
+Scopulibacillus	47
+Sedimentibacter	27
+Solibacillus	12
+Sphingobacterium	43
+Sporosarcina	61
+Terrisporobacter	17
+Tissierella	194
+Tumebacillus	3
+Unclassified	1213
+uncultured Acidobacteria bacterium	9
+uncultured bacterium	4
+uncultured compost bacterium	55
+uncultured Rhodospirillaceae bacterium	4
+Vagococcus	63
+Virgibacillus	77

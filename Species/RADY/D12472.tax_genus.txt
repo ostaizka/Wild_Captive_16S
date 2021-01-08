@@ -1,0 +1,37 @@
+Taxa	Counts
+[Eubacterium] brachy group	6
+[Eubacterium] fissicatena group	33
+Acinetobacter	5
+Alistipes	24
+Alloprevotella	8
+Anaerocolumna	26
+Angelakisella	104
+Aquabacterium	8
+Bacillus	48
+Bacteroides	29
+Blautia	5
+Brevundimonas	3
+Burkholderia-Caballeronia-Paraburkholderia	6
+Dyella	5
+Erysipelatoclostridium	70
+Eubacterium	194
+GCA-900066225	131
+Gordonibacter	107
+Intestinimonas	16
+Lachnoclostridium	917
+Lachnospiraceae AC2044 group	13709
+Lachnospiraceae NC2004 group	8
+Lactobacillus	3
+Pelomonas	6
+Providencia	7
+Ralstonia	129
+Raoultibacter	11
+Rhodococcus	67
+Robinsoniella	39
+Ruminiclostridium 5	8
+Ruminiclostridium 9	8
+Ruminococcaceae UCG-008	27
+Tyzzerella	174
+Unclassified	16153
+uncultured bacterium	13
+Vibrio	3

@@ -1,0 +1,12 @@
+Taxa	Counts
+Actinobacillus	306
+Angelakisella	11
+Bacteroides	52
+Campylobacter	170
+Cetobacterium	72
+Escherichia-Shigella	8
+Fusobacterium	67
+Morganella	16
+Phocoenobacter	387
+Psychrobacter	3
+Unclassified	8

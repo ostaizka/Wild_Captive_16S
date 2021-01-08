@@ -1,0 +1,20 @@
+Taxa	Counts
+Arthrobacter	243
+Basidiomycota	9
+Carnobacterium	5
+Chryseobacterium	15
+Clostridium sensu stricto 1	553
+Cryobacterium	12
+Flavobacterium	336
+Hafnia-Obesumbacterium	4
+Janthinobacterium	17
+Pedobacter	73
+Pseudomonas	6925
+Psychrobacter	55
+Rhodococcus	3
+Sphingobacterium	16
+Sphingomonas	11
+Streptococcus	7
+Subtercola	419
+Turicibacter	25
+Unclassified	30

@@ -1,0 +1,84 @@
+Taxa	Counts
+[Eubacterium] brachy group	56
+[Eubacterium] coprostanoligenes group	3460
+[Eubacterium] nodatum group	55
+[Eubacterium] oxidoreducens group	176
+[Eubacterium] ruminantium group	201
+[Eubacterium] ventriosum group	1502
+[Ruminococcus] torques group	121
+Acetitomaculum	161
+Agathobacter	2719
+Alistipes	529
+Alloprevotella	47
+Anaerovibrio	28
+Anaerovorax	44
+Atopobium	12
+Bacteroides	2408
+Blautia	189
+Campylobacter	9
+Candidatus Soleaferrea	124
+Candidatus Stoquefichus	49
+Christensenellaceae R-7 group	3323
+Clostridium sensu stricto 1	31
+Coprococcus 2	99
+Coprococcus 3	18
+Defluviitaleaceae UCG-011	73
+Dorea	71
+Family XIII AD3011 group	103
+Intestinimonas	109
+Lachnoclostridium	17
+Lachnoclostridium 10	297
+Lachnoclostridium 5	61
+Lachnospiraceae AC2044 group	266
+Lachnospiraceae FCS020 group	553
+Lachnospiraceae NC2004 group	35
+Lachnospiraceae NK4A136 group	820
+Lachnospiraceae UCG-001	108
+Lachnospiraceae UCG-008	194
+Lachnospiraceae UCG-010	83
+Mailhella	21
+Methanosphaera	41
+Negativibacillus	94
+Oscillibacter	58
+p-1088-a5 gut group	66
+Paeniclostridium	47
+Papillibacter	144
+Parvibacter	123
+Phascolarctobacterium	132
+Prevotella 1	10
+Prevotellaceae UCG-001	13
+Prevotellaceae UCG-003	89
+Prevotellaceae UCG-004	581
+Rikenellaceae RC9 gut group	1697
+Romboutsia	52
+Roseburia	1827
+Ruminiclostridium	164
+Ruminiclostridium 1	51
+Ruminiclostridium 5	66
+Ruminiclostridium 6	141
+Ruminiclostridium 9	209
+Ruminobacter	77
+Ruminococcaceae NK4A214 group	658
+Ruminococcaceae UCG-002	257
+Ruminococcaceae UCG-004	33
+Ruminococcaceae UCG-005	16652
+Ruminococcaceae UCG-009	467
+Ruminococcaceae UCG-010	4683
+Ruminococcaceae UCG-011	138
+Ruminococcaceae UCG-013	2290
+Ruminococcaceae UCG-014	1712
+Ruminococcus 1	1038
+Ruminococcus 2	319
+Succinivibrio	62
+Treponema 2	71
+Turicibacter	22
+Tyzzerella	30
+Tyzzerella 3	93
+Tyzzerella 4	2441
+UC5-1-2E3	63
+Unclassified	9897
+uncultured bacterium	1198
+uncultured Bacteroidales bacterium	55
+uncultured Parabacteroides sp.	35
+uncultured Porphyromonadaceae bacterium	59
+XBB1006	19

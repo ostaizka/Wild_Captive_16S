@@ -1,0 +1,32 @@
+Taxa	Counts
+Acetitomaculum	29
+Actinomyces	357
+Bacteroides	18
+Blastococcus	123
+Blautia	182
+Brevundimonas	56
+Clostridium sensu stricto 1	9011
+Collinsella	7199
+Corynebacterium	1484
+Corynebacterium 1	56
+Devosia	27
+Enterococcus	950
+Escherichia-Shigella	2772
+Fusobacterium	3050
+Gemella	474
+Hydrogenophaga	33
+Leucobacter	5954
+Parvimonas	273
+Peptoclostridium	70
+Peptoniphilus	309
+Pseudenhygromyxa	13
+Pseudomonas	113
+Pseudonocardia	91
+Slackia	81
+Solirubrobacter	24
+Sphingomonas	22
+Streptococcus	3337
+Sutterella	130
+TM7 phylum sp. canine oral taxon 305	28
+Unclassified	2569
+uncultured bacterium	179

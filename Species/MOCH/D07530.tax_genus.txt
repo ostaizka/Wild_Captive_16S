@@ -1,0 +1,93 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	40
+[Eubacterium] brachy group	17
+[Eubacterium] coprostanoligenes group	2523
+[Eubacterium] nodatum group	35
+[Eubacterium] oxidoreducens group	46
+[Eubacterium] ruminantium group	62
+[Eubacterium] ventriosum group	39
+[Ruminococcus] torques group	26
+Acetitomaculum	12
+Agathobacter	12
+Alistipes	3151
+Anaeroplasma	18
+Anaerostipes	28
+Anaerovorax	11
+Arthrobacter	6
+Atopostipes	11
+Bacteroides	3505
+Bifidobacterium	224
+Candidatus Soleaferrea	197
+Candidatus Stoquefichus	18
+Cetobacterium	35
+Christensenellaceae R-7 group	1266
+Clostridium sensu stricto 1	18
+Coprococcus 2	75
+Coprococcus 3	316
+Corynebacterium 1	29
+Defluviitaleaceae UCG-011	6
+dgA-11 gut group	429
+DNF00809	5
+Dorea	19
+Escherichia-Shigella	32
+Faecalibacterium	18
+Family XIII AD3011 group	9
+Fibrobacter	14
+Halioglobus	6
+Halomonas	138
+Hydrogenoanaerobacterium	36
+Kandleria	739
+Lachnoclostridium	82
+Lachnoclostridium 10	124
+Lachnospira	6
+Lachnospiraceae AC2044 group	153
+Lachnospiraceae FCS020 group	47
+Lachnospiraceae NK3A20 group	16
+Lachnospiraceae NK4A136 group	538
+Lachnospiraceae NK4B4 group	11
+Lachnospiraceae UCG-001	55
+Lachnospiraceae UCG-004	33
+Lachnospiraceae UCG-008	75
+Lachnospiraceae UCG-010	15
+Mailhella	135
+Marvinbryantia	42
+Methanobrevibacter	87
+Methanosphaera	10
+Motilimonas	91
+Negativibacillus	10
+Nocardia	11
+Oscillibacter	59
+Parabacteroides	37
+Parasutterella	22
+Phascolarctobacterium	73
+Photobacterium	13
+Prevotellaceae Ga6A1 group	134
+Prevotellaceae UCG-003	23
+Prevotellaceae UCG-004	349
+Psychrobacillus	11
+Rikenellaceae RC9 gut group	2027
+Romboutsia	25
+Roseburia	160
+Ruminiclostridium	29
+Ruminiclostridium 1	316
+Ruminiclostridium 6	46
+Ruminiclostridium 9	60
+Ruminococcaceae NK4A214 group	200
+Ruminococcaceae UCG-002	74
+Ruminococcaceae UCG-005	3394
+Ruminococcaceae UCG-009	295
+Ruminococcaceae UCG-010	6465
+Ruminococcaceae UCG-011	41
+Ruminococcaceae UCG-013	564
+Ruminococcaceae UCG-014	830
+Ruminococcus 1	338
+Ruminococcus 2	192
+Shewanella	33
+Streptococcus	9
+Treponema 2	92
+Turicibacter	53
+Tyzzerella 4	187
+Unclassified	3966
+uncultured bacterium	2855
+uncultured rumen bacterium	15
+unidentified rumen bacterium RFN47	65

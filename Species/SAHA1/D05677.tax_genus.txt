@@ -1,0 +1,35 @@
+Taxa	Counts
+[Eubacterium] brachy group	35
+Carnobacterium	366
+Cetobacterium	1286
+Clostridium sensu stricto 1	7727
+Clostridium sensu stricto 11	45
+Clostridium sensu stricto 13	20
+Clostridium sensu stricto 4	23
+Edwardsiella	297
+Enterobacter	271
+Enterococcus	1305
+Escherichia-Shigella	71
+Fusobacterium	20929
+Gemella	16
+Hathewaya	14
+Helicobacter	28
+Ignatzschineria	3940
+Jeotgalicoccus	19
+Lactococcus	153
+Lysinibacillus	66
+Moellerella	477
+Morganella	47
+Mycoplasma	451
+Paeniclostridium	2405
+Paraclostridium	24
+Parvimonas	14
+Peptoniphilus	13
+Peptostreptococcus	292
+Plesiomonas	9384
+Proteus	18239
+Providencia	38
+Psychrobacter	11936
+Romboutsia	43
+Unclassified	1867
+Vagococcus	2047

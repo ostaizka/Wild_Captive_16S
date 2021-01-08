@@ -1,0 +1,4 @@
+Taxa	Counts
+Actinobacillus	243
+Erysipelatoclostridium	3
+Phocoenobacter	981

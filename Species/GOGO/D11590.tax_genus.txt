@@ -1,0 +1,56 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	23028
+[Eubacterium] hallii group	4983
+[Eubacterium] ruminantium group	294
+Acetitomaculum	902
+Agathobacter	5656
+Anaerosporobacter	1185
+Bifidobacterium	630
+Blautia	3806
+Butyricicoccus	1267
+Candidatus Methanomethylophilus	305
+Christensenellaceae R-7 group	5771
+Clostridium sensu stricto 1	3522
+Coriobacteriaceae UCG-003	2518
+Dialister	775
+Dorea	493
+Erysipelotrichaceae UCG-003	2394
+Erysipelotrichaceae UCG-004	1313
+Faecalibacterium	4340
+Family XIII AD3011 group	6404
+Fusicatenibacter	882
+Holdemanella	619
+Lachnoclostridium	416
+Lachnospira	410
+Lachnospiraceae FCS020 group	9776
+Lachnospiraceae ND3007 group	1211
+Lachnospiraceae NK3A20 group	1722
+Lachnospiraceae NK4A136 group	2340
+Lachnospiraceae UCG-004	2666
+Lachnospiraceae UCG-008	310
+Libanicoccus	638
+Oribacterium	1148
+Oscillibacter	237
+Phascolarctobacterium	9151
+Platanus occidentalis	678
+Prevotella 9	4426
+Pseudobutyrivibrio	22595
+Rikenellaceae RC9 gut group	21411
+Roseburia	14509
+Ruminiclostridium 9	1471
+Ruminococcaceae NK4A214 group	20459
+Ruminococcaceae UCG-002	1421
+Ruminococcaceae UCG-005	5114
+Ruminococcaceae UCG-008	2295
+Ruminococcaceae UCG-010	4995
+Ruminococcaceae UCG-013	340
+Ruminococcaceae UCG-014	6408
+Ruminococcus 1	739
+Solobacterium	814
+Streptococcus	781
+Subdoligranulum	923
+Succinivibrio	1234
+Treponema 2	12953
+Unclassified	300332
+uncultured bacterium	59128
+Z20	288

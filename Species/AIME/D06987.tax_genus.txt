@@ -1,0 +1,25 @@
+Taxa	Counts
+Actinobacillus	18
+Bacteroides	4
+Bartonella	2
+Campylobacter	151
+Clostridium sensu stricto 1	4882
+Dermacoccus	2
+Desulfovibrio	3
+Enterococcus	9
+Escherichia-Shigella	9751
+Lachnospiraceae UCG-007	2
+Lactobacillus	66
+Moraxella	2
+Neisseria	5
+Nesterenkonia	2
+Peptostreptococcus	3
+Sarcina	280
+Sinobaca	2
+Streptococcus	3307
+Terrisporobacter	127
+Triticum aestivum (bread wheat)	289
+Turicibacter	87
+Unclassified	5795
+Weissella	2
+Zea mays	2

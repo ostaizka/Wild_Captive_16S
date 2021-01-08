@@ -1,0 +1,47 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	7
+[Eubacterium] hallii group	6
+28-4	2
+A2	3
+Alistipes	95
+Anaerosporobacter	3
+ASF356	9
+Bacteroides	120
+Blautia	10
+Butyricicoccus	61
+Fusicatenibacter	2
+GCA-900066575	21
+gut metagenome	30
+Helicobacter	3598
+Lachnoclostridium	17
+Lachnoclostridium 5	3
+Lachnospiraceae AC2044 group	5
+Lachnospiraceae FCS020 group	6
+Lachnospiraceae NK4A136 group	2615
+Lachnospiraceae UCG-001	241
+Lachnospiraceae UCG-006	18
+Lactobacillus	144
+Morganella	48
+Mucispirillum	17
+Muribaculum	30
+Oscillibacter	194
+Prevotella 9	60
+Prevotellaceae Ga6A1 group	779
+Prevotellaceae UCG-001	1785
+Rikenella	3
+Roseburia	71
+Ruminiclostridium	102
+Ruminiclostridium 6	17
+Ruminiclostridium 9	164
+Ruminococcaceae UCG-003	9
+Ruminococcaceae UCG-013	2
+Ruminococcaceae UCG-014	22
+Ruminococcus 1	36
+Treponema 2	85
+Trichococcus	2
+Tyzzerella	3
+Unclassified	4727
+uncultured bacterium	3117
+uncultured Bacteroidales bacterium	801
+uncultured organism	24
+unidentified	24

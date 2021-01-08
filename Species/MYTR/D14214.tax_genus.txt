@@ -1,0 +1,99 @@
+Taxa	Counts
+[Eubacterium] eligens group	10
+[Eubacterium] hallii group	7
+[Ruminococcus] gnavus group	20
+[Ruminococcus] torques group	13
+Acinetobacter	54
+Aeromonas	7
+Agathobacter	4
+Alistipes	4
+Alloprevotella	301
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	3
+Anaerovibrio	5
+Aquicella	3
+Bacteroides	11
+Bifidobacterium	427
+Blautia	84
+Bradyrhizobium	4
+Brevundimonas	2
+Butyricicoccus	17
+Catenibacterium	7
+Cetobacterium	8
+Clostridium sensu stricto 1	1795
+Collinsella	53
+Conexibacter	2
+Coprococcus 3	5
+Corynebacterium 1	4
+Devosia	2
+Dialister	16
+Diaphorobacter	12
+Dongia	2
+Dorea	43
+Enterobacter	395
+Enterococcus	21
+Erysipelatoclostridium	53
+Erysipelothrix	2
+Erysipelotrichaceae UCG-006	40
+Escherichia-Shigella	2061
+Faecalibacterium	43
+Fusicatenibacter	9
+Hafnia-Obesumbacterium	4
+Holdemanella	1040
+Ignatzschineria	14
+Jeotgalibaca	3
+Kurthia	13
+Lachnoclostridium	22
+Lachnospira	2
+Lachnospiraceae UCG-001	3
+Lachnospiraceae UCG-008	214
+Lactobacillus	4
+Lactococcus	195
+Libanicoccus	4
+Macrococcus	11
+Marvinbryantia	173
+Mesorhizobium sp. JB07	3
+Myroides	8
+Negativibacillus	2
+Oribacterium	21
+Oscillibacter	3
+Paeniclostridium	27
+Parabacteroides	2
+Paraclostridium	10
+Paracoccus	3
+Pedobacter	2
+Peptoclostridium	638
+Peptococcus	70
+Prevotella 2	25
+Prevotella 7	53
+Prevotella 9	351
+Prevotellaceae NK3B31 group	7
+Pseudolabrys	5
+Pseudomonas	31
+Psychrobacter	16
+Rhodopirellula	2
+Romboutsia	595
+Roseburia	4
+Rothia	5
+Ruminococcaceae UCG-002	4
+Ruminococcaceae UCG-005	12
+Ruminococcaceae UCG-014	112
+Ruminococcus 1	10
+Sarcina	91
+Solibacillus	32
+Solobacterium	29
+Sphingobacterium	2
+Sphingomonas	4
+Sporosarcina	41
+Staphylococcus	14
+Streptococcus	5602
+Subdoligranulum	11
+Succinivibrio	3
+Sutterella	3
+Terrisporobacter	148
+Treponema 2	14
+Turicibacter	143
+Tyzzerella	4
+Ulvibacter	33
+Unclassified	198
+uncultured bacterium	21
+uncultured rumen bacterium	21

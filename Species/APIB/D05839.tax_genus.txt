@@ -1,0 +1,16 @@
+Taxa	Counts
+Acinetobacter	30
+Aeromonas	4033
+Altererythrobacter	3
+Arcobacter	6
+Cyanobium PCC-6307	12
+Gemmobacter	26
+GKS98 freshwater group	9
+Porphyrobacter	8
+Rhodobacter	NA
+Roseofilum AO1-A	31
+Schizothrix LEGE 07164	7
+Shewanella	293
+Synechococcus CC9902	14
+Unclassified	NA
+Vibrio	28

@@ -1,0 +1,32 @@
+Taxa	Counts
+Aerococcus	9
+Aeromonas	363
+Anoxybacillus	9
+C39	16
+Cetobacterium	8133
+Cyanobium PCC-6307	23
+Desulfomicrobium	10
+Desulfopila	32
+Desulforhopalus	7
+Dinghuibacter	4
+Geobacillus	16
+Lamprocystis	6
+LD29	4
+Luteolibacter	13
+Ornithinimicrobium	5
+Paenibacillus	5
+Paraclostridium	13
+Phreatobacter	4
+Planococcus	34
+Plesiomonas	100
+Roseofilum AO1-A	11
+Rubribacterium	38
+Shewanella	7
+Sphingomonas	6
+Tabrizicola	4
+Terrimicrobium	9
+Thiocapsa	6
+Thiocystis	12
+Tropicimonas	14
+Unclassified	806
+uncultured bacterium	22

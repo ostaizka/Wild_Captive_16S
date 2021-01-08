@@ -1,0 +1,29 @@
+Taxa	Counts
+[Eubacterium] ventriosum group	26
+[Eubacterium] xylanophilum group	361
+28-4	37
+Acetitomaculum	21
+Alistipes	22
+ASF356	46
+Butyricicoccus	37
+GCA-900066575	86
+Helicobacter	549
+Lachnoclostridium	27
+Lachnospiraceae NK4A136 group	14092
+Lachnospiraceae UCG-001	82
+Lachnospiraceae UCG-006	104
+Lactobacillus	25
+Oscillibacter	390
+possible genus Sk018	41
+Roseburia	71
+Ruminiclostridium	210
+Ruminiclostridium 5	49
+Ruminiclostridium 9	269
+Ruminococcaceae NK4A214 group	14
+Ruminococcaceae UCG-005	42
+Ruminococcaceae UCG-010	9
+Ruminococcaceae UCG-014	95
+Ruminococcus 1	208
+Turicibacter	37
+Unclassified	3639
+uncultured bacterium	4132

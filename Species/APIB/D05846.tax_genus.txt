@@ -1,0 +1,19 @@
+Taxa	Counts
+Aeromonas	5836
+Cetobacterium	33
+Cryomorpha	8
+Cyanobium PCC-6307	208
+Gemmobacter	7
+Luteolibacter	115
+Microcystis PCC-7914	18
+Nitratireductor	12
+Plesiomonas	65
+Rhodobacter	44
+Roseomonas	12
+Rubellimicrobium	15
+Rubribacterium	39
+Shewanella	26
+Tabrizicola	34
+Unclassified	3192
+uncultured bacterium	637
+Vibrio	NA

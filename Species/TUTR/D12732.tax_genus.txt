@@ -1,0 +1,9 @@
+Taxa	Counts
+Actinobacillus	18
+Cetobacterium	1485
+Clostridium sensu stricto 1	1749
+Paeniclostridium	44
+Paraclostridium	132
+Photobacterium	12
+Sarcina	37
+Unclassified	110

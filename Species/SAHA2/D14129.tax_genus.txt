@@ -1,0 +1,30 @@
+Taxa	Counts
+Anaerosporobacter	18
+B48	3
+Bacteroides	414
+Campylobacter	81
+Cellulosilyticum	5
+Clostridium sensu stricto 1	2358
+Clostridium sensu stricto 2	29
+Edwardsiella	80
+Enterobacter	24
+Epulopiscium	218
+Escherichia-Shigella	1152
+Fusobacterium	9685
+Granulicella	2
+Herbinix	6
+Lachnoclostridium	3
+Lachnospira	3
+Lactobacillus	6
+Paeniclostridium	19
+Peptoclostridium	2
+Plesiomonas	54
+Proteus	10
+Pseudomonas	190
+Romboutsia	2
+Roseburia	8
+Ruminococcaceae UCG-005	21
+Ruminococcaceae UCG-011	25
+Terrisporobacter	13
+Tyzzerella	12
+Unclassified	1947

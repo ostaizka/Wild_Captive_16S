@@ -1,0 +1,33 @@
+Taxa	Counts
+Actinobacillus	548
+Actinomyces	7
+Aggregatibacter	19
+Akkermansia	2
+Arenimonas	2
+Bacteroides	12
+Bergeyella	20
+Bouteloua dactyloides	5
+Campylobacter	274
+Citrobacter	4
+Clostridium sensu stricto 1	1458
+Comamonas	4
+Dielma	2
+Enterobacter	3
+Erysipelotrichaceae UCG-006	2
+Escherichia-Shigella	71
+Flavobacterium	2
+Fusobacterium	7
+Lactobacillus	186
+Necropsobacter	8
+Neisseria	56
+Parascardovia	6
+Parvimonas	2
+Porphyromonas	33
+Proteus	2
+Providencia	18
+Staphylococcus	4
+Streptococcus	23279
+Triticum aestivum (bread wheat)	49
+Turicibacter	32
+Unclassified	798
+Veillonella	74

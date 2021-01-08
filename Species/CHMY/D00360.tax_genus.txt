@@ -1,0 +1,18 @@
+Taxa	Counts
+[Eubacterium] fissicatena group	517
+Bilophila	228
+Cellulosilyticum	135
+Citrobacter	84
+Clostridium sensu stricto 1	6026
+Clostridium sensu stricto 13	191
+Clostridium sensu stricto 2	638
+Intestinibacter	269
+Oscillibacter	187
+Paraclostridium	217
+Pseudomonas	93
+Pygmaiobacter	250
+Romboutsia	537
+Sarcina	735
+Terrisporobacter	883
+UBA1819	90
+Unclassified	82370

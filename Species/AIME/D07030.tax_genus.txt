@@ -1,0 +1,15 @@
+Taxa	Counts
+Actinobacillus	4
+Actinomyces	5
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	3
+Bacteroides	5
+Campylobacter	89
+Clostridium sensu stricto 1	13337
+Enterobacter	18
+Enterococcus	4
+Escherichia-Shigella	9911
+Streptococcus	2904
+Terrisporobacter	980
+Triticum aestivum (bread wheat)	75
+Turicibacter	1099
+Unclassified	850

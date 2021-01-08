@@ -1,0 +1,38 @@
+Taxa	Counts
+[Eubacterium] hallii group	11
+[Eubacterium] nodatum group	1828
+[Ruminococcus] gauvreauii group	57
+[Ruminococcus] gnavus group	485
+[Ruminococcus] torques group	120
+Alloprevotella	758
+Bacteroides	8262
+Blautia	1471
+Butyricicoccus	67
+Catenisphaera	94
+Clostridium sensu stricto 1	810
+Clostridium sensu stricto 13	9
+Clostridium sensu stricto 15	44
+Clostridium sensu stricto 7	142
+Collinsella	210
+Escherichia-Shigella	965
+Faecalitalea	6
+Fusobacterium	371
+Hathewaya	26
+Howardella	34
+Lachnoclostridium	490
+Lactobacillus	46
+Negativibacillus	96
+Odoribacter	65
+Oscillospira	9
+Paeniclostridium	154
+Parabacteroides	45
+Peptoclostridium	368
+Peptococcus	29
+Peptostreptococcus	50
+Phascolarctobacterium	1054
+Roseburia	291
+Ruminiclostridium 5	109
+Ruminococcaceae UCG-010	32
+Solobacterium	247
+Unclassified	1512
+uncultured bacterium	102

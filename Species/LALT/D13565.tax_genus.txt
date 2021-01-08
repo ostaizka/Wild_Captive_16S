@@ -1,0 +1,92 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	1531
+[Eubacterium] eligens group	458
+[Eubacterium] nodatum group	287
+[Eubacterium] oxidoreducens group	147
+[Eubacterium] xylanophilum group	40
+[Ruminococcus] gauvreauii group	245
+[Ruminococcus] torques group	143
+Alistipes	746
+Anaerostipes	639
+Bacteroides	4216
+Blautia	1249
+Butyricicoccus	138
+Butyricimonas	154
+Campylobacter	82
+Candidatus Soleaferrea	150
+Cellulosilyticum	152
+Christensenellaceae R-7 group	5885
+Clostridium sensu stricto 1	202
+Collinsella	179
+Coprococcus 1	183
+Coprococcus 3	271
+Desulfovibrio	244
+Enterococcus	583
+Erysipelatoclostridium	51
+Erysipelotrichaceae UCG-003	776
+Erysipelotrichaceae UCG-004	86
+Escherichia-Shigella	189
+Faecalibacterium	836
+Family XIII AD3011 group	776
+Fibrobacter	2219
+Fusicatenibacter	693
+Fusobacterium	76
+GCA-900066575	556
+Holdemanella	182
+Holdemania	37
+Howardella	57
+Hydrogenoanaerobacterium	123
+Intestinibacter	380
+Lachnoclostridium	245
+Lachnoclostridium 5	323
+Lachnospira	56
+Lachnospiraceae AC2044 group	432
+Lachnospiraceae FCS020 group	209
+Lachnospiraceae NK4A136 group	2283
+Lachnospiraceae NK4B4 group	164
+Lachnospiraceae UCG-004	172
+Lachnospiraceae UCG-008	128
+Lactobacillus	164
+Lactococcus	112
+Leuconostoc	108
+Marvinbryantia	595
+Methanobrevibacter	194
+Methanocorpusculum	193
+Mobilitalea	87
+Oscillibacter	499
+Parabacteroides	927
+Phascolarctobacterium	1452
+Prevotella 1	255
+Prevotella 9	924
+Prevotellaceae UCG-001	970
+Prevotellaceae UCG-003	701
+Proteus	56
+Rikenellaceae RC9 gut group	662
+Roseburia	130
+Ruminiclostridium 5	64
+Ruminiclostridium 6	2721
+Ruminiclostridium 9	76
+Ruminococcaceae NK4A214 group	1849
+Ruminococcaceae UCG-002	8386
+Ruminococcaceae UCG-003	105
+Ruminococcaceae UCG-004	92
+Ruminococcaceae UCG-005	11023
+Ruminococcaceae UCG-008	73
+Ruminococcaceae UCG-010	6194
+Ruminococcaceae UCG-013	354
+Ruminococcaceae UCG-014	6487
+Ruminococcaceae V9D2013 group	39
+Ruminococcus 1	11726
+Ruminococcus 2	87
+Shuttleworthia	86
+Sphaerochaeta	114
+Streptococcus	307
+Subdoligranulum	727
+Sutterella	1058
+Treponema 2	2123
+Tyzzerella 3	50
+UBA1819	74
+Unclassified	35761
+uncultured bacterium	6464
+uncultured rumen bacterium	158
+Victivallis	963

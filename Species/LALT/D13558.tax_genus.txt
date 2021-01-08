@@ -1,0 +1,9 @@
+Taxa	Counts
+Arthrobacter	5
+Blastococcus	3
+Lachnoclostridium	3
+Rikenellaceae RC9 gut group	5
+Ruminococcaceae UCG-005	7
+Ruminococcaceae UCG-010	4
+Unclassified	42
+uncultured bacterium	7

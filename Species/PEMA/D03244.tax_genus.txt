@@ -1,0 +1,27 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	170
+[Eubacterium] xylanophilum group	127
+Acetitomaculum	73
+Butyricicoccus	14
+Candidatus Saccharimonas	111
+Escherichia-Shigella	24
+Family XIII UCG-001	108
+GCA-900066575	216
+Lachnoclostridium	139
+Lachnospiraceae FCS020 group	528
+Lachnospiraceae NK4A136 group	2360
+Lachnospiraceae UCG-001	121
+Lachnospiraceae UCG-006	74
+Lachnospiraceae UCG-008	35
+Lactobacillus	12889
+Mucispirillum	55
+Odoribacter	53
+Oscillibacter	204
+Roseburia	124
+Ruminiclostridium	707
+Ruminiclostridium 5	71
+Ruminiclostridium 6	17
+Ruminiclostridium 9	518
+Tyzzerella	14
+Unclassified	5763
+uncultured bacterium	3791

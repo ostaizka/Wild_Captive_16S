@@ -1,0 +1,63 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	36
+[Eubacterium] coprostanoligenes group	967
+[Eubacterium] nodatum group	75
+Akkermansia	29
+Alistipes	539
+Alloprevotella	67
+Anaerovorax	23
+Bacillus	196
+Bacteroides	785
+Candidatus Soleaferrea	71
+Catenibacterium	35
+Christensenellaceae R-7 group	1706
+Coprococcus 3	21
+Defluviitaleaceae UCG-011	25
+Desulfovibrio	7
+dgA-11 gut group	295
+Dorea	40
+Family XIII AD3011 group	220
+Family XIII UCG-001	12
+Flavonifractor	48
+Halomonas	7
+Lachnoclostridium 10	45
+Lachnospiraceae AC2044 group	55
+Lachnospiraceae FCS020 group	43
+Lachnospiraceae NK4A136 group	47
+Lachnospiraceae UCG-010	85
+Lysinibacillus	52
+Mailhella	39
+Mogibacterium	57
+Oscillibacter	85
+Oscillospira	30
+Paeniclostridium	75
+Phascolarctobacterium	86
+Pirellula	12
+Prevotella 1	180
+Prevotellaceae UCG-001	46
+Prevotellaceae UCG-003	234
+Prevotellaceae UCG-004	878
+Rikenellaceae RC9 gut group	1671
+Romboutsia	127
+Roseburia	49
+Ruminiclostridium	275
+Ruminiclostridium 5	50
+Ruminiclostridium 9	33
+Ruminococcaceae NK4A214 group	432
+Ruminococcaceae UCG-002	204
+Ruminococcaceae UCG-004	132
+Ruminococcaceae UCG-005	5033
+Ruminococcaceae UCG-009	517
+Ruminococcaceae UCG-010	426
+Ruminococcaceae UCG-013	853
+Ruminococcaceae UCG-014	111
+Ruminococcus 1	188
+Solibacillus	40
+Treponema 2	14
+Tyzzerella 4	168
+Unclassified	1630
+uncultured bacterium	1189
+uncultured Bacteroidales bacterium	128
+uncultured Paludibacter sp.	38
+uncultured Porphyromonadaceae bacterium	12
+XBB1006	61

@@ -1,0 +1,15 @@
+Taxa	Counts
+Actinobacteria	8
+Bacteroidetes	7559
+Cyanobacteria	1030
+Elusimicrobia	58
+Euryarchaeota	140
+Fibrobacteres	13299
+Firmicutes	15292
+Kiritimatiellaeota	173
+Lentisphaerae	107
+Planctomycetes	21
+Proteobacteria	159
+Spirochaetes	20
+Tenericutes	374
+Verrucomicrobia	238

@@ -1,0 +1,21 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	374
+[Eubacterium] fissicatena group	370
+Akkermansia	363
+Bacteroides	61
+Bilophila	273
+Cellulosilyticum	115
+Cetobacterium	44
+Clostridium sensu stricto 1	358
+Desulfovibrio	485
+Eubacterium	177
+GCA-900066755	152
+Lachnoclostridium	71
+Oscillibacter	1537
+Pygmaiobacter	85
+Romboutsia	236
+Ruminococcaceae NK4A214 group	98
+Ruminococcaceae UCG-009	842
+Terrisporobacter	412
+UBA1819	416
+Unclassified	76605

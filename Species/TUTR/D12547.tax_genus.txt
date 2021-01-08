@@ -1,0 +1,10 @@
+Taxa	Counts
+Actinobacillus	2125
+Angelakisella	62
+Candidatus Arthromitus	45
+Cetobacterium	405
+Clostridium sensu stricto 1	6
+Fusobacterium	7
+Paeniclostridium	63
+Photobacterium	39
+Unclassified	20

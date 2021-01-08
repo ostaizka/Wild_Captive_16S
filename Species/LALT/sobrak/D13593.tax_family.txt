@@ -1,0 +1,41 @@
+Taxa	Counts
+Acidaminococcaceae	215
+Agrostemma githago (corn cockle)	211
+Anaeroplasmataceae	36
+Bacteroidaceae	678
+Bacteroidales UCG-001	465
+Burkholderiaceae	65
+Caldicoprobacteraceae	36
+Christensenellaceae	7247
+Clostridiaceae 1	466
+Clostridiales vadinBB60 group	504
+Desulfovibrionaceae	72
+Eggerthellaceae	63
+Erysipelotrichaceae	397
+F082	131
+Family XIII	775
+Fibrobacteraceae	538
+Izimaplasmataceae	6143
+Lachnospiraceae	2121
+Marinilabiliaceae	400
+Methanocorpusculaceae	291
+Methanomethylophilaceae	288
+Mitochondria	21
+Muribaculaceae	411
+p-251-o5	4709
+Paludibacteraceae	59
+Pasteurellaceae	49
+Peptococcaceae	102
+Peptostreptococcaceae	1715
+Pirellulaceae	32
+Prevotellaceae	987
+Pseudomonadaceae	43
+Rikenellaceae	12094
+Ruminococcaceae	11621
+Spirochaetaceae	3552
+Streptococcaceae	4045
+Tannerellaceae	422
+Unclassified	17804
+uncultured bacterium	4420
+uncultured rumen bacterium	369
+Victivallaceae	209

@@ -1,0 +1,24 @@
+Taxa	Counts
+Acinetobacter	3
+Aeromonas	1087
+Blautia	36
+Butyrivibrio	15
+Carnobacterium	3
+Clostridium sensu stricto 1	2324
+Clostridium sensu stricto 13	351
+Edwardsiella	313
+Enterococcus	7
+Epulopiscium	2094
+Fusobacterium	5815
+Intestinibacter	6
+Klebsiella	14
+Paeniclostridium	300
+Paraclostridium	620
+Parvimonas	5
+Peptostreptococcus	22
+Plesiomonas	4609
+Proteus	29
+Psychrobacter	519
+Romboutsia	829
+Terrisporobacter	344
+Unclassified	3514

@@ -1,0 +1,68 @@
+Taxa	Counts
+Actinomyces	62
+Afipia	43
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	206
+Arsenicicoccus	25
+Atopostipes	44
+Bacillus	125
+Bacteroides	37
+Bosea	19
+Brachybacterium	61
+Campylobacter	38
+Candidatus Udaeobacter	171
+Candidatus Xiphinematobacter	33
+Carnobacterium	194
+Cetobacterium	3933
+Clostridium sensu stricto 1	49638
+Clostridium sensu stricto 13	50
+Clostridium sensu stricto 18	38
+Clostridium sensu stricto 5	655
+Corynebacterium 1	503
+Curtobacterium	129
+Dielma	34
+Edwardsiella	39
+Enterococcus	585
+Epulopiscium	67
+Erysipelothrix	551
+Escherichia-Shigella	1217
+Fusobacterium	767
+Granulicella	16
+Haemophilus	32
+Hafnia-Obesumbacterium	205
+Helicobacter	151
+Herbaspirillum	29
+Ignatzschineria	131
+Kocuria	42
+Kurthia	35
+Lactococcus	65
+Leucobacter	35
+Luteolibacter	48
+Macrococcus	294
+Micrococcus	120
+Mobilicoccus	146
+Neisseria	65
+Ochrobactrum	56
+Paeniclostridium	11430
+Paraclostridium	44
+Parvimonas	24
+Peptoniphilus	1375
+Peptostreptococcus	19097
+Plantibacter	65
+Plesiomonas	3298
+Pseudarthrobacter	90
+Pseudoclavibacter	50
+Pseudomonas	120
+Pseudorhizobium	16
+Psychrobacter	57
+Romboutsia	313
+Ruminiclostridium 1	23
+Savagea	2219
+Serratia	41
+Staphylococcus	52
+Streptococcus	710
+Terrisporobacter	734
+Tissierella	445
+Turicibacter	20
+Unclassified	21968
+Vagococcus	627
+Veillonella	71

@@ -1,0 +1,23 @@
+Taxa	Counts
+[Bacteroides] pectinophilus group	35
+[Eubacterium] xylanophilum group	411
+Alistipes	22
+Candidatus Saccharimonas	3033
+Desulfovibrio	466
+GCA-900066575	59
+Helicobacter	73
+Lachnoclostridium	66
+Lachnospiraceae NK4A136 group	17125
+Lachnospiraceae UCG-006	247
+Lachnospiraceae UCG-008	83
+Lactobacillus	320
+Marvinbryantia	25
+Odoribacter	16
+Oscillibacter	72
+Ruminiclostridium	86
+Ruminiclostridium 9	50
+Ruminococcaceae UCG-014	250
+Ruminococcus 1	608
+Treponema 2	175
+Unclassified	6699
+uncultured bacterium	3406

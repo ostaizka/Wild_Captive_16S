@@ -1,0 +1,24 @@
+Taxa	Counts
+[Eubacterium] nodatum group	17
+Azospirillum	10
+Bilateria	424
+C39	255
+Candidatus Planktoluna	10
+Candidatus Saccharibacteria bacterium RAAC3_TM7_1	7
+Candidatus Xiphinematobacter	6
+Cyanobium PCC-6307	80
+Desulfopila	13
+Enhydrobacter	3
+Halobacillus	13
+Limnothrix	8
+Methylocaldum	14
+Phormidium IAM M-71	20
+Plesiomonas	7
+Ralstonia	10
+Rubribacterium	11
+Shewanella	17
+Streptococcus	14
+Terrimicrobium	8
+Unclassified	592
+uncultured bacterium	13
+Vibrio	18

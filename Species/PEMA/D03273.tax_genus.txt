@@ -1,0 +1,30 @@
+Taxa	Counts
+[Bacteroides] pectinophilus group	136
+[Eubacterium] coprostanoligenes group	80
+[Eubacterium] xylanophilum group	94
+A2	57
+Acetitomaculum	29
+Alistipes	431
+Anaerosporobacter	90
+Anaerotruncus	47
+Desulfovibrio	243
+Escherichia-Shigella	26
+Helicobacter	556
+Lachnospiraceae NK4A136 group	4845
+Lachnospiraceae UCG-001	423
+Lachnospiraceae UCG-006	270
+Lachnospiraceae UCG-008	263
+Lactobacillus	312
+Lawsonella	42
+Oscillibacter	280
+Parabacteroides	43
+Prevotellaceae UCG-001	40
+Roseburia	134
+Ruminiclostridium	197
+Ruminiclostridium 5	70
+Ruminiclostridium 9	312
+Ruminococcaceae UCG-005	43
+Ruminococcus 1	19
+Unclassified	10424
+uncultured bacterium	7871
+uncultured organism	30

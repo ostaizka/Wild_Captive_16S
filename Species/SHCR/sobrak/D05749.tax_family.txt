@@ -1,0 +1,18 @@
+Taxa	Counts
+Bacteroidaceae	94
+Burkholderiaceae	745
+Carnobacteriaceae	97
+Clostridiaceae 1	12758
+Dysgonomonadaceae	84
+Enterobacteriaceae	46915
+Enterococcaceae	307
+Fusobacteriaceae	385
+Lachnospiraceae	1745
+Lactobacillaceae	404
+Moraxellaceae	17978
+Peptostreptococcaceae	7307
+Planococcaceae	262
+Streptococcaceae	549
+Tannerellaceae	190
+Unclassified	150
+Weeksellaceae	417

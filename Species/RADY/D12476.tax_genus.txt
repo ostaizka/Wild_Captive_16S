@@ -1,0 +1,99 @@
+Taxa	Counts
+[Eubacterium] brachy group	640
+[Eubacterium] coprostanoligenes group	62
+[Eubacterium] eligens group	3
+[Eubacterium] fissicatena group	3428
+[Eubacterium] nodatum group	91
+[Ruminococcus] torques group	6
+Achromobacter	6
+Acinetobacter	22
+Aeromonas	106
+Afipia	8
+Agathobacter	7
+Alistipes	45
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	68
+Anaerocolumna	68
+Anaerofustis	72
+Anaerosinus	176
+Anaerosporobacter	157
+Anaerotruncus	71
+Anaerovorax	203
+Angelakisella	86
+Aquabacterium	27
+Arthrobacter	12
+Bacillus	68
+Blautia	642
+Budvicia	5
+Burkholderia-Caballeronia-Paraburkholderia	11
+Buttiauxella	12
+Butyricicoccus	9
+Candidatus Soleaferrea	11
+Cereibacter	3
+Christensenella	47
+Christensenellaceae R-7 group	30
+Citrobacter	31
+Cloacibacillus	4
+Clostridium sensu stricto 1	53
+Comamonas	4
+Deinococcus	7
+Elusimicrobium	6
+Ensifer	7
+Enterobacter	13
+Enterococcus	3
+Erysipelatoclostridium	55
+Escherichia-Shigella	9
+Eubacterium	1403
+Frigoribacterium	5
+Fusicatenibacter	18
+GCA-900066225	90
+Gordonibacter	1765
+gut metagenome	3
+Hydrogenoanaerobacterium	27
+Intestinimonas	74
+Jeotgalibacillus	4
+Kaistia	33
+Lachnoclostridium	5460
+Lachnoclostridium 10	88
+Lachnospiraceae AC2044 group	630
+Lachnospiraceae NC2004 group	55
+Lachnospiraceae NK4A136 group	93
+Lachnospiraceae UCG-001	8
+Lactobacillus	5
+Lactococcus	124
+Lactonifactor	42
+Lelliottia	16
+Leucobacter	14
+Methanobrevibacter	4
+Microbacterium	15
+Micromonospora	4
+Nakamurella	4
+Nocardioides	4
+Ochrobactrum	21
+Paenibacillus	8
+Paracoccus	10
+Parafrigoribacterium	7
+Pelomonas	30
+Plantibacter	4
+Prevotellaceae UCG-001	9
+Pseudomonas	16
+Pseudorhodobacter	10
+Pygmaiobacter	107
+Ralstonia	528
+Raoultibacter	721
+Rhodococcus	355
+Robinsoniella	187
+Roseburia	7
+Ruminiclostridium	10
+Ruminiclostridium 5	289
+Ruminiclostridium 9	111
+Ruminococcaceae NK4A214 group	58
+Ruminococcaceae UCG-008	707
+Ruminococcaceae UCG-009	621
+Ruminococcaceae UCG-013	8
+Ruminococcaceae UCG-014	39
+Tianweitania	7
+Tyzzerella	1254
+UBA1819	24
+Unclassified	14660
+uncultured alpha proteobacterium	48
+Vibrio	11

@@ -1,0 +1,25 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	17
+Blautia	19
+Desulfovibrio	1323
+Family XIII UCG-001	127
+GCA-900066575	132
+Intestinimonas	103
+Lachnoclostridium	91
+Lachnospiraceae FCS020 group	68
+Lachnospiraceae NK4A136 group	4063
+Lachnospiraceae UCG-006	197
+Lachnospiraceae UCG-008	65
+Lactobacillus	3728
+Oscillibacter	838
+Roseburia	63
+Ruminiclostridium	2524
+Ruminiclostridium 5	293
+Ruminiclostridium 9	2367
+Ruminococcaceae UCG-003	120
+Ruminococcaceae UCG-005	20
+Ruminococcaceae UCG-009	17
+Ruminococcaceae UCG-014	24
+UBA1819	90
+Unclassified	13072
+uncultured bacterium	38

@@ -1,0 +1,70 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	61
+[Eubacterium] oxidoreducens group	6
+[Eubacterium] xylanophilum group	2
+28-4	15
+A2	37
+Acetatifactor	12
+Acetitomaculum	16
+Adlercreutzia	9
+Agathobacter	5
+Alistipes	109
+Anaeroplasma	2
+Anaerostipes	116
+ASF356	6
+Bacteroides	10
+Blautia	13
+Butyricicoccus	14
+Butyrivibrio	7
+Candidatus Soleaferrea	5
+Coprococcus 2	71
+Desulfovibrio	11
+Dorea	4
+Eisenbergiella	50
+Elusimicrobium	3
+GCA-900066575	70
+gut metagenome	40
+Harryflintia	3
+Helicobacter	353
+Herbinix	29
+Intestinimonas	10
+Lachnoclostridium	109
+Lachnoclostridium 5	2
+Lachnospiraceae NC2004 group	2
+Lachnospiraceae NK4A136 group	2534
+Lachnospiraceae NK4B4 group	18
+Lachnospiraceae UCG-001	146
+Lachnospiraceae UCG-006	48
+Lachnospiraceae UCG-009	3
+Lactobacillus	774
+Marvinbryantia	5
+Muribaculum	61
+Odoribacter	20
+Oscillibacter	794
+Oxalobacter	3
+Parabacteroides	37
+Prevotellaceae Ga6A1 group	320
+Prevotellaceae UCG-001	24
+Pygmaiobacter	5
+Rikenella	4
+Roseburia	202
+Ruminiclostridium	412
+Ruminiclostridium 5	31
+Ruminiclostridium 6	26
+Ruminiclostridium 9	600
+Ruminococcaceae NK4A214 group	7
+Ruminococcaceae UCG-003	54
+Ruminococcaceae UCG-004	3
+Ruminococcaceae UCG-005	19
+Ruminococcaceae UCG-009	22
+Ruminococcaceae UCG-010	5
+Ruminococcaceae UCG-014	57
+Ruminococcus 1	245
+Staphylococcus	2
+Tyzzerella	9
+UBA1819	3
+Unclassified	10072
+uncultured bacterium	3042
+uncultured Bacteroidales bacterium	168
+uncultured Clostridiales bacterium	2
+uncultured organism	16

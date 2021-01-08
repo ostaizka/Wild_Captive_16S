@@ -1,0 +1,41 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	27
+[Eubacterium] coprostanoligenes group	1069
+[Eubacterium] nodatum group	47
+Akkermansia	77
+Alistipes	1126
+Alloprevotella	111
+Bacteroides	1579
+Candidatus Soleaferrea	120
+Catenibacterium	383
+Christensenellaceae R-7 group	1341
+Clostridium sensu stricto 1	64
+Desulfovibrio	38
+dgA-11 gut group	572
+Family XIII AD3011 group	135
+Helicobacter	37
+Lactobacillus	46
+Oscillibacter	92
+Oscillospira	88
+Paeniclostridium	122
+Phascolarctobacterium	86
+Prevotellaceae Ga6A1 group	65
+Prevotellaceae UCG-003	639
+Prevotellaceae UCG-004	678
+Rikenellaceae RC9 gut group	3520
+Romboutsia	98
+Ruminiclostridium	458
+Ruminococcaceae NK4A214 group	643
+Ruminococcaceae UCG-002	687
+Ruminococcaceae UCG-004	48
+Ruminococcaceae UCG-005	8539
+Ruminococcaceae UCG-009	610
+Ruminococcaceae UCG-010	649
+Ruminococcaceae UCG-013	497
+Saccharofermentans	27
+Treponema 2	36
+Tyzzerella 4	176
+Unclassified	1816
+uncultured bacterium	2500
+uncultured Bacteroidales bacterium	72
+uncultured Porphyromonadaceae bacterium	148

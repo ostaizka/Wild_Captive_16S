@@ -1,0 +1,24 @@
+Taxa	Counts
+Afipia	1072
+Akkermansia	503
+Asinibacterium	62
+Bacteroides	25
+Cellulosilyticum	313
+Clostridium sensu stricto 1	9290
+Clostridium sensu stricto 13	134
+Cupriavidus	173
+Ensifer	153
+Fimbriiglobus	23
+Intestinibacter	211
+Mesorhizobium	2623
+Nordella	43
+Oscillibacter	77
+Pseudonocardia	91
+Pygmaiobacter	151
+Romboutsia	131
+Ruminococcaceae NK4A214 group	85
+Ruminococcaceae UCG-014	494
+Sarcina	65
+Terrisporobacter	778
+UBA1819	254
+Unclassified	34958

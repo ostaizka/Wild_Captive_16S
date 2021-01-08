@@ -1,0 +1,101 @@
+Taxa	Counts
+[Eubacterium] fissicatena group	3
+Acetanaerobacterium	441
+Achromobacter	20
+Acinetobacter	3860
+Advenella	6
+Aestuariicella	2
+Alcaligenes	1468
+Alistipes	53
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	23
+Altererythrobacter	23
+Aminobacter	33
+Anaerosporobacter	5
+Anaerovorax	10
+Aquamicrobium	399
+Azospirillum	87
+Bacillus	26
+Bacteroides	158
+Bdellovibrio	30
+Bosea	7
+Bradyrhizobium	4
+Brevundimonas	29
+Breznakia	3
+Camelimonas	8
+Christensenellaceae R-7 group	27
+Chthoniobacter	3
+Clostridium sensu stricto 1	23
+Clostridium sensu stricto 13	11
+Clostridium sensu stricto 5	4
+Clostridium sensu stricto 7	2
+Clostridium sensu stricto 9	5
+Cohnella	3
+Comamonas	699
+Defluviimonas	8
+Desulfitobacterium	20
+Devosia	44
+Diaphorobacter	43
+DSSF69	8
+Dysgonomonas	669
+Empedobacter	1011
+Enterobacter	18
+Enterococcus	9
+Erysipelatoclostridium	7
+Falsochrobactrum	15
+Filomicrobium	3
+Flavobacterium	6819
+Gemmobacter	27
+Herbinix	55
+Kaistia	4
+Lachnoclostridium 5	24
+Lachnospiraceae UCG-008	5
+Lactococcus	211
+LD29	5
+Leadbetterella	9
+Leucobacter	26
+Limnohabitans	10
+Luteolibacter	8
+Lysinibacillus	11
+Massilia	7
+Mesorhizobium	2
+Mycobacterium	2
+Mycoplana	40
+Nocardioides	9
+Oxalobacter	3
+Paenochrobactrum	60
+Parabacteroides	44
+Parapedobacter	4
+Patulibacter	5
+Pediococcus	2
+Pedobacter	18
+Pelagibacterium	20
+Peredibacter	10
+Phenylobacterium	16
+Planctomicrobium	5
+Pluralibacter	165
+Proteiniborus	5
+Pseudochrobactrum	39
+Pseudoflavitalea	7
+Pseudomonas	195
+Pusillimonas	52
+Rhodopirellula	11
+Rhodopseudomonas	6
+Romboutsia	55
+Ruminiclostridium	21
+Ruminiclostridium 1	195
+Ruminococcaceae NK4A214 group	2
+Ruminococcaceae UCG-005	9
+Rummeliibacillus	11
+Sedimentibacter	5
+Soonwooa	3
+Sphingobacterium	12
+Sphingomonas	7
+Sphingopyxis	95
+Sporosarcina	8
+Stenotrophomonas	1137
+Taibaiella	10
+Terrisporobacter	4
+Tissierella	12
+Tumebacillus	2
+Unclassified	870
+Weissella	32

@@ -1,0 +1,82 @@
+Taxa	Counts
+[Eubacterium] brachy group	151
+[Eubacterium] coprostanoligenes group	2523
+[Eubacterium] hallii group	131
+Acetitomaculum	14
+Achromobacter	12
+Agathobacter	74
+Akkermansia	306
+Alistipes	88
+Anaerofustis	35
+Anaerosporobacter	21
+Anaerovorax	665
+Atopostipes	16
+Blautia	59
+Caldicoprobacter	27
+Candidatus Saccharimonas	91
+Candidatus Soleaferrea	220
+Castellaniella	32
+Christensenellaceae R-7 group	2678
+Clostridium sensu stricto 1	244
+Comamonas	44
+Coprococcus 2	10
+Corynebacterium 1	28
+Delftia	66
+dgA-11 gut group	92
+Erysipelotrichaceae UCG-004	1515
+Eubacterium	54
+Family XIII AD3011 group	737
+Family XIII UCG-001	17
+Gillisia	28
+Janibacter	20
+Lachnospiraceae AC2044 group	1015
+Lachnospiraceae FCS020 group	18
+Lachnospiraceae ND3007 group	421
+Lachnospiraceae NK4A136 group	987
+Lachnospiraceae UCG-006	67
+Lachnospiraceae UCG-008	156
+Lachnospiraceae UCG-009	161
+Lachnospiraceae XPB1014 group	607
+Marvinbryantia	159
+Methanobrevibacter	223
+Methanocorpusculum	167
+Mogibacterium	192
+Mucinivorans	33
+Mycoplasma	229
+Oribacterium	329
+p-1088-a5 gut group	36
+Pelomonas	50
+Phascolarctobacterium	95
+Phoenicibacter	419
+Prevotella 1	205
+Prevotella 7	13
+Prevotella 9	22
+Prevotellaceae UCG-001	182
+Prevotellaceae UCG-003	212
+Prevotellaceae UCG-004	231
+probable genus 10	54
+Pseudobutyrivibrio	58
+Pseudooceanicola	13
+Ralstonia	94
+Ramlibacter	13
+Rikenellaceae RC9 gut group	11169
+Roseburia	25
+Ruminiclostridium	71
+Ruminiclostridium 1	164
+Ruminiclostridium 9	84
+Ruminococcaceae NK4A214 group	3051
+Ruminococcaceae UCG-002	679
+Ruminococcaceae UCG-004	46
+Ruminococcaceae UCG-005	535
+Ruminococcaceae UCG-010	1995
+Ruminococcaceae UCG-013	258
+Ruminococcaceae UCG-014	612
+Ruminococcaceae V9D2013 group	69
+SP3-e08	142
+Sphingomonas	148
+Streptococcus	980
+Thermomonas	21
+Treponema 2	880
+Unclassified	14665
+uncultured bacterium	5020
+uncultured rumen bacterium	291

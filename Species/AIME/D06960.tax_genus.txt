@@ -1,0 +1,26 @@
+Taxa	Counts
+Acidovorax	1443
+Advenella	30
+Arthrobacter	13
+Chryseobacterium	688
+Clostridium sensu stricto 1	59
+Comamonas	7
+Devosia	8
+Diaphorobacter	10
+Duganella	44
+Dyadobacter	2
+Flavobacterium	629
+Janthinobacterium	1023
+Leuconostoc	51
+Massilia	1384
+Mycetocola	4
+Myroides	48
+Pedobacter	788
+Pseudarthrobacter	10
+Pseudochrobactrum	6
+Pseudomonas	5612
+Serratia	75
+Sphingobacterium	983
+Stenotrophomonas	220
+Unclassified	124
+Variovorax	3

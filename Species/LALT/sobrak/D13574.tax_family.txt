@@ -1,0 +1,39 @@
+Taxa	Counts
+Acidaminococcaceae	75
+Akkermansiaceae	220
+Anaeroplasmataceae	48
+Atopobiaceae	8
+Bacteroidaceae	714
+Bacteroidales RF16 group	854
+Barnesiellaceae	28
+Blattella germanica (German cockroach)	20
+Burkholderiaceae	7
+Caldicoprobacteraceae	18
+Christensenellaceae	1404
+Clostridiales vadinBB60 group	1625
+Clostridium sp. CAG:306	26
+Dysgonomonadaceae	13
+Elusimicrobiaceae	58
+Enterococcaceae	10
+Erysipelotrichaceae	62
+Family XIII	15
+Fibrobacteraceae	13299
+gut metagenome	5
+Lachnospiraceae	1969
+Marinifilaceae	8
+Methanocorpusculaceae	87
+Methanomethylophilaceae	53
+Peptococcaceae	18
+Pirellulaceae	21
+Prevotellaceae	967
+Puniceicoccaceae	18
+Rikenellaceae	3478
+Ruminococcaceae	9737
+Tannerellaceae	334
+Unclassified	1885
+uncultured bacterium	1103
+uncultured organism	29
+uncultured rumen bacterium	114
+uncultured rumen bacterium 4C0d-2	58
+vadinBE97	43
+Victivallaceae	47

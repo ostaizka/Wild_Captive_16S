@@ -1,0 +1,6 @@
+Taxa	Counts
+Clostridium sensu stricto 1	43
+Enterococcus	129
+Escherichia-Shigella	3645
+Lysinibacillus	12
+Unclassified	36

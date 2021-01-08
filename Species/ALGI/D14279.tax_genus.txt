@@ -1,0 +1,66 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	190
+[Eubacterium] ventriosum group	15
+Acinetobacter	66
+Alistipes	465
+Anaerosporobacter	67
+Anaerostipes	19
+Anaerovorax	23
+Bacillus	5236
+Bacteroides	265
+Blautia	20
+Campylobacter	15
+Candidatus Endomicrobium	60
+Candidatus Soleaferrea	46
+Caryophanon	18
+Cellulosilyticum	4
+Cerasicoccus	16
+Christensenellaceae R-7 group	349
+Citrobacter	86
+Clostridiales bacterium enrichment culture clone 06-1235251-76	16
+Clostridium sensu stricto 1	63
+Clostridium sensu stricto 3	33
+Desulfovibrio	61
+Diplostephium hartwegii	8
+DMER64	10
+Enterobacter	23
+Escherichia-Shigella	187
+Faecalibacterium	53
+Fibrobacter	260
+Fonticella	12
+Hespellia	27
+Hydrogenoanaerobacterium	27
+Lachnoclostridium	9
+Lachnoclostridium 10	40
+Lachnoclostridium 5	143
+Lachnospira	50
+Lachnospiraceae AC2044 group	45
+Lachnospiraceae NC2004 group	8
+Lachnospiraceae NK4A136 group	42
+Lachnospiraceae UCG-004	129
+Lachnospiraceae UCG-007	32
+Lachnospiraceae UCG-009	59
+Lysinibacillus	27
+Methanocorpusculum	150
+Methanosphaera	5
+Oscillibacter	142
+Oscillospira	20
+Papillibacter	71
+Parabacteroides	26
+Pygmaiobacter	19
+Rikenella	6
+Ruminiclostridium	39
+Ruminiclostridium 6	31
+Ruminococcaceae NK4A214 group	267
+Ruminococcaceae UCG-002	28
+Ruminococcaceae UCG-009	9
+Ruminococcaceae UCG-010	193
+Ruminococcaceae UCG-014	223
+Ruminococcus 1	79
+S5-A14a	21
+Solibacillus	105
+Terrisporobacter	19
+Treponema 2	79
+Unclassified	29916
+uncultured bacterium	485
+uncultured prokaryote	8

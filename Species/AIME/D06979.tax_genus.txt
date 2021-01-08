@@ -1,0 +1,23 @@
+Taxa	Counts
+Acinetobacter	2207
+Campylobacter	46
+Caryophanon	26
+Cedecea	172
+Clostridium sensu stricto 1	7102
+Comamonas	30
+Enterobacter	70
+Escherichia-Shigella	9836
+Hafnia-Obesumbacterium	11800
+Lysinibacillus	70
+Morganella	28
+Pantoea	186
+Pseudomonas	3750
+Rahnella	226
+Raoultella	215
+Sarcina	388
+Serratia	18048
+Terrisporobacter	128
+Triticum aestivum (bread wheat)	22
+Turicibacter	82
+Unclassified	4534
+Yersinia	224

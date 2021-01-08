@@ -1,0 +1,40 @@
+Taxa	Counts
+[Bacteroides] pectinophilus group	45
+Acetatifactor	28
+Acetitomaculum	79
+Agathobacter	16
+Alistipes	35
+Bacteroides	66
+Blautia	429
+Butyricicoccus	27
+Desulfovibrio	75
+Dorea	6
+Eisenbergiella	275
+GCA-900066575	192
+Helicobacter	1224
+Intestinimonas	18
+Lachnoclostridium	119
+Lachnoclostridium 5	56
+Lachnospiraceae FCS020 group	82
+Lachnospiraceae NK4A136 group	10217
+Lachnospiraceae UCG-001	583
+Lachnospiraceae UCG-006	179
+Lachnospiraceae UCG-008	130
+Lactobacillus	608
+Odoribacter	18
+Oscillibacter	226
+Oscillospira	11
+Rikenella	42
+Roseburia	253
+Ruminiclostridium	379
+Ruminiclostridium 5	15
+Ruminiclostridium 6	30
+Ruminiclostridium 9	890
+Ruminococcaceae UCG-005	20
+Ruminococcaceae UCG-014	4
+Ruminococcus 1	73
+Tyzzerella 3	21
+Unclassified	9305
+uncultured bacterium	2411
+uncultured organism	144
+unidentified	75

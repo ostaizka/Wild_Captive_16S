@@ -1,0 +1,56 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	26
+[Eubacterium] brachy group	90
+[Eubacterium] coprostanoligenes group	4278
+[Eubacterium] oxidoreducens group	156
+[Eubacterium] ruminantium group	119
+[Eubacterium] xylanophilum group	2581
+[Ruminococcus] torques group	114
+Acetitomaculum	269
+Akkermansia	74
+Alistipes	273
+Bacteroides	917
+Blautia	874
+CAG-56	230
+Candidatus Soleaferrea	34
+Christensenellaceae R-7 group	6074
+Desulfovibrio	36
+Dorea	28
+Enterorhabdus	18
+Faecalibacterium	21
+Family XIII AD3011 group	56
+Fibrobacter	24
+Lachnoclostridium	244
+Lachnospiraceae AC2044 group	140
+Lachnospiraceae NC2004 group	124
+Lachnospiraceae NK4A136 group	7005
+Lachnospiraceae UCG-001	230
+Lachnospiraceae UCG-003	77
+Marvinbryantia	265
+Methanobrevibacter	165
+Methanosphaera	20
+Parabacteroides	178
+Parasutterella	26
+Prevotella 1	13
+Prevotellaceae UCG-001	914
+Prevotellaceae UCG-003	611
+Prevotellaceae UCG-004	33
+Roseburia	422
+Ruminiclostridium 1	24
+Ruminiclostridium 5	67
+Ruminiclostridium 6	1133
+Ruminiclostridium 9	156
+Ruminococcaceae NK4A214 group	1091
+Ruminococcaceae UCG-002	1697
+Ruminococcaceae UCG-005	11071
+Ruminococcaceae UCG-009	506
+Ruminococcaceae UCG-010	547
+Ruminococcaceae UCG-011	21
+Ruminococcaceae UCG-013	681
+Ruminococcaceae UCG-014	1144
+Ruminococcus 1	2039
+Sarcina	38
+Treponema 2	3054
+Tyzzerella 4	36
+Unclassified	11404
+uncultured bacterium	2366

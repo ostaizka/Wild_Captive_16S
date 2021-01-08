@@ -1,0 +1,91 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	38
+[Eubacterium] brachy group	70
+[Eubacterium] coprostanoligenes group	786
+[Eubacterium] eligens group	13
+[Eubacterium] nodatum group	92
+[Eubacterium] oxidoreducens group	13
+[Eubacterium] ruminantium group	50
+[Eubacterium] xylanophilum group	31
+[Ruminococcus] gauvreauii group	25
+[Ruminococcus] torques group	33
+Acetitomaculum	31
+Akkermansia	63
+Alistipes	898
+Anaerosporobacter	55
+Anaerostipes	71
+Anaerovorax	27
+Bacteroides	1792
+Blautia	159
+Candidatus Saccharimonas	42
+Candidatus Soleaferrea	154
+Candidatus Stoquefichus	333
+Christensenellaceae R-7 group	1789
+Clostridium sensu stricto 1	60
+Coprococcus 2	49
+Coprococcus 3	360
+Defluviitaleaceae UCG-011	20
+dgA-11 gut group	388
+Dorea	69
+Eisenbergiella	15
+Erysipelotrichaceae UCG-004	13
+Escherichia-Shigella	15
+Family XIII AD3011 group	159
+Fibrobacter	341
+GCA-900066575	30
+Halomonas	19
+Hespellia	39
+Intestinimonas	7
+Kandleria	15
+Lachnoclostridium	88
+Lachnoclostridium 10	134
+Lachnospiraceae AC2044 group	939
+Lachnospiraceae FCS020 group	63
+Lachnospiraceae NK3A20 group	36
+Lachnospiraceae NK4A136 group	595
+Lachnospiraceae UCG-001	156
+Lachnospiraceae UCG-004	27
+Lachnospiraceae UCG-008	64
+Lachnospiraceae UCG-010	13
+Marvinbryantia	94
+Methanobrevibacter	91
+Methanosphaera	12
+Methylobacterium	17
+Motilimonas	65
+Oribacterium	27
+Oscillibacter	35
+Paeniclostridium	5
+Papillibacter	26
+Parabacteroides	81
+Parasutterella	16
+Phascolarctobacterium	89
+Prevotella 1	302
+Prevotellaceae Ga6A1 group	151
+Prevotellaceae UCG-001	93
+Prevotellaceae UCG-004	2058
+Rikenellaceae RC9 gut group	3650
+Romboutsia	132
+Roseburia	513
+Ruminiclostridium	47
+Ruminiclostridium 1	313
+Ruminiclostridium 6	196
+Ruminiclostridium 9	101
+Ruminococcaceae NK4A214 group	224
+Ruminococcaceae UCG-001	7
+Ruminococcaceae UCG-002	146
+Ruminococcaceae UCG-005	8106
+Ruminococcaceae UCG-007	23
+Ruminococcaceae UCG-009	84
+Ruminococcaceae UCG-010	4271
+Ruminococcaceae UCG-011	86
+Ruminococcaceae UCG-013	275
+Ruminococcaceae UCG-014	710
+Ruminococcus 1	901
+Ruminococcus 2	132
+Shuttleworthia	8
+Treponema 2	4194
+Turicibacter	21
+Tyzzerella 4	84
+Unclassified	3609
+uncultured bacterium	921
+unidentified rumen bacterium RFN47	10

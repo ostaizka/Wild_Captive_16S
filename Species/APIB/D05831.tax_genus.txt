@@ -1,0 +1,59 @@
+Taxa	Counts
+966-1	8
+Aeromonas	14
+C39	11
+Candidatus Accumulibacter	19
+Candidatus Alysiosphaera	13
+Candidatus Chloroploca	20
+Candidatus Competibacter	99
+Candidatus Contendobacter	56
+Candidatus Thiosymbion	27
+Cetobacterium	26
+Clostridium sensu stricto 1	14
+Cyanobium PCC-6307	375
+Defluviicoccus	133
+Desulfatiglans	7
+Desulfobacca	5
+Desulfobacterium	108
+Desulforhopalus	95
+Desulfovirga	102
+Dinghuibacter	111
+Falsirhodobacter	12
+Gleocapsa	13
+Halochromatium	161
+Hyphomicrobium	12
+Ilumatobacter	9
+Lamprocystis	40
+LD29	5
+Limnothrix	179
+Luteolibacter	72
+Merismopedia 0BB39S01	13
+Methanobacterium	3
+Methylocaldum	71
+Methyloceanibacter	6
+Microcystis PCC-7914	100
+Pannonibacter	10
+Phormidium IAM M-71	68
+Plesiomonas	9
+Porphyrobacter	34
+Pseudohoeflea	11
+Rhodobacter	36
+Rhodopirellula	4
+Roseivivax	7
+Roseomonas	147
+Rubellimicrobium	16
+Rubribacterium	523
+Rubrimonas	13
+Sandaracinobacter	59
+Spirulina CCC Snake P-Y-85	35
+Sva0081 sediment group	141
+Sva0996 marine group	4
+Synechococcus MBIC10613	2319
+Tabrizicola	141
+Terrimicrobium	36
+Thiocapsa	185
+Thiohalocapsa	722
+Tropicimonas	236
+Unclassified	4652
+uncultured bacterium	114
+Vibrio	206

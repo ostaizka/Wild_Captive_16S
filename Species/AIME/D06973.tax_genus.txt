@@ -1,0 +1,26 @@
+Taxa	Counts
+1174-901-12	40
+Acinetobacter	48
+Brochothrix	94
+Carnobacterium	32
+Clostridium sensu stricto 1	4304
+Enterobacter	158
+Enterococcus	46
+Escherichia-Shigella	1974
+Flavobacterium	74
+Hafnia-Obesumbacterium	18148
+Lactobacillus	34
+Lactococcus	176
+Methylorosula	22
+Pantoea	94
+Pseudomonas	20989
+Rahnella	48
+Raoultella	95
+Sarcina	260
+Serratia	6424
+Sphingobacterium	52
+Streptococcus	52
+Terrisporobacter	38
+Turicibacter	54
+Unclassified	4440
+Yersinia	36

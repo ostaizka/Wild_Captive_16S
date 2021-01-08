@@ -1,0 +1,17 @@
+Taxa	Counts
+Aeromonas	13
+Citricoccus	9
+Corynebacterium 1	7
+Haemophilus	6
+Kocuria	3
+Limnobacter	3
+Mycoplasma	795
+Neisseria	5
+Paucibacter	10
+Pelomonas	10
+Ralstonia	8
+Rheinheimera	14
+Shewanella	3
+Unclassified	7
+Vibrio	33
+Xylophilus	5

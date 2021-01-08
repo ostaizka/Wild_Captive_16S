@@ -1,0 +1,70 @@
+Taxa	Counts
+[Eubacterium] hallii group	4
+[Ruminococcus] gnavus group	18
+[Ruminococcus] torques group	15
+Acinetobacter	44
+Aeromonas	23
+Alloprevotella	530
+Bacteroides	12
+Bauldia	11
+Bifidobacterium	537
+Blautia	68
+Butyricicoccus	58
+Catenibacterium	13
+Citrobacter	57
+Clostridium sensu stricto 1	1615
+Collinsella	220
+Dialister	154
+Diaphorobacter	2
+Dorea	160
+Elizabethkingia	3
+Enterobacter	392
+Enterococcus	21
+Erysipelatoclostridium	65
+Erysipelotrichaceae UCG-006	38
+Escherichia-Shigella	2156
+Faecalibacterium	14
+Faecalitalea	2
+Hafnia-Obesumbacterium	4
+Holdemanella	1341
+Lachnoclostridium	59
+Lachnospiraceae UCG-008	150
+Lactobacillus	4
+Lactococcus	232
+Leuconostoc	3
+Libanicoccus	6
+Macrococcus	6
+Marvinbryantia	142
+Megasphaera	28
+Mesorhizobium	2
+Novosphingobium	2
+Olsenella	2
+Oribacterium	67
+Paeniclostridium	15
+Parabacteroides	4
+Pedomicrobium	3
+Peptoclostridium	722
+Peptococcus	44
+Pir4 lineage	3
+Prevotella 2	31
+Prevotella 9	41
+Raoultella	16
+Reyranella	3
+Rikenellaceae RC9 gut group	19
+Romboutsia	446
+Rothia	15
+Ruminiclostridium 1	4
+Ruminococcaceae UCG-005	28
+Ruminococcaceae UCG-014	106
+Sarcina	90
+Slackia	5
+Solobacterium	56
+Staphylococcus	17
+Streptococcus	5590
+Subdoligranulum	9
+Terrisporobacter	111
+Treponema 2	5
+Turicibacter	141
+Tyzzerella 4	8
+Unclassified	139
+uncultured bacterium	5

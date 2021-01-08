@@ -1,0 +1,87 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	33
+[Eubacterium] brachy group	8
+[Eubacterium] coprostanoligenes group	2722
+[Eubacterium] eligens group	33
+[Eubacterium] fissicatena group	10
+[Eubacterium] nodatum group	20
+[Eubacterium] oxidoreducens group	48
+[Eubacterium] ruminantium group	5
+[Eubacterium] ventriosum group	118
+[Ruminococcus] gnavus group	16
+[Ruminococcus] torques group	253
+Adlercreutzia	5
+Agathobacter	98
+Alistipes	251
+Anaerofustis	9
+Anaerovorax	3
+Atopobium	6
+Bacteroides	2391
+Bifidobacterium	37
+Blautia	169
+Butyricicoccus	3
+Butyricimonas	5
+Candidatus Soleaferrea	10
+Candidatus Stoquefichus	17
+Christensenellaceae R-7 group	511
+Coprococcus 2	42
+Coprococcus 3	137
+dgA-11 gut group	48
+DNF00809	29
+Dorea	88
+Enterobacter	159
+Erysipelatoclostridium	54
+Faecalibacterium	11
+Family XIII AD3011 group	22
+Fusicatenibacter	7
+GCA-900066575	9
+Halomonas	121
+Harryflintia	5
+Helicobacter	15
+Hydrogenoanaerobacterium	66
+Hymenobacter	3
+Intestinimonas	97
+Lachnoclostridium	34
+Lachnoclostridium 10	37
+Lachnospiraceae AC2044 group	56
+Lachnospiraceae FCS020 group	234
+Lachnospiraceae NC2004 group	3
+Lachnospiraceae NK4A136 group	737
+Lachnospiraceae UCG-001	14
+Lachnospiraceae UCG-003	10
+Lachnospiraceae UCG-008	54
+Marvinbryantia	15
+Oscillibacter	83
+Papillibacter	162
+Pseudomonas	8
+Raoultella	45
+Roseburia	381
+Ruminiclostridium	145
+Ruminiclostridium 1	742
+Ruminiclostridium 5	88
+Ruminiclostridium 9	105
+Ruminococcaceae NK4A214 group	217
+Ruminococcaceae UCG-002	10
+Ruminococcaceae UCG-004	33
+Ruminococcaceae UCG-005	3167
+Ruminococcaceae UCG-007	3
+Ruminococcaceae UCG-008	27
+Ruminococcaceae UCG-009	452
+Ruminococcaceae UCG-010	3171
+Ruminococcaceae UCG-011	15
+Ruminococcaceae UCG-013	2640
+Ruminococcaceae UCG-014	2831
+Ruminococcaceae V9D2013 group	4
+Ruminococcus 1	356
+Ruminococcus 2	78
+Shewanella	10
+Streptococcus	7
+Subdoligranulum	7
+Syntrophococcus	64
+Treponema 2	46
+Tyzzerella 4	445
+Unclassified	4666
+uncultured bacterium	594
+uncultured organism	4
+uncultured rumen bacterium	49
+XBB1006	11

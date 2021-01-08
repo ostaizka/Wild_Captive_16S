@@ -1,0 +1,60 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	852
+[Eubacterium] fissicatena group	135
+[Eubacterium] nodatum group	155
+[Ruminococcus] torques group	352
+Alistipes	799
+Anaerocolumna	95
+Anaerosporobacter	199
+Anaerostipes	330
+Bacteroides	6755
+Blautia	325
+Candidatus Soleaferrea	510
+Cellulosilyticum	275
+Christensenellaceae R-7 group	17615
+Clostridium sensu stricto 1	4644
+Coprococcus 1	330
+Desulfovibrio	150
+Enterobacter	113
+Enterococcus	2067
+Erysipelotrichaceae UCG-003	167
+Family XIII AD3011 group	10481
+Fibrobacter	147
+GCA-900066575	606
+Hespellia	127
+Hydrogenoanaerobacterium	325
+Intestinibacter	1464
+Lachnospiraceae AC2044 group	2866
+Lachnospiraceae NK4A136 group	2321
+Lachnospiraceae NK4B4 group	99
+Lachnospiraceae UCG-008	534
+Lactobacillus	335
+Marvinbryantia	258
+Methanobrevibacter	2159
+Mobilitalea	429
+Oxalobacter	179
+p-1088-a5 gut group	296
+Papillibacter	97
+Parabacteroides	1148
+Paraeggerthella	62
+Phascolarctobacterium	317
+Prevotellaceae UCG-003	419
+Rikenellaceae RC9 gut group	3866
+Ruminiclostridium 1	144
+Ruminiclostridium 9	498
+Ruminococcaceae NK4A214 group	12623
+Ruminococcaceae UCG-002	13304
+Ruminococcaceae UCG-004	168
+Ruminococcaceae UCG-005	31308
+Ruminococcaceae UCG-008	224
+Ruminococcaceae UCG-010	5321
+Ruminococcaceae UCG-011	131
+Ruminococcaceae UCG-014	42431
+Ruminococcus 1	7055
+Streptococcus	378
+Terrisporobacter	186
+Treponema 2	12288
+Unclassified	27273
+uncultured bacterium	2450
+uncultured Rikenellaceae bacterium	69
+Weissella	250

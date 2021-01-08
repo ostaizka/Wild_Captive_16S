@@ -1,0 +1,5 @@
+Taxa	Counts
+Actinobacillus	16
+Cetobacterium	342
+Phocoenobacter	2192
+Tyzzerella 3	14

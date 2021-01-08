@@ -1,0 +1,91 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	3
+[Eubacterium] coprostanoligenes group	300
+Acidibacter	37
+Acidisphaera	6
+Acidothermus	2
+Acinetobacter	93
+Afipia	19
+Agathobacter	4
+Alistipes	16
+Alloprevotella	155
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	6
+alphaI cluster	3
+Anaerobacillus	9
+Anaerosporobacter	3
+Aquicella	2
+Arsenophonus	28
+Arthrobacter	8
+Bacillus	141
+Bacteroides	1302
+Bavariicoccus	4
+Blautia	21
+Bosea	3
+Bradyrhizobium	54
+Brochothrix	11
+Bryobacter	9
+Candidatus Koribacter	11
+Candidatus Solibacter	11
+Candidatus Stoquefichus	8
+Candidatus Xiphinematobacter	97
+Carnobacterium	4
+Chryseobacterium	84
+Clostridium sensu stricto 1	1917
+Clostridium sensu stricto 5	16
+Conexibacter	30
+Coprococcus 1	9
+Corynebacterium 1	3
+Cronobacter	12
+Diaphorobacter	18
+Dorea	2
+Enterobacter	8
+Enterococcus	860
+Escherichia-Shigella	2980
+Flavobacterium	109
+Gemmata	4
+gut metagenome	15
+Kurthia	6
+Labrys	4
+Lachnospiraceae UCG-004	3
+Lactococcus	1221
+Lysinibacillus	22
+Methylovirgula	11
+Minicystis	3
+Morganella	56
+Mycobacterium	33
+Occallatibacter	5
+Ochrobactrum	61
+Odoribacter	4
+Paenalcaligenes	4
+Paeniclostridium	43
+Paenochrobactrum	9
+Pajaroellobacter	2
+Parabacteroides	125
+Paraprevotella	2
+Phascolarctobacterium	55
+Prevotellaceae UCG-001	10
+Pseudomonas	8
+Rhodoplanes	18
+Rickettsiella	5
+Romboutsia	898
+Roseburia	9
+Roseiarcus	29
+Ruminiclostridium	12
+Ruminiclostridium 5	4
+Ruminococcaceae NK4A214 group	3
+Ruminococcaceae UCG-014	743
+Solibacillus	67
+Sphingobacterium	88
+Staphylococcus	3
+Stenotrophomonas	2
+Terrisporobacter	23
+Tsukamurella	4
+Tumebacillus	3
+Turicibacter	46
+Tyzzerella 4	18
+Unclassified	2198
+uncultured Acidobacteria bacterium	16
+uncultured alpha proteobacterium	3
+uncultured bacterium	42
+uncultured Rhodospirillaceae bacterium	2
+ZOR0006	25

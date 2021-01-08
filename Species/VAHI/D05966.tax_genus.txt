@@ -1,0 +1,4 @@
+Taxa	Counts
+Francisella	8
+Mycoplasma	1301
+Romboutsia	79

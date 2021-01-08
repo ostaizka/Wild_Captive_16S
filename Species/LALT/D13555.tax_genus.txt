@@ -1,0 +1,3 @@
+Taxa	Counts
+Christensenellaceae R-7 group	4
+Pseudomonas	124

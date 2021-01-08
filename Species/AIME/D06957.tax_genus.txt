@@ -1,0 +1,29 @@
+Taxa	Counts
+1174-901-12	52
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	39
+Brevundimonas	34
+Chryseobacterium	132
+Clostridium sensu stricto 1	35520
+Duganella	1753
+Dyadobacter	117
+Enterococcus	12
+Escherichia-Shigella	150
+Flavobacterium	614
+Granulicella	27
+Hafnia-Obesumbacterium	80
+Janthinobacterium	621
+Massilia	3227
+Ochrobactrum	16
+Pedobacter	1784
+Pseudoduganella	41
+Pseudomonas	9812
+Ramlibacter	42
+Serratia	265
+Sphingomonas	308
+Stenotrophomonas	26
+Streptococcus	12075
+Terrisporobacter	2157
+Turicibacter	943
+Unclassified	2514
+uncultured bacterium	37
+Variovorax	49

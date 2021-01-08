@@ -1,0 +1,26 @@
+Taxa	Counts
+Actinobacillus	218
+Aggregatibacter	2
+Bacteroides	7
+Campylobacter	8
+Cetobacterium	9
+Clostridium sensu stricto 1	47
+Cnuella	2
+Daucus carota subsp. sativus	5
+Enterobacter	12
+Enterococcus	7
+Escherichia-Shigella	1186
+Flavobacterium	2
+Hafnia-Obesumbacterium	12
+Lactobacillus	119
+Myroides	2
+Necropsobacter	9
+Pantoea	3
+Providencia	307
+Pseudomonas	5
+Sarcina	3
+Serratia	4
+Streptococcus	15839
+Thermomonas	2
+Unclassified	1145
+Weissella	1990

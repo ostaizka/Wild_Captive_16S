@@ -1,0 +1,33 @@
+Taxa	Counts
+[Eubacterium] fissicatena group	84
+Acinetobacter	10552
+Aeromonas	400
+Bacteroides	97
+Buttiauxella	267
+Cetobacterium	193
+Citrobacter	8063
+Clostridium sensu stricto 1	11302
+Clostridium sensu stricto 13	602
+Comamonas	657
+Enterobacter	6148
+Enterococcus	194
+Epulopiscium	1860
+Hafnia-Obesumbacterium	38377
+Helicobacter	186
+Klebsiella	5593
+Lachnospiraceae NK4A136 group	797
+Lactococcus	438
+Lelliottia	1043
+Lysinibacillus	404
+Morganella	89
+Paenibacillus	505
+Paraclostridium	1327
+Pseudocitrobacter	246
+Pseudomonas	152
+Romboutsia	4207
+Salmonella	5135
+Sarcina	144
+Serratia	163
+Terrisporobacter	672
+Unclassified	1712
+Yokenella	2647

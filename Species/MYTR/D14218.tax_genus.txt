@@ -1,0 +1,137 @@
+Taxa	Counts
+Achromobacter	333
+Acinetobacter	4873
+Actinomadura	38
+Actinomycetospora	6
+Aeromicrobium	12
+Afipia	28
+Agromyces	8
+Alcaligenes	315
+Alkaliphilus	173
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	48
+Ammoniphilus	24
+Anaerocolumna	3
+Anaerospora	3
+Aquicella	3
+Arthrobacter	69
+Bacillus	2667
+Bosea	27
+Bradyrhizobium	142
+Brevundimonas	2974
+Burkholderia-Caballeronia-Paraburkholderia	6
+Caldicoprobacter	23
+Camelimonas	217
+Candidatus Tokpelaia	26
+Candidatus Udaeobacter	27
+Candidatus Xiphinematobacter	17
+Cellulomonas	188
+Cellulosimicrobium	245
+Chelatococcus	23
+Chthoniobacter	6
+Chungangia	5
+Cloacibacterium	19
+Clostridium sensu stricto 1	1159
+Clostridium sensu stricto 5	104
+Clostridium sensu stricto 8	20
+Clostridium sensu stricto 9	3
+Cohnella	159
+Comamonas	191
+Conexibacter	6
+Cupriavidus	4
+Desulfitobacterium	32
+Devosia	120
+Diaphorobacter	137
+Dysgonomonas	9
+Empedobacter	143
+Enterobacter	109
+Enterococcus	61
+Erysipelothrix	10
+Escherichia-Shigella	10
+Filomicrobium	13
+Flavobacterium	72
+Gemmata	8
+Georgenia	70
+Glutamicibacter	74
+Gordonia	151
+Haliangium	13
+Halomonas	17
+Haloplasma	11
+Hamadaea	4
+Helcococcus	49
+Herbinix	6
+Hydrogenispora	5
+Hyphomicrobium	15
+IMCC26207	28
+Kaistia	43
+Knoellia	3
+Labrys	5
+Lachnoclostridium 5	4
+Lactococcus	17
+Leucobacter	917
+Lysinibacillus	472
+Mesorhizobium	345
+Methylobacterium	12
+Methylocystis	4
+Micromonospora	5
+Mycobacterium	157
+Mycoplana	5
+Myroides	286
+Nannocystis	10
+Nocardioides	207
+Nonomuraea	5
+Novosphingobium	58
+Oceanobacillus	28
+Ochrobactrum	3952
+Oerskovia	29
+Paenibacillus	234
+Pajaroellobacter	6
+Paraclostridium	70
+Paracoccus	117
+Paradevosia	707
+Parapusillimonas	54
+Patulibacter	277
+Pelomonas	9
+Pelosinus	9
+Phenylobacterium	589
+Promicrospora sp. OSS 3	4
+Proteiniborus	5
+Pseudochrobactrum	326
+Pseudomonas	54
+Pseudorhodoplanes	46
+Psychrobacillus	11
+Pusillimonas	31
+Rhodococcus	575
+Rhodoglobus	7
+Rhodomicrobium	11
+Rickettsiella	41
+Romboutsia	1149
+Salipaludibacillus	5
+Sedimentibacter	12
+Smaragdicoccus	4
+Solibacillus	176
+Sphingobacterium	1125
+Sphingobium	8
+Sphingopyxis	32
+Sporacetigenium	171
+Sporosarcina	20
+Stenotrophomonas	1186
+Steroidobacter	107
+Streptomyces	6
+Thermobacillus	9
+Timonella	15
+Tissierella	244
+Trabulsiella	73
+Tumebacillus	47
+Turicibacter	17
+Tyzzerella 4	4
+Unclassified	2131
+uncultured Acidobacteria bacterium	19
+uncultured bacterium	57
+uncultured compost bacterium	3
+uncultured Planctomyces sp.	4
+uncultured Rhodospirillaceae bacterium	7
+uncultured Stella sp.	6
+Vagococcus	29
+Verrucosispora	9
+Virgibacillus	13
+Vulgatibacter	52

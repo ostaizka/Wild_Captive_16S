@@ -1,0 +1,11 @@
+Taxa	Counts
+Actinobacillus	640
+Candidatus Arthromitus	16
+Cetobacterium	827
+Lactobacillus	3
+Paeniclostridium	120
+Paraclostridium	10
+Phocoenobacter	1513
+Romboutsia	47
+Unclassified	13
+Ureaplasma	2

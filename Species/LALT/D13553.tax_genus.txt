@@ -1,0 +1,10 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	3
+Christensenellaceae R-7 group	4
+GCA-900066575	2
+Rikenellaceae RC9 gut group	28
+Ruminococcaceae UCG-005	15
+Ruminococcaceae UCG-010	7
+Treponema 2	7
+Unclassified	103
+uncultured bacterium	30

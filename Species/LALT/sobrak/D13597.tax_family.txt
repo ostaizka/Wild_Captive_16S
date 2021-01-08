@@ -1,0 +1,36 @@
+Taxa	Counts
+Acidaminococcaceae	243
+Bacteroidaceae	218
+Bacteroidales BS11 gut group	64
+Bacteroidales RF16 group	323
+Bacteroidales UCG-001	1712
+Campylobacteraceae	196
+Christensenellaceae	18023
+Clostridiaceae 1	545
+Clostridiales vadinBB60 group	1207
+Erysipelotrichaceae	167
+Eubacteriaceae	89
+F082	3674
+Family XIII	1532
+Fibrobacteraceae	10283
+Izimaplasmataceae	30347
+Lachnospiraceae	2841
+Methanobacteriaceae	100
+Methanocorpusculaceae	1722
+Methanomethylophilaceae	208
+Muribaculaceae	219
+Peptococcaceae	38
+Peptostreptococcaceae	3107
+Pirellulaceae	458
+Prevotellaceae	1257
+Rikenellaceae	17952
+Ruminococcaceae	33678
+Spirochaetaceae	11381
+Streptococcaceae	744
+Synergistaceae	129
+Tannerellaceae	63
+Unclassified	24707
+uncultured bacterium	5644
+uncultured rumen bacterium	341
+unidentified rumen bacterium RF39	47
+Victivallaceae	43

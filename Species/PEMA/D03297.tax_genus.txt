@@ -1,0 +1,14 @@
+Taxa	Counts
+[Eubacterium] xylanophilum group	448
+Alistipes	112
+Candidatus Saccharimonas	5510
+Desulfovibrio	42
+Family XIII UCG-001	4
+Lachnospiraceae NK4A136 group	1054
+Lactobacillus	8403
+Ruminiclostridium 9	34
+Ruminococcaceae UCG-010	28
+Ruminococcaceae UCG-014	724
+Ruminococcus 1	167
+Unclassified	5745
+uncultured bacterium	8738

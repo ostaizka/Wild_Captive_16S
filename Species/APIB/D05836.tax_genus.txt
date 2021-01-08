@@ -1,0 +1,10 @@
+Taxa	Counts
+Aeromonas	NA
+Bilateria	12
+Cyanobium PCC-6307	22
+Phreatobacter	7
+Plesiomonas	5
+Roseofilum AO1-A	14
+Synechococcus CC9902	11
+Terrimicrobium	15
+Unclassified	2032

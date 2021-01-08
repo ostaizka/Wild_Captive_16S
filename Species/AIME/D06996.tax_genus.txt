@@ -1,0 +1,48 @@
+Taxa	Counts
+Acidibacter	6
+Acinetobacter	57
+Actinobacillus	148
+Akkermansia	9
+Altererythrobacter	9
+Arthrobacter	15
+Bacillus	123
+Bacteroides	43
+Brachybacterium	30
+Butyricimonas	5
+Campylobacter	34
+Capnocytophaga	6
+Cellulosilyticum	22
+Chryseobacterium	46
+Clostridium sensu stricto 1	9483
+Enterobacter	13
+Escherichia-Shigella	1123
+Flavobacterium	51
+Fusobacterium	23
+Glutamicibacter	148
+Hafnia-Obesumbacterium	16
+Helicobacter	590
+Knoellia	24
+Luteimonas	11
+Massilia	58
+Moraxella	5
+Necropsobacter	19
+Neisseria	14
+Paenibacillus	172
+Pedobacter	38
+Polaromonas	8
+Porphyromonas	24
+Pseudarthrobacter	30
+Pseudomonas	70
+Rhodobacter	12
+Rhodoferax	20
+Sarcina	22
+Sphingobacterium	38
+Sphingomonas	24
+Streptococcus	24723
+Terrisporobacter	22
+Triticum aestivum (bread wheat)	417
+Turicibacter	141
+Tychonema CCAP 1459-11B	74
+Unclassified	4940
+Weissella	2810
+Wilmottia Ant-Ph58	5

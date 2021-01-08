@@ -1,0 +1,3 @@
+Taxa	Counts
+Mycoplasma	42749
+Unclassified	7317

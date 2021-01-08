@@ -1,0 +1,24 @@
+Taxa	Counts
+Achromobacter	4
+Acidovorax	4
+Acinetobacter	54
+Alcaligenes	9
+Arthrobacter	6
+Chryseobacterium	5
+Clostridium sensu stricto 1	3813
+Erysipelothrix	5
+Escherichia-Shigella	45
+Janthinobacterium	65
+Leucobacter	12
+Massilia	3
+Mycetocola	10
+Pelomonas	16
+Pseudarthrobacter	6
+Pseudomonas	251
+Serratia	14
+Sphingomonas	28
+Streptococcus	7
+Terrisporobacter	36
+Turicibacter	509
+Unclassified	109
+Vitreoscilla	14

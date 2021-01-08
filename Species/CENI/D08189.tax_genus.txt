@@ -1,0 +1,94 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	1912
+[Eubacterium] eligens group	28
+[Eubacterium] oxidoreducens group	102
+[Eubacterium] ruminantium group	40
+[Eubacterium] ventriosum group	75
+[Ruminococcus] torques group	29
+Agathobacter	271
+Akkermansia	974
+Alistipes	1944
+Alloprevotella	152
+Anaerosporobacter	119
+Anaerovibrio	23
+Anaerovorax	27
+Bacteroides	2959
+Blautia	29
+Butyrivibrio	70
+Campylobacter	13
+Candidatus Soleaferrea	118
+Cellulosilyticum	11
+Cerasicoccus	9
+Christensenellaceae R-7 group	1550
+Clostridium sensu stricto 1	47
+Clostridium sensu stricto 6	15
+Coprococcus 2	87
+Coprococcus 3	104
+Defluviitaleaceae UCG-011	45
+dgA-11 gut group	524
+Dorea	57
+Elusimicrobium	26
+Family XIII AD3011 group	90
+Family XIII UCG-001	11
+Fusobacterium	3553
+hoa5-07d05 gut group	17
+Hydrogenoanaerobacterium	57
+Intestinimonas	32
+Lachnoclostridium	49
+Lachnoclostridium 10	202
+Lachnospiraceae AC2044 group	415
+Lachnospiraceae FCS020 group	175
+Lachnospiraceae NC2004 group	33
+Lachnospiraceae NK4A136 group	517
+Lachnospiraceae UCG-008	41
+Lachnospiraceae UCG-010	104
+Mailhella	112
+Methanocorpusculum	327
+Negativibacillus	37
+Odoribacter	17
+Oscillibacter	109
+Oscillospira	15
+p-1088-a5 gut group	17
+Paeniclostridium	59
+Papillibacter	51
+Parabacteroides	36
+Parasutterella	89
+Phascolarctobacterium	495
+Prevotella 1	369
+Prevotellaceae Ga6A1 group	17
+Prevotellaceae UCG-001	514
+Prevotellaceae UCG-003	2085
+Prevotellaceae UCG-004	1561
+Quinella	8
+Rikenellaceae RC9 gut group	3923
+Romboutsia	66
+Roseburia	483
+Ruminiclostridium	59
+Ruminiclostridium 1	45
+Ruminiclostridium 5	16
+Ruminiclostridium 6	117
+Ruminiclostridium 9	66
+Ruminobacter	912
+Ruminococcaceae NK4A214 group	432
+Ruminococcaceae UCG-002	381
+Ruminococcaceae UCG-004	31
+Ruminococcaceae UCG-005	7878
+Ruminococcaceae UCG-009	511
+Ruminococcaceae UCG-010	6050
+Ruminococcaceae UCG-011	191
+Ruminococcaceae UCG-013	1586
+Ruminococcaceae UCG-014	316
+Ruminococcus 1	664
+Ruminococcus 2	132
+Succinivibrio	421
+Treponema 2	785
+Turicibacter	23
+Tyzzerella	19
+Tyzzerella 4	308
+Unclassified	9138
+uncultured bacterium	5670
+uncultured Bacteroidales bacterium	956
+uncultured Parabacteroides sp.	288
+uncultured Porphyromonadaceae bacterium	515
+uncultured rumen bacterium	110
+Victivallis	73

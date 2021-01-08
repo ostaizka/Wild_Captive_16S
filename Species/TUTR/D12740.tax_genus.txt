@@ -1,0 +1,25 @@
+Taxa	Counts
+[Eubacterium] brachy group	2
+Actinobacillus	427
+Arcobacter	76
+Campylobacter	16
+Cetobacterium	30
+Clostridium sensu stricto 1	167
+Fusibacter	6
+Fusobacterium	107
+Marinifilum	6
+Maritimimonas	43
+Oceanivirga	39
+Paraclostridium	72
+Parvimonas	56
+Peptoniphilus	16
+Phocoenobacter	137
+Porphyromonas	25
+Psychrobacter	43
+Pusillimonas	31
+Sediminispirochaeta	18
+Streptobacillus	8
+Tenacibaculum	65
+Tyzzerella 3	16
+Unclassified	144
+Ureaplasma	100

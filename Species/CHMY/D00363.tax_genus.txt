@@ -1,0 +1,14 @@
+Taxa	Counts
+[Eubacterium] fissicatena group	284
+Akkermansia	18075
+Anaerosporobacter	571
+Cellulosilyticum	762
+Citrobacter	1945
+Erysipelatoclostridium	78
+Hungatella	2626
+Kluyvera	212
+Lachnoclostridium	718
+Lachnoclostridium 5	740
+Oscillibacter	154
+Oscillospira	112
+Unclassified	86778

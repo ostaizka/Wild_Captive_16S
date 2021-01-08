@@ -1,0 +1,109 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	891
+[Eubacterium] coprostanoligenes group	36
+[Eubacterium] xylanophilum group	9
+[Ruminococcus] gnavus group	12
+[Ruminococcus] torques group	263
+Acidovorax	14
+Acinetobacter	863
+Agathobacter	33
+Akkermansia	12
+Alistipes	3384
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	8
+Aminobacterium	9
+Anaerofilum	31
+Anaeroplasma	77
+Arthrobacter	5200
+ASF356	9
+Bacteroides	566
+Bifidobacterium	29
+Bilophila	8
+Blautia	83
+Brachybacterium	7
+Bradyrhizobium	27
+Brevundimonas	66
+Burkholderia-Caballeronia-Paraburkholderia	42
+Butyricicoccus	10
+Caldicoprobacter	23
+Candidatus Saccharimonas	16
+Chryseobacterium	292
+Citrobacter	27
+Clostridium sensu stricto 1	8
+Comamonas	291
+Cutibacterium	31
+Delftia	74
+Eisenbergiella	13
+Elizabethkingia	404
+Empedobacter	115
+Enterobacter	206
+Enterococcus	33
+Erysipelatoclostridium	21
+Escherichia-Shigella	35
+Faecalibacterium	42
+Family XIII UCG-001	10
+Flavobacterium	481
+Fournierella	15
+GCA-900066575	7
+Geodermatophilus	6
+Lachnoclostridium	6
+Lachnospiraceae FE2018 group	27
+Lachnospiraceae NC2004 group	17
+Lachnospiraceae NK4A136 group	61
+Lachnospiraceae UCG-001	26
+Lachnospiraceae UCG-006	20
+Lactobacillus	409
+Lactococcus	21
+Leucobacter	48
+Marvinbryantia	22
+Microbacterium	265
+Morganella	215
+Myroides	23
+Negativibacillus	22
+Ochrobactrum	8
+Oryza sativa Indica Group (long-grained rice)	19
+Oscillibacter	33
+Oscillospira	7
+Oxalobacter	11
+Paenarthrobacter	88
+Paludibaculum	5
+Parabacteroides	451
+Pediococcus	181
+Pedobacter	94
+Phascolarctobacterium	7
+Polaromonas	79
+Prevotellaceae NK3B31 group	48
+Prevotellaceae UCG-001	20
+Propionimicrobium	38
+Pseudochrobactrum	59
+Pseudomonas	1010
+Ralstonia	166
+Rhodococcus	163
+Romboutsia	13
+Roseburia	50
+Ruminiclostridium	8
+Ruminiclostridium 5	6
+Ruminiclostridium 6	39
+Ruminiclostridium 9	21
+Ruminococcaceae NK4A214 group	31
+Ruminococcaceae UCG-005	68
+Ruminococcaceae UCG-014	282
+Ruminococcus 1	126
+Ruminococcus 2	39
+Sellimonas	7
+Sphingobacterium	213
+Sphingomonas	24
+Staphylococcus	13
+Stenotrophomonas	21
+Streptococcus	22
+Subdoligranulum	41
+Taibaiella	8
+Thermovirga	33
+Treponema 2	45
+Tyzzerella 4	26
+Unclassified	29968
+uncultured bacterium	231
+uncultured Clostridia bacterium	53
+uncultured delta proteobacterium	7
+Vagococcus	73
+Variovorax	10
+Vogesella	42

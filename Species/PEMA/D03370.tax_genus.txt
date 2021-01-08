@@ -1,0 +1,34 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	32
+[Eubacterium] oxidoreducens group	18
+[Eubacterium] xylanophilum group	44
+28-4	3
+A2	18
+Alistipes	68
+Desulfovibrio	232
+Family XIII UCG-001	50
+GCA-900066575	66
+Helicobacter	638
+Intestinimonas	30
+Lachnoclostridium	65
+Lachnospiraceae FCS020 group	84
+Lachnospiraceae NK4A136 group	9595
+Lachnospiraceae UCG-001	117
+Lachnospiraceae UCG-006	77
+Lachnospiraceae UCG-008	91
+Lactobacillus	2639
+Marvinbryantia	19
+Oscillibacter	545
+Roseburia	76
+Ruminiclostridium	872
+Ruminiclostridium 5	76
+Ruminiclostridium 6	19
+Ruminiclostridium 9	652
+Ruminococcaceae NK4A214 group	17
+Ruminococcaceae UCG-005	37
+Ruminococcaceae UCG-009	10
+Ruminococcaceae UCG-014	99
+Ruminococcus 1	1259
+Tyzzerella	50
+Unclassified	6741
+uncultured bacterium	1634

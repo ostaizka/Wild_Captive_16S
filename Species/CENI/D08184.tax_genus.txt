@@ -1,0 +1,81 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	1858
+[Eubacterium] oxidoreducens group	70
+[Eubacterium] ventriosum group	77
+[Ruminococcus] torques group	86
+Agathobacter	116
+Akkermansia	576
+Alistipes	1702
+Alloprevotella	104
+Anaerosporobacter	55
+Anaerovibrio	24
+Anaerovorax	59
+Bacteroides	6017
+Blautia	27
+Candidatus Saccharimonas	42
+Candidatus Soleaferrea	158
+Christensenellaceae R-7 group	1793
+Clostridium sensu stricto 1	40
+Coprococcus 2	49
+Coprococcus 3	41
+Defluviitaleaceae UCG-011	39
+dgA-11 gut group	615
+Dorea	62
+Family XIII AD3011 group	120
+Hydrogenoanaerobacterium	37
+Intestinimonas	38
+Lachnoclostridium	24
+Lachnoclostridium 10	143
+Lachnospiraceae AC2044 group	353
+Lachnospiraceae FCS020 group	76
+Lachnospiraceae NC2004 group	14
+Lachnospiraceae NK4A136 group	416
+Lachnospiraceae UCG-001	24
+Lachnospiraceae UCG-004	29
+Lachnospiraceae UCG-010	102
+Mailhella	204
+Negativibacillus	27
+Oscillibacter	99
+Oscillospira	16
+p-1088-a5 gut group	24
+Paeniclostridium	42
+Papillibacter	38
+Parabacteroides	28
+Parasutterella	72
+Phascolarctobacterium	190
+Prevotella 1	276
+Prevotellaceae Ga6A1 group	40
+Prevotellaceae UCG-001	367
+Prevotellaceae UCG-003	1335
+Prevotellaceae UCG-004	1434
+Rikenellaceae RC9 gut group	5619
+Romboutsia	60
+Roseburia	311
+Ruminiclostridium 6	90
+Ruminiclostridium 9	80
+Ruminobacter	284
+Ruminococcaceae NK4A214 group	372
+Ruminococcaceae UCG-002	525
+Ruminococcaceae UCG-004	69
+Ruminococcaceae UCG-005	8535
+Ruminococcaceae UCG-009	307
+Ruminococcaceae UCG-010	5413
+Ruminococcaceae UCG-011	120
+Ruminococcaceae UCG-013	1430
+Ruminococcaceae UCG-014	223
+Ruminococcus 1	370
+Ruminococcus 2	131
+Succinivibrio	732
+Treponema 2	804
+Turicibacter	22
+Tyzzerella	16
+Tyzzerella 4	233
+Unclassified	6591
+uncultured bacterium	6263
+uncultured Bacteroidales bacterium	480
+uncultured Paludibacter sp.	24
+uncultured Parabacteroides sp.	123
+uncultured Porphyromonadaceae bacterium	422
+uncultured rumen bacterium	153
+unidentified rumen bacterium RFN47	42
+Victivallis	74

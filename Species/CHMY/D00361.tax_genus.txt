@@ -1,0 +1,14 @@
+Taxa	Counts
+Akkermansia	10553
+Clostridium sensu stricto 1	3004
+Clostridium sensu stricto 11	562
+Clostridium sensu stricto 13	1044
+Epulopiscium	311
+Eubacterium	81
+Oscillospira	92
+Parabacteroides	79
+Paraclostridium	471
+Pygmaiobacter	100
+Romboutsia	5812
+Terrisporobacter	1152
+Unclassified	92139

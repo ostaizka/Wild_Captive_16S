@@ -1,0 +1,6 @@
+Taxa	Counts
+Aeromonas	99
+Cetobacterium	16
+Mycoplasma	NA
+Unclassified	NA
+ZOR0006	12

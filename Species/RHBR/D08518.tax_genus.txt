@@ -1,0 +1,87 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	2494
+[Eubacterium] hallii group	10
+[Eubacterium] nodatum group	22
+[Eubacterium] oxidoreducens group	20
+[Ruminococcus] gauvreauii group	29
+[Ruminococcus] gnavus group	11
+[Ruminococcus] torques group	29
+Acetitomaculum	284
+Akkermansia	8942
+Anaerobium	147
+Anaeroplasma	28
+Anaerosporobacter	7
+Azovibrio	39
+Bacteroides	771
+Blautia	272
+Candidatus Soleaferrea	118
+Cellulosilyticum	256
+Christensenellaceae R-7 group	1939
+Clostridium sensu stricto 1	65
+Clostridium sensu stricto 5	82
+Coprococcus 2	80
+Coprococcus 3	710
+Defluviitaleaceae UCG-011	17
+Dialister	52
+Dielma	16
+Dorea	109
+Enterorhabdus	61
+Faecalibacterium	28
+Family XIII AD3011 group	429
+Family XIII UCG-001	40
+Flavonifractor	10
+Fusicatenibacter	18
+GCA-900066575	6
+Hydrogenoanaerobacterium	12
+Intestinibacter	58
+Lachnobacterium sp. wal 14165	144
+Lachnoclostridium	152
+Lachnoclostridium 5	163
+Lachnospiraceae AC2044 group	652
+Lachnospiraceae FCS020 group	6
+Lachnospiraceae NC2004 group	191
+Lachnospiraceae NK4A136 group	762
+Lachnospiraceae NK4B4 group	129
+Lachnospiraceae UCG-001	79
+Lachnospiraceae UCG-008	71
+Lachnospiraceae XPB1014 group	35
+Lactonifactor	23
+Marvinbryantia	118
+Megasphaera	13
+Methanosphaera	15
+Negativibacillus	10
+Oxalobacter	20
+p-1088-a5 gut group	785
+Papillibacter	56
+Parabacteroides	81
+Parvibacter	188
+Phascolarctobacterium	102
+Prevotella 1	665
+Prevotella 7	257
+Prevotellaceae UCG-001	201
+Rikenellaceae RC9 gut group	582
+Romboutsia	35
+Roseburia	327
+Ruminiclostridium	24
+Ruminiclostridium 6	75
+Ruminiclostridium 9	112
+Ruminococcaceae NK4A214 group	1014
+Ruminococcaceae UCG-002	125
+Ruminococcaceae UCG-003	60
+Ruminococcaceae UCG-005	6847
+Ruminococcaceae UCG-009	454
+Ruminococcaceae UCG-010	1322
+Ruminococcaceae UCG-013	586
+Ruminococcaceae UCG-014	611
+Ruminococcus 1	311
+Ruminococcus 2	180
+Schima mertensiana	7
+Terrisporobacter	28
+Treponema 2	29
+Tyzzerella	18
+Tyzzerella 4	78
+Unclassified	6363
+uncultured bacterium	4106
+uncultured Coriobacteriaceae bacterium	16
+uncultured rumen bacterium	451
+Victivallis	35

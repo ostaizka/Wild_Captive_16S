@@ -1,0 +1,41 @@
+Taxa	Counts
+[Ruminococcus] gauvreauii group	3
+[Ruminococcus] gnavus group	1132
+[Ruminococcus] torques group	47
+Bacteroides	10
+Blautia	1912
+Catenisphaera	431
+Clostridium sensu stricto 1	768
+Clostridium sensu stricto 13	115
+Clostridium sensu stricto 15	7
+Clostridium sensu stricto 4	53
+Clostridium sensu stricto 7	225
+Collinsella	17225
+Dorea	42
+Faecalitalea	3
+Fusobacterium	54
+Hathewaya	4
+Lachnoclostridium	119
+Lachnospiraceae FCS020 group	13
+Lactobacillus	6
+Lactococcus	20
+Methyloversatilis	5
+Negativibacillus	51
+Olsenella	37
+Paeniclostridium	90
+Peptoclostridium	661
+Peptococcus	40
+Peptoniphilus	161
+Peptostreptococcus	1553
+Phascolarctobacterium	15
+Pseudomonas	9
+Romboutsia	36
+Ruminiclostridium	2
+Ruminococcaceae UCG-005	54
+Ruminococcaceae UCG-010	5
+Slackia	21
+Solobacterium	265
+Streptococcus	50
+SWB02	3
+Terrisporobacter	68
+Unclassified	1967

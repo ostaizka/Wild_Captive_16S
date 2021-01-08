@@ -1,0 +1,10 @@
+Taxa	Counts
+Aeromonas	103
+Cetobacterium	1724
+Mycoplasma	809
+Paraclostridium	157
+Romboutsia	12
+Terrisporobacter	21
+Triticum aestivum (bread wheat)	4
+Unclassified	140
+Vibrio	653

@@ -1,0 +1,167 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	9
+[Eubacterium] xylanophilum group	15
+28-4	8
+Acidaminococcus	4
+Acidibacter	2
+Acinetobacter	11
+Actinomycetospora	10
+Aeromicrobium	20
+Agathobacter	9
+Agromyces	14
+Akkermansia	57
+Alistipes	110
+Alkanindiges	5
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	8
+Altererythrobacter	32
+Amaricoccus	10
+Anaerocolumna	16
+Anaerosporobacter	23
+Anaerovorax	11
+Anseongella	4
+Antricoccus	47
+Arenimonas	2
+Arthrobacter	17
+Austwickia	8
+Bacillus	67
+Bergeyella	15
+Bilophila	5
+Brachybacterium	64
+Brevibacterium	12
+Brevundimonas	9
+Calidifontibacter	12
+Campylobacter	6
+Candidatus Methanoplasma	23
+Candidatus Soleaferrea	25
+Cellulomonas	26
+Cellulosilyticum	272
+Chelatococcus	3
+Christensenellaceae R-7 group	401
+Chryseobacterium	243
+Citricoccus	10
+CL500-29 marine group	14
+Clostridiales bacterium enrichment culture clone 06-1235251-76	3
+Clostridium sensu stricto 1	457
+Comamonas	30
+Coprococcus 2	3
+Corynebacterium	31
+Deinococcus	36
+Demequina	6
+Dermacoccus	7
+Dermatophilus	180
+Desulfobulbus	2
+Desulfovibrio	209
+Dietzia	48
+Enterobacillus	12
+Erysipelatoclostridium	3
+Erysipelothrix	32
+Erythrobacter	23
+Escherichia-Shigella	7
+Faecalibacterium	29
+Family XIII AD3011 group	12
+Fastidiosipila	2
+Ferruginibacter	6
+Fibrobacter	13
+Fluviicola	5
+Fusobacterium	25
+Gallicola	325
+Gloeocapsa PCC-7428	10
+Glycomyces	3
+Gordonia	22
+H1	21
+Haoranjiania	17
+Hespellia	9
+Hydrogenoanaerobacterium	24
+Hyphomicrobium	2
+Iamia	8
+Ilumatobacter	9
+Intestinibacter	41
+Intrasporangium	15
+Isoptericola	13
+Janibacter	20
+Kineosphaera	45
+Knoellia	62
+Kribbia	106
+Kushneria	69
+Kytococcus	4
+Lachnoclostridium 10	214
+Lachnoclostridium 12	35
+Lachnoclostridium 5	33
+Lachnospira	9
+Lachnospiraceae AC2044 group	39
+Lachnospiraceae NK4A136 group	62
+Lachnospiraceae UCG-004	31
+Lachnospiraceae UCG-006	2
+Lachnospiraceae UCG-007	324
+Lachnospiraceae UCG-009	15
+Limnobacter	46
+Luteimonas	50
+Luteococcus	31
+Lysobacter	50
+Marmoricola	23
+Marvinbryantia	8
+Mesorhizobium	9
+Methanobrevibacter	14
+Methanocorpusculum	9
+Mycobacterium	14
+Nakamurella	17
+Niabella	41
+Nocardioides	284
+Novosphingobium	15
+OLB8	4
+Ornithinicoccus	13
+Ornithinimicrobium	115
+Oscillibacter	19
+Ottowia	76
+Oxalobacter	9
+Papillibacter	8
+Parabacteroides	23
+Paracoccus	163
+Pedomicrobium	10
+Pelagibacterium	8
+Perlucidibaca	8
+Petrimonas	5
+Propionicicella	6
+Propioniciclava	86
+Pseudoclavibacter	111
+Pseudomonas	25
+Pseudonocardia	14
+Quadrisphaera	644
+Rhizorhapis	71
+Rhodobacter	6
+Rhodomicrobium	2
+Rhodopirellula	2
+Robinsoniella	4
+Ruminiclostridium 5	2
+Ruminococcaceae NK4A214 group	102
+Ruminococcaceae UCG-002	9
+Ruminococcaceae UCG-005	64
+Ruminococcaceae UCG-008	14
+Ruminococcaceae UCG-010	151
+Ruminococcaceae UCG-013	20
+Ruminococcaceae UCG-014	44
+Ruminococcus 1	35
+S5-A14a	72
+Salinicola	3
+Sarcina	23
+Serinicoccus	35
+Sphingomonas	13
+Spirosoma	33
+Staphylococcus	78
+Streptomyces	9
+Subdoligranulum	24
+Taibaiella	11
+Terrisporobacter	77
+Tessaracoccus	38
+Tetrasphaera	60
+Thermomonas	13
+Tonsilliphilus	37
+Truepera	4
+Unclassified	9227
+uncultured actinobacterium	11
+uncultured bacterium	360
+uncultured Bacteroidetes bacterium	2
+uncultured Clostridiales bacterium	10
+Vitellibacter	4
+W5053	49
+Zhizhongheella	22

@@ -1,0 +1,3 @@
+Taxa	Counts
+Mycoplasma	12438
+Unclassified	NA

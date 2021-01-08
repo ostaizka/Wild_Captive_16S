@@ -1,0 +1,19 @@
+Taxa	Counts
+Akkermansia	8747
+Bacteroides	765
+Cellulosilyticum	353
+Citrobacter	483
+Clostridium sensu stricto 1	32478
+Clostridium sensu stricto 13	305
+Eggerthella	82
+Epulopiscium	129
+Eubacterium	329
+Fusobacterium	91
+Intestinibacter	361
+Lachnospiraceae UCG-007	415
+Oscillibacter	899
+Romboutsia	103
+Terrisporobacter	1308
+Turicibacter	231
+UBA1819	115
+Unclassified	46146

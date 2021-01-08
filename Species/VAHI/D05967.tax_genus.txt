@@ -1,0 +1,4 @@
+Taxa	Counts
+Brevinema	4231
+Mycoplasma	17327
+Unclassified	5253

@@ -1,0 +1,18 @@
+Taxa	Counts
+Alistipes	445
+Bacteroides	34
+Candidatus Saccharimonas	410
+GCA-900066575	41
+Lachnoclostridium	167
+Lachnospiraceae NK4A136 group	2422
+Lactobacillus	26216
+Odoribacter	185
+Prevotellaceae UCG-001	303
+Roseburia	248
+Ruminiclostridium	25
+Ruminiclostridium 5	41
+Ruminiclostridium 9	219
+Ruminococcaceae UCG-003	140
+Ruminococcaceae UCG-014	503
+Unclassified	4705
+uncultured bacterium	6380

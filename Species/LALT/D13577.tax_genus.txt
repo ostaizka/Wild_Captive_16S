@@ -1,0 +1,53 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	6773
+[Eubacterium] eligens group	80
+[Eubacterium] oxidoreducens group	251
+Acetitomaculum	81
+Agathobacter	494
+Akkermansia	339
+Alistipes	1414
+Alloprevotella	84
+Bacteroidales bacterium 55_9	78
+Bacteroides	452
+Caldicoprobacter	193
+Candidatus Methanogranum	148
+Candidatus Methanoplasma	136
+Candidatus Soleaferrea	177
+Christensenellaceae R-7 group	3747
+Coprococcus 3	304
+Elusimicrobium	375
+Enterococcus	63
+Fibrobacter	543
+hoa5-07d05 gut group	157
+Lachnoclostridium 10	609
+Lachnospiraceae AC2044 group	325
+Lachnospiraceae NC2004 group	294
+Lachnospiraceae NK4A136 group	1674
+Lachnospiraceae UCG-001	86
+Lachnospiraceae UCG-008	83
+Lachnospiraceae UCG-009	164
+Methanocorpusculum	756
+Negativibacillus	69
+Oxalobacter	896
+p-1088-a5 gut group	76
+Parabacteroides	454
+Prevotella 1	1068
+Prevotellaceae Ga6A1 group	56
+Prevotellaceae UCG-003	1426
+Prevotellaceae UCG-004	269
+Rikenellaceae RC9 gut group	13390
+Ruminiclostridium	129
+Ruminiclostridium 1	395
+Ruminiclostridium 6	115
+Ruminococcaceae NK4A214 group	747
+Ruminococcaceae UCG-002	275
+Ruminococcaceae UCG-005	13174
+Ruminococcaceae UCG-009	151
+Ruminococcaceae UCG-010	27574
+Ruminococcaceae UCG-011	2946
+Ruminococcaceae UCG-013	2291
+Ruminococcaceae UCG-014	2638
+Ruminococcus 1	1380
+Unclassified	53253
+uncultured bacterium	34454
+uncultured Porphyromonadaceae bacterium	355

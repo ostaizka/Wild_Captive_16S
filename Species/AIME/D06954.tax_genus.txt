@@ -1,0 +1,13 @@
+Taxa	Counts
+Arthrobacter	119
+Brochothrix	43
+Carnobacterium	178
+Clostridium sensu stricto 1	22
+Janthinobacterium	173
+Paenisporosarcina	167
+Pedobacter	61
+Pseudomonas	17714
+Psychrobacillus	2
+Rhodococcus	3
+Turicibacter	2
+Unclassified	16

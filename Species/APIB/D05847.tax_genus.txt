@@ -1,0 +1,11 @@
+Taxa	Counts
+Aeromonas	NA
+Bilateria	57
+Cryomorpha	4
+Nodosilinea PCC-7104	11
+Plesiomonas	17
+Pseudarthrobacter	6
+Shewanella	239
+Terrimicrobium	6
+Unclassified	NA
+Vibrio	NA

@@ -1,0 +1,11 @@
+Taxa	Counts
+Campylobacter	350
+Clostridium sensu stricto 1	8343
+Escherichia-Shigella	16358
+Fusobacterium	3
+Megasphaera	9
+Streptococcus	6122
+Terrisporobacter	201
+Triticum aestivum (bread wheat)	18
+Turicibacter	2835
+Unclassified	724

@@ -1,0 +1,6 @@
+Taxa	Counts
+Aeromonas	6
+C39	48
+Cyanobium PCC-6307	14
+Paracoccus	3
+Unclassified	2156

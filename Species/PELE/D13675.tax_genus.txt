@@ -1,0 +1,33 @@
+Taxa	Counts
+Acetatifactor	3
+Alistipes	59
+Allobaculum	141
+Atopostipes	11
+Bacteroides	3
+Corynebacterium 1	7
+GCA-900066575	4
+Gordonibacter	9
+gut metagenome	496
+Jeotgalicoccus	24
+Lachnoclostridium	4
+Lachnospiraceae NK4A136 group	16
+Lachnospiraceae UCG-001	7
+Lachnospiraceae UCG-004	5
+Lachnospiraceae UCG-006	2
+Lactobacillus	1223
+Muribaculum	2
+Odoribacter	2
+Oscillibacter	3
+Parabacteroides	3
+Prevotella 9	4
+Prevotellaceae UCG-001	243
+Roseburia	28
+Ruminococcaceae UCG-003	2
+Ruminococcaceae UCG-010	27
+Ruminococcaceae UCG-014	35
+Ruminococcus 1	62
+Sporosarcina	19
+Staphylococcus	30
+Unclassified	3884
+uncultured bacterium	14126
+uncultured Bacteroidales bacterium	880

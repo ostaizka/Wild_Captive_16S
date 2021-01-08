@@ -1,0 +1,48 @@
+Taxa	Counts
+[Clostridium] innocuum group	15
+Bacillus	57
+Bacteroides	9726
+Blautia	18
+Butyricicoccus	26
+Campylobacter	658
+Carnobacterium	33
+Cellulosilyticum	62
+Cetobacterium	10007
+Clostridium sensu stricto 1	5806
+Clostridium sensu stricto 11	24
+Clostridium sensu stricto 13	71
+Clostridium sensu stricto 7	21
+Edwardsiella	332
+Enterobacter	792
+Epulopiscium	1371
+Erysipelatoclostridium	84
+Escherichia-Shigella	530
+Fusobacterium	5651
+Herbinix	98
+Ignatzschineria	1128
+Lachnoclostridium	61
+Lysinibacillus	24
+Macellibacteroides	8721
+Mycoplasma	852
+Myroides	41
+Paeniclostridium	122
+Paenisporosarcina	465
+Parabacteroides	77
+Paraeggerthella	30
+Parasutterella	437
+Peptostreptococcus	74
+Plesiomonas	4680
+Proteus	270
+Pseudochrobactrum	47
+Pseudomonas	16952
+Psychrobacter	529
+Romboutsia	43
+Sarcina	104
+Serratia	61
+Sporosarcina	15345
+Terrisporobacter	276
+Tissierella	102
+Tyzzerella	89
+Tyzzerella 4	28
+Unclassified	9119
+Vitreoscilla	26

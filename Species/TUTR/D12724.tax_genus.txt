@@ -1,0 +1,13 @@
+Taxa	Counts
+Actinobacillus	242
+Arcobacter	30
+Campylobacter	29
+Cetobacterium	1028
+Clostridium sensu stricto 1	79
+Paraclostridium	1442
+Phocoenobacter	37
+Photobacterium	41
+Psychrobacter	42
+Romboutsia	30
+Tenacibaculum	4
+Unclassified	108

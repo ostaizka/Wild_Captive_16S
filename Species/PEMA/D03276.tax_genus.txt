@@ -1,0 +1,36 @@
+Taxa	Counts
+[Eubacterium] oxidoreducens group	13
+[Eubacterium] xylanophilum group	191
+A2	31
+Acinetobacter	8
+Alistipes	186
+Anaerovorax	10
+Blautia	78
+Candidatus Saccharimonas	21
+GCA-900066225	11
+GCA-900066575	251
+Helicobacter	261
+Lachnoclostridium	145
+Lachnospiraceae NK4A136 group	7021
+Lachnospiraceae UCG-001	87
+Lachnospiraceae UCG-006	52
+Lachnospiraceae UCG-008	77
+Lactobacillus	16897
+Mucispirillum	15
+Odoribacter	65
+Oscillibacter	332
+Pantoea	23
+Prevotellaceae UCG-001	83
+Pseudomonas	23
+Roseburia	152
+Ruminiclostridium	1203
+Ruminiclostridium 5	239
+Ruminiclostridium 6	64
+Ruminiclostridium 9	441
+Ruminococcaceae UCG-005	35
+Ruminococcaceae UCG-009	39
+Ruminococcus 1	19
+Tyzzerella	42
+Unclassified	4121
+uncultured bacterium	1929
+unidentified	7

@@ -1,0 +1,53 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	22962
+[Eubacterium] hallii group	3739
+Acetitomaculum	692
+Agathobacter	979
+Anaerostipes	686
+Bifidobacterium	709
+Blautia	560
+Butyricicoccus	430
+Campylobacter	260
+Candidatus Methanomethylophilus	2439
+Candidatus Saccharimonas	646
+Christensenellaceae R-7 group	20669
+Clostridium sensu stricto 1	1864
+Coriobacteriaceae UCG-003	3765
+Dorea	4818
+Erysipelotrichaceae UCG-003	1934
+Erysipelotrichaceae UCG-004	5802
+Family XIII AD3011 group	21071
+Family XIII UCG-001	1433
+Fibrobacter	7485
+Lachnoclostridium	592
+Lachnoclostridium 10	1067
+Lachnospiraceae FCS020 group	7866
+Lachnospiraceae ND3007 group	5668
+Lachnospiraceae NK3A20 group	621
+Lachnospiraceae NK4A136 group	2404
+Lachnospiraceae UCG-002	397
+Lachnospiraceae UCG-008	294
+Libanicoccus	1055
+Oribacterium	561
+Oxalobacter	2700
+p-1088-a5 gut group	873
+Prevotella 7	360
+Pseudobutyrivibrio	4620
+Rikenellaceae RC9 gut group	51700
+Roseburia	2751
+Ruminiclostridium 9	2199
+Ruminococcaceae NK4A214 group	34476
+Ruminococcaceae UCG-002	3262
+Ruminococcaceae UCG-005	9737
+Ruminococcaceae UCG-008	6743
+Ruminococcaceae UCG-010	13958
+Ruminococcaceae UCG-014	616
+Ruminococcus 1	1024
+Solobacterium	788
+Sphaerochaeta	3268
+Succinivibrio	2203
+Theobroma cacao (cacao)	489
+Treponema 2	3510
+Unclassified	280926
+uncultured bacterium	17899
+Z20	3545

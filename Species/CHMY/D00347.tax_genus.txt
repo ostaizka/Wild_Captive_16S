@@ -1,0 +1,8 @@
+Taxa	Counts
+Clostridium sensu stricto 1	6480
+Clostridium sensu stricto 13	246
+Intestinibacter	689
+Lachnospiraceae UCG-007	718
+Ruminiclostridium	149
+Terrisporobacter	679
+Unclassified	74557

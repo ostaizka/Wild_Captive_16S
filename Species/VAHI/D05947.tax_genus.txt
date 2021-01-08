@@ -1,0 +1,3 @@
+Taxa	Counts
+Bilateria	5
+Vibrio	24

@@ -1,0 +1,6 @@
+Taxa	Counts
+Aeromonas	127
+Francisella	26
+Mycoplasma	25366
+Unclassified	18010
+Vibrio	87

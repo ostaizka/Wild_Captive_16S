@@ -1,0 +1,4 @@
+Taxa	Counts
+Aeromonas	29
+Mycoplasma	7036
+Unclassified	436

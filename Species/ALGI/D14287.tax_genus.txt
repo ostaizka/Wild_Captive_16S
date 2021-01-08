@@ -1,0 +1,56 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	564
+[Eubacterium] oxidoreducens group	31
+[Eubacterium] xylanophilum group	32
+Acetivibrio	612
+Acidaminococcus	25
+Akkermansia	10
+Alistipes	84
+Anaerocolumna	26
+Anaerofustis	65
+Anaerosporobacter	93
+Anaerovorax	90
+Bacillus	16
+bacterium enrichment culture clone BBMC-4	217
+Candidatus Endomicrobium	262
+Candidatus Methanoplasma	31
+Candidatus Soleaferrea	166
+Cellulosilyticum	142
+Christensenellaceae R-7 group	586
+Clostridiales bacterium enrichment culture clone 06-1235251-76	24
+Clostridium sensu stricto 1	66
+Clostridium sensu stricto 3	124
+DMER64	634
+Erysipelotrichaceae UCG-004	79
+Family XIII UCG-001	15
+Fibrobacter	123
+Hydrogenoanaerobacterium	49
+Lachnoclostridium	36
+Lachnoclostridium 10	614
+Lachnoclostridium 5	49
+Lachnospira	6
+Lachnospiraceae AC2044 group	407
+Lachnospiraceae NC2004 group	127
+Lachnospiraceae NK4A136 group	375
+Lachnospiraceae UCG-004	887
+Lachnospiraceae UCG-007	40
+Lachnospiraceae UCG-009	38
+Methanocorpusculum	26
+Papillibacter	222
+Pyramidobacter	27
+Ruminiclostridium	58
+Ruminiclostridium 1	13
+Ruminiclostridium 6	63
+Ruminococcaceae NK4A214 group	714
+Ruminococcaceae UCG-005	65
+Ruminococcaceae UCG-010	1045
+Ruminococcaceae UCG-013	71
+Ruminococcaceae UCG-014	485
+Ruminococcaceae V9D2013 group	21
+Ruminococcus 1	3446
+Sporobacter	7
+Succinivibrio	89
+Terrisporobacter	26
+Unclassified	28971
+uncultured bacterium	699
+uncultured rumen bacterium	150

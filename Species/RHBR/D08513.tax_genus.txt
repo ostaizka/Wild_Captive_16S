@@ -1,0 +1,60 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	793
+[Eubacterium] ventriosum group	7
+[Ruminococcus] gauvreauii group	23
+[Ruminococcus] torques group	31
+Acetitomaculum	405
+Akkermansia	10744
+Anaerobium	52
+Anaerofustis	7
+Bacteroides	19
+Blautia	242
+Campylobacter	6
+Candidatus Soleaferrea	66
+Cellulosilyticum	227
+Christensenellaceae R-7 group	1849
+Clostridium sensu stricto 1	15
+Clostridium sensu stricto 5	11
+Coprococcus 3	38
+Dialister	15
+Enterorhabdus	28
+Erysipelatoclostridium	7
+Family XIII AD3011 group	130
+Family XIII UCG-001	20
+Helicobacter	6
+Intestinibacter	274
+Lachnospiraceae NC2004 group	202
+Lachnospiraceae UCG-001	12
+Lachnospiraceae XPB1014 group	108
+Lactonifactor	152
+Marvinbryantia	126
+Megasphaera	10
+Methanosphaera	13
+Negativibacillus	104
+Oxalobacter	16
+p-1088-a5 gut group	38
+Papillibacter	36
+Parabacteroides	251
+Parvibacter	19
+Phascolarctobacterium	41
+Populus tremula	6
+Prevotella 1	4525
+Prevotella 7	59
+Prevotellaceae UCG-001	432
+Prunus mume (Japanese apricot)	55
+Rikenellaceae RC9 gut group	5
+Roseburia	15
+Ruminiclostridium	9
+Ruminiclostridium 6	180
+Ruminiclostridium 9	73
+Ruminococcaceae NK4A214 group	5139
+Ruminococcaceae UCG-002	74
+Ruminococcaceae UCG-003	55
+Ruminococcaceae UCG-005	2110
+Ruminococcaceae UCG-009	15
+Ruminococcaceae UCG-010	479
+Ruminococcaceae UCG-013	147
+Ruminococcus 1	9
+Selenomonas	16
+Unclassified	5569
+uncultured bacterium	1808

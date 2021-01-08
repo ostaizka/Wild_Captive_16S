@@ -1,0 +1,11 @@
+Taxa	Counts
+Cyanobium PCC-6307	7
+Flavobacterium	5
+Mycoplasma	767
+Neisseria	2
+Nodosilinea PCC-7104	6
+Pantoea	429
+Polynucleobacter	9
+Streptococcus	2
+Unclassified	487
+uncultured bacterium	2

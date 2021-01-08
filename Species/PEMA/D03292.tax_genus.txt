@@ -1,0 +1,38 @@
+Taxa	Counts
+[Eubacterium] xylanophilum group	4
+28-4	156
+Alistipes	202
+Anaerotruncus	12
+ASF356	14
+Blautia	279
+Butyricicoccus	103
+GCA-900066575	104
+Helicobacter	4784
+Lachnoclostridium	38
+Lachnospiraceae FCS020 group	53
+Lachnospiraceae NC2004 group	21
+Lachnospiraceae NK4A136 group	7535
+Lachnospiraceae UCG-001	35
+Lachnospiraceae UCG-006	355
+Lachnospiraceae UCG-008	564
+Lactobacillus	69
+Negativibacillus	5
+Oscillibacter	1060
+Parabacteroides	3
+Peptococcus	9
+Pygmaiobacter	12
+Roseburia	104
+Ruminiclostridium	974
+Ruminiclostridium 5	44
+Ruminiclostridium 6	16
+Ruminiclostridium 9	2150
+Ruminococcaceae NK4A214 group	24
+Ruminococcaceae UCG-003	60
+Ruminococcaceae UCG-009	14
+Ruminococcaceae UCG-014	34
+Ruminococcus 1	64
+Tyzzerella	56
+UBA1819	38
+Unclassified	7961
+uncultured bacterium	1998
+unidentified	21

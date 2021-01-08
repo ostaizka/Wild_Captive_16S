@@ -1,0 +1,7 @@
+Taxa	Counts
+Aeromonas	256
+Cetobacterium	946
+Clostridium sensu stricto 1	11
+Paraclostridium	19
+Plesiomonas	22
+Romboutsia	175

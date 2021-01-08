@@ -1,0 +1,7 @@
+Taxa	Counts
+Candidatus Saccharimonas	78
+Lactobacillus	23999
+Prevotellaceae UCG-001	197
+Ruminococcus 1	34
+Unclassified	14636
+uncultured bacterium	27247

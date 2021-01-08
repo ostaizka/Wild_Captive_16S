@@ -1,0 +1,97 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	13
+[Eubacterium] brachy group	5
+[Eubacterium] coprostanoligenes group	1202
+[Eubacterium] eligens group	18
+[Eubacterium] nodatum group	23
+[Eubacterium] oxidoreducens group	16
+[Eubacterium] ventriosum group	212
+[Ruminococcus] torques group	86
+Agathobacter	56
+Alistipes	104
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	22
+Anaerofustis	4
+Atopobium	24
+Bacillus	3
+Bacteroides	983
+Bifidobacterium	52
+Blautia	367
+Bosea	7
+Candidatus Soleaferrea	27
+Candidatus Stoquefichus	4
+Caproiciproducens	13
+Carnobacterium	5
+Christensenellaceae R-7 group	435
+Clostridioides	15
+Clostridium sensu stricto 1	7
+Comamonas	7
+Coprococcus 2	5
+Coprococcus 3	111
+Defluviitaleaceae UCG-011	6
+dgA-11 gut group	18
+DNF00809	7
+Dorea	66
+Enterococcus	174
+Erysipelatoclostridium	28
+Faecalibacterium	35
+Family XIII AD3011 group	56
+Fibrobacter	5
+Fusicatenibacter	24
+GCA-900066225	17
+GCA-900066575	14
+Halomonas	104
+Helicobacter	16
+Hydrogenoanaerobacterium	29
+Intestinimonas	58
+Lachnoclostridium	12
+Lachnoclostridium 10	82
+Lachnospira	5
+Lachnospiraceae AC2044 group	31
+Lachnospiraceae FCS020 group	52
+Lachnospiraceae NC2004 group	17
+Lachnospiraceae NK4A136 group	389
+Lachnospiraceae UCG-004	117
+Lactobacillus	24
+Leucobacter	8
+Mailhella	7
+Marvinbryantia	138
+Mycetocola	36
+Ochrobactrum	6
+Oscillibacter	54
+Papillibacter	103
+Parabacteroides	4
+Prevotellaceae UCG-004	32
+Pseudochrobactrum	93
+Psychrobacter	10
+Rikenellaceae RC9 gut group	84
+Romboutsia	36
+Roseburia	340
+Ruminiclostridium	70
+Ruminiclostridium 1	109
+Ruminiclostridium 5	298
+Ruminiclostridium 9	85
+Ruminococcaceae NK4A214 group	236
+Ruminococcaceae UCG-002	28
+Ruminococcaceae UCG-003	34
+Ruminococcaceae UCG-005	2936
+Ruminococcaceae UCG-008	8
+Ruminococcaceae UCG-009	137
+Ruminococcaceae UCG-010	1412
+Ruminococcaceae UCG-011	12
+Ruminococcaceae UCG-013	6421
+Ruminococcaceae UCG-014	5953
+Ruminococcus 1	308
+Ruminococcus 2	15
+Sanguibacter	5
+Shewanella	11
+Sphingomonas	4
+Subdoligranulum	23
+Syntrophococcus	20
+Tepidimicrobium	3
+Treponema 2	60
+Tyzzerella 3	11
+Tyzzerella 4	429
+Unclassified	3913
+uncultured bacterium	204
+Weissella	13
+XBB1006	4

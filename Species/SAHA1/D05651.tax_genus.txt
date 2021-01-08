@@ -1,0 +1,27 @@
+Taxa	Counts
+Bacillus	2071
+Carnobacterium	1031
+Citrobacter	404
+Clostridium sensu stricto 1	14041
+Clostridium sensu stricto 13	71
+Clostridium sensu stricto 7	31
+Edwardsiella	1363
+Enterobacter	2120
+Enterococcus	1391
+Epulopiscium	365
+Escherichia-Shigella	45964
+Fusobacterium	8090
+Helicobacter	115
+Mucilaginibacter	14
+Muribacter	33
+Paenibacillus	60
+Paeniclostridium	1021
+Peptostreptococcus	14221
+Plesiomonas	3036
+Psychrobacter	815
+Romboutsia	707
+Sarcina	690
+Streptobacillus	16
+Streptococcus	134
+Terrisporobacter	2078
+Unclassified	788

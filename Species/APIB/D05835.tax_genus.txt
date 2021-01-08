@@ -1,0 +1,67 @@
+Taxa	Counts
+Actinomycetospora	13
+Aeromonas	32
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	6
+Ancylobacter	4
+Arthronema SAG 12.89	29
+Arthrospira PCC-7345	39
+C39	45
+Candidatus Alysiosphaera	2
+Candidatus Chloroploca	12
+Candidatus Competibacter	39
+Candidatus Contendobacter	25
+Clostridium sensu stricto 1	16
+Cryomorpha	8
+Cyanobium PCC-6307	67
+Dechloromonas	7
+Defluviicoccus	39
+Dermacoccus	7
+Desulfatiglans	7
+Desulfobacterium	25
+Desulfomicrobium	4
+Desulfomonile	32
+Desulforhopalus	118
+Desulfosarcina	8
+Desulfovirga	21
+Dinghuibacter	12
+Gemmobacter	4
+Halobacillus	14
+Halochromatium	22
+Herbinix	11
+Lamprocystis	72
+Limnothrix	108
+Luteolibacter	12
+Methanosaeta	7
+Methylocaldum	22
+Microcystis PCC-7914	12
+Mycobacterium	6
+Nitratireductor	6
+Nocardioides	5
+Nodosilinea PCC-7104	83
+Pelolinea	5
+Phormidium IAM M-71	8
+Planococcus	27
+Pseudokineococcus	7
+Ralstonia	11
+Romboutsia	8
+Roseobacter clade CHAB-I-5 lineage	13
+Roseomonas	24
+Roseovarius	5
+Rubribacterium	243
+Rubrimonas	13
+Sandaracinobacter	42
+Shewanella	8
+Shinella	9
+SM1A02	3
+Spirulina CCC Snake P-Y-85	114
+Subgroup 23	5
+Sva0081 sediment group	31
+Synechococcus MBIC10613	85
+Tabrizicola	113
+Terrimicrobium	12
+Thiohalocapsa	52
+Tropicimonas	78
+Unclassified	3845
+uncultured bacterium	160
+uncultured soil bacterium	8
+Vibrio	76

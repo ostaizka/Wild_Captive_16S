@@ -1,0 +1,61 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	22354
+[Eubacterium] eligens group	2540
+[Eubacterium] hallii group	1060
+Acinetobacter	102634
+Agathobacter	16809
+Alloprevotella	3561
+Anaerostipes	2576
+Anaerovibrio	3259
+Bacillus	2412
+Bifidobacterium	12442
+Blautia	3132
+Campylobacter	447
+Cerasicoccus	2242
+Christensenellaceae R-7 group	5614
+Collinsella	2274
+Coriobacteriaceae UCG-003	10649
+Dialister	5008
+Dorea	1614
+Enterorhabdus	1285
+Erysipelotrichaceae UCG-003	2132
+Erysipelotrichaceae UCG-006	3518
+Faecalibacterium	15667
+Family XIII UCG-001	2790
+Fibrobacter	1568
+Fusicatenibacter	1121
+GCA-900066575	3384
+Holdemanella	1210
+Kurthia	86110
+Lachnoclostridium	4633
+Lachnospiraceae ND3007 group	6044
+Lachnospiraceae NK3A20 group	3270
+Lachnospiraceae NK4A136 group	5078
+Lachnospiraceae UCG-004	10419
+Olsenella	3394
+Oribacterium	903
+Oscillospira	352
+Oxalobacter	612
+Phascolarctobacterium	2177
+Prevotella 7	46810
+Prevotella 9	17350
+Pseudomonas	23150
+Rikenellaceae RC9 gut group	7444
+Roseburia	2098
+Ruminiclostridium 9	1258
+Ruminococcaceae NK4A214 group	11771
+Ruminococcaceae UCG-002	12887
+Ruminococcaceae UCG-003	2574
+Ruminococcaceae UCG-005	6536
+Ruminococcaceae UCG-008	47025
+Ruminococcaceae UCG-010	6872
+Ruminococcaceae UCG-014	15893
+Ruminococcus 1	372
+Rummeliibacillus	8702
+Senegalimassilia	1310
+Solobacterium	3578
+Subdoligranulum	11286
+Succinivibrio	2467
+Sutterella	2590
+Unclassified	221096
+uncultured bacterium	1241

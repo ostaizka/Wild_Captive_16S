@@ -1,0 +1,15 @@
+Taxa	Counts
+Chryseobacterium	6
+Clostridium sensu stricto 1	6258
+Enterobacter	911
+Escherichia-Shigella	19
+Hafnia-Obesumbacterium	209
+Janthinobacterium	23
+Lactococcus	162
+Leuconostoc	4
+Pseudomonas	16526
+Serratia	176
+Streptococcus	12
+Terrisporobacter	113
+Turicibacter	855
+Unclassified	444

@@ -1,0 +1,22 @@
+Taxa	Counts
+Aeromonas	59
+Campylobacter	2019
+Cetobacterium	47201
+Clostridium sensu stricto 1	19546
+Clostridium sensu stricto 13	860
+Clostridium sensu stricto 7	66
+Edwardsiella	401
+Enterobacter	557
+Epulopiscium	7575
+Escherichia-Shigella	297
+Fusobacterium	5671
+Paeniclostridium	6298
+Paraclostridium	228
+Peptoclostridium	155
+Peptoniphilus	81
+Peptostreptococcus	1190
+Plesiomonas	5932
+Romboutsia	1736
+Sarcina	2246
+Terrisporobacter	908
+Unclassified	6629

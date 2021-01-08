@@ -1,0 +1,64 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	596
+[Eubacterium] oxidoreducens group	30
+Acetivibrio	207
+Acidaminococcus	32
+Anaerosporobacter	58
+Anaerovorax	77
+Bacillus	473
+bacterium enrichment culture clone BBMC-4	264
+Campylobacter	10
+Candidatus Methanoplasma	207
+Candidatus Soleaferrea	167
+Cellulosilyticum	90
+Christensenellaceae R-7 group	723
+Clostridiales bacterium enrichment culture clone 06-1235251-76	38
+Clostridium sensu stricto 1	1105
+Clostridium sensu stricto 3	418
+Desulfovibrio	22
+DMER64	354
+Erysipelatoclostridium	8
+Erysipelotrichaceae UCG-004	7
+Faecalibacterium	43
+Family XIII UCG-001	13
+Fibrobacter	265
+Hydrogenoanaerobacterium	51
+Lachnoclostridium	47
+Lachnoclostridium 10	69
+Lachnoclostridium 5	48
+Lachnospiraceae AC2044 group	363
+Lachnospiraceae NC2004 group	219
+Lachnospiraceae NK4A136 group	54
+Lachnospiraceae NK4B4 group	16
+Lachnospiraceae UCG-004	179
+Lachnospiraceae UCG-007	123
+Lachnospiraceae UCG-009	120
+Lactobacillus	24
+Methanocorpusculum	84
+Mobilitalea	64
+Oscillibacter	17
+Papillibacter	83
+Pyramidobacter	56
+Romboutsia	13
+Ruminiclostridium	81
+Ruminiclostridium 1	36
+Ruminiclostridium 6	17
+Ruminiclostridium 9	7
+Ruminococcaceae NK4A214 group	549
+Ruminococcaceae UCG-002	20
+Ruminococcaceae UCG-005	26
+Ruminococcaceae UCG-010	726
+Ruminococcaceae UCG-013	35
+Ruminococcaceae UCG-014	626
+Ruminococcus 1	992
+S5-A14a	22
+Sarcina	50
+Streptococcus	8
+Succinivibrio	91
+Terrisporobacter	60
+Unclassified	24005
+uncultured alpha proteobacterium	32
+uncultured bacterium	626
+uncultured Bacteroidetes bacterium	651
+uncultured Clostridiales bacterium	28
+uncultured rumen bacterium	180

@@ -1,0 +1,35 @@
+Taxa	Counts
+Bacillus	203
+Bacteroides	22
+Blautia	42
+Campylobacter	4752
+Cellulosilyticum	67
+Cetobacterium	19
+Chryseobacterium	57
+Clostridium sensu stricto 1	7769
+Clostridium sensu stricto 11	73
+Clostridium sensu stricto 13	806
+Clostridium sensu stricto 2	185
+Clostridium sensu stricto 7	90
+Edwardsiella	9771
+Enterobacter	6508
+Epulopiscium	1406
+Escherichia-Shigella	6574
+Flavobacterium	21
+Fusobacterium	29919
+Gelidibacter	39
+Helicobacter	1353
+Paeniclostridium	361
+Paeniglutamicibacter	69
+Pedobacter	29
+Peptostreptococcus	2355
+Plesiomonas	19956
+Psychrobacter	38
+Romboutsia	99
+Ruminococcaceae UCG-005	42
+Sarcina	171
+Sporosarcina	63
+Terrisporobacter	383
+Tyzzerella 3	31
+Tyzzerella 4	17
+Unclassified	517

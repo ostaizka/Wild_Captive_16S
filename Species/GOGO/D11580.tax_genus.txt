@@ -1,0 +1,89 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	12219
+[Eubacterium] hallii group	453
+[Eubacterium] ruminantium group	1643
+[Eubacterium] ventriosum group	856
+[Eubacterium] xylanophilum group	259
+Agathobacter	3039
+Alloprevotella	1362
+Blautia	3301
+Butyricicoccus	482
+Campylobacter	1136
+Candidatus Saccharimonas	304
+Candidatus Soleaferrea	2289
+Cerasicoccus	4746
+Christensenellaceae R-7 group	17936
+Clostridium sensu stricto 1	12167
+Coprococcus 1	372
+Coprococcus 2	1023
+Coprococcus 3	304
+Coriobacteriaceae UCG-003	9371
+Desulfovibrio	2957
+dgA-11 gut group	391
+Dialister	20245
+Dorea	1315
+Enterorhabdus	1289
+Erysipelotrichaceae UCG-003	5367
+Escherichia-Shigella	883
+Faecalibacterium	11648
+Family XIII AD3011 group	988
+Family XIII UCG-001	796
+Fournierella	602
+Lachnoclostridium	1911
+Lachnospira	641
+Lachnospiraceae FCS020 group	348
+Lachnospiraceae NC2004 group	218
+Lachnospiraceae NK3A20 group	1865
+Lachnospiraceae NK4A136 group	14324
+Lachnospiraceae UCG-004	2622
+Lachnospiraceae UCG-008	692
+Lachnospiraceae XPB1014 group	22214
+Lactobacillus	1774
+Marvinbryantia	760
+Methanobrevibacter	292
+Olsenella	662
+Oribacterium	4749
+Oscillibacter	557
+p-1088-a5 gut group	1219
+Phascolarctobacterium	7390
+Phoenicibacter	943
+Prevotella 1	17955
+Prevotella 2	1477
+Prevotella 7	37125
+Prevotella 9	54670
+Prevotellaceae NK3B31 group	1447
+Prevotellaceae UCG-001	6656
+Prevotellaceae UCG-003	1141
+Prevotellaceae UCG-004	709
+Pyramidobacter	227
+Rikenellaceae RC9 gut group	27144
+Roseburia	1841
+Ruminiclostridium	553
+Ruminiclostridium 6	4010
+Ruminiclostridium 9	5857
+Ruminobacter	2041
+Ruminococcaceae NK4A214 group	22333
+Ruminococcaceae UCG-002	12782
+Ruminococcaceae UCG-003	2542
+Ruminococcaceae UCG-005	30088
+Ruminococcaceae UCG-008	1894
+Ruminococcaceae UCG-009	325
+Ruminococcaceae UCG-010	12313
+Ruminococcaceae UCG-013	1487
+Ruminococcaceae UCG-014	8877
+Ruminococcus 1	5547
+Senegalimassilia	529
+Slackia	636
+Solobacterium	3379
+Sphaerochaeta	10089
+Streptococcus	724
+Subdoligranulum	6190
+Succinivibrio	6366
+Sutterella	1214
+Treponema 2	44370
+Unclassified	213387
+uncultured bacterium	69030
+uncultured Bacteroidales bacterium	18357
+uncultured prokaryote	527
+uncultured rumen bacterium	2962
+Z20	5802

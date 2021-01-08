@@ -1,0 +1,76 @@
+Taxa	Counts
+[Eubacterium] brachy group	13
+[Eubacterium] coprostanoligenes group	285
+Alistipes	88
+Anaerocolumna	24
+Anaerosporobacter	42
+Campylobacter	418
+Candidatus Methanoplasma	296
+Candidatus Soleaferrea	36
+Cellulosilyticum	202
+Christensenellaceae R-7 group	2222
+Chryseobacterium	276
+Clostridium sensu stricto 1	550
+Coprococcus 2	7
+Corynebacterium	35
+Corynebacterium 1	64
+Dermatophilus	216
+Desulfovibrio	185
+Dietzia	59
+DMER64	49
+Erysipelothrix	84
+Escherichia-Shigella	88
+Family XIII UCG-001	8
+Fastidiosipila	64
+Fibrobacter	98
+Gallicola	20
+Gordonia	20
+H1	36
+Haoranjiania	64
+Intestinibacter	92
+Janibacter	97
+Knoellia	68
+Kribbia	9
+Lachnoclostridium 10	341
+Lachnoclostridium 5	22
+Lachnospiraceae AC2044 group	51
+Lachnospiraceae NK4A136 group	59
+Lachnospiraceae UCG-004	32
+Lachnospiraceae UCG-007	407
+Lachnospiraceae UCG-009	17
+Lachnospiraceae XPB1014 group	10
+Methanobrevibacter	95
+Methanocorpusculum	102
+Micrococcus	55
+Mycoplasma	1299
+Niabella	9
+Nocardioides	116
+Ornithinimicrobium	263
+Oscillibacter	40
+Papillibacter	8
+Petrimonas	47
+Propioniciclava	267
+Quadrisphaera	112
+Ruminiclostridium	39
+Ruminococcaceae NK4A214 group	180
+Ruminococcaceae UCG-010	535
+Ruminococcaceae UCG-013	85
+Ruminococcaceae UCG-014	674
+Ruminococcus 1	74
+S5-A14a	40
+Sarcina	27
+Serinicoccus	64
+Streptococcus	17
+Subdoligranulum	8
+Succinivibrio	15
+Taibaiella	9
+Terrisporobacter	73
+Tetrasphaera	78
+Thermomonas	12
+Unclassified	28373
+uncultured alpha proteobacterium	21
+uncultured bacterium	391
+uncultured Bacteroidetes bacterium	57
+uncultured Clostridiales bacterium	41
+uncultured rumen bacterium	63
+W5053	6

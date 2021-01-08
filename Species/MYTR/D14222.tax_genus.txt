@@ -1,0 +1,48 @@
+Taxa	Counts
+[Eubacterium] fissicatena group	245
+Actinomadura	8
+Bacillus	735
+Bacteroides	787
+Caldicoprobacter	3
+Cellulomonas	148
+Cellulosimicrobium	30
+Clostridium sensu stricto 1	17
+Clostridium sensu stricto 16	15
+Clostridium sensu stricto 5	15
+Desulfitobacterium	83
+Enterobacter	41
+Enterococcus	431
+Escherichia-Shigella	184
+Glutamicibacter	466
+Herbinix	4
+Jeotgalibaca	2
+Kurthia	9883
+Lachnoclostridium	6
+Lachnoclostridium 10	3
+Lachnoclostridium 5	244
+Lachnospiraceae UCG-004	1195
+Lachnospiraceae UCG-008	130
+Lactococcus	43
+Leucobacter	93
+Lysinibacillus	109
+Mesorhizobium	36
+Methanobrevibacter	3
+Microbacterium	10
+Ornithinibacillus	15
+Paenibacillus	98
+Paeniclostridium	5
+Patulibacter	5
+Proteiniborus	8
+Pseudogracilibacillus	116
+Rhodococcus	106
+Romboutsia	12
+Sedimentibacter	14
+Solibacillus	211
+Sporosarcina	1906
+Streptomyces	10
+Terrisporobacter	2
+Tissierella	660
+Tumebacillus	3
+Unclassified	1023
+Vagococcus	65
+Weissella	10

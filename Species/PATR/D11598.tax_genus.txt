@@ -1,0 +1,83 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	42321
+[Eubacterium] hallii group	4987
+[Eubacterium] xylanophilum group	14150
+[Ruminococcus] gauvreauii group	3155
+[Ruminococcus] torques group	2197
+28-4	5893
+Acetitomaculum	34621
+Agathobacter	6454
+Anaerovibrio	1498
+Bifidobacterium	649
+Blautia	73998
+Candidatus Saccharimonas	2466
+Cerasicoccus	15667
+Christensenellaceae R-7 group	37393
+Cloacibacillus	781
+Clostridium sensu stricto 1	13314
+Collinsella	1918
+Coprococcus 3	5364
+Coriobacteriaceae UCG-003	46268
+Desulfovibrio	853
+dgA-11 gut group	4643
+Dialister	36298
+Dorea	4431
+Enterorhabdus	7852
+Erysipelotrichaceae UCG-003	3248
+Erysipelotrichaceae UCG-006	4715
+Faecalibacterium	81654
+Faecalitalea	1081
+Family XIII UCG-001	663
+Fournierella	6632
+Fusicatenibacter	30523
+gut metagenome	1650
+Lachnoclostridium	11544
+Lachnospira	4205
+Lachnospiraceae ND3007 group	42710
+Lachnospiraceae NK3A20 group	33341
+Lachnospiraceae NK4A136 group	24820
+Lachnospiraceae UCG-002	9329
+Lachnospiraceae UCG-003	1297
+Lachnospiraceae UCG-004	5860
+Lachnospiraceae UCG-008	6208
+Marvinbryantia	4579
+metagenome	1227
+Oribacterium	28996
+Oscillospira	3431
+Parabacteroides	33152
+Peptococcus	1818
+Phascolarctobacterium	15101
+Phoenicibacter	14199
+Prevotella 1	81434
+Prevotella 2	19750
+Prevotella 9	248688
+Prevotellaceae UCG-001	4011
+Prevotellaceae UCG-003	4634
+Pygmaiobacter	760
+Rikenellaceae RC9 gut group	148166
+Roseburia	8429
+Ruminiclostridium 6	3200
+Ruminiclostridium 9	7678
+Ruminococcaceae NK4A214 group	35471
+Ruminococcaceae UCG-002	18673
+Ruminococcaceae UCG-003	5939
+Ruminococcaceae UCG-005	46925
+Ruminococcaceae UCG-008	11810
+Ruminococcaceae UCG-010	14865
+Ruminococcaceae UCG-011	851
+Ruminococcaceae UCG-013	1318
+Ruminococcaceae UCG-014	36960
+Ruminococcus 1	6803
+Ruminococcus 2	1305
+Senegalimassilia	6367
+Solobacterium	2792
+Sphaerochaeta	13506
+Subdoligranulum	48101
+Succinivibrio	44918
+Sutterella	38083
+Synergistes	981
+Treponema 2	26825
+Unclassified	1207763
+uncultured bacterium	238522
+uncultured rumen bacterium	1798
+Z20	1308

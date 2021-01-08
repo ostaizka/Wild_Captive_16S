@@ -1,0 +1,87 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	1981
+[Eubacterium] oxidoreducens group	12
+[Eubacterium] ruminantium group	12
+[Ruminococcus] torques group	30
+Acetitomaculum	525
+Acidaminococcus	16
+Akkermansia	4897
+Anaerobium	38
+Anaeroplasma	22
+Azovibrio	55
+Bacteroides	221
+Blautia	287
+Candidatus Methanogranum	9
+Candidatus Soleaferrea	107
+Cellulosilyticum	149
+Christensenellaceae R-7 group	2305
+Clostridium sensu stricto 1	27
+Clostridium sensu stricto 5	18
+Coprococcus 2	54
+Coprococcus 3	618
+Defluviitalea	39
+Defluviitaleaceae UCG-011	23
+Dialister	137
+Dielma	6
+DNF00809	10
+Dorea	87
+Enterorhabdus	161
+Faecalibacterium	18
+Family XIII AD3011 group	333
+Family XIII UCG-001	69
+Fibrobacter	10
+Flavonifractor	10
+Fusicatenibacter	20
+Hydrogenoanaerobacterium	54
+Intestinibacter	86
+Intestinimonas	13
+Lachnobacterium sp. wal 14165	214
+Lachnoclostridium	125
+Lachnoclostridium 5	122
+Lachnospiraceae AC2044 group	553
+Lachnospiraceae NC2004 group	340
+Lachnospiraceae ND3007 group	28
+Lachnospiraceae NK4A136 group	1134
+Lachnospiraceae NK4B4 group	461
+Lachnospiraceae UCG-001	53
+Lachnospiraceae UCG-008	116
+Lactonifactor	41
+Marvinbryantia	85
+Megasphaera	14
+Methanosphaera	16
+p-1088-a5 gut group	1029
+Papillibacter	70
+Parabacteroides	123
+Parvibacter	338
+Pentatrichomonas	21
+Phascolarctobacterium	89
+Prevotella 1	899
+Prevotella 7	409
+Prevotellaceae UCG-001	786
+Prunus mume (Japanese apricot)	13
+Rikenellaceae RC9 gut group	837
+Romboutsia	46
+Roseburia	314
+Ruminiclostridium	42
+Ruminiclostridium 6	248
+Ruminiclostridium 9	127
+Ruminococcaceae NK4A214 group	1516
+Ruminococcaceae UCG-002	152
+Ruminococcaceae UCG-003	102
+Ruminococcaceae UCG-005	6747
+Ruminococcaceae UCG-009	348
+Ruminococcaceae UCG-010	1260
+Ruminococcaceae UCG-013	965
+Ruminococcaceae UCG-014	897
+Ruminococcaceae V9D2013 group	14
+Ruminococcus 1	506
+Ruminococcus 2	124
+Terrisporobacter	24
+Treponema 2	29
+Tyzzerella	16
+Tyzzerella 4	67
+Unclassified	8604
+uncultured bacterium	3617
+uncultured Coriobacteriaceae bacterium	17
+uncultured rumen bacterium	567
+Victivallis	52

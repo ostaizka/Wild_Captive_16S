@@ -1,0 +1,52 @@
+Taxa	Counts
+Acidovorax	26
+Acinetobacter	8449
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	33
+Arachidicoccus	26
+Arthrobacter	873
+Bacillus	568
+Brachybacterium	47
+Brevibacterium	40
+Brochothrix	32
+Campylobacter	17
+Carnobacterium	2079
+Chryseobacterium	195
+Clostridium sensu stricto 1	3790
+Clostridium sensu stricto 11	224
+Clostridium sensu stricto 13	488
+Delftia	33
+Edwardsiella	587
+Enterobacter	311
+Enterococcus	159
+Escherichia-Shigella	22889
+Flavobacterium	85
+Fusobacterium	673
+Glutamicibacter	1507
+Hafnia-Obesumbacterium	46
+Helicobacter	17
+Kurthia	39
+Leucobacter	29
+Lysinibacillus	1831
+Methylobacterium	32
+Ochrobactrum	46
+Paenibacillus	36
+Paeniclostridium	813
+Paeniglutamicibacter	122
+Pedobacter	98
+Peptostreptococcus	12
+Plesiomonas	1328
+Pseudomonas	82
+Psychrobacillus	245
+Psychrobacter	43447
+Rhizobacter	40
+Rhodanobacter	246
+Romboutsia	21
+Solibacillus	256
+Sphingobacterium	258
+Sphingomonas	46
+Sporosarcina	10056
+Streptococcus	31
+Taibaiella	80
+Terrisporobacter	131
+Unclassified	876
+uncultured bacterium	14

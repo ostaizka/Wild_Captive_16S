@@ -1,0 +1,34 @@
+Taxa	Counts
+Aeromonas	1178
+Campylobacter	63
+Cetobacterium	19
+Clostridium sensu stricto 1	4223
+Clostridium sensu stricto 11	39
+Enterobacter	75
+Epulopiscium	14
+Erysipelothrix	49
+Escherichia-Shigella	838
+Falsochrobactrum	16
+Fusobacterium	1751
+Helicobacter	16
+Hoeflea	34
+Ignatzschineria	182
+Klebsiella	82
+Lactococcus	166
+Moellerella	153
+Ochrobactrum	6
+Paeniclostridium	2546
+Paenochrobactrum	17
+Paraclostridium	598
+Peptoclostridium	64
+Plesiomonas	3119
+Proteus	275
+Pseudochrobactrum	6
+Psychrobacter	14
+Romboutsia	792
+Ruminococcaceae UCG-011	309
+Savagea	28
+Serratia	76
+Terrisporobacter	2
+Unclassified	1876
+Vagococcus	57

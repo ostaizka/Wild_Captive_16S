@@ -1,0 +1,22 @@
+Taxa	Counts
+Aeromonas	244
+Blautia	59
+Cellulosilyticum	6
+Cetobacterium	482
+Clostridium sensu stricto 1	10537
+Clostridium sensu stricto 11	3
+Clostridium sensu stricto 13	648
+Clostridium sensu stricto 2	73
+Epulopiscium	NA
+Escherichia-Shigella	89
+Fusobacterium	5256
+Paeniclostridium	123
+Peptoclostridium	14
+Peptostreptococcus	12
+Plesiomonas	499
+Romboutsia	636
+Ruminococcaceae UCG-011	222
+Sarcina	40
+Terrisporobacter	2435
+Turicibacter	33
+Unclassified	2784

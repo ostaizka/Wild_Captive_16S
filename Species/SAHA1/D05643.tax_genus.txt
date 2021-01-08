@@ -1,0 +1,52 @@
+Taxa	Counts
+Acinetobacter	91
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	44
+Arthrobacter	35
+Bacillus	469
+Bacteroides	39
+Carnobacterium	251
+Cellulosilyticum	883
+Cetobacterium	62759
+Christensenellaceae R-7 group	86
+Clostridium sensu stricto 1	1289
+Clostridium sensu stricto 13	63
+Clostridium sensu stricto 3	292
+Clostridium sensu stricto 5	116
+Comamonas	19
+Curvibacter	54
+Cutibacterium	13
+Delftia	165
+Edwardsiella	840
+Eggerthella	110
+Enterobacter	190
+Enterococcus	84
+Epulopiscium	172
+Erysipelothrix	988
+Escherichia-Shigella	660
+Herbaspirillum	78
+Ignatzschineria	25
+Jeotgalicoccus	201
+Kurthia	30
+Lacticigenium	27
+Lactococcus	28
+Leucobacter	49
+Lysinibacillus	1088
+Ochrobactrum	286
+Paenibacillus	42
+Paeniglutamicibacter	16
+Pelomonas	14
+Plesiomonas	490
+Proteus	171
+Pseudomonas	124
+Psychrobacter	300
+Romboutsia	141
+Savagea	860
+Serratia	34
+Sphingomonas	77
+Sporosarcina	151
+Stenotrophomonas	31
+Streptococcus	113
+Terrisporobacter	1098
+Tissierella	67
+Unclassified	594
+Vagococcus	147

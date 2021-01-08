@@ -1,0 +1,87 @@
+Taxa	Counts
+[Bacteroides] pectinophilus group	4
+[Eubacterium] coprostanoligenes group	107
+[Eubacterium] eligens group	27
+[Eubacterium] hallii group	335
+[Ruminococcus] gauvreauii group	130
+[Ruminococcus] torques group	31
+Acidaminococcus	142
+Agathobacter	793
+Alloprevotella	184
+Anaerostipes	300
+Anaerovibrio	5
+Bifidobacterium	372
+Blautia	694
+Butyricicoccus	37
+CAG-56	7
+CAG-873	4
+Christensenellaceae R-7 group	28
+Clostridium sensu stricto 1	472
+Collinsella	174
+Coprococcus 1	27
+Coprococcus 2	159
+Desulfovibrio	17
+dgA-11 gut group	4
+Dialister	479
+Dorea	231
+Enterococcus	10
+Enterorhabdus	33
+Erysipelotrichaceae UCG-003	174
+Escherichia-Shigella	66
+Faecalibacterium	773
+Family XIII AD3011 group	11
+Family XIII UCG-001	10
+Fusicatenibacter	95
+Helicobacter	4
+Intestinibacter	14
+Lachnoclostridium	68
+Lachnospira	11
+Lachnospiraceae FCS020 group	26
+Lachnospiraceae NC2004 group	2
+Lachnospiraceae ND3007 group	121
+Lachnospiraceae NK3A20 group	87
+Lachnospiraceae NK4A136 group	52
+Lachnospiraceae UCG-001	26
+Lachnospiraceae UCG-004	4
+Lachnospiraceae UCG-008	348
+Lactobacillus	52
+Lactococcus	270
+Leptotrichia	16
+Libanicoccus	23
+Marvinbryantia	71
+Megasphaera	36
+Methanobrevibacter	6
+Olsenella	6
+Oribacterium	158
+Oxalobacter	4
+Prevotella 2	43
+Prevotella 7	111
+Prevotella 9	1027
+Prevotellaceae NK3B31 group	71
+Prevotellaceae UCG-003	28
+Rikenellaceae RC9 gut group	17
+Romboutsia	10
+Roseburia	72
+Ruminiclostridium 5	31
+Ruminiclostridium 6	7
+Ruminiclostridium 9	31
+Ruminococcaceae NK4A214 group	42
+Ruminococcaceae UCG-002	58
+Ruminococcaceae UCG-003	3
+Ruminococcaceae UCG-005	121
+Ruminococcaceae UCG-008	342
+Ruminococcaceae UCG-010	21
+Ruminococcaceae UCG-013	9
+Ruminococcaceae UCG-014	78
+Ruminococcus 1	108
+Ruminococcus 2	10
+Senegalimassilia	21
+Slackia	76
+Solobacterium	171
+Streptococcus	58
+Subdoligranulum	313
+Treponema 2	10
+Tyzzerella	2
+Unclassified	827
+uncultured bacterium	61
+Weissella	11

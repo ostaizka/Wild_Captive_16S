@@ -1,0 +1,16 @@
+Taxa	Counts
+Aeromonas	11373
+Arthrospira PCC-7345	148
+Cetobacterium	20565
+Cyanobium PCC-6307	721
+Leptolyngbya ANT.L52.2	251
+Limnothrix	90
+Paraclostridium	2130
+Plesiomonas	864
+Pseudomonas	80
+Roseofilum AO1-A	657
+Rubribacterium	251
+Shewanella	590
+Unclassified	1455
+uncultured bacterium	128
+Vibrio	118

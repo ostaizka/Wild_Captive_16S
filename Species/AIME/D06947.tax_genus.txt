@@ -1,0 +1,13 @@
+Taxa	Counts
+Capnocytophaga	4
+Clostridium sensu stricto 1	206
+Escherichia-Shigella	1445
+Lactobacillus	55
+Lautropia	12
+Moraxella	4
+Streptococcus	39934
+Terrisporobacter	4
+Thermus	10
+Triticum aestivum (bread wheat)	123
+Turicibacter	11
+Unclassified	2516

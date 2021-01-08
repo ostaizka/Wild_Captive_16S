@@ -1,0 +1,12 @@
+Taxa	Counts
+Aeromonas	915
+Clostridium sensu stricto 1	10
+Flavobacterium	11
+Modestobacter	9
+Mycoplasma	7360
+Paraclostridium	157
+Rheinheimera	7
+Romboutsia	48
+Sphingobium	7
+Unclassified	4615
+Vibrio	21

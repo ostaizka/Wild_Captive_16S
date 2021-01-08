@@ -1,0 +1,22 @@
+Taxa	Counts
+Acidovorax	12
+Actinobacillus	471
+Cetobacterium	106
+Cloacibacterium	6
+Fusobacterium	29
+HIMB11	11
+Mesonia	3
+Paeniclostridium	15
+Parvimonas	4
+Peptostreptococcus	30
+Phocoenobacter	64
+Photobacterium	31
+Porphyromonas	14
+Pseudoalteromonas	86
+Psychrobacter	14
+Sediminispirochaeta	3
+SUP05 cluster	4
+Tenacibaculum	10
+Unclassified	26
+Ureaplasma	63
+Vibrio	622

@@ -1,0 +1,156 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	14
+Acinetobacter	472
+Actinocorallia	21
+Agrococcus	51
+Agromyces	68
+Aliihoeflea	25
+Alistipes	33
+Altererythrobacter	63
+Amaricoccus	81
+Anaerocolumna	77
+Anaerolinea	15
+Anaerosporobacter	15
+Anaerovorax	13
+Arthrobacter	59
+Bacillus	249
+Bacteroides	167
+Bauldia	16
+Blastocatella	10
+Blautia	54
+Brachybacterium	80
+Brevibacterium	23
+Brevundimonas	16
+Campylobacter	7
+Candidatus Alysiosphaera	13
+Candidatus Soleaferrea	13
+Caproiciproducens	14
+Cellulosilyticum	409
+Cellulosimicrobium	107
+Christensenellaceae R-7 group	131
+Chryseobacterium	1057
+Chryseolinea	14
+Citricoccus	46
+Citrobacter	222
+Clostridium sensu stricto 1	837
+Conexibacter	66
+Corynebacterium	40
+Defluviicoccus	15
+Deinococcus	16
+Demequina	8
+Dermatophilus	32
+Desulfovibrio	131
+Devosia	35
+Dietzia	40
+Ellin6055	45
+Enterobacter	201
+Enterococcus	38
+Erysipelothrix	32
+Escherichia-Shigella	140
+Faecalibacterium	83
+Family XIII AD3011 group	19
+Flavobacterium	72
+Fluviicola	26
+Fusobacterium	12
+Geminicoccus	16
+Gordonia	96
+Haoranjiania	75
+Hirschia	11
+Hydrogenoanaerobacterium	23
+Hydrogenophaga	20
+Hyphomicrobium	40
+Iamia	191
+Ilumatobacter	199
+IMCC26207	15
+Intestinibacter	136
+IS-44	10
+Isoptericola	111
+Janibacter	18
+Knoellia	25
+Kribbia	50
+Kytococcus	16
+Lachnoclostridium 10	538
+Lachnoclostridium 12	54
+Lachnoclostridium 5	49
+Lachnospiraceae AC2044 group	54
+Lachnospiraceae FCS020 group	12
+Lachnospiraceae NK4A136 group	105
+Lachnospiraceae NK4B4 group	15
+Lachnospiraceae UCG-007	618
+Lachnospiraceae UCG-009	13
+Lactococcus	29
+Limnobacter	28
+Luteimonas	458
+Lysinimonas	13
+Lysobacter	984
+Marinilutecoccus	10
+Mesorhizobium	88
+metagenome	27
+Methanobrevibacter	73
+Methanocorpusculum	27
+Microbulbifer	41
+Micrococcus	15
+Micromonospora	61
+Niabella	27
+Nitrospira	62
+Nocardioides	1746
+Novosphingobium	18
+OLB8	38
+Ornithinicoccus	54
+Ornithinimicrobium	102
+Oscillibacter	29
+Oscillospira	11
+Ottowia	146
+Oxalobacter	26
+Paracoccus	148
+Pedomicrobium	113
+Peredibacter	56
+Propionicicella	24
+Proteus	55
+Pseudactinotalea	48
+Pseudoclavibacter	38
+Pseudofulvimonas	20
+Pseudorhodoplanes	38
+Pseudoxanthomonas	26
+Pyramidobacter	30
+Quadrisphaera	290
+Rhizobiales bacterium GB10	27
+Rhizorhapis	61
+Rhodobacter	20
+Rhodobaculum	81
+Rhodococcus	27
+Robiginitalea	56
+Ruminococcaceae NK4A214 group	23
+Ruminococcaceae UCG-002	13
+Ruminococcaceae UCG-010	112
+Ruminococcaceae UCG-014	77
+Ruminococcus 1	30
+S5-A14a	46
+Sarcina	51
+Serinicoccus	45
+Solirubrobacter	29
+Sphingobacterium	14
+Staphylococcus	30
+Stenotrophobacter	28
+Streptococcus	116
+Streptomyces	67
+Subdoligranulum	30
+Succinivibrio	59
+SWB02	13
+Taibaiella	86
+Terrabacter	59
+Terrimonas	5
+Terrisporobacter	185
+Tessaracoccus	30
+Tetrasphaera	139
+Thauera	15
+Thermomonas	156
+Truepera	8
+Unclassified	14026
+uncultured actinobacterium	100
+uncultured bacterium	806
+uncultured Iamia sp.	21
+uncultured rumen bacterium	14
+Vitellibacter	9
+W5053	16
+Woeseia	15

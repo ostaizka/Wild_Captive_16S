@@ -1,0 +1,62 @@
+Taxa	Counts
+[Bacteroides] pectinophilus group	47
+[Eubacterium] coprostanoligenes group	115
+[Eubacterium] nodatum group	2
+[Eubacterium] oxidoreducens group	3
+[Eubacterium] xylanophilum group	3
+A2	3
+Achromobacter	4
+Agathobacter	4
+Alistipes	155
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	2
+ASF356	7
+Bacteroides	47
+Blautia	15
+Butyrivibrio	67
+Candidatus Soleaferrea	2
+Corynebacterium 1	2
+Eisenbergiella	7
+GCA-900066575	7
+gut metagenome	134
+Helicobacter	647
+Jeotgalicoccus	3
+Kurthia	4
+Lachnoclostridium	8
+Lachnospiraceae FCS020 group	5
+Lachnospiraceae NK4A136 group	650
+Lachnospiraceae UCG-001	54
+Lachnospiraceae UCG-006	9
+Lachnospiraceae UCG-009	3
+Lactobacillus	85
+Marvinbryantia	5
+Methylobacterium	2
+Mucispirillum	5
+Muribaculum	10
+Odoribacter	3
+Oscillibacter	97
+Parabacteroides	4
+Prevotella 9	5
+Prevotellaceae Ga6A1 group	40
+Prevotellaceae UCG-001	111
+Pygmaiobacter	7
+Roseburia	19
+Ruminiclostridium	42
+Ruminiclostridium 5	8
+Ruminiclostridium 6	5
+Ruminiclostridium 9	97
+Ruminococcaceae NK4A214 group	5
+Ruminococcaceae UCG-003	6
+Ruminococcaceae UCG-005	9
+Ruminococcaceae UCG-009	8
+Ruminococcaceae UCG-010	16
+Ruminococcaceae UCG-013	2
+Ruminococcaceae UCG-014	402
+Ruminococcus 1	120
+Treponema 2	14
+Tyzzerella	3
+UBA1819	7
+Unclassified	9185
+uncultured bacterium	5536
+uncultured Bacteroidales bacterium	171
+uncultured organism	29
+unidentified	2

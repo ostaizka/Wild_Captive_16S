@@ -1,0 +1,13 @@
+Taxa	Counts
+[Eubacterium] fissicatena group	208
+Cellulosilyticum	202
+Clostridium sensu stricto 1	22911
+Clostridium sensu stricto 13	406
+Clostridium sensu stricto 2	129
+Intestinibacter	995
+Lachnoclostridium 12	566
+Lachnospiraceae UCG-007	628
+Ruminiclostridium	178
+Sarcina	835
+Terrisporobacter	4907
+Unclassified	78945

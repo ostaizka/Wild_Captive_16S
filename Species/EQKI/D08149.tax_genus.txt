@@ -1,0 +1,55 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	15
+[Eubacterium] coprostanoligenes group	610
+Acetitomaculum	93
+Actinobacillus	57
+Agathobacter	123
+Alistipes	16
+Anaerosporobacter	46
+Anaerovorax	448
+Campylobacter	143
+Christensenellaceae R-7 group	1877
+Defluviitaleaceae UCG-011	37
+FD2005	22
+Fibrobacter	230
+hoa5-07d05 gut group	659
+Hydrogenoanaerobacterium	13
+Lachnospiraceae AC2044 group	6183
+Lachnospiraceae ND3007 group	259
+Lachnospiraceae NK4A136 group	939
+Lachnospiraceae UCG-002	13
+Lachnospiraceae UCG-006	114
+Lachnospiraceae UCG-008	238
+Lachnospiraceae UCG-009	308
+Lachnospiraceae XPB1014 group	659
+Marvinbryantia	95
+Methanimicrococcus	12
+Mycoplasma	24
+Oribacterium	379
+p-1088-a5 gut group	52
+Papillibacter	179
+Phascolarctobacterium	712
+Prevotellaceae UCG-004	387
+Pseudobutyrivibrio	58
+Quinella	161
+Rikenellaceae RC9 gut group	4935
+Ruminiclostridium 1	409
+Ruminococcaceae NK4A214 group	2625
+Ruminococcaceae UCG-002	859
+Ruminococcaceae UCG-004	164
+Ruminococcaceae UCG-005	797
+Ruminococcaceae UCG-010	2148
+Ruminococcaceae UCG-014	717
+Ruminococcaceae V9D2013 group	40
+Ruminococcus 1	1332
+Saccharofermentans	56
+Sediminispirochaeta	60
+SP3-e08	130
+Streptococcus	105
+Terrisporobacter	37
+Treponema 2	1112
+Unclassified	10109
+uncultured bacterium	7539
+uncultured Lachnospiraceae bacterium	22
+uncultured rumen bacterium	203
+Z20	145

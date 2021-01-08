@@ -1,0 +1,9 @@
+Taxa	Counts
+Actinobacillus	2306
+Cetobacterium	52
+Clostridium sensu stricto 1	272
+Paeniclostridium	18
+Phocoenobacter	21
+Romboutsia	31
+Tyzzerella 3	324
+Unclassified	21

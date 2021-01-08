@@ -1,0 +1,66 @@
+Taxa	Counts
+[Eubacterium] brachy group	7
+[Eubacterium] coprostanoligenes group	57
+[Eubacterium] nodatum group	4
+[Eubacterium] xylanophilum group	102
+28-4	8
+A2	10
+Acetatifactor	10
+Alistipes	2114
+Anaerofilum	3
+Anaerotruncus	2
+ASF356	7
+Bacteroides	45
+Bilophila	42
+Blautia	401
+Butyricicoccus	3
+Candidatus Soleaferrea	14
+Cronobacter	25
+Dorea	3
+Eisenbergiella	8
+Elusimicrobium	22
+Escherichia-Shigella	4
+Flavisolibacter	3
+Flavonifractor	9
+GCA-900066575	34
+gut metagenome	55
+Helicobacter	160
+Hydrogenoanaerobacterium	2
+Intestinimonas	36
+Lachnoclostridium	20
+Lachnoclostridium 5	231
+Lachnospiraceae FCS020 group	16
+Lachnospiraceae NK4A136 group	1640
+Lachnospiraceae UCG-001	162
+Lachnospiraceae UCG-006	14
+Lactobacillus	21
+Mucispirillum	344
+Muribaculum	19
+Odoribacter	19
+Oscillibacter	237
+Oxalobacter	3
+Peptococcus	7
+Prevotella 9	3
+Prevotellaceae UCG-001	53
+Rikenella	8
+Roseburia	443
+Ruminiclostridium	346
+Ruminiclostridium 1	3
+Ruminiclostridium 5	15
+Ruminiclostridium 6	9
+Ruminiclostridium 9	239
+Ruminococcaceae NK4A214 group	11
+Ruminococcaceae UCG-003	26
+Ruminococcaceae UCG-005	13
+Ruminococcaceae UCG-009	17
+Ruminococcaceae UCG-010	7
+Ruminococcaceae UCG-014	5
+Ruminococcus 1	101
+Staphylococcus	11
+Tyzzerella	15
+Unclassified	6736
+uncultured bacterium	5991
+uncultured Bacteroidales bacterium	34
+uncultured Clostridiales bacterium	32
+uncultured organism	802
+XBB1006	16

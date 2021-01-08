@@ -1,0 +1,89 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	13
+[Eubacterium] coprostanoligenes group	2244
+[Eubacterium] nodatum group	25
+[Eubacterium] oxidoreducens group	66
+[Eubacterium] ruminantium group	31
+[Eubacterium] ventriosum group	65
+Agathobacter	175
+Akkermansia	1333
+Alistipes	1941
+Alloprevotella	100
+Anaerosporobacter	150
+Anaerovibrio	41
+Anaerovorax	49
+Bacillus	10
+Bacteroides	3433
+Blautia	14
+Butyrivibrio	61
+Campylobacter	24
+Candidatus Soleaferrea	179
+Christensenellaceae R-7 group	1711
+Clostridium sensu stricto 1	47
+Clostridium sensu stricto 6	9
+Coprococcus 2	91
+Coprococcus 3	51
+Defluviitaleaceae UCG-011	42
+dgA-11 gut group	470
+Dorea	39
+Elusimicrobium	136
+Family XIII AD3011 group	125
+Fibrobacter	10
+Hydrogenoanaerobacterium	68
+Intestinimonas	27
+Lachnoclostridium	142
+Lachnoclostridium 10	225
+Lachnospiraceae AC2044 group	392
+Lachnospiraceae FCS020 group	186
+Lachnospiraceae NC2004 group	66
+Lachnospiraceae NK4A136 group	517
+Lachnospiraceae UCG-008	31
+Lachnospiraceae UCG-010	133
+Mailhella	148
+Methanobrevibacter	28
+Negativibacillus	23
+Odoribacter	23
+Oscillibacter	113
+Oscillospira	23
+Paeniclostridium	83
+Papillibacter	50
+Parabacteroides	30
+Parasutterella	64
+Phascolarctobacterium	592
+Prevotella 1	170
+Prevotellaceae Ga6A1 group	27
+Prevotellaceae UCG-001	236
+Prevotellaceae UCG-003	784
+Prevotellaceae UCG-004	1240
+Rikenellaceae RC9 gut group	4458
+Romboutsia	74
+Roseburia	448
+Ruminiclostridium	63
+Ruminiclostridium 1	26
+Ruminiclostridium 6	130
+Ruminiclostridium 9	95
+Ruminobacter	362
+Ruminococcaceae NK4A214 group	436
+Ruminococcaceae UCG-002	448
+Ruminococcaceae UCG-004	35
+Ruminococcaceae UCG-005	6639
+Ruminococcaceae UCG-009	385
+Ruminococcaceae UCG-010	7214
+Ruminococcaceae UCG-011	312
+Ruminococcaceae UCG-013	1694
+Ruminococcaceae UCG-014	481
+Ruminococcus 1	828
+Ruminococcus 2	112
+Succinivibrio	1876
+Treponema 2	710
+Turicibacter	15
+Tyzzerella	21
+Tyzzerella 4	348
+Unclassified	11198
+uncultured bacterium	5445
+uncultured Bacteroidales bacterium	401
+uncultured Parabacteroides sp.	599
+uncultured Porphyromonadaceae bacterium	429
+uncultured rumen bacterium	280
+Victivallis	78
+XBB1006	15

@@ -1,0 +1,32 @@
+Taxa	Counts
+[Eubacterium] ruminantium group	603
+[Eubacterium] xylanophilum group	794
+28-4	82
+Acetitomaculum	35
+Alistipes	106
+Anaeroplasma	10
+Anaerotruncus	4
+Blautia	33
+Coprococcus 2	227
+Desulfovibrio	73
+Dorea	26
+GCA-900066575	277
+Helicobacter	441
+Lachnoclostridium	142
+Lachnospiraceae NK4A136 group	12620
+Lachnospiraceae UCG-006	266
+Lachnospiraceae UCG-008	476
+Lactobacillus	663
+Mucispirillum	69
+Odoribacter	28
+Oscillibacter	238
+Roseburia	217
+Ruminiclostridium	529
+Ruminiclostridium 5	37
+Ruminiclostridium 6	21
+Ruminiclostridium 9	372
+Ruminococcaceae UCG-014	51
+Ruminococcus 1	452
+Tyzzerella	25
+Unclassified	3933
+uncultured bacterium	4189

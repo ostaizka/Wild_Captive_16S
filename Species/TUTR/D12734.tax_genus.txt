@@ -1,0 +1,14 @@
+Taxa	Counts
+Actinobacillus	105
+Cetobacterium	2226
+Clostridium sensu stricto 1	184
+Maritimimonas	17
+Paeniclostridium	248
+Paraclostridium	585
+Phocoenobacter	73
+Photobacterium	269
+Porphyromonas	2
+Psychrobacter	10
+Tenacibaculum	9
+Unclassified	49
+uncultured Eubacterium sp.	6

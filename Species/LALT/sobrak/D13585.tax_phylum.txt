@@ -1,0 +1,16 @@
+Taxa	Counts
+Actinobacteria	631
+Bacteroidetes	40705
+Chloroflexi	80
+Cyanobacteria	640
+Epsilonbacteraeota	496
+Euryarchaeota	4241
+Fibrobacteres	268
+Firmicutes	98996
+Kiritimatiellaeota	1498
+Lentisphaerae	361
+Planctomycetes	86
+Proteobacteria	422
+Spirochaetes	26704
+Synergistetes	161
+Tenericutes	33596

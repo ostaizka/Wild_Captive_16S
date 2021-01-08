@@ -1,0 +1,68 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	17881
+[Eubacterium] eligens group	2386
+[Eubacterium] hallii group	1236
+Acinetobacter	144416
+Agathobacter	14654
+Alloprevotella	3476
+Anaerostipes	2817
+Anaerovibrio	3212
+Bifidobacterium	12235
+Blautia	3174
+Butyricicoccus	311
+Campylobacter	602
+Cerasicoccus	3032
+Chishuiella	720
+Christensenellaceae R-7 group	6475
+Collinsella	1932
+Coriobacteriaceae UCG-003	8700
+Dialister	4888
+Dorea	1064
+Enterorhabdus	1223
+Erysipelotrichaceae UCG-003	1888
+Erysipelotrichaceae UCG-006	3381
+Faecalibacterium	11607
+Family XIII AD3011 group	430
+Family XIII UCG-001	2474
+Fibrobacter	1889
+Fusicatenibacter	1142
+GCA-900066575	2769
+Holdemanella	1196
+Intestinibacter	319
+Kurthia	42398
+Lachnoclostridium	4764
+Lachnospiraceae ND3007 group	6631
+Lachnospiraceae NK3A20 group	3037
+Lachnospiraceae NK4A136 group	6955
+Lachnospiraceae UCG-004	7448
+Lactococcus	1076
+Olsenella	2869
+Oribacterium	1454
+Oscillospira	263
+Oxalobacter	505
+Peptococcus	523
+Phascolarctobacterium	2126
+Prevotella 7	32608
+Prevotella 9	12414
+Pseudomonas	2861
+Rikenellaceae RC9 gut group	8296
+Roseburia	1712
+Ruminiclostridium 9	852
+Ruminococcaceae NK4A214 group	9168
+Ruminococcaceae UCG-002	14557
+Ruminococcaceae UCG-003	1938
+Ruminococcaceae UCG-005	4778
+Ruminococcaceae UCG-008	34380
+Ruminococcaceae UCG-010	7418
+Ruminococcaceae UCG-013	268
+Ruminococcaceae UCG-014	15234
+Ruminococcus 1	441
+Rummeliibacillus	9031
+Senegalimassilia	1259
+Solobacterium	3325
+Subdoligranulum	8670
+Succinivibrio	2654
+Sutterella	3285
+Unclassified	206159
+uncultured bacterium	3322
+uncultured rumen bacterium	379

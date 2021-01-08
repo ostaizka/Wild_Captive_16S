@@ -1,0 +1,46 @@
+Taxa	Counts
+[Ruminococcus] gnavus group	4785
+[Ruminococcus] torques group	36
+Actinomyces	135
+Agrococcus	24
+Arthrobacter	5
+Bacteroides	35
+Blastococcus	16
+Blautia	1684
+Brevibacterium	84
+Brevundimonas	18
+Catenisphaera	4109
+Clostridium sensu stricto 1	2374
+Collinsella	1839
+Corynebacterium	64
+Corynebacterium 1	762
+Devosia	9
+Dietzia	939
+Dorea	132
+Erysipelatoclostridium	89
+Escherichia-Shigella	1459
+Fusobacterium	52
+Gemella	41
+Jeotgalibaca	45
+Kocuria	149
+Lachnoclostridium	1380
+Lactococcus	29
+Leucobacter	10
+Macrococcus	83
+Megamonas	26
+Nosocomiicoccus	17
+Paeniclostridium	1935
+Paraclostridium	5
+Parvimonas	35
+Peptoclostridium	254
+Phascolarctobacterium	6
+Pseudomonas	37
+Rothia	13
+Ruminiclostridium 5	24
+Staphylococcus	136
+Streptococcus	629
+Terrisporobacter	31
+TM7 phylum sp. canine oral taxon 250	9
+Unclassified	2043
+uncultured bacterium	57
+uncultured Thermomicrobia bacterium	24

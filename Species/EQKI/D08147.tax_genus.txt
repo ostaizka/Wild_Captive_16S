@@ -1,0 +1,58 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	940
+[Eubacterium] ruminantium group	29
+Acetitomaculum	148
+Agathobacter	89
+Alistipes	33
+Anaerosporobacter	304
+Anaerovorax	204
+Campylobacter	41
+Christensenellaceae R-7 group	1052
+Clostridium sensu stricto 1	14
+dgA-11 gut group	163
+Elusimicrobium	44
+Erysipelotrichaceae UCG-004	33
+Family XIII AD3011 group	58
+Fibrobacter	854
+hoa5-07d05 gut group	474
+Lachnoclostridium 10	65
+Lachnospiraceae AC2044 group	1838
+Lachnospiraceae ND3007 group	185
+Lachnospiraceae NK4A136 group	1042
+Lachnospiraceae UCG-006	110
+Lachnospiraceae UCG-008	195
+Lachnospiraceae UCG-009	406
+Lachnospiraceae XPB1014 group	321
+Marvinbryantia	65
+Methanocorpusculum	39
+Oribacterium	292
+Oscillibacter	21
+p-1088-a5 gut group	26
+Papillibacter	332
+Phascolarctobacterium	976
+Prevotella 1	60
+Prevotellaceae UCG-001	145
+Prevotellaceae UCG-003	617
+Prevotellaceae UCG-004	916
+Pyramidobacter	42
+Quinella	87
+Rikenellaceae RC9 gut group	7151
+Ruminiclostridium 1	229
+Ruminococcaceae NK4A214 group	2193
+Ruminococcaceae UCG-002	390
+Ruminococcaceae UCG-004	66
+Ruminococcaceae UCG-005	776
+Ruminococcaceae UCG-010	2123
+Ruminococcaceae UCG-013	79
+Ruminococcaceae UCG-014	293
+Ruminococcaceae V9D2013 group	10
+Ruminococcus 1	137
+Ruminococcus 2	175
+Sediminispirochaeta	58
+SP3-e08	47
+Streptococcus	117
+Treponema 2	978
+Unclassified	10489
+uncultured bacterium	7161
+uncultured Lachnospiraceae bacterium	19
+uncultured rumen bacterium	712

@@ -1,0 +1,31 @@
+Taxa	Counts
+1174-901-12	76
+Acinetobacter	100
+Aeromonas	22
+Cetobacterium	46
+Citrobacter	20
+Clostridium sensu stricto 1	38549
+Coprococcus 2	6
+Cronobacter	18
+Enterobacter	160
+Escherichia-Shigella	910
+Hafnia-Obesumbacterium	2897
+Lactobacillus	1216
+Lactococcus	42
+Leuconostoc	594
+Massilia	28
+Methylorosula	38
+Pseudochrobactrum	18
+Pseudomonas	3211
+Rahnella	80
+Rheinheimera	54
+Rhodopseudomonas	6
+Sarcina	160
+Serratia	1841
+Sphingobacterium	46
+Streptococcus	258
+Terrisporobacter	738
+Triticum aestivum (bread wheat)	68
+Turicibacter	942
+Unclassified	6022
+Vogesella	60

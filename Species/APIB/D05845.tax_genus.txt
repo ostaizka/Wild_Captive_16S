@@ -1,0 +1,4 @@
+Taxa	Counts
+Aeromonas	425
+Unclassified	549
+Vibrio	79

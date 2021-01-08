@@ -1,0 +1,30 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	417
+[Eubacterium] ruminantium group	604
+Acetitomaculum	103
+Alistipes	359
+Butyricicoccus	60
+Coprococcus 2	62
+GCA-900066575	22
+Helicobacter	524
+Lachnoclostridium	51
+Lachnospiraceae NK4A136 group	3912
+Lachnospiraceae UCG-001	102
+Lachnospiraceae UCG-006	88
+Lachnospiraceae UCG-008	51
+Lactobacillus	9336
+Mucispirillum	102
+Odoribacter	355
+Oscillibacter	410
+Prevotellaceae UCG-001	1508
+Roseburia	182
+Ruminiclostridium	392
+Ruminiclostridium 6	160
+Ruminiclostridium 9	546
+Ruminococcaceae NK4A214 group	11
+Ruminococcaceae UCG-005	48
+Ruminococcaceae UCG-009	47
+Ruminococcaceae UCG-014	18
+Ruminococcus 1	1052
+Unclassified	4374
+uncultured bacterium	4268

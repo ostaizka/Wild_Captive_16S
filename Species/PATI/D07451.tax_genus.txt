@@ -1,0 +1,32 @@
+Taxa	Counts
+[Ruminococcus] gnavus group	115
+[Ruminococcus] torques group	18
+Acidovorax	18
+Bacteroides	130
+Blautia	1297
+Brevundimonas	24
+Burkholderia-Caballeronia-Paraburkholderia	7
+Candidatus Saccharimonas	33
+Catenisphaera	31
+Christensenellaceae R-7 group	26
+Clostridium sensu stricto 1	167
+Collinsella	5984
+Corynebacterium	5
+Devosia	9
+Escherichia-Shigella	558
+Family XIII AD3011 group	2
+Fusobacterium	452
+Gemella	4
+Hydrogenophaga	8
+Lachnoclostridium	109
+Megamonas	26
+Paeniclostridium	11
+Peptoclostridium	4208
+Phascolarctobacterium	12
+Pseudomonas	27
+Slackia	31
+Staphylococcus	4
+Streptococcus	280
+Sutterella	35
+Unclassified	375
+uncultured bacterium	8

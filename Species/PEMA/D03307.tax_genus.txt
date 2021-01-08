@@ -1,0 +1,11 @@
+Taxa	Counts
+Alistipes	197
+Anaeroplasma	19
+Coprococcus 2	19
+Lachnospiraceae NK4A136 group	503
+Lactobacillus	3542
+Ruminococcaceae UCG-010	14
+Ruminococcaceae UCG-013	13
+Ruminococcus 1	76
+Unclassified	11805
+uncultured bacterium	14236

@@ -1,0 +1,5 @@
+Taxa	Counts
+Cetobacterium	318
+Clostridium sensu stricto 1	162
+Tyzzerella 3	77
+Unclassified	6

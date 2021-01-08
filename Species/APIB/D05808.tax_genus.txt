@@ -1,0 +1,5 @@
+Taxa	Counts
+Aeromonas	1247
+Cetobacterium	49010
+Plesiomonas	115
+Unclassified	2384

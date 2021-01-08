@@ -1,0 +1,5 @@
+Taxa	Counts
+Bacteroidetes	1282
+Firmicutes	36140
+Fusobacteria	1882
+Proteobacteria	63956

@@ -1,0 +1,27 @@
+Taxa	Counts
+Anaerosporobacter	2
+Bacteroides	1897
+Bilophila	69
+Blautia	15
+Campylobacter	13
+Clostridium sensu stricto 1	326
+Clostridium sensu stricto 2	33
+Edwardsiella	110
+Enterobacter	125
+Epulopiscium	8
+Escherichia-Shigella	979
+Fusobacterium	3167
+Helicobacter	53
+Klebsiella	5
+Lachnospiraceae UCG-004	36
+Megamonas	46
+Parabacteroides	38
+Parasutterella	5
+Phascolarctobacterium	306
+Plesiomonas	15
+Proteus	412
+Salmonella	22
+Terrisporobacter	14
+Tyzzerella	3
+Unclassified	951
+uncultured bacterium	7

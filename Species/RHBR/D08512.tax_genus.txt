@@ -1,0 +1,88 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	1322
+[Eubacterium] fissicatena group	3
+[Eubacterium] hallii group	11
+[Eubacterium] nodatum group	4
+[Eubacterium] oxidoreducens group	6
+[Ruminococcus] gauvreauii group	38
+[Ruminococcus] gnavus group	59
+[Ruminococcus] torques group	100
+Acetitomaculum	214
+Akkermansia	4877
+Alistipes	9
+Anaerobium	19
+Anaerofustis	4
+Bacteroides	385
+Blautia	229
+Candidatus Soleaferrea	60
+Christensenellaceae R-7 group	1610
+Clostridium sensu stricto 5	86
+Coprococcus 3	799
+Defluviitaleaceae UCG-011	22
+Dialister	5
+Dielma	101
+DNF00809	13
+Dorea	71
+Enterorhabdus	5
+Erysipelotrichaceae UCG-003	33
+Faecalibacterium	391
+Family XIII AD3011 group	412
+Family XIII UCG-001	75
+Fibrobacter	6
+Flavonifractor	10
+GCA-900066575	5
+Helicobacter	8
+Intestinibacter	70
+Lachnoclostridium	398
+Lachnoclostridium 5	102
+Lachnospiraceae AC2044 group	845
+Lachnospiraceae FCS020 group	6
+Lachnospiraceae NC2004 group	179
+Lachnospiraceae ND3007 group	12
+Lachnospiraceae NK4A136 group	522
+Lachnospiraceae UCG-001	211
+Lachnospiraceae UCG-008	232
+Lachnospiraceae UCG-010	16
+Lachnospiraceae XPB1014 group	6
+Lactonifactor	31
+Marvinbryantia	310
+Negativibacillus	65
+Oribacterium	5
+Oscillibacter	29
+Oxalobacter	37
+p-1088-a5 gut group	252
+Papillibacter	33
+Parabacteroides	111
+Parvibacter	788
+Phascolarctobacterium	221
+Prevotella 1	5
+Prevotella 7	120
+Prevotella 9	18
+Prevotellaceae UCG-001	656
+Rikenellaceae RC9 gut group	422
+Robinsoniella	17
+Roseburia	119
+Ruminiclostridium	33
+Ruminiclostridium 6	155
+Ruminiclostridium 9	38
+Ruminococcaceae NK4A214 group	1109
+Ruminococcaceae UCG-002	114
+Ruminococcaceae UCG-003	55
+Ruminococcaceae UCG-005	3736
+Ruminococcaceae UCG-009	375
+Ruminococcaceae UCG-010	725
+Ruminococcaceae UCG-013	420
+Ruminococcaceae UCG-014	347
+Ruminococcaceae V9D2013 group	6
+Ruminococcus 1	285
+Ruminococcus 2	7
+Sphaerochaeta	19
+Streptococcus	7
+Subdoligranulum	10
+Syntrophococcus	7
+Treponema 2	35
+Tyzzerella	16
+Tyzzerella 4	39
+Unclassified	4274
+uncultured bacterium	3208
+uncultured rumen bacterium	192

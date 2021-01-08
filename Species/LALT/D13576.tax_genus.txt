@@ -1,0 +1,7 @@
+Taxa	Counts
+Christensenellaceae R-7 group	4
+Prevotellaceae UCG-003	4
+Rikenellaceae RC9 gut group	9
+Ruminococcaceae UCG-010	5
+Unclassified	5
+uncultured bacterium	10

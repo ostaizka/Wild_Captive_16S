@@ -1,0 +1,22 @@
+Taxa	Counts
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	4
+Bacillus	8
+Clostridium sensu stricto 1	18662
+Escherichia-Shigella	7965
+Helicobacter	92
+Lysinibacillus	27
+Megasphaera	4
+Methylobacterium	9
+Paenibacillus	15
+Paeniclostridium	14
+Paraclostridium	27
+Providencia	288
+Pseudarthrobacter	14
+Pseudomonas	19
+Romboutsia	385
+Sarcina	24
+Streptococcus	4536
+Terrisporobacter	3147
+Triticum aestivum (bread wheat)	199
+Turicibacter	2609
+Unclassified	5856

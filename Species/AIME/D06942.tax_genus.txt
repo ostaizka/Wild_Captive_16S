@@ -1,0 +1,14 @@
+Taxa	Counts
+Akkermansia	3
+Bacteroides	5
+Bouteloua dactyloides	12
+Clostridium sensu stricto 1	4492
+Escherichia-Shigella	20923
+Pseudomonas	8
+Streptococcus	821
+Terrisporobacter	663
+Thermus	8
+Triticum aestivum (bread wheat)	93
+Turicibacter	777
+Unclassified	1558
+uncultured bacterium	3

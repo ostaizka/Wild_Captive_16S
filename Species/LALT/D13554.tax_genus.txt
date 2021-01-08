@@ -1,0 +1,4 @@
+Taxa	Counts
+Christensenellaceae R-7 group	12
+Unclassified	11
+uncultured bacterium	12

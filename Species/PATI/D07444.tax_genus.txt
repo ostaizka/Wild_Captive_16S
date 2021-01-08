@@ -1,0 +1,21 @@
+Taxa	Counts
+Acinetobacter	7
+Anoxybacillus	538
+Chryseobacterium	323
+Corynebacterium 1	49
+Cutibacterium	113
+Delftia	2014
+Massilia	1022
+Meiothermus	314
+Methylobacterium	1024
+Microbacterium	119
+Mycoplasma	193
+Novosphingobium	23
+Pedobacter	63
+Pelomonas	96
+Pseudomonas	522
+Rhodococcus	539
+Rhodoferax	5
+Rothia	30
+Sphingomonas	9219
+Unclassified	121

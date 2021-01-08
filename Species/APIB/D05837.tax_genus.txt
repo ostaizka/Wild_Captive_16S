@@ -1,0 +1,3 @@
+Taxa	Counts
+Aeromonas	190
+Unclassified	251

@@ -1,0 +1,140 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	29
+[Eubacterium] coprostanoligenes group	1772
+[Eubacterium] nodatum group	37
+[Eubacterium] oxidoreducens group	50
+[Eubacterium] ruminantium group	46
+[Eubacterium] ventriosum group	88
+[Ruminococcus] torques group	42
+Acetitomaculum	13
+Acinetobacter	8518
+Aerococcus	251
+Aeromonas	265
+Aerosphaera	94
+Agathobacter	263
+Akkermansia	90
+Alistipes	1432
+Alkalibacterium	76
+Alloiococcus	24
+Alloprevotella	1138
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	15
+Altererythrobacter	20
+Amphibacillus	21
+Anaerosporobacter	116
+Anaerovibrio	94
+Anaerovorax	34
+Atopostipes	379
+Bacillus	66
+Bacteroides	1559
+Brevibacterium	25
+Campylobacter	14
+Candidatus Soleaferrea	101
+Cellulosilyticum	28
+Christensenellaceae R-7 group	1930
+Chryseobacterium	16
+Citricoccus	53
+Clostridium sensu stricto 1	215
+Clostridium sensu stricto 6	41
+Comamonas	58
+Coprococcus 2	79
+Coprococcus 3	16
+Corynebacterium	13
+Corynebacterium 1	176
+Defluviimonas	12
+Defluviitaleaceae UCG-011	41
+Desemzia	55
+dgA-11 gut group	354
+Dietzia	72
+Dorea	37
+Elusimicrobium	61
+Enhydrobacter	20
+Enteractinococcus	38
+Enterobacter	112
+Enterococcus	65
+Escherichia-Shigella	939
+Exiguobacterium	1809
+Facklamia	280
+Family XIII AD3011 group	121
+Geobacter	30
+Gillisia	17
+Hahella	75
+Hydrogenoanaerobacterium	59
+Intestinimonas	21
+Jeotgalibaca	34
+Jeotgalicoccus	422
+Kocuria	13
+Kurthia	205
+Lachnoclostridium	16
+Lachnoclostridium 10	216
+Lachnospiraceae AC2044 group	284
+Lachnospiraceae FCS020 group	284
+Lachnospiraceae NC2004 group	59
+Lachnospiraceae NK4A136 group	619
+Lachnospiraceae UCG-009	17
+Lachnospiraceae UCG-010	76
+Luteimonas	25
+Lysinibacillus	22
+Macrococcus	71
+Mailhella	159
+Massilia	66
+Methanocorpusculum	84
+Moraxella	24
+Negativibacillus	16
+Neisseria	29
+Ornithinimicrobium	47
+Oscillibacter	105
+Paeniclostridium	151
+Papillibacter	35
+Parabacteroides	41
+Parasutterella	89
+Phascolarctobacterium	253
+Planococcus	178
+Planomicrobium	33
+Pontibacter	28
+Prevotella 1	83
+Prevotellaceae UCG-001	48
+Prevotellaceae UCG-003	456
+Prevotellaceae UCG-004	886
+Pseudomonas	437
+Psychrobacter	257
+Rhodococcus	15
+Rikenellaceae RC9 gut group	3279
+Romboutsia	232
+Roseburia	792
+Ruminiclostridium	39
+Ruminiclostridium 1	27
+Ruminiclostridium 5	12
+Ruminiclostridium 6	104
+Ruminiclostridium 9	46
+Ruminobacter	365
+Ruminococcaceae NK4A214 group	476
+Ruminococcaceae UCG-002	405
+Ruminococcaceae UCG-004	28
+Ruminococcaceae UCG-005	5687
+Ruminococcaceae UCG-009	399
+Ruminococcaceae UCG-010	8148
+Ruminococcaceae UCG-011	192
+Ruminococcaceae UCG-013	1193
+Ruminococcaceae UCG-014	425
+Ruminococcus 1	606
+Ruminococcus 2	143
+Salinicoccus	447
+Solibacillus	93
+Streptococcus	157
+Succinivibrio	400
+Trabulsiella	21
+Treponema 2	1054
+Turicibacter	248
+Tyzzerella	30
+Tyzzerella 4	281
+Unclassified	8766
+uncultured bacterium	3771
+uncultured Bacteroidales bacterium	319
+uncultured Parabacteroides sp.	222
+uncultured Porphyromonadaceae bacterium	232
+uncultured rumen bacterium	152
+Vibrio	268
+Victivallis	71
+W5053	28
+XBB1006	19
+Yaniella	14

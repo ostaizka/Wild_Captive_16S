@@ -1,0 +1,57 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	51
+[Eubacterium] coprostanoligenes group	952
+[Eubacterium] oxidoreducens group	40
+[Eubacterium] ruminantium group	62
+[Eubacterium] ventriosum group	13
+Akkermansia	119
+Anaerovorax	1416
+Campylobacter	113
+Candidatus Soleaferrea	329
+Christensenellaceae R-7 group	646
+dgA-11 gut group	228
+Erysipelotrichaceae UCG-004	89
+Family XIII AD3011 group	181
+Fibrobacter	126
+GCA-900066225	32
+GCA-900066575	26
+hoa5-07d05 gut group	66
+Lachnoclostridium 10	249
+Lachnoclostridium 12	20
+Lachnospiraceae AC2044 group	506
+Lachnospiraceae NC2004 group	34
+Lachnospiraceae ND3007 group	223
+Lachnospiraceae NK4A136 group	199
+Lachnospiraceae UCG-008	27
+Lachnospiraceae UCG-009	349
+Lachnospiraceae XPB1014 group	79
+Methanocorpusculum	784
+Mycoplasma	129
+Oribacterium	151
+Oscillibacter	59
+Papillibacter	530
+Phascolarctobacterium	528
+Prevotella 1	175
+Prevotellaceae UCG-003	21
+Prevotellaceae UCG-004	427
+Rikenellaceae RC9 gut group	17077
+Ruminiclostridium	66
+Ruminiclostridium 1	72
+Ruminococcaceae NK4A214 group	1775
+Ruminococcaceae UCG-002	3141
+Ruminococcaceae UCG-004	16
+Ruminococcaceae UCG-005	337
+Ruminococcaceae UCG-010	1520
+Ruminococcaceae UCG-012	100
+Ruminococcaceae UCG-013	59
+Ruminococcaceae UCG-014	1363
+Ruminococcaceae V9D2013 group	132
+Ruminococcus 1	534
+Saccharofermentans	154
+Sediminispirochaeta	20
+SP3-e08	32
+Sporobacter	37
+Treponema 2	894
+Unclassified	12483
+uncultured bacterium	8692
+uncultured rumen bacterium	250

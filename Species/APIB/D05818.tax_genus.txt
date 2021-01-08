@@ -1,0 +1,19 @@
+Taxa	Counts
+Aeromonas	687
+Arcobacter	15
+C39	140
+Candidatus Aquiluna	53
+Cetobacterium	53
+Hydrogenophaga	111
+Limnohabitans	41
+MWH-UniP1 aquatic group	51
+Novispirillum	4
+Pelomonas	6
+Phreatobacter	10
+Plesiomonas	18
+Polynucleobacter	35
+Rheinheimera	29
+Rubellimicrobium	7
+Shewanella	38
+Tabrizicola	19
+Unclassified	1414

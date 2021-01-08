@@ -1,0 +1,29 @@
+Taxa	Counts
+Acinetobacter	18
+Aeromonas	108
+Algoriphagus	32
+Azoarcus	5
+Blastococcus	4
+Burkholderia-Caballeronia-Paraburkholderia	4
+Caedibacter	73
+Candidatus Aquiluna	52
+Candidatus Megaira	188
+Candidatus Trichorickettsia	22
+Chitinibacter	73
+Corynebacterium 1	6
+Defluviimonas	7
+Delftia	9
+Devosia	5
+Gemmatimonas	8
+Hydrogenophaga	103
+Limnohabitans	15
+MWH-UniP1 aquatic group	33
+NS3a marine group	50
+Paracoccus	25
+Polynucleobacter	32
+Pseudomonas	9
+Rheinheimera	19
+Shewanella	31
+Unclassified	830
+Vibrio	54
+Vogesella	9

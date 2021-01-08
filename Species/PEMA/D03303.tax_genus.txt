@@ -1,0 +1,29 @@
+Taxa	Counts
+[Bacteroides] pectinophilus group	151
+[Eubacterium] xylanophilum group	159
+Family XIII UCG-001	71
+GCA-900066575	130
+Helicobacter	493
+Intestinimonas	34
+Lachnoclostridium	116
+Lachnospiraceae FCS020 group	106
+Lachnospiraceae NC2004 group	62
+Lachnospiraceae NK4A136 group	17380
+Lachnospiraceae UCG-001	85
+Lachnospiraceae UCG-006	77
+Lachnospiraceae UCG-008	198
+Lactobacillus	2309
+Odoribacter	99
+Oscillibacter	738
+Roseburia	260
+Ruminiclostridium	1315
+Ruminiclostridium 5	53
+Ruminiclostridium 6	690
+Ruminiclostridium 9	2278
+Ruminococcaceae NK4A214 group	65
+Ruminococcaceae UCG-003	99
+Ruminococcaceae UCG-005	73
+Ruminococcaceae UCG-009	28
+Ruminococcaceae UCG-014	17
+Unclassified	7585
+uncultured bacterium	109

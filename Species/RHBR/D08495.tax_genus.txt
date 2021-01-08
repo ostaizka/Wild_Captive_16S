@@ -1,0 +1,78 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	4696
+[Eubacterium] fissicatena group	26
+[Eubacterium] ruminantium group	12
+[Eubacterium] ventriosum group	9
+[Eubacterium] xylanophilum group	18
+[Ruminococcus] torques group	94
+Acetitomaculum	62
+Akkermansia	2168
+ASF356	30
+Bacteroides	108
+Blautia	282
+Bosea	28
+Candidatus Methanogranum	14
+Candidatus Methanomethylophilus	27
+Candidatus Soleaferrea	65
+Christensenellaceae R-7 group	2123
+Coprococcus 3	101
+Dielma	42
+DNF00809	374
+Dorea	25
+Enterorhabdus	34
+Faecalibacterium	7
+Family XIII AD3011 group	309
+Family XIII UCG-001	21
+Fusicatenibacter	171
+Intestinimonas	98
+Lachnoclostridium	276
+Lachnoclostridium 10	18
+Lachnospira	41
+Lachnospiraceae NC2004 group	646
+Lachnospiraceae ND3007 group	58
+Lachnospiraceae NK4A136 group	1188
+Lachnospiraceae UCG-001	89
+Lachnospiraceae UCG-006	172
+Lachnospiraceae UCG-008	65
+Lachnospiraceae UCG-010	87
+Lachnospiraceae XPB1014 group	38
+Lactonifactor	28
+Marvinbryantia	323
+Megasphaera	71
+Negativibacillus	8
+Oscillospira	204
+Oxalobacter	18
+p-1088-a5 gut group	499
+Papillibacter	29
+Peptococcus	42
+Phascolarctobacterium	27
+Prevotella 1	224
+Prevotella 7	771
+Prevotellaceae NK3B31 group	21
+Pseudomonas	15
+Rikenellaceae RC9 gut group	349
+Roseburia	778
+Ruminiclostridium	375
+Ruminiclostridium 1	16
+Ruminiclostridium 5	37
+Ruminiclostridium 6	697
+Ruminiclostridium 9	191
+Ruminococcaceae NK4A214 group	3406
+Ruminococcaceae UCG-002	1881
+Ruminococcaceae UCG-003	350
+Ruminococcaceae UCG-005	3731
+Ruminococcaceae UCG-009	277
+Ruminococcaceae UCG-010	2119
+Ruminococcaceae UCG-013	434
+Ruminococcaceae UCG-014	926
+Ruminococcaceae V9D2013 group	9
+Ruminococcus 1	319
+Selenomonas	28
+Syntrophococcus	24
+Treponema 2	115
+Tyzzerella	21
+Tyzzerella 3	32
+Unclassified	10453
+uncultured bacterium	3526
+uncultured Clostridiales bacterium	14
+uncultured Thermoanaerobacterales bacterium	19

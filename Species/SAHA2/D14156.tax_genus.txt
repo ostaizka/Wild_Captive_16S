@@ -1,0 +1,20 @@
+Taxa	Counts
+Acinetobacter	151
+Cetobacterium	5499
+Clostridium sensu stricto 1	6318
+Enterococcus	2406
+Erysipelothrix	415
+Escherichia-Shigella	1703
+Lysinibacillus	102
+Paeniclostridium	396
+Paraclostridium	21
+Peptoclostridium	145
+Peptostreptococcus	132
+Pseudomonas	464
+Psychrobacter	683
+Romboutsia	1761
+Ruminococcaceae UCG-011	358
+Terrisporobacter	878
+Turicibacter	225
+Unclassified	2120
+Vagococcus	1228

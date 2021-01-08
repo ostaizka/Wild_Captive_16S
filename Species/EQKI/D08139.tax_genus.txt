@@ -1,0 +1,56 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	854
+Acetitomaculum	150
+Agathobacter	270
+Alistipes	31
+Anaerovorax	197
+Campylobacter	28
+Christensenellaceae R-7 group	545
+Clostridium sensu stricto 1	16
+Defluviitaleaceae UCG-011	39
+dgA-11 gut group	70
+Eisenbergiella	12
+Erysipelatoclostridium	24
+Family XIII AD3011 group	62
+FD2005	51
+Fibrobacter	2348
+hoa5-07d05 gut group	286
+Lachnoclostridium 10	109
+Lachnoclostridium 5	164
+Lachnospiraceae AC2044 group	3008
+Lachnospiraceae NC2004 group	32
+Lachnospiraceae ND3007 group	119
+Lachnospiraceae NK4A136 group	1480
+Lachnospiraceae UCG-002	10
+Lachnospiraceae UCG-006	162
+Lachnospiraceae UCG-008	408
+Lachnospiraceae UCG-009	555
+Lachnospiraceae XPB1014 group	799
+Marvinbryantia	114
+Oribacterium	257
+Papillibacter	181
+Peptococcus	9
+Phascolarctobacterium	911
+Prevotellaceae UCG-001	45
+Prevotellaceae UCG-003	151
+Prevotellaceae UCG-004	675
+Pyramidobacter	15
+Quinella	83
+Rikenellaceae RC9 gut group	5053
+Ruminiclostridium 1	84
+Ruminococcaceae NK4A214 group	1561
+Ruminococcaceae UCG-002	382
+Ruminococcaceae UCG-004	33
+Ruminococcaceae UCG-005	574
+Ruminococcaceae UCG-010	737
+Ruminococcaceae UCG-013	40
+Ruminococcaceae UCG-014	60
+Ruminococcus 1	585
+Saccharofermentans	218
+Sediminispirochaeta	9
+SP3-e08	77
+Treponema 2	1586
+Unclassified	8731
+uncultured bacterium	11254
+uncultured Lachnospiraceae bacterium	41
+Z20	37

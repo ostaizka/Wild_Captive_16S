@@ -1,0 +1,11 @@
+Taxa	Counts
+Arthrobacter	632
+Carnobacterium	116
+Flavobacterium	8
+Paenisporosarcina	15
+Pedobacter	7227
+Pseudomonas	8747
+Sanguibacter	26
+Sphingobacterium	382
+Stenotrophomonas	8
+Subtercola	353

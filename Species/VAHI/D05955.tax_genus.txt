@@ -1,0 +1,12 @@
+Taxa	Counts
+Aeromonas	2310
+Cetobacterium	3099
+Clostridium sensu stricto 1	254
+Enterobacter	32
+Flavobacterium	12
+Mycoplasma	9129
+Paraclostridium	128
+Plesiomonas	166
+Romboutsia	1920
+Unclassified	1224
+Vibrio	14

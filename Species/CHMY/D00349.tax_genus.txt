@@ -1,0 +1,21 @@
+Taxa	Counts
+[Eubacterium] fissicatena group	307
+Anaerosporobacter	331
+Anaerostipes	230
+Bacteroides	41844
+Burkholderia-Caballeronia-Paraburkholderia	75
+Cellulosilyticum	297
+Clostridioides	124
+Clostridium sensu stricto 1	2962
+Epulopiscium	319
+Erysipelatoclostridium	35602
+Hungatella	644
+Intestinibacter	217
+Lachnoclostridium	134
+Lachnoclostridium 10	818
+Lachnospira	4398
+Oscillibacter	522
+Robinsoniella	1517
+Salvia miltiorrhiza	146
+Terrisporobacter	1050
+Unclassified	26070

@@ -1,0 +1,35 @@
+Taxa	Counts
+[Acetivibrio] ethanolgignens group	8
+[Bacteroides] pectinophilus group	233
+[Eubacterium] coprostanoligenes group	12
+[Eubacterium] xylanophilum group	21
+28-4	67
+Acetitomaculum	114
+Alistipes	108
+Butyricicoccus	93
+Desulfovibrio	120
+Eisenbergiella	22
+Family XIII UCG-001	14
+GCA-900066575	134
+Helicobacter	1911
+Intestinimonas	63
+Lachnoclostridium	80
+Lachnospiraceae NK4A136 group	9673
+Lachnospiraceae UCG-001	274
+Lachnospiraceae UCG-006	92
+Lachnospiraceae UCG-008	258
+Lactobacillus	400
+Oscillibacter	774
+Peptococcus	19
+Roseburia	213
+Ruminiclostridium	1047
+Ruminiclostridium 6	289
+Ruminiclostridium 9	1689
+Ruminococcaceae UCG-003	97
+Ruminococcaceae UCG-005	21
+Ruminococcaceae UCG-009	19
+Treponema 2	85
+UBA1819	16
+Unclassified	5712
+uncultured bacterium	271
+unidentified	35

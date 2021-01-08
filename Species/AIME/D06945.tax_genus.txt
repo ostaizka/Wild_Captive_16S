@@ -1,0 +1,27 @@
+Taxa	Counts
+Anaerosporobacter	7
+Bacillus	197
+Bacteroides	4
+Caryophanon	109
+Cellulosilyticum	601
+Clostridium sensu stricto 1	7924
+Devosia	3
+Escherichia-Shigella	10949
+Flavobacterium	3
+Gemmobacter	4
+Lysinibacillus	124
+Neisseria	4
+Paenibacillus	30
+Paraclostridium	10
+Pseudarthrobacter	12
+Pseudomonas	10
+Rhodobacter	9
+Sarcina	374
+Staphylococcus	20
+Streptococcus	3877
+Terrisporobacter	226
+Trichococcus	20
+Triticum aestivum (bread wheat)	165
+Turicibacter	323
+Unclassified	4378
+Weissella	3

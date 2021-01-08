@@ -1,0 +1,11 @@
+Taxa	Counts
+Aeromonas	434
+Mycoplasma	2503
+Nodosilinea PCC-7104	3
+Paraclostridium	190
+Romboutsia	518
+Shewanella	5
+Terrisporobacter	18
+Unclassified	354
+uncultured bacterium	76
+Vibrio	8694

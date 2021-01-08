@@ -1,0 +1,15 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	10
+[Eubacterium] xylanophilum group	31
+Alistipes	120
+Coprococcus 2	83
+Helicobacter	79
+Lachnospiraceae FCS020 group	16
+Lachnospiraceae NK4A136 group	2525
+Lachnospiraceae UCG-008	47
+Lactobacillus	1217
+Oscillibacter	108
+Ruminiclostridium 9	69
+Ruminococcus 1	80
+Unclassified	7721
+uncultured bacterium	13777

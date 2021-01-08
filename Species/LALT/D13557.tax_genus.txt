@@ -1,0 +1,8 @@
+Taxa	Counts
+Christensenellaceae R-7 group	18
+p-1088-a5 gut group	5
+Ruminococcaceae UCG-002	2
+Ruminococcaceae UCG-010	2
+Treponema 2	8
+UBA1819	10
+Unclassified	10

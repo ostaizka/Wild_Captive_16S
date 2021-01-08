@@ -1,0 +1,61 @@
+Taxa	Counts
+[Eubacterium] brachy group	66
+[Eubacterium] coprostanoligenes group	1228
+[Eubacterium] fissicatena group	1600
+[Eubacterium] nodatum group	87
+[Ruminococcus] torques group	360
+Acidisphaera	64
+Acinetobacter	58
+Aeromonas	617
+Alistipes	126
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	15
+Anaerotruncus	9
+Anaerovorax	12
+Angelakisella	54
+Bacteroides	280
+Blautia	1556
+Buttiauxella	25
+Caproiciproducens	186
+Catabacter	38
+Christensenella	63
+Chryseobacterium	24
+Citrobacter	424
+Clostridium sensu stricto 1	8
+Comamonas	58
+Desulfovibrio	26
+Elusimicrobium	19
+Enterobacter	38
+Erysipelatoclostridium	22
+Escherichia-Shigella	30
+Eubacterium	2545
+Flavobacterium	209
+GCA-900066225	30
+Gordonibacter	2211
+gut metagenome	230
+Hafnia-Obesumbacterium	178
+Herbaspirillum	23
+Lachnoclostridium	1606
+Lachnospiraceae AC2044 group	42
+Lachnospiraceae NC2004 group	10
+Lachnospiraceae NK4A136 group	29
+Lachnospiraceae UCG-001	10
+Lactonifactor	70
+Lelliottia	23
+Ochrobactrum	10
+Oxalobacter	15
+Plantibacter	18
+Pseudomonas	27
+Pygmaiobacter	745
+Raoultella	61
+Raoultibacter	2871
+Rhodococcus	11
+Robinsoniella	231
+Ruminiclostridium 5	962
+Ruminiclostridium 9	522
+Ruminococcaceae UCG-008	10
+Ruminococcaceae UCG-014	295
+Shewanella	19
+Tyzzerella	129
+Unclassified	26526
+uncultured alpha proteobacterium	17
+uncultured organism	9

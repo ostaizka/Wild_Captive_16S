@@ -1,0 +1,16 @@
+Taxa	Counts
+Actinobacillus	165
+Campylobacter	25
+Cellulosilyticum	16
+Clostridium sensu stricto 1	667
+Cronobacter	4
+Escherichia-Shigella	24116
+Hafnia-Obesumbacterium	74
+Lactobacillus	18
+Sarcina	19
+Serratia	9
+Streptococcus	6881
+Triticum aestivum (bread wheat)	14
+Turicibacter	217
+Unclassified	1169
+Veillonella	66

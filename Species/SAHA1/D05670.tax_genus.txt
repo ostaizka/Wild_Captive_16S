@@ -1,0 +1,18 @@
+Taxa	Counts
+[Ruminococcus] gnavus group	71
+Bacteroides	82
+Cetobacterium	66180
+Clostridium sensu stricto 1	14576
+Clostridium sensu stricto 13	480
+Epulopiscium	12514
+Escherichia-Shigella	14761
+Fusobacterium	39445
+Helicobacter	204
+Paeniclostridium	218
+Peptostreptococcus	667
+Plesiomonas	4941
+Romboutsia	238
+Sarcina	995
+Terrisporobacter	1900
+Tyzzerella 4	107
+Unclassified	1205

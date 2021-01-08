@@ -1,0 +1,88 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	312
+[Eubacterium] eligens group	6
+[Eubacterium] hallii group	122
+[Eubacterium] ruminantium group	5
+[Eubacterium] xylanophilum group	29
+[Ruminococcus] gauvreauii group	51
+[Ruminococcus] torques group	4
+Acidaminococcus	17
+Agathobacter	158
+Anaerostipes	145
+Bifidobacterium	201
+Blautia	287
+Butyricicoccus	26
+CAG-873	4
+Candidatus Soleaferrea	4
+Cellulosilyticum	98
+Cetobacterium	13
+Christensenellaceae R-7 group	161
+Clostridium sensu stricto 1	594
+Collinsella	97
+Coprococcus 1	16
+Coprococcus 2	3
+Coprococcus 3	25
+Coriobacteriaceae UCG-003	6
+Desulfovibrio	15
+Dialister	130
+Dorea	85
+Enterorhabdus	7
+Erysipelotrichaceae UCG-003	47
+Erysipelotrichaceae UCG-004	9
+Faecalibacterium	282
+Family XIII AD3011 group	56
+Family XIII UCG-001	17
+Fibrobacter	82
+Flavonifractor	8
+Fusicatenibacter	17
+Intestinibacter	98
+Lachnoclostridium	19
+Lachnospira	3
+Lachnospiraceae FCS020 group	22
+Lachnospiraceae ND3007 group	43
+Lachnospiraceae NK3A20 group	165
+Lachnospiraceae NK4A136 group	434
+Lachnospiraceae NK4B4 group	5
+Lachnospiraceae UCG-001	17
+Lachnospiraceae UCG-008	183
+Lactobacillus	399
+Libanicoccus	8
+Marvinbryantia	79
+Megasphaera	23
+Methanobrevibacter	335
+Mitsuokella	22
+Olsenella	23
+Oribacterium	51
+Prevotella 7	95
+Prevotella 9	1005
+Prevotellaceae NK3B31 group	7
+Prevotellaceae UCG-003	170
+Rikenellaceae RC9 gut group	147
+Romboutsia	32
+Roseburia	72
+Ruminiclostridium 5	5
+Ruminiclostridium 6	29
+Ruminiclostridium 9	27
+Ruminococcaceae NK4A214 group	269
+Ruminococcaceae UCG-002	378
+Ruminococcaceae UCG-003	4
+Ruminococcaceae UCG-004	24
+Ruminococcaceae UCG-005	322
+Ruminococcaceae UCG-008	155
+Ruminococcaceae UCG-009	8
+Ruminococcaceae UCG-010	70
+Ruminococcaceae UCG-013	58
+Ruminococcaceae UCG-014	421
+Ruminococcus 1	85
+Ruminococcus 2	449
+Senegalimassilia	10
+Shuttleworthia	8
+Slackia	14
+Solobacterium	145
+Streptococcus	27
+Subdoligranulum	63
+Succinivibrio	35
+Terrisporobacter	16
+Treponema 2	171
+Unclassified	1273
+uncultured bacterium	163

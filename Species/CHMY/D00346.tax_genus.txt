@@ -1,0 +1,12 @@
+Taxa	Counts
+[Eubacterium] ventriosum group	46
+Clostridium sensu stricto 1	8771
+Clostridium sensu stricto 13	340
+Intestinibacter	1296
+Lachnoclostridium 10	837
+Lachnospiraceae UCG-007	2256
+Ruminiclostridium	49
+Sarcina	100
+Terrisporobacter	1321
+Turicibacter	93
+Unclassified	51190

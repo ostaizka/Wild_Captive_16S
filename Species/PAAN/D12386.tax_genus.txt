@@ -1,0 +1,80 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	451
+[Eubacterium] hallii group	56
+[Eubacterium] ruminantium group	41
+[Ruminococcus] torques group	35
+1174-901-12	2
+Acidaminococcus	139
+Alistipes	7
+Alloprevotella	31
+Anaerostipes	105
+Annona muricata	14
+Bifidobacterium	7000
+Blautia	159
+Butyricicoccus	20
+Cajanus cajan (pigeon pea)	46
+Candidatus Soleaferrea	5
+Catenibacterium	278
+Christensenellaceae R-7 group	111
+Collinsella	565
+Coprococcus 1	12
+Coprococcus 2	29
+dgA-11 gut group	25
+Dialister	504
+Dorea	60
+Enterorhabdus	15
+Erysipelotrichaceae UCG-003	2
+Erysipelotrichaceae UCG-004	12
+Faecalibacterium	122
+Family XIII AD3011 group	140
+Fusicatenibacter	5
+Glycine max (soybean)	2
+Intestinibacter	42
+Lachnoclostridium	3
+Lachnospiraceae FCS020 group	7
+Lachnospiraceae ND3007 group	7
+Lachnospiraceae NK3A20 group	308
+Lachnospiraceae NK4A136 group	63
+Lachnospiraceae UCG-004	415
+Lachnospiraceae UCG-008	83
+Lactobacillus	218
+Libanicoccus	9
+Marvinbryantia	13
+Megasphaera	69
+Methanobrevibacter	76
+Olsenella	18
+Oribacterium	8
+Oscillospira	5
+Oxalobacter	2
+Prevotella 2	17
+Prevotella 7	153
+Prevotella 9	969
+Prevotellaceae NK3B31 group	19
+Prevotellaceae UCG-003	23
+Prevotellaceae UCG-004	6
+Rikenellaceae RC9 gut group	25
+Romboutsia	3
+Roseburia	165
+Ruminiclostridium 9	49
+Ruminococcaceae NK4A214 group	200
+Ruminococcaceae UCG-002	397
+Ruminococcaceae UCG-004	30
+Ruminococcaceae UCG-005	650
+Ruminococcaceae UCG-008	15
+Ruminococcaceae UCG-009	5
+Ruminococcaceae UCG-010	42
+Ruminococcaceae UCG-011	19
+Ruminococcaceae UCG-013	101
+Ruminococcaceae UCG-014	251
+Ruminococcus 1	99
+Senegalimassilia	27
+Slackia	21
+Solobacterium	128
+Streptococcus	2
+Subdoligranulum	74
+Succinivibrio	4
+Sutterella	5
+Terrisporobacter	8
+Treponema 2	43
+Unclassified	1210
+uncultured bacterium	194

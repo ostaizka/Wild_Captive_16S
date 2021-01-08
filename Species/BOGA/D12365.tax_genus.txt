@@ -1,0 +1,106 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	1682
+[Eubacterium] oxidoreducens group	82
+[Eubacterium] ventriosum group	89
+Acidicaldus	44
+Acidothermus	141
+Actinobacillus	241
+Actinospica	259
+Alcanivorax	2341
+Anaerovorax	136
+Ascidiaceihabitans	43
+Bacteroidales bacterium Bact_22	44
+Brachybacterium	66
+Brevibacterium	37
+Bryobacter	73
+Butyrivibrio 2	1494
+Candidatus Koribacter	41
+Candidatus Saccharimonas	443
+Candidatus Soleaferrea	137
+Christensenellaceae R-7 group	1706
+Clade Ia	290
+Cloacibacterium	97
+Corynebacterium 1	42
+Cutibacterium	593
+Dehalogenimonas	64
+Delftia	71
+Enhydrobacter	54
+Enterobacter	164
+Erysipelotrichaceae UCG-004	645
+Erythrobacter	1188
+Exiguobacterium	574
+Fibrobacter	1091
+Formosa	345
+Halomonas	54
+Hyphomonas	122
+Lachnospiraceae AC2044 group	346
+Lachnospiraceae FCS020 group	189
+Lachnospiraceae NC2004 group	59
+Lachnospiraceae ND3007 group	93
+Lachnospiraceae NK3A20 group	217
+Lachnospiraceae NK4A136 group	618
+Lachnospiraceae UCG-004	160
+Lachnospiraceae UCG-006	58
+Lachnospiraceae UCG-008	92
+Lactobacillus	144
+Leisingera	155
+Mesoflavibacter	1240
+Methanobrevibacter	65
+Methylobacterium	126
+Micrococcus	94
+Nautella	1749
+Oceanobacterium	1747
+Oleibacter	2060
+Oribacterium	78
+Oscillospira	310
+Papillibacter	219
+Prevotella 1	1956
+Prevotellaceae UCG-001	519
+Prevotellaceae UCG-003	1015
+probable genus 10	317
+Pseudomonas	1596
+Ralstonia	58
+Rikenellaceae RC9 gut group	18573
+Roseburia	134
+Roseobacter clade CHAB-I-5 lineage	42
+Roseovarius	119
+Ruegeria	4307
+Ruminiclostridium	224
+Ruminiclostridium 1	361
+Ruminobacter	1232
+Ruminococcaceae NK4A214 group	972
+Ruminococcaceae UCG-002	847
+Ruminococcaceae UCG-005	683
+Ruminococcaceae UCG-010	1269
+Ruminococcaceae UCG-012	117
+Ruminococcaceae UCG-013	677
+Ruminococcaceae UCG-014	166
+Ruminococcaceae V9D2013 group	76
+Ruminococcus 1	493
+Ruminococcus 2	261
+Saccharofermentans	401
+Sediminispirochaeta	131
+Sphaerochaeta	195
+Sphingomonas	42
+Streptacidiphilus	66
+Streptomyces	133
+Succiniclasticum	844
+Succinimonas	238
+Succinivibrio	83
+Succinivibrionaceae UCG-002	333
+Sulfitobacter	235
+Thalassococcus	4124
+Treponema 2	121
+Unclassified	16326
+uncultured Acidobacteria bacterium	278
+uncultured archaeon	141
+uncultured bacterium	4307
+uncultured Chloroflexi bacterium	56
+uncultured marine archaeon	288
+uncultured marine group I thaumarchaeote	99
+uncultured rumen bacterium	9153
+unidentified rumen bacterium RFN46	128
+unidentified rumen bacterium RFN47	565
+unidentified rumen bacterium RFN73	332
+unidentified rumen bacterium RFN86	175
+Winogradskyella	1202

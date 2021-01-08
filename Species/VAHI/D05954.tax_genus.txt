@@ -1,0 +1,5 @@
+Taxa	Counts
+Cetobacterium	45
+Mycoplasma	NA
+Shewanella	18
+Unclassified	111

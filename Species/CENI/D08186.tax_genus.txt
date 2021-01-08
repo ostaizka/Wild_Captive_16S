@@ -1,0 +1,85 @@
+Taxa	Counts
+[Anaerorhabdus] furcosa group	16
+[Eubacterium] coprostanoligenes group	1944
+[Eubacterium] nodatum group	30
+[Eubacterium] oxidoreducens group	108
+[Eubacterium] ruminantium group	32
+[Eubacterium] ventriosum group	54
+[Ruminococcus] torques group	37
+Agathobacter	128
+Akkermansia	3629
+Alistipes	2543
+Alloprevotella	1496
+Anaerosporobacter	25
+Anaerovibrio	21
+Anaerovorax	41
+Bacteroides	3002
+Blautia	18
+Campylobacter	731
+Candidatus Soleaferrea	166
+Christensenellaceae R-7 group	1795
+Clostridium sensu stricto 1	31
+Coprococcus 2	61
+Coprococcus 3	39
+Defluviitaleaceae UCG-011	22
+dgA-11 gut group	531
+Dorea	47
+Family XIII AD3011 group	114
+Hydrogenoanaerobacterium	81
+Intestinimonas	45
+Lachnoclostridium	46
+Lachnoclostridium 10	150
+Lachnospiraceae AC2044 group	197
+Lachnospiraceae FCS020 group	169
+Lachnospiraceae NC2004 group	9
+Lachnospiraceae NK4A136 group	217
+Lachnospiraceae UCG-004	24
+Lachnospiraceae UCG-010	102
+Mailhella	221
+Negativibacillus	31
+Oscillibacter	137
+Oscillospira	23
+p-1088-a5 gut group	26
+Paeniclostridium	72
+Papillibacter	39
+Parabacteroides	42
+Parasutterella	82
+Phascolarctobacterium	1683
+Prevotella 1	221
+Prevotellaceae Ga6A1 group	68
+Prevotellaceae UCG-001	207
+Prevotellaceae UCG-003	1935
+Prevotellaceae UCG-004	1392
+Quinella	16
+Rikenellaceae RC9 gut group	5758
+Romboutsia	77
+Roseburia	299
+Ruminiclostridium	84
+Ruminiclostridium 1	30
+Ruminiclostridium 6	80
+Ruminiclostridium 9	76
+Ruminobacter	165
+Ruminococcaceae NK4A214 group	449
+Ruminococcaceae UCG-002	801
+Ruminococcaceae UCG-004	31
+Ruminococcaceae UCG-005	8501
+Ruminococcaceae UCG-009	464
+Ruminococcaceae UCG-010	7769
+Ruminococcaceae UCG-011	369
+Ruminococcaceae UCG-013	1487
+Ruminococcaceae UCG-014	405
+Ruminococcaceae V9D2013 group	32
+Ruminococcus 1	454
+Ruminococcus 2	99
+Succinivibrio	490
+Treponema 2	528
+Turicibacter	28
+Tyzzerella 4	234
+Unclassified	8748
+uncultured bacterium	5487
+uncultured Bacteroidales bacterium	651
+uncultured Parabacteroides sp.	174
+uncultured Porphyromonadaceae bacterium	591
+uncultured rumen bacterium	220
+Victivallis	69
+XBB1006	13

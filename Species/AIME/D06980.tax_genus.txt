@@ -1,0 +1,157 @@
+Taxa	Counts
+AAP99	256
+Acidibacter	550
+Acidovorax	36
+Aetherobacter	28
+Afipia	158
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	602
+Aminobacter	16
+Anaerocolumna	16
+Anaerosporobacter	16
+Aquabacterium	28
+Aquicella	64
+Asticcacaulis	144
+Azotobacter	32
+Bacillus	54
+bacterium enrichment culture clone auto67_4W	106
+Bauldia	58
+Bdellovibrio	26
+Bradyrhizobium	426
+Brevundimonas	34
+Bryobacter	415
+Burkholderia-Caballeronia-Paraburkholderia	58
+Byssovorax	36
+Candidatus Finniella	24
+Candidatus Ovatusbacter	14
+Candidatus Rhabdochlamydia	28
+Candidatus Xiphinematobacter	26
+Caulobacter	18
+Cellulosilyticum	52
+Cellvibrio	64
+Chitinimonas	18
+Chitinophaga	94
+Chryseobacterium	54
+Chryseolinea	42
+Chthoniobacter	406
+Chthonomonas	16
+Clostridium sensu stricto 1	98
+Comamonas	418
+Coxiella	50
+Curvibacter	110
+Cytophaga	18
+Devosia	1346
+Dokdonella	68
+Dongia	488
+DSSD61	56
+Duganella	14
+Dyadobacter	12
+Dyella	18
+Dysgonomonas	12
+Ellin6067	46
+Enterobacter	36
+Escherichia-Shigella	18
+Ferruginibacter	455
+Fimbriiglobus	174
+Frondihabitans	134
+Galbitalea	48
+Gemmata	68
+Gemmobacter	68
+Granulicella	106
+Haliangium	256
+Hirschia	192
+Hydrogenophaga	118
+Hyphomicrobium	718
+Ideonella	160
+Inquilinus	50
+IS-44	632
+Jatrophihabitans	66
+Kaistia	130
+Labrys	82
+Lacunisphaera	530
+Larkinella	32
+Legionella	90
+Leptothrix	170
+Limnohabitans	150
+Luteibacter	28
+Luteolibacter	40
+Lysinibacillus	8
+Lysinimonas	48
+Massilia	86
+Mesorhizobium	174
+metagenome	758
+Methylophilus	150
+Methylotenera	640
+mle1-7	70
+MM1	28
+Mucilaginibacter	380
+Mycobacterium	54
+Mycoplana	60
+Nitrospirillum	212
+Opitutus	72
+Paenibacillus	68
+Pajaroellobacter	542
+Paludibaculum	86
+Pedobacter	28
+Pedomicrobium	16
+Pedosphaera	42
+Pelomonas	340
+Phaeodactylibacter	24
+Phenylobacterium	158
+Pirellula	54
+Piscinibacter	76
+Planctomicrobium	24
+Planctomycetales bacterium Ellin7224	14
+Planctopirus	16
+Polaromonas	46
+Prosthecobacter	188
+Providencia	12
+Pseudaminobacter	48
+Pseudoflavitalea	124
+Pseudolabrys	344
+Pseudomonas	120
+Pseudorhodoferax	28
+Pseudorhodoplanes	44
+Pseudoxanthomonas	122
+Rahnella	94
+Raoultella	16
+Reyranella	442
+Rhizobacter	564
+Rhizorhapis	48
+Rhodanobacter	32
+Rhodobacter	34
+Rhodoferax	1164
+Rhodopseudomonas	42
+Roseateles	94
+Roseiarcus	120
+Roseococcus	42
+Roseomonas	18
+Sediminibacterium	120
+SH-PL14	16
+Shinella	18
+Singulisphaera	20
+SM1A02	110
+Sphingobium	202
+Sphingomonas	896
+Sphingopyxis	20
+Spirochaeta 2	714
+Spirosoma	36
+Stenotrophomonas	18
+SWB02	178
+Taibaiella	52
+Tardiphaga	60
+Terrimicrobium	18
+Terrimonas	438
+UBA6140	38
+Unclassified	14009
+uncultured alpha proteobacterium	44
+uncultured Archangiaceae bacterium	24
+uncultured bacterium	2073
+uncultured Bacteroidetes bacterium	52
+uncultured Burkholderiales bacterium	14
+uncultured planctomycete	200
+uncultured proteobacterium	37
+uncultured soil bacterium	8
+uncultured Sorangiineae bacterium	24
+uncultured Verrucomicrobia bacterium	312
+Variovorax	242
+Xenophilus	54

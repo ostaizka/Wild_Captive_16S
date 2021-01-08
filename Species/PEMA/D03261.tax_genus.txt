@@ -1,0 +1,34 @@
+Taxa	Counts
+28-4	21
+Alistipes	207
+ASF356	21
+Butyricicoccus	33
+GCA-900066575	77
+Helicobacter	77
+Intestinimonas	22
+Lachnoclostridium	103
+Lachnospiraceae NK4A136 group	3302
+Lachnospiraceae UCG-001	221
+Lachnospiraceae UCG-006	56
+Lachnospiraceae UCG-008	44
+Lactobacillus	332
+Mucispirillum	62
+Oscillibacter	1007
+Oscillospira	9
+Parabacteroides	74
+Prevotellaceae UCG-001	221
+Rikenella	8
+Roseburia	5
+Ruminiclostridium	1883
+Ruminiclostridium 5	9
+Ruminiclostridium 6	33
+Ruminiclostridium 9	1388
+Ruminococcaceae UCG-003	50
+Ruminococcaceae UCG-005	43
+Ruminococcaceae UCG-009	19
+Ruminococcaceae UCG-014	29
+Treponema 2	47
+Unclassified	7913
+uncultured bacterium	2728
+uncultured Bacteroidales bacterium	4
+unidentified	15

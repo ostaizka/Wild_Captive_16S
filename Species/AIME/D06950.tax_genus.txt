@@ -1,0 +1,25 @@
+Taxa	Counts
+Acinetobacter	28
+Actinobacillus	12
+Anaerococcus	3
+Anoxybacillus	6
+Bacteroides	23
+Caryophanon	4
+Cetobacterium	14
+Clostridium sensu stricto 1	16403
+Comamonas	7
+Enterobacter	26
+Enterococcus	9
+Escherichia-Shigella	834
+Geobacillus	9
+Hafnia-Obesumbacterium	18
+Lactobacillus	131
+Neisseria	4
+Ochrobactrum	5
+Pseudomonas	33
+Serratia	19
+Streptococcus	3923
+Terrisporobacter	2659
+Triticum aestivum (bread wheat)	403
+Turicibacter	786
+Unclassified	4481

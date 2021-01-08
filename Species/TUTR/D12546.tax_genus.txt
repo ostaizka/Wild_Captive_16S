@@ -1,0 +1,7 @@
+Taxa	Counts
+Actinobacillus	39
+Candidatus Arthromitus	18
+Lactobacillus	52
+Pseudahrensia	12
+Tyzzerella 3	91
+Unclassified	700

@@ -1,0 +1,11 @@
+Taxa	Counts
+Actinobacillus	1599
+Candidatus Arthromitus	2
+Cetobacterium	925
+Clostridium sensu stricto 1	846
+Fusobacterium	292
+Paeniclostridium	198
+Paraclostridium	16
+Peptoclostridium	20
+Tyzzerella 3	5
+Unclassified	78

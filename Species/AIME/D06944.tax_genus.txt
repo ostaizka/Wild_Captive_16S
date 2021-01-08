@@ -1,0 +1,24 @@
+Taxa	Counts
+Actinobacillus	28
+Actinomyces	4
+Actinomycetospora	3
+Bacteroides	7
+Campylobacter	47
+Candidatus Uzinura	15
+Clostridium sensu stricto 1	2269
+Escherichia-Shigella	4851
+Lautropia	4
+Methylocystis	4
+Moraxella	10
+Neisseria	11
+Paeniclostridium	5
+Pseudomonas	8
+Psychrobacter	4
+Romboutsia	151
+Ruminococcus 1	36
+Streptococcus	8621
+Terrisporobacter	16
+Triticum aestivum (bread wheat)	672
+Tumebacillus	3
+Turicibacter	166
+Unclassified	12954

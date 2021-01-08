@@ -1,0 +1,87 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	4274
+[Eubacterium] nodatum group	836
+[Eubacterium] ruminantium group	1470
+[Eubacterium] ventriosum group	82
+[Ruminococcus] gauvreauii group	114
+[Ruminococcus] gnavus group	101
+[Ruminococcus] torques group	96
+Acetitomaculum	210
+Actinobacillus	27
+Alistipes	70
+Anaerofustis	32
+Anaeroplasma	56
+Anaerosporobacter	357
+Bacteroides	753
+Blautia	63
+CAG-352	94
+Campylobacter	27
+Candidatus Soleaferrea	365
+Catenisphaera	106
+Cellulosilyticum	96
+Christensenellaceae R-7 group	8586
+Clostridium sensu stricto 1	153
+Coprococcus 1	365
+Coprococcus 3	58
+Erysipelotrichaceae UCG-004	171
+Escherichia-Shigella	222
+Family XIII AD3011 group	2481
+Fibrobacter	178
+Fonticella	106
+GCA-900066225	139
+GCA-900066575	157
+Intestinibacter	1460
+Lachnoclostridium	317
+Lachnoclostridium 10	32
+Lachnoclostridium 5	65
+Lachnospiraceae AC2044 group	516
+Lachnospiraceae FCS020 group	104
+Lachnospiraceae NC2004 group	26
+Lachnospiraceae ND3007 group	95
+Lachnospiraceae NK4A136 group	483
+Lachnospiraceae UCG-007	35
+Lachnospiraceae UCG-008	44
+Lachnospiraceae UCG-010	37
+Marvinbryantia	572
+Methanocorpusculum	767
+Methanosphaera	48
+Mogibacterium	256
+Mycobacterium	42
+Oribacterium	59
+Oscillibacter	301
+Papillibacter	463
+Parabacteroides	95
+Peptococcus	273
+Phascolarctobacterium	697
+Prevotella 7	185
+Prevotellaceae UCG-003	360
+Prevotellaceae UCG-004	96
+Pseudonocardia	61
+Rikenellaceae RC9 gut group	3583
+Ruminiclostridium 5	208
+Ruminiclostridium 6	38
+Ruminiclostridium 9	49
+Ruminococcaceae NK4A214 group	1837
+Ruminococcaceae UCG-002	1406
+Ruminococcaceae UCG-004	217
+Ruminococcaceae UCG-005	3913
+Ruminococcaceae UCG-008	110
+Ruminococcaceae UCG-010	3758
+Ruminococcaceae UCG-011	100
+Ruminococcaceae UCG-013	573
+Ruminococcaceae UCG-014	4059
+Ruminococcaceae V9D2013 group	34
+Ruminococcus 1	48
+S5-A14a	98
+Sarcina	97
+Streptococcus	24
+Subdoligranulum	74
+Sutterella	325
+Terrisporobacter	538
+Treponema 2	11818
+Tyzzerella	46
+Tyzzerella 4	57
+UBA1819	99
+Unclassified	47163
+uncultured bacterium	10004
+uncultured Porphyromonadaceae bacterium	20

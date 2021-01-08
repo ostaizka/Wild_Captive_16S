@@ -1,0 +1,11 @@
+Taxa	Counts
+Aeromonas	3240
+Cetobacterium	5998
+Clostridium sensu stricto 1	43
+Desulfobulbus	5
+Limnothrix	55
+Roseofilum AO1-A	25
+Shewanella	12
+Unclassified	46
+uncultured bacterium	24
+Vibrio	42

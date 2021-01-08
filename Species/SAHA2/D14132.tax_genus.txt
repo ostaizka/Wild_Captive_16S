@@ -1,0 +1,12 @@
+Taxa	Counts
+Aeromonas	3318
+Clostridium sensu stricto 1	28870
+Edwardsiella	3100
+Epulopiscium	5016
+Fusobacterium	4742
+Helicobacter	183
+Paeniclostridium	985
+Plesiomonas	10630
+Romboutsia	111
+Ruminococcaceae UCG-011	801
+Unclassified	6514

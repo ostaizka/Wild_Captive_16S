@@ -1,0 +1,92 @@
+Taxa	Counts
+[Acetivibrio] ethanolgignens group	13
+[Anaerorhabdus] furcosa group	23
+[Eubacterium] coprostanoligenes group	1860
+[Eubacterium] nodatum group	25
+[Eubacterium] oxidoreducens group	84
+[Eubacterium] ruminantium group	62
+[Eubacterium] ventriosum group	86
+[Ruminococcus] torques group	17
+Acetitomaculum	11
+Agathobacter	198
+Akkermansia	3062
+Alistipes	1826
+Alloprevotella	79
+Anaerosporobacter	84
+Anaerovibrio	26
+Anaerovorax	39
+Bacteroides	3822
+Blautia	18
+Butyrivibrio	47
+Candidatus Soleaferrea	118
+Cerasicoccus	10
+Christensenellaceae R-7 group	2179
+Clostridium sensu stricto 1	59
+Coprococcus 2	112
+Coprococcus 3	85
+Defluviitaleaceae UCG-011	81
+dgA-11 gut group	513
+Dorea	66
+Elusimicrobium	58
+Family XIII AD3011 group	86
+GCA-900066225	8
+Hydrogenoanaerobacterium	97
+Intestinimonas	17
+Lachnoclostridium	72
+Lachnoclostridium 10	336
+Lachnospiraceae AC2044 group	454
+Lachnospiraceae FCS020 group	169
+Lachnospiraceae NC2004 group	19
+Lachnospiraceae NK4A136 group	751
+Lachnospiraceae NK4B4 group	30
+Lachnospiraceae UCG-004	20
+Lachnospiraceae UCG-008	41
+Lachnospiraceae UCG-010	88
+Mailhella	212
+Negativibacillus	38
+Oscillibacter	135
+Oscillospira	26
+p-1088-a5 gut group	102
+Paeniclostridium	63
+Papillibacter	44
+Parasutterella	53
+Phascolarctobacterium	2348
+Prevotella 1	273
+Prevotellaceae Ga6A1 group	39
+Prevotellaceae UCG-001	335
+Prevotellaceae UCG-003	790
+Prevotellaceae UCG-004	1281
+Pygmaiobacter	14
+Quinella	31
+Rikenellaceae RC9 gut group	5598
+Romboutsia	72
+Roseburia	502
+Ruminiclostridium	70
+Ruminiclostridium 1	38
+Ruminiclostridium 6	205
+Ruminiclostridium 9	95
+Ruminobacter	1208
+Ruminococcaceae NK4A214 group	485
+Ruminococcaceae UCG-002	499
+Ruminococcaceae UCG-004	50
+Ruminococcaceae UCG-005	8375
+Ruminococcaceae UCG-009	546
+Ruminococcaceae UCG-010	8417
+Ruminococcaceae UCG-011	754
+Ruminococcaceae UCG-013	1609
+Ruminococcaceae UCG-014	608
+Ruminococcus 1	782
+Ruminococcus 2	155
+Succinivibrio	431
+Treponema 2	706
+Turicibacter	17
+Tyzzerella	17
+Tyzzerella 4	307
+Unclassified	14201
+uncultured bacterium	4172
+uncultured Bacteroidales bacterium	453
+uncultured Parabacteroides sp.	137
+uncultured Porphyromonadaceae bacterium	244
+uncultured rumen bacterium	240
+unidentified rumen bacterium RFN47	15
+Victivallis	92

@@ -1,0 +1,38 @@
+Taxa	Counts
+[Ruminococcus] torques group	13
+28-4	125
+Acetitomaculum	52
+Alistipes	12
+Anaeroplasma	24
+Anaerotruncus	19
+Bacteroides	47
+Bilophila	14
+Blautia	1158
+Candidatus Saccharimonas	8
+Desulfovibrio	30
+GCA-900066575	289
+Helicobacter	9135
+Intestinimonas	37
+Lachnoclostridium	622
+Lachnospiraceae FCS020 group	117
+Lachnospiraceae NK4A136 group	3906
+Lachnospiraceae UCG-001	89
+Lachnospiraceae UCG-006	173
+Lachnospiraceae UCG-008	1238
+Lactobacillus	72
+Oscillibacter	1024
+Parabacteroides	31
+Peptococcus	19
+Roseburia	566
+Ruminiclostridium	1019
+Ruminiclostridium 5	82
+Ruminiclostridium 9	2987
+Ruminococcaceae UCG-003	136
+Ruminococcaceae UCG-009	44
+Ruminococcaceae UCG-014	14
+Ruminococcus 1	43
+Tyzzerella	33
+UBA1819	22
+Unclassified	7097
+uncultured bacterium	842
+uncultured organism	288

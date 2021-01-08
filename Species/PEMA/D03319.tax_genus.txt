@@ -1,0 +1,7 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	11
+Lachnospiraceae NK4A136 group	23
+Lactobacillus	2332
+Raoultella	28
+Unclassified	10186
+uncultured bacterium	7579

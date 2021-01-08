@@ -1,0 +1,12 @@
+Taxa	Counts
+Clostridium sensu stricto 1	6296
+Clostridium sensu stricto 4	9
+Collinsella	22
+Enterococcus	16
+Kineosporia	16
+Paeniclostridium	4165
+Peptoclostridium	93
+Peptoniphilus	352
+Peptostreptococcus	163
+Sarcina	9
+Unclassified	849

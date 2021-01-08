@@ -1,0 +1,88 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	2159
+[Eubacterium] eligens group	897
+[Eubacterium] nodatum group	501
+[Eubacterium] oxidoreducens group	292
+[Eubacterium] ruminantium group	197
+[Eubacterium] ventriosum group	109
+[Ruminococcus] gauvreauii group	183
+[Ruminococcus] torques group	151
+Agathobacter	1031
+Alistipes	2743
+Alloprevotella	144
+Anaerocolumna	637
+Anaerosporobacter	197
+Anaerostipes	711
+Bacillus	472
+Bacteroides	19564
+Barnesiella	256
+Blautia	390
+Butyricimonas	1383
+CAG-352	375
+Campylobacter	1377
+Cellulosilyticum	1878
+Christensenellaceae R-7 group	14056
+Clostridium sensu stricto 1	9190
+Clostridium sensu stricto 6	93
+Coprococcus 1	1115
+Coprococcus 2	291
+Desulfovibrio	148
+Enterobacter	89
+Enterococcus	205
+Erysipelotrichaceae UCG-003	402
+Escherichia-Shigella	481
+Faecalibacterium	1171
+Family XIII AD3011 group	802
+Fusicatenibacter	150
+GCA-900066575	6304
+gut metagenome	107
+Hydrogenoanaerobacterium	241
+Intestinibacter	1252
+Intestinimonas	205
+Lachnoclostridium	899
+Lachnoclostridium 10	132
+Lachnoclostridium 5	232
+Lachnospiraceae AC2044 group	351
+Lachnospiraceae FCS020 group	216
+Lachnospiraceae NC2004 group	229
+Lachnospiraceae ND3007 group	212
+Lachnospiraceae NK4A136 group	6122
+Lachnospiraceae NK4B4 group	125
+Lachnospiraceae UCG-004	370
+Lachnospiraceae UCG-008	138
+Lactobacillus	264
+Marvinbryantia	301
+Methanobrevibacter	130
+Mobilitalea	1035
+Oscillibacter	1693
+p-1088-a5 gut group	680
+Papillibacter	182
+Parabacteroides	3703
+Parasutterella	2204
+Phascolarctobacterium	2438
+Prevotella 1	684
+Prevotella 9	369
+Prevotellaceae UCG-003	200
+Psychrobacillus	188
+Roseburia	140
+Ruminiclostridium 6	516
+Ruminococcaceae NK4A214 group	6027
+Ruminococcaceae UCG-002	9337
+Ruminococcaceae UCG-003	113
+Ruminococcaceae UCG-005	26892
+Ruminococcaceae UCG-008	308
+Ruminococcaceae UCG-009	469
+Ruminococcaceae UCG-010	9558
+Ruminococcaceae UCG-012	173
+Ruminococcaceae UCG-013	538
+Ruminococcaceae UCG-014	4631
+Ruminococcus 1	11309
+Solibacillus	351
+Streptococcus	282
+Subdoligranulum	150
+Terrisporobacter	804
+Treponema 2	226
+Unclassified	51214
+uncultured bacterium	5531
+uncultured rumen bacterium	422
+Victivallis	174

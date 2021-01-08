@@ -1,0 +1,5 @@
+Taxa	Counts
+Mycoplasma	19951
+Paraclostridium	65
+Romboutsia	109
+Unclassified	1267

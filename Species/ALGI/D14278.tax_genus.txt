@@ -1,0 +1,49 @@
+Taxa	Counts
+[Eubacterium] coprostanoligenes group	113
+Acetivibrio	26
+Acinetobacter	5251
+Aeromonas	30
+Alistipes	81
+Anaerofustis	9
+Anaerovorax	28
+Bacillus	160
+Bacteroides	44
+Blautia	10
+Candidatus Methanoplasma	18
+Candidatus Soleaferrea	23
+Caryophanon	80
+Cellulosilyticum	7
+Christensenellaceae R-7 group	401
+Clostridiales bacterium enrichment culture clone 06-1235251-76	11
+Clostridium sensu stricto 1	73
+Comamonas	50
+Desulfovibrio	60
+Fibrobacter	55
+Lachnoclostridium 10	73
+Lachnoclostridium 5	6
+Lachnospira	6
+Lachnospiraceae UCG-004	137
+Lachnospiraceae UCG-007	38
+Lachnospiraceae UCG-009	24
+Lysinibacillus	19
+Methanocorpusculum	108
+Papillibacter	19
+Pseudomonas	609
+Psychrobacillus	15
+Rheinheimera	56
+Ruminiclostridium	26
+Ruminococcaceae NK4A214 group	139
+Ruminococcaceae UCG-002	8
+Ruminococcaceae UCG-010	64
+Ruminococcaceae UCG-011	8
+Ruminococcaceae UCG-013	14
+Ruminococcaceae UCG-014	42
+Ruminococcus 1	100
+S5-A14a	7
+Shewanella	78
+Solibacillus	103
+Treponema 2	11
+Unclassified	20851
+uncultured bacterium	249
+uncultured Bacteroidetes bacterium	45
+uncultured rumen bacterium	25

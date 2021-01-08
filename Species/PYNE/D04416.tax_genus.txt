@@ -1,0 +1,61 @@
+Taxa	Counts
+[Eubacterium] brachy group	16
+[Eubacterium] coprostanoligenes group	121
+[Eubacterium] oxidoreducens group	25
+[Ruminococcus] torques group	155
+Acetitomaculum	148
+Alistipes	77
+Bacteroides	2366
+Blautia	562
+Christensenellaceae R-7 group	7171
+Coprobacillus	222
+Coprococcus 2	24
+Coprococcus 3	83
+Desulfovibrio	37
+Dorea	143
+Enterorhabdus	64
+Erysipelotrichaceae UCG-006	109
+Faecalibacterium	104
+Family XIII AD3011 group	145
+Helicobacter	35
+Lachnoclostridium	215
+Lachnoclostridium 5	50
+Lachnospira	32
+Lachnospiraceae FCS020 group	266
+Lachnospiraceae NC2004 group	18
+Lachnospiraceae NK3A20 group	838
+Lachnospiraceae NK4A136 group	1542
+Lachnospiraceae UCG-001	66
+Lachnospiraceae UCG-003	37
+Lachnospiraceae UCG-008	10
+Marvinbryantia	923
+Methanobrevibacter	22
+Oscillibacter	39
+Papillibacter	28
+Parabacteroides	26
+Phascolarctobacterium	49
+Prevotellaceae UCG-001	162
+Prevotellaceae UCG-003	113
+Pseudoramibacter	80
+Rikenellaceae RC9 gut group	116
+Romboutsia	64
+Roseburia	983
+Ruminiclostridium	15
+Ruminiclostridium 5	81
+Ruminiclostridium 9	42
+Ruminococcaceae NK4A214 group	1439
+Ruminococcaceae UCG-002	1328
+Ruminococcaceae UCG-005	7524
+Ruminococcaceae UCG-009	444
+Ruminococcaceae UCG-010	455
+Ruminococcaceae UCG-011	80
+Ruminococcaceae UCG-013	673
+Ruminococcaceae UCG-014	372
+Ruminococcus 1	1381
+Ruminococcus 2	9446
+Solobacterium	96
+Terrisporobacter	18
+Treponema 2	12044
+Tyzzerella	32
+Unclassified	11304
+uncultured bacterium	83

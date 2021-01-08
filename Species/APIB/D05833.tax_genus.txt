@@ -1,0 +1,8 @@
+Taxa	Counts
+Cyanobium PCC-6307	3
+Defluviicoccus	5
+Limnothrix	12
+Synechococcus MBIC10613	10
+Terrimicrobium	3
+Unclassified	32
+Vibrio	76

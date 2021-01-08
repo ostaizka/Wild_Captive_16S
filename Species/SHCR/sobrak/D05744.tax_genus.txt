@@ -1,0 +1,29 @@
+Taxa	Counts
+Acinetobacter	11709
+Bacillus	152
+Buttiauxella	134
+Carnobacterium	5006
+Cetobacterium	138
+Citrobacter	4225
+Clostridium sensu stricto 1	10570
+Clostridium sensu stricto 13	425
+Comamonas	153
+Dysgonomonas	279
+Enterobacter	11519
+Enterococcus	187
+Epulopiscium	640
+Hafnia-Obesumbacterium	1077
+Klebsiella	2527
+Lachnospiraceae NK4A136 group	96
+Lactococcus	174
+Lelliottia	8829
+Lysinibacillus	2355
+Paraclostridium	2284
+Psychrobacillus	235
+Romboutsia	4444
+Salmonella	26506
+Sarcina	712
+Solibacillus	1518
+Terrisporobacter	406
+Unclassified	170
+Yokenella	1610

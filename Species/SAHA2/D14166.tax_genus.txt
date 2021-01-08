@@ -1,0 +1,38 @@
+Taxa	Counts
+Acinetobacter	4
+Aeromonas	30
+Bradyrhizobium	6
+Brochothrix	101
+Butyrivibrio	30
+Carnobacterium	2581
+Cetobacterium	86
+Clostridium sensu stricto 1	NA
+Clostridium sensu stricto 13	244
+Clostridium sensu stricto 7	137
+Epulopiscium	19
+Erysipelatoclostridium	17
+Escherichia-Shigella	17
+Fusobacterium	74
+Hafnia-Obesumbacterium	75
+Hathewaya	51
+Helicobacter	16
+Limnohabitans	2
+Micrococcus	14
+Paeniclostridium	1915
+Paraclostridium	3
+Paraeggerthella	878
+Peptoclostridium	22
+Peptostreptococcus	19
+Plesiomonas	50
+Pseudomonas	1364
+Psychrobacter	12
+Romboutsia	1459
+Roseiarcus	24
+Ruminococcaceae UCG-011	60
+Sarcina	15
+Serratia	11
+Staphylococcus	27
+Terrisporobacter	163
+Turicibacter	43
+Unclassified	492
+Vagococcus	154

@@ -1,0 +1,3 @@
+Taxa	Counts
+Cetobacterium	4754
+Fusobacterium	40

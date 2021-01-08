@@ -1,0 +1,38 @@
+Taxa	Counts
+[Clostridium] innocuum group	682
+[Eubacterium] fissicatena group	195
+Akkermansia	29121
+Bacteroides	70805
+Bifidobacterium	121
+Bilophila	2822
+Blautia	588
+Caproiciproducens	75
+Chryseobacterium	65
+Clostridioides	346
+Clostridium sensu stricto 1	36
+Clostridium sensu stricto 2	680
+DTU089	488
+Dysgonomonas	177
+Eggerthella	119
+Enterobacter	1379
+Enterococcus	254
+Erysipelatoclostridium	365
+Escherichia-Shigella	1100
+Flavonifractor	52
+Hungatella	3509
+Intestinibacter	609
+Lachnoclostridium	2502
+Lactococcus	761
+Morganella	192
+Negativicoccus	89
+Oscillibacter	138
+Parabacteroides	13951
+Proteus	49
+Pseudomonas	59
+Robinsoniella	150
+Rothia	46
+Ruminiclostridium 9	59
+Ruminococcus 1	4260
+Streptococcus	170
+UBA1819	237
+Unclassified	731

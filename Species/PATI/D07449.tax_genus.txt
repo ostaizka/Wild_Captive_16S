@@ -1,0 +1,28 @@
+Taxa	Counts
+Acinetobacter	133
+Anoxybacillus	113
+Bacillus	129
+bacterium QTYC46b	143
+Capnocytophaga	9
+Chelatococcus	116
+Chryseobacterium	886
+Cutibacterium	692
+Delftia	1673
+Escherichia-Shigella	92
+Janthinobacterium	42
+Klebsiella	111
+Lawsonella	127
+Massilia	256
+Methylobacterium	528
+Microbacterium	246
+Mycoplasma	240
+Pedobacter	227
+Peptoniphilus	144
+Pseudomonas	399
+Rhodococcus	5
+Sphingomonas	6494
+Staphylococcus	171
+Streptococcus	308
+Thermoanaerobaculum	26
+uncultured bacterium	37
+Yonghaparkia	107
