@@ -1,4 +1,12 @@
-#Load the following packages
+#####
+# Diversity analysis pipeline v1
+# by Ostaizka Aizpurua and Antton Alberdi
+# ostaizka.aizpurua@sund.ku.dk, antton.alberdi@sund.ku.dk
+# January 2021
+#####
+
+
+#Load required libraries
 library(reshape2)
 library(gplots)
 library(purrr)
@@ -16,14 +24,18 @@ library("ggpubr")
 library(dmetar)
 library(meta)
 
-#Directory
+#Set working directory
 setwd("~/github/Wild_Captive_16S")
 
-#### Load the metadata and create hierarchy table for diversity analysis ####
+#### Load the metadata and create hierarchy table for diversity analyses ####
 metadata <- read.table("Data/metadata.tsv", sep =";")
 hierarchy_all <- tibble::rownames_to_column(metadata, "Samples")
 
-#### Get code names ####
+###############
+# 1) PREPARE WORKING ABUNDANCE-TABLES
+###############
+
+#### Declare dataset (species) code names ####
 list.dirs <- function(path="Species", pattern=NULL, all.dirs=FALSE,
                       full.names=FALSE, ignore.case=FALSE) {
   # use full.names=TRUE to pass to file.info
@@ -36,12 +48,13 @@ list.dirs <- function(path="Species", pattern=NULL, all.dirs=FALSE,
   else
     return(basename(dirs))
 }
+
 code.list <- list.dirs()
 
-#### Get genus table ####
+#### Generate a genus-level read-abundance table for each dataset ####
 for (code in code.list){
   print(code)
-  #Load files at genus level
+  #Load individual genus-level abundance tables
   files.g = list.files(path=(paste("Species/",code,sep="")), pattern="*.tax_genus.txt")
   names.g = gsub(".tax_genus.txt","",files.g)
   filelist.g = lapply(paste("Species",code,files.g,sep="/"), function(x)read.table(x, header=T,sep="\t"))
@@ -56,7 +69,7 @@ for (code in code.list){
   write.table(count.table.g, paste("Tables/count_genus_",code,".tsv",sep=""))
 }
 
-#### Filtering the tables ####
+#### Filter tables ####
 #Load all the tables created
 for (code in code.list){
   print(code)
@@ -72,16 +85,29 @@ for (code in code.list){
   write.table(get(paste("count.filtdepth.",code,sep="")),paste("Tables/countfiltdepth_",code,".tsv",sep=""))
 }
 
-## Remove NA taxa from Genus table
+#Filter out samples with low diversity coverage
+for (code in code.list){
+  filtcov <- as.data.frame(depth_cov(get(paste("count.filtdepth.",code,sep="")),qvalue=0))
+  count.filtcov <- get(paste("count.filtdepth.",code,sep=""))
+  count.filtcov <- count.filtcov[,rownames(filtcov[filtcov$Coverage > 98,])]
+  assign(paste("count.filtcov.",code,sep=""),get("count.filtcov"))
+  write.table(get(paste("count.filtcov.",code,sep="")),paste("Tables/countfiltcov_",code,".tsv",sep=""))
+}
+
+## Remove non-bacterial or taxonomy-lacking genera from the dataset
 taxonlist_NA <- read.table("Data/NA_taxa.txt")
 taxonlist_NA <-  as.character(taxonlist_NA[,1])
 
 for (code in code.list){
-  count.filtdepth <- read.table(paste("Tables/countfiltdepth_",code,".tsv",sep=""))
+  count.filtdepth <- read.table(paste("Tables/countfiltcov_",code,".tsv",sep=""))
   count.filtered <- count.filtdepth[! rownames(count.filtdepth) %in% taxonlist_NA,]
   assign(paste("count.filtered.",code,sep=""),get("count.filtered"))
   write.table(get(paste("count.filtered.",code,sep="")),paste("Tables/countfiltered_",code,".tsv",sep=""))
 }
+
+###############
+# 2) DIVERSITY ANALYSES
+###############
 
 ####Diversity analysis based on abundace: using hilldiv####
 ##R
