@@ -118,6 +118,9 @@ for (code in code.list){
   hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
   divqR <- div_test(final.table,qvalue=0,hierarchy=hierarchy[,c(1,5)])
   divqR_table <- divqR$data
+  n <- nrow(divqR_table)
+  mean <- mean(divqR_table[,c("Value")])
+  sd <- sd(divqR_table[,c("Value")])
   divqR_wild <- divqR_table[divqR_table$Group == "Wild",]
   n_wild <- nrow(divqR_wild)
   mean_wild <- mean(divqR_wild[,c("Value")])
@@ -126,10 +129,10 @@ for (code in code.list){
   n_captive <- nrow(divqR_captive)
   mean_captive <- mean(divqR_captive[,c("Value")])
   sd_captive <- sd(divqR_captive[,c("Value")])
-  summary_R <- rbind(summary_R,c(n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
+  summary_R <- rbind(summary_R,c(n,mean,sd,n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
 }
 
-colnames(summary_R) <- c("n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
+colnames(summary_R) <- c("n","mean","sd","n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
 rownames(summary_R) <- code.list
 write.table(summary_R, "Results/summary_diversity_R.tsv")
 
@@ -150,6 +153,9 @@ for (code in code.list){
   tree_filtered <- match_data(final.table,capwild.tree,output="tree")
   divqREH <- div_test(final.table,qvalue=1,hierarchy=hierarchy[,c(1,5)], tree=tree_filtered)
   divqREH_table <- divqREH$data
+  n <- nrow(divqREH_table)
+  mean <- mean(divqREH_table[,c("Value")])
+  sd <- sd(divqREH_table[,c("Value")])
   divqREH_wild <- divqREH_table[divqREH_table$Group == "Wild",]
   n_wild <- nrow(divqREH_wild)
   mean_wild <- mean(divqREH_wild[,c("Value")])
@@ -158,9 +164,9 @@ for (code in code.list){
   n_captive <- nrow(divqREH_captive)
   mean_captive <- mean(divqREH_captive[,c("Value")])
   sd_captive <- sd(divqREH_captive[,c("Value")])
-  summary_REH <- rbind(summary_REH,c(n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
+  summary_REH <- rbind(summary_REH,c(n,mean,sd,n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
 }
-colnames(summary_REH) <- c("n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
+colnames(summary_REH) <- c("n","mean","sd","n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
 rownames(summary_REH) <- code.list
 write.table(summary_REH, "Results/summary_diversity_REH.tsv")
 
@@ -307,13 +313,61 @@ meta_REH_sub_tree.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_
                          sm = "SMD")
 
 ###############
-# 4) COMPOSITIONAL DIFFERENCES
+# 4) COMPOSITIONAL DIFFERENCES (BETA DIVERSITY BETWEEN CAPTIVE AND WILD)
 ###############
+
+#R
+
+betadisR_results <- c()
+for (code in code.list){
+  final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
+  ##Filter the hierarchy
+  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
+  #Check whether both lists are identical
+  identical(sort(colnames(final.table)),sort(as.character(hierarchy[,1])))
+  ##Filter the metadata
+  samples.kept <- colnames(final.table)
+  metadata.filtered <- metadata[rownames(metadata) %in% samples.kept,]
+  metadata.filtered1 <- tibble::rownames_to_column(metadata.filtered, "Code")
+  row.names(metadata.filtered1) <- metadata.filtered1$Datafiles
+  divpart.R <- div_part(final.table,qvalue=0,hierarchy=hierarchy[,c(1,5)])
+  betadis.R <- beta_dis(divpart.R)
+  betadisR_results <- append(betadisR_results,betadis.R$CqN[2])
+}
+names(betadisR_results) <- code.list
+
+#REH
+capwild.tree <- read.tree("Data/genustree.tre")
+
+betadisREH_results <- c()
+for (code in code.list){
+  final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
+    rownames(final.table) <- gsub(" ","_",rownames(final.table))
+    rownames(final.table) <- gsub("[","",rownames(final.table),fixed = TRUE)
+    rownames(final.table) <- gsub("]","",rownames(final.table),fixed = TRUE)
+    rownames(final.table) <- gsub("(","-",rownames(final.table),fixed = TRUE)
+    rownames(final.table) <- gsub(")","-",rownames(final.table),fixed = TRUE)
+  ##Filter the hierarchy
+  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
+  #Check whether both lists are identical
+  identical(sort(colnames(final.table)),sort(as.character(hierarchy[,1])))
+  ##Filter the metadata
+  samples.kept <- colnames(final.table)
+  metadata.filtered <- metadata[rownames(metadata) %in% samples.kept,]
+  metadata.filtered1 <- tibble::rownames_to_column(metadata.filtered, "Code")
+  row.names(metadata.filtered1) <- metadata.filtered1$Datafiles
+  capwild.tree <- read.tree("Data/genustree.tre")
+  tree_filtered <- match_data(final.table,capwild.tree,output="tree")
+  divpart.REH <- div_part(final.table,qvalue=1,hierarchy=hierarchy[,c(1,5)],tree=tree_filtered)
+  betadis.REH <- beta_dis(divpart.REH)
+  betadisREH_results <- append(betadisREH_results,betadis.REH$CqN[2])
+}
+names(betadisREH_results) <- code.list
 
 #### Compositional differences: PERMANOVA #####
 #Permutest and Adonis
-#Pairwise (dis)similarity computation based on beta diversities
-#R
+#Pairwise dissimilarity computation based on beta diversities (R)
+
 permanovaR_results <- c()
 permutestR_results <- c()
 for (code in code.list){
@@ -342,7 +396,8 @@ names(permutestR_results) <- code.list
 saveRDS(permanovaR_results, "Results/RDS/permanova_R.RData")
 saveRDS(permutestR_results, "Results/RDS/permutest_R.RData")
 
-#REH
+#Pairwise (dis)similarity computation based on beta diversities (REH)
+
 capwild.tree <- read.tree("Data/genustree.tre")
 permanovaREH_results <- c()
 permutestREH_results <- c()
