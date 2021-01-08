@@ -106,11 +106,12 @@ for (code in code.list){
 }
 
 ###############
-# 2) DIVERSITY ANALYSES
+# 2) DIVERSITY SUMMARIES
 ###############
 
 ####Diversity analysis based on abundace: using hilldiv####
-##R
+
+# Summary of diversity values based on richness (R)
 summary_R <- c()
 for (code in code.list){
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
@@ -127,34 +128,13 @@ for (code in code.list){
   sd_captive <- sd(divqR_captive[,c("Value")])
   summary_R <- rbind(summary_R,c(n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
 }
+
 colnames(summary_R) <- c("n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
 rownames(summary_R) <- code.list
 write.table(summary_R, "Results/summary_diversity_R.tsv")
-# Meta-analysis
-summary_R <- read.table("Results/summary_diversity_R.tsv")
-ssummary_R <- as.data.frame(summary_R)
-meta_R_ready <- tibble::rownames_to_column(summary_R,"Author")
-rownames(meta_R_ready) <- meta_R_ready$Author
-sp_sorted <- c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","GOGO","PEMA","PELE","TUTR","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT")
-meta_R_ready <- meta_R_ready[sp_sorted,]
-meta_R.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
-                        data = meta_R_ready,
-                        studlab = paste(Author),
-                        comb.fixed = FALSE,
-                        comb.random = TRUE,
-                        method.tau = "SJ",
-                        hakn = TRUE,
-                        prediction = TRUE,
-                        sm = "SMD")
-saveRDS(meta_R.raw, "Results/RDS/metanalysis_R.RData")
 
-pdf("Results/Plots/forest_R.pdf", width=13, height=8)
-forest(meta_R.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect",
-       rightlabs = c("g","95% CI","Weight"),leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),
-       lab.e = "Captivity",lab.c="Wild")
-dev.off()
+# Summary of diversity values based on richness+eveness+homogeneity (REH)
 
-##REH
 capwild.tree <- read.tree("Data/genustree.tre")
 
 summary_REH <- c()
@@ -183,7 +163,38 @@ for (code in code.list){
 colnames(summary_REH) <- c("n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
 rownames(summary_REH) <- code.list
 write.table(summary_REH, "Results/summary_diversity_REH.tsv")
-# Meta-analysis
+
+###############
+# 3) DIVERSITY META-ANALYSES
+###############
+
+# Meta-analysis based on richness (R)
+
+summary_R <- read.table("Results/summary_diversity_R.tsv")
+ssummary_R <- as.data.frame(summary_R)
+meta_R_ready <- tibble::rownames_to_column(summary_R,"Author")
+rownames(meta_R_ready) <- meta_R_ready$Author
+sp_sorted <- c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","GOGO","PEMA","PELE","TUTR","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT")
+meta_R_ready <- meta_R_ready[sp_sorted,]
+meta_R.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
+                        data = meta_R_ready,
+                        studlab = paste(Author),
+                        comb.fixed = FALSE,
+                        comb.random = TRUE,
+                        method.tau = "SJ",
+                        hakn = TRUE,
+                        prediction = TRUE,
+                        sm = "SMD")
+saveRDS(meta_R.raw, "Results/RDS/metanalysis_R.RData")
+
+pdf("Results/Plots/forest_R.pdf", width=13, height=8)
+forest(meta_R.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect",
+       rightlabs = c("g","95% CI","Weight"),leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),
+       lab.e = "Captivity",lab.c="Wild")
+dev.off()
+
+# Meta-analysis based on richness+eveness+homogeneity (REH)
+
 summary_REH <- read.table("Results/summary_diversity_REH.tsv")
 summary_REH <- as.data.frame(summary_REH)
 meta_REH_ready <- tibble::rownames_to_column(summary_REH,"Author")
@@ -207,29 +218,14 @@ forest(meta_REH.raw,col.diamond = "blue",col.diamond.lines = "black",text.random
        lab.e = "Captivity",lab.c="Wild")
 dev.off()
 
-#Subset of the data set (Primates & Cetartiodactylans)
-#Primates
-#R
+# Meta-analysis of just primates based on richness (R)
+
+#Subset diversity table
+summary_R <- read.table("Results/summary_diversity_R.tsv")
 sublist <- c("RHBR","PYNE","PAAN","PATR","GOGO")
-summary_R.subset <- c()
-for (code in sublist){
-  final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
-  divqR <- div_test(final.table,qvalue=0,hierarchy=hierarchy[,c(1,5)])
-  divqR_table <- divqR$data
-  divqR_wild <- divqR_table[divqR_table$Group == "Wild",]
-  n_wild <- nrow(divqR_wild)
-  mean_wild <- mean(divqR_wild[,c("Value")])
-  sd_wild <- sd(divqR_wild[,c("Value")])
-  divqR_captive <- divqR_table[divqR_table$Group == "Captivity",]
-  n_captive <- nrow(divqR_captive)
-  mean_captive <- mean(divqR_captive[,c("Value")])
-  sd_captive <- sd(divqR_captive[,c("Value")])
-  summary_R.subset <- rbind(summary_R.subset,c(n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
-}
-colnames(summary_R.subset) <- c("n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
-rownames(summary_R.subset) <- sublist
-summary_R.subset <- as.data.frame(summary_R.subset)
+summary_R.subset <- summary_R[rownames(summary_R) %in% sublist,]
+
+#Run meta-analysis
 meta_R_sub_ready <- tibble::rownames_to_column(summary_R.subset,"Author")
 rownames(meta_R_sub_ready) <- meta_R_sub_ready$Author
 sp_sorted <- c("RHBR","PYNE","PAAN","PATR","GOGO")
@@ -244,34 +240,14 @@ meta_R_sub.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd
                             prediction = TRUE,
                             sm = "SMD")
 
-#REH
-#sublist <- c("RHBR","PYNE","PAAN","PATR","GOGO")
-summary_REH_sub <- c()
-for (code in sublist){
-  print(code)
-  final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-  rownames(final.table) <- gsub(" ","_",rownames(final.table))
-  rownames(final.table) <- gsub("[","",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub("]","",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub("(","-",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub(")","-",rownames(final.table),fixed = TRUE)
-  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
-  tree_filtered <- match_data(final.table,capwild.tree,output="tree")
-  divqREH <- div_test(final.table,qvalue=1,hierarchy=hierarchy[,c(1,5)], tree=tree_filtered)
-  divqREH_table <- divqREH$data
-  divqREH_wild <- divqREH_table[divqREH_table$Group == "Wild",]
-  n_wild <- nrow(divqREH_wild)
-  mean_wild <- mean(divqREH_wild[,c("Value")])
-  sd_wild <- sd(divqREH_wild[,c("Value")])
-  divqREH_captive <- divqREH_table[divqREH_table$Group == "Captivity",]
-  n_captive <- nrow(divqREH_captive)
-  mean_captive <- mean(divqREH_captive[,c("Value")])
-  sd_captive <- sd(divqREH_captive[,c("Value")])
-  summary_REH_sub <- rbind(summary_REH_sub,c(n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
-}
-colnames(summary_REH_sub) <- c("n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
-rownames(summary_REH_sub) <- sublist
-summary_REH_sub <- as.data.frame(summary_REH_sub)
+# Meta-analysis of just primates based on richness+eveness+homogeneity (REH)
+
+#Subset diversity table
+summary_REH <- read.table("Results/summary_diversity_REH.tsv")
+sublist <- c("RHBR","PYNE","PAAN","PATR","GOGO")
+summary_REH.subset <- summary_REH[rownames(summary_REH) %in% sublist,]
+
+#Run meta-analysis
 meta_REH_sub_ready <- tibble::rownames_to_column(summary_REH_sub,"Author")
 rownames(meta_REH_sub_ready) <- meta_REH_sub_ready$Author
 sp_sorted <- c("RHBR","PYNE","PAAN","PATR","GOGO")
@@ -286,28 +262,14 @@ meta_REH_sub_tree.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_
                                  prediction = TRUE,
                                  sm = "SMD")
 
-#Cetartiodactylans
-#R
+# Meta-analysis of just cetartiodactylans based on richness (R)
+
+#Subset diversity table
+summary_R <- read.table("Results/summary_diversity_R.tsv")
 sublist <- c("TUTR","MOCH","BOGA","ELDA","CENI")
-summary_R.subset <- c()
-for (code in sublist){
-  final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
-  divR <- div_test(final.table,qvalue=0,hierarchy=hierarchy[,c(1,5)])
-  divR_table <- divR$data
-  divR_wild <- divR_table[divR_table$Group == "Wild",]
-  n_wild <- nrow(divR_wild)
-  mean_wild <- mean(divR_wild[,c("Value")])
-  sd_wild <- sd(divR_wild[,c("Value")])
-  divR_captive <- divR_table[divR_table$Group == "Captivity",]
-  n_captive <- nrow(divR_captive)
-  mean_captive <- mean(divR_captive[,c("Value")])
-  sd_captive <- sd(divR_captive[,c("Value")])
-  summary_R.subset <- rbind(summary_R.subset,c(n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
-}
-colnames(summary_R.subset) <- c("n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
-rownames(summary_R.subset) <- sublist
-summary_R.subset <- as.data.frame(summary_R.subset)
+summary_R.subset <- summary_R[rownames(summary_R) %in% sublist,]
+
+#Run meta-analysis
 meta_R_sub_ready <- tibble::rownames_to_column(summary_R.subset,"Author")
 rownames(meta_R_sub_ready) <- meta_R_sub_ready$Author
 sp_sorted <- c("TUTR","MOCH","BOGA","ELDA","CENI")
@@ -322,47 +284,31 @@ meta_R_sub.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd
                             prediction = TRUE,
                             sm = "SMD")
 
-#REH
-#sublist <- c("TUTR","MOCH","BOGA","ELDA","CENI")
-summary_REH_sub <- c()
-for (code in sublist){
-  print(code)
-  final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-  rownames(final.table) <- gsub(" ","_",rownames(final.table))
-  rownames(final.table) <- gsub("[","",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub("]","",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub("(","-",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub(")","-",rownames(final.table),fixed = TRUE)
-  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
-  tree_filtered <- match_data(final.table,capwild.tree,output="tree")
-  divq1 <- div_test(final.table,qvalue=1,hierarchy=hierarchy[,c(1,5)], tree=tree_filtered)
-  divq1_table <- divq1$data
-  divq1_wild <- divq1_table[divq1_table$Group == "Wild",]
-  n_wild <- nrow(divq1_wild)
-  mean_wild <- mean(divq1_wild[,c("Value")])
-  sd_wild <- sd(divq1_wild[,c("Value")])
-  divq1_captive <- divq1_table[divq1_table$Group == "Captivity",]
-  n_captive <- nrow(divq1_captive)
-  mean_captive <- mean(divq1_captive[,c("Value")])
-  sd_captive <- sd(divq1_captive[,c("Value")])
-  summary_REH_sub <- rbind(summary_REH_sub,c(n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
-}
-colnames(summary_REH_sub) <- c("n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
-rownames(summary_REH_sub) <- sublist
-summary_REH_sub <- as.data.frame(summary_REH_sub)
+# Meta-analysis of just primates based on richness+eveness+homogeneity (REH)
+
+#Subset diversity table
+summary_REH <- read.table("Results/summary_diversity_REH.tsv")
+sublist <- c("TUTR","MOCH","BOGA","ELDA","CENI")
+summary_REH.subset <- summary_REH[rownames(summary_REH) %in% sublist,]
+
+#Run meta-analysis
 meta_REH_sub_ready <- tibble::rownames_to_column(summary_REH_sub,"Author")
 rownames(meta_REH_sub_ready) <- meta_REH_sub_ready$Author
-sp_sorted <- c("TUTR","MOCH","BOGA","ELDA","CENI")
+sp_sorted <- c("RHBR","PYNE","PAAN","PATR","GOGO")
 meta_REH_sub_ready <- meta_REH_sub_ready[sp_sorted,]
-meta_q1_sub_tree.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
-                                 data = meta_REH_sub_ready,
-                                 studlab = paste(Author),
-                                 comb.fixed = FALSE,
-                                 comb.random = TRUE,
-                                 method.tau = "SJ",
-                                 hakn = TRUE,
-                                 prediction = TRUE,
-                                 sm = "SMD")
+meta_REH_sub_tree.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
+                         data = meta_REH_sub_ready,
+                         studlab = paste(Author),
+                         comb.fixed = FALSE,
+                         comb.random = TRUE,
+                         method.tau = "SJ",
+                         hakn = TRUE,
+                         prediction = TRUE,
+                         sm = "SMD")
+
+###############
+# 4) COMPOSITIONAL DIFFERENCES
+###############
 
 #### Compositional differences: PERMANOVA #####
 #Permutest and Adonis
