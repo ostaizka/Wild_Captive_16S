@@ -229,11 +229,6 @@ summary_REH <- c()
 for (code in code.list){
   print(code)
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-  rownames(final.table) <- gsub(" ","_",rownames(final.table))
-  rownames(final.table) <- gsub("[","",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub("]","",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub("(","-",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub(")","-",rownames(final.table),fixed = TRUE)
   hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
   tree_filtered <- match_data(final.table,capwild.tree,output="tree")
   divqREH <- div_test(final.table,qvalue=1,hierarchy=hierarchy[,c(1,5)], tree=tree_filtered)
@@ -510,11 +505,6 @@ permanovaREH_results <- c()
 permutestREH_results <- c()
 for (code in code.list){
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-  rownames(final.table) <- gsub(" ","_",rownames(final.table))
-  rownames(final.table) <- gsub("[","",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub("]","",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub("(","-",rownames(final.table),fixed = TRUE)
-  rownames(final.table) <- gsub(")","-",rownames(final.table),fixed = TRUE)
   tree_filtered <- match_data(final.table,capwild.tree,output="tree")
   hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
   samples.kept <- colnames(final.table)
