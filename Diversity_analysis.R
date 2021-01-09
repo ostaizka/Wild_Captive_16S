@@ -5,7 +5,6 @@
 # January 2021
 #####
 
-
 #Load required libraries
 library(reshape2)
 library(gplots)
@@ -32,7 +31,7 @@ metadata <- read.table("Data/metadata.tsv", sep =";")
 hierarchy_all <- tibble::rownames_to_column(metadata, "Samples")
 
 ###############
-# 1) PREPARE WORKING ABUNDANCE-TABLES
+# B1) PREPARE WORKING ABUNDANCE-TABLES
 ###############
 
 #### Declare dataset (species) code names ####
@@ -51,7 +50,10 @@ list.dirs <- function(path="Species", pattern=NULL, all.dirs=FALSE,
 
 code.list <- list.dirs()
 
-#### Generate a genus-level read-abundance table for each dataset ####
+##
+## B1.1) Generate genus-level read-abundance tables for each dataset
+##
+
 for (code in code.list){
   print(code)
   #Load individual genus-level abundance tables
@@ -69,15 +71,18 @@ for (code in code.list){
   write.table(count.table.g, paste("Tables/count_genus_",code,".tsv",sep=""))
 }
 
-#### Filter tables ####
-#Load all the tables created
+##
+## B1.2) Filter genus-level read-abundance tables
+##
+
+# Load all the tables created
 for (code in code.list){
   print(code)
   count.table <- read.table(paste("Tables/count_genus_",code,".tsv",sep=""))
   assign(paste("count.table.",code,sep=""),get("count.table"))
 }
 
-#Filter out samples with low sequencing depth (1000)
+# Filter out samples with low sequencing depth (1000)
 for (code in code.list){
   count.filtdepth <- depth_filt(get(paste("count.table.",code,sep="")),1000)
   count.filtdepth <- count.filtdepth[rowSums(count.filtdepth)>0, ]
@@ -85,7 +90,7 @@ for (code in code.list){
   write.table(get(paste("count.filtdepth.",code,sep="")),paste("Tables/countfiltdepth_",code,".tsv",sep=""))
 }
 
-#Filter out samples with low diversity coverage
+# Filter out samples with low diversity coverage
 for (code in code.list){
   filtcov <- as.data.frame(depth_cov(get(paste("count.filtdepth.",code,sep="")),qvalue=0))
   count.filtcov <- get(paste("count.filtdepth.",code,sep=""))
@@ -94,24 +99,102 @@ for (code in code.list){
   write.table(get(paste("count.filtcov.",code,sep="")),paste("Tables/countfiltcov_",code,".tsv",sep=""))
 }
 
-## Remove non-bacterial or taxonomy-lacking genera from the dataset
+# Remove non-bacterial or taxonomy-lacking genera from the dataset and simplify names
 taxonlist_NA <- read.table("Data/NA_taxa.txt")
 taxonlist_NA <-  as.character(taxonlist_NA[,1])
 
 for (code in code.list){
   count.filtdepth <- read.table(paste("Tables/countfiltcov_",code,".tsv",sep=""))
   count.filtered <- count.filtdepth[! rownames(count.filtdepth) %in% taxonlist_NA,]
+  rownames(count.filtered) <- gsub(" ","_",rownames(count.filtered))
+  rownames(count.filtered) <- gsub("[","",rownames(count.filtered),fixed = TRUE)
+  rownames(count.filtered) <- gsub("]","",rownames(count.filtered),fixed = TRUE)
+  rownames(count.filtered) <- gsub("(","-",rownames(count.filtered),fixed = TRUE)
+  rownames(count.filtered) <- gsub(")","-",rownames(count.filtered),fixed = TRUE)
   assign(paste("count.filtered.",code,sep=""),get("count.filtered"))
   write.table(get(paste("count.filtered.",code,sep="")),paste("Tables/countfiltered_",code,".tsv",sep=""))
 }
 
+##
+## B1.3) Merge all species-specific tables into a single table
+##
+
+#Load filtered genus tables
+files.g = list.files(path="Tables",pattern="countfiltered_*")
+filelist.g = lapply(paste("Tables",files.g,sep="/"), function(x)read.table(x, header=T))
+rownameslist = lapply(filelist.g, function(x) rownames(x))
+for (l in c(1:length(filelist.g))){
+  filelist.g[[l]]$taxa <- rownames(filelist.g[[l]])
+}
+
+#Transform list to matrix
+filelist.g %>% purrr::reduce(full_join, by = "taxa") -> count.table.all.g
+rownames(count.table.all.g) <- count.table.all.g[,"taxa"]
+count.table.all.g <- count.table.all.g[,colnames(count.table.all.g) != "taxa"]
+
+#Replace NAs by 0s
+count.table.all.g[is.na(count.table.all.g)] <- 0
+write.table(count.table.all.g, "Tables/count_Genus_all.tsv")
+
 ###############
-# 2) DIVERSITY SUMMARIES
+# B2) ACROSS-SPECIES DIFFERENCES
 ###############
 
-####Diversity analysis based on abundace: using hilldiv####
+# Load overall genus-abundance table and prepare hierarchy table
+count.table.all.g <- read.table("Tables/count_Genus_all.tsv")
+hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(count.table.all.g)),]
 
-# Summary of diversity values based on richness (R)
+##
+## B2.1) Alpha diversity differences across species
+##
+
+#R
+divR.all <- div_test(count.table.all.g,qvalue=0,hierarchy=hierarchy[,c(1,3)])
+saveRDS(divR.all,"Results/RDS/divR.all.tree.RData")
+
+#REH
+capwild.tree <- read.tree("Data/genustree.tre")
+tree_filtered <- match_data(count.table.all.g,capwild.tree,output="tree")
+divREH.all <- div_test(count.table.all.g,qvalue=1,hierarchy=hierarchy[,c(1,3)],tree = tree_filtered)
+saveRDS(divREH.all,"Results/RDS/divREH.all.tree.RData")
+
+##
+## B2.2) Compositional differences across species
+##
+
+samples.kept <- colnames(count.table.all.g)
+metadata.filtered <- metadata[rownames(metadata) %in% samples.kept,]
+
+#R
+pairdis.R.all <- pair_dis(count.table.all.g,qvalue=0,hierarchy=hierarchy[,c(1,3)])
+saveRDS(pairdis.R.all,"Results/RDS/pairdis_R_all.RData")
+pairdis.R.all <- readRDS("Results/RDS/pairdis_R_all.RData")
+u0n <- pairdis.R.all$L1_UqN
+u0n.dist <- as.dist(u0n)
+ps.disper.u0n.species <- betadisper(u0n.dist, metadata.filtered$Species)
+permutest(ps.disper.u0n.species, pairwise = TRUE)
+adonis(u0n.dist ~ Species, data =metadata.filtered, permutations = 999)
+
+#REH - note this step may take multiple days
+capwild.tree <- read.tree("Data/genustree.tre")
+tree_filtered <- match_data(count.table.all.g,capwild.tree,output="tree")
+pairdis.REH.all <- pair_dis(count.table.all.g,qvalue=1,hierarchy=hierarchy[,c(1,3)], tree = tree_filtered)
+saveRDS(pairdis.REH.all,"Results/RDS/pairdis_REH_all.RData")
+pairdis.REH.all <- readRDS("Results/RDS/pairdis.REH.all")
+u1n.tree <- pairdis.REH.all$L1_UqN
+u1n.dist.tree <- as.dist(u1n.tree)
+ps.disper.u1n.tree <- betadisper(u1n.dist.tree, metadata.filtered$Species)
+permutest(ps.disper.u1n.tree, pairwise = TRUE)
+adonis(u1n.dist.tree ~ Species, data = metadata.filtered, permutations = 999)
+
+###############
+# B3) DIVERSITY SUMMARIES
+###############
+
+##
+## B3.1) Summary of diversity values based on richness (R)
+##
+
 summary_R <- c()
 for (code in code.list){
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
@@ -136,7 +219,9 @@ colnames(summary_R) <- c("n","mean","sd","n_wild", "mean_wild", "sd_wild","n_cap
 rownames(summary_R) <- code.list
 write.table(summary_R, "Results/summary_diversity_R.tsv")
 
-# Summary of diversity values based on richness+eveness+homogeneity (REH)
+##
+## B3.2) Summary of diversity values based on richness+eveness+homogeneity (REH)
+##
 
 capwild.tree <- read.tree("Data/genustree.tre")
 
@@ -171,10 +256,12 @@ rownames(summary_REH) <- code.list
 write.table(summary_REH, "Results/summary_diversity_REH.tsv")
 
 ###############
-# 3) DIVERSITY META-ANALYSES
+# 4) OVERALL WILD vs CAPTIVE DIVERSITY META-ANALYSES
 ###############
 
-# Meta-analysis based on richness (R)
+##
+## B4.1) Meta-analysis based on richness (R)
+##
 
 summary_R <- read.table("Results/summary_diversity_R.tsv")
 ssummary_R <- as.data.frame(summary_R)
@@ -199,7 +286,9 @@ forest(meta_R.raw,col.diamond = "blue",col.diamond.lines = "black",text.random =
        lab.e = "Captivity",lab.c="Wild")
 dev.off()
 
-# Meta-analysis based on richness+eveness+homogeneity (REH)
+##
+## B4.2) Meta-analysis based on richness+eveness+homogeneity (REH)
+##
 
 summary_REH <- read.table("Results/summary_diversity_REH.tsv")
 summary_REH <- as.data.frame(summary_REH)
@@ -224,7 +313,13 @@ forest(meta_REH.raw,col.diamond = "blue",col.diamond.lines = "black",text.random
        lab.e = "Captivity",lab.c="Wild")
 dev.off()
 
-# Meta-analysis of just primates based on richness (R)
+###############
+# 5) TAXON-SPECIFIC DIVERSITY META-ANALYSES
+###############
+
+##
+## B5.1) Meta-analysis of primates based on richness+eveness+homogeneity (REH)
+##
 
 #Subset diversity table
 summary_R <- read.table("Results/summary_diversity_R.tsv")
@@ -246,7 +341,9 @@ meta_R_sub.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd
                             prediction = TRUE,
                             sm = "SMD")
 
-# Meta-analysis of just primates based on richness+eveness+homogeneity (REH)
+##
+## B5.2) Meta-analysis of primates based on richness+eveness+homogeneity (REH)
+##
 
 #Subset diversity table
 summary_REH <- read.table("Results/summary_diversity_REH.tsv")
@@ -268,7 +365,9 @@ meta_REH_sub_tree.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_
                                  prediction = TRUE,
                                  sm = "SMD")
 
-# Meta-analysis of just cetartiodactylans based on richness (R)
+##
+## B5.3) Meta-analysis of cetartiodactylans based on richness (R)
+##
 
 #Subset diversity table
 summary_R <- read.table("Results/summary_diversity_R.tsv")
@@ -290,7 +389,9 @@ meta_R_sub.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd
                             prediction = TRUE,
                             sm = "SMD")
 
-# Meta-analysis of just primates based on richness+eveness+homogeneity (REH)
+##
+## B5.4) Meta-analysis of cetartiodactylans based on richness+eveness+homogeneity (REH)
+##
 
 #Subset diversity table
 summary_REH <- read.table("Results/summary_diversity_REH.tsv")
@@ -313,10 +414,12 @@ meta_REH_sub_tree.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_
                          sm = "SMD")
 
 ###############
-# 4) COMPOSITIONAL DIFFERENCES (BETA DIVERSITY BETWEEN CAPTIVE AND WILD)
+# 6) COMPOSITIONAL DIFFERENCES (DIVERSITY PARTITIONING)
 ###############
 
-#R
+##
+## B6.1) Diversity partitioning based on richness (R)
+##
 
 betadisR_results <- c()
 for (code in code.list){
@@ -336,17 +439,15 @@ for (code in code.list){
 }
 names(betadisR_results) <- code.list
 
-#REH
+##
+## B6.1) Diversity partitioning based on richness+eveness+homogeneity (REH)
+##
+
 capwild.tree <- read.tree("Data/genustree.tre")
 
 betadisREH_results <- c()
 for (code in code.list){
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-    rownames(final.table) <- gsub(" ","_",rownames(final.table))
-    rownames(final.table) <- gsub("[","",rownames(final.table),fixed = TRUE)
-    rownames(final.table) <- gsub("]","",rownames(final.table),fixed = TRUE)
-    rownames(final.table) <- gsub("(","-",rownames(final.table),fixed = TRUE)
-    rownames(final.table) <- gsub(")","-",rownames(final.table),fixed = TRUE)
   ##Filter the hierarchy
   hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
   #Check whether both lists are identical
@@ -364,9 +465,13 @@ for (code in code.list){
 }
 names(betadisREH_results) <- code.list
 
-#### Compositional differences: PERMANOVA #####
-#Permutest and Adonis
-#Pairwise dissimilarity computation based on beta diversities (R)
+###############
+# 7) COMPOSITIONAL DIFFERENCES (ANALYSIS OF VARIANCE)
+###############
+
+##
+## B7.1) Permutational analysis of variance based on richness (R)
+##
 
 permanovaR_results <- c()
 permutestR_results <- c()
@@ -396,7 +501,9 @@ names(permutestR_results) <- code.list
 saveRDS(permanovaR_results, "Results/RDS/permanova_R.RData")
 saveRDS(permutestR_results, "Results/RDS/permutest_R.RData")
 
-#Pairwise (dis)similarity computation based on beta diversities (REH)
+##
+## B7.2) Permutational analysis of variance based on richness+eveness+homogeneity (REH)
+##
 
 capwild.tree <- read.tree("Data/genustree.tre")
 permanovaREH_results <- c()
@@ -427,6 +534,41 @@ names(permanovaREH_results) <- code.list
 names(permutestREH_results) <- code.list
 saveRDS(permanovaREH_results,paste("Results/permanova_REH.RData",sep=""))
 saveRDS(permutestREH_results,paste("Results/permutest_REH.RData",sep=""))
+
+
+
+###############
+# BX) PLOTS
+###############
+
+#NMDS plots
+
+#Plot (to be moved down)
+pairdis.R.all <- readRDS("Results/RDS/pairdis_R_all.RData")
+u0n <- pairdis.R.all$L1_UqN
+dis_nmds(u0n,hierarchy=hierarchy[,c(1,19)], centroids=TRUE, runs=200)
+
+#Plot it (remove outlier D12719)
+pairdis.REH.all <- readRDS("Results/RDS/pairdis_REH_all.RData")
+u1n.tree <- pairdis.REH.all$L1_UqN
+dis_nmds(u1n.tree,hierarchy=hierarchy[,c(1,19)], centroids=TRUE, runs=200)
+
+#####################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #####Shapiro-Wilk’s method for normality test#####
 #Preliminary test to check independent t-test assumptions: normality(Shapiro) & homogeneity in variances(F-test)

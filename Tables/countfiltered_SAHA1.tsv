@@ -2,8 +2,8 @@
 "Bacteroides" 1641 0 22 227 0 39 0 435 0 36 0 0 252 0 82 37 42 69 0 9726 0
 "Cellulosilyticum" 84 0 67 0 0 883 0 0 0 42 0 0 0 93 0 0 0 0 0 62 0
 "Cetobacterium" 17648 47201 19 63391 0 62759 30 34060 0 28492 5606 8057 7750 585 66180 3933 9488 4284 12018 10007 1286
-"Clostridium sensu stricto 1" 5466 19546 7769 8754 3790 1289 25739 5186 14041 17300 13338 39369 14996 16418 14576 49638 14693 20284 14592 5806 7727
-"Clostridium sensu stricto 13" 661 860 806 298 488 63 548 101 71 66 375 120 803 457 480 50 78 840 215 71 20
+"Clostridium_sensu_stricto_1" 5466 19546 7769 8754 3790 1289 25739 5186 14041 17300 13338 39369 14996 16418 14576 49638 14693 20284 14592 5806 7727
+"Clostridium_sensu_stricto_13" 661 860 806 298 488 63 548 101 71 66 375 120 803 457 480 50 78 840 215 71 20
 "Edwardsiella" 465 401 9771 2983 587 840 0 645 1363 1583 2168 321 2274 3489 0 39 0 0 167 332 297
 "Enterobacter" 436 557 6508 3006 311 190 0 514 2120 1237 1603 298 2252 5012 0 0 24 0 316 792 271
 "Epulopiscium" 5082 7575 1406 11336 0 172 0 205 365 9849 4168 4249 5169 16515 12514 67 474 60 42 1371 0
@@ -24,22 +24,22 @@
 "Terrisporobacter" 88 908 383 746 131 1098 25 125 2078 311 2786 1579 1821 484 1900 734 46 2271 35 276 0
 "Aeromonas" 0 59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 "Campylobacter" 0 2019 4752 253 17 0 43 0 0 0 52 0 92 0 0 38 0 0 0 658 0
-"Clostridium sensu stricto 7" 0 66 90 0 0 0 368 139 31 0 0 0 0 0 0 0 0 32 145 21 0
+"Clostridium_sensu_stricto_7" 0 66 90 0 0 0 368 139 31 0 0 0 0 0 0 0 0 32 145 21 0
 "Paraclostridium" 0 228 0 0 0 0 391 548 0 0 0 33 0 0 0 44 127 161 62 0 24
 "Peptoclostridium" 0 155 0 192 0 0 0 496 0 0 0 0 0 0 0 0 0 0 0 0 0
 "Bacillus" 0 0 203 127 568 469 0 0 2071 0 0 0 116 0 0 125 0 0 0 57 0
 "Blautia" 0 0 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18 0
 "Chryseobacterium" 0 0 57 0 195 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-"Clostridium sensu stricto 11" 0 0 73 0 224 0 0 190 0 0 0 0 0 0 0 0 0 18 135 24 45
-"Clostridium sensu stricto 2" 0 0 185 0 0 0 0 0 0 0 0 0 74 0 0 0 0 6730 0 0 0
+"Clostridium_sensu_stricto_11" 0 0 73 0 224 0 0 190 0 0 0 0 0 0 0 0 0 18 135 24 45
+"Clostridium_sensu_stricto_2" 0 0 185 0 0 0 0 0 0 0 0 0 74 0 0 0 0 6730 0 0 0
 "Flavobacterium" 0 0 21 0 85 0 54 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 "Gelidibacter" 0 0 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 "Paeniglutamicibacter" 0 0 69 0 122 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 "Pedobacter" 0 0 29 0 98 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-"Ruminococcaceae UCG-005" 0 0 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"Ruminococcaceae_UCG-005" 0 0 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 "Sporosarcina" 0 0 63 0 10056 151 0 2153 0 0 0 0 0 0 0 0 0 0 1030 15345 0
-"Tyzzerella 3" 0 0 31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26 0 0 0
-"Tyzzerella 4" 0 0 17 0 0 0 0 0 0 0 0 0 0 0 107 0 0 0 0 28 0
+"Tyzzerella_3" 0 0 31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26 0 0 0
+"Tyzzerella_4" 0 0 17 0 0 0 0 0 0 0 0 0 0 0 107 0 0 0 0 28 0
 "Actinomyces" 0 0 0 202 0 0 229 0 0 22 46 0 161 0 0 62 20 76 199 0 0
 "Herbinix" 0 0 0 83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 98 0
 "Pygmaiobacter" 0 0 0 75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -71,9 +71,9 @@
 "Sphingomonas" 0 0 0 0 46 77 0 0 0 0 0 0 0 0 0 0 17 0 97 0 0
 "Streptococcus" 0 0 0 0 31 113 0 0 134 19 0 0 0 0 0 710 0 0 0 0 0
 "Taibaiella" 0 0 0 0 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-"Christensenellaceae R-7 group" 0 0 0 0 0 86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-"Clostridium sensu stricto 3" 0 0 0 0 0 292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-"Clostridium sensu stricto 5" 0 0 0 0 0 116 0 0 0 0 0 0 0 0 0 655 0 0 0 0 0
+"Christensenellaceae_R-7_group" 0 0 0 0 0 86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"Clostridium_sensu_stricto_3" 0 0 0 0 0 292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"Clostridium_sensu_stricto_5" 0 0 0 0 0 116 0 0 0 0 0 0 0 0 0 655 0 0 0 0 0
 "Comamonas" 0 0 0 0 0 19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 "Curvibacter" 0 0 0 0 0 54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 "Cutibacterium" 0 0 0 0 0 13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -92,8 +92,8 @@
 "Tissierella" 0 0 0 0 0 67 0 0 0 0 0 0 0 0 0 445 100 0 0 102 0
 "Vagococcus" 0 0 0 0 0 147 0 0 0 1231 0 0 0 0 0 627 659 82 1393 0 2047
 "Chlamydia" 0 0 0 0 0 0 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-"Clostridium sensu stricto 15" 0 0 0 0 0 0 652 47 0 0 0 0 0 0 0 0 0 0 155 0 0
-"Clostridium sensu stricto 4" 0 0 0 0 0 0 45 0 0 0 0 0 0 0 0 0 0 0 318 0 23
+"Clostridium_sensu_stricto_15" 0 0 0 0 0 0 652 47 0 0 0 0 0 0 0 0 0 0 155 0 0
+"Clostridium_sensu_stricto_4" 0 0 0 0 0 0 45 0 0 0 0 0 0 0 0 0 0 0 318 0 23
 "Dielma" 0 0 0 0 0 0 13 0 0 0 0 0 0 0 0 34 14 0 13 0 0
 "Hathewaya" 0 0 0 0 0 0 241 94 0 0 0 0 0 0 0 0 0 291 129 0 14
 "Mycoplasma" 0 0 0 0 0 0 102 19 0 79 0 0 0 0 0 0 122 0 67 852 451
@@ -115,13 +115,13 @@
 "Lelliottia" 0 0 0 0 0 0 0 0 0 0 0 0 608 0 0 0 21 0 0 0 0
 "Morganella" 0 0 0 0 0 0 0 0 0 0 0 0 322 0 0 0 308 0 0 0 47
 "Parafrigoribacterium" 0 0 0 0 0 0 0 0 0 0 0 0 109 0 0 0 0 0 0 0 0
-"[Ruminococcus] gnavus group" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 0 0 0 0 0 0
+"Ruminococcus_gnavus_group" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 0 0 0 0 0 0
 "Afipia" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 0 0 0 0 0
 "Arsenicicoccus" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 0 0
 "Atopostipes" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 0 0 0 0 0
 "Bosea" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19 0 0 0 0 0
-"Clostridium sensu stricto 18" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38 0 0 0 0 0
-"Corynebacterium 1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 503 0 0 0 0 0
+"Clostridium_sensu_stricto_18" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38 0 0 0 0 0
+"Corynebacterium_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 503 0 0 0 0 0
 "Curtobacterium" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 129 0 0 0 0 0
 "Granulicella" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 0 0 0 0 0
 "Haemophilus" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 0 0 0 0 0
@@ -135,7 +135,7 @@
 "Pseudarthrobacter" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 90 0 0 0 0 0
 "Pseudoclavibacter" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 122 0 0 0 0
 "Pseudorhizobium" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 0 0 0 0 0
-"Ruminiclostridium 1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 0
+"Ruminiclostridium_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23 0 0 0 0 0
 "Staphylococcus" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52 0 0 1290 0 0
 "Veillonella" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 0 0 0 0 0
 "Acetitomaculum" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38 0 0 0 0
@@ -146,7 +146,7 @@
 "Yersinia" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51 0 0 0 0
 "Planococcus" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 0 0 0
 "Planomicrobium" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 0 0 0
-"[Clostridium] innocuum group" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0
+"Clostridium_innocuum_group" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0
 "Butyricicoccus" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26 0
 "Erysipelatoclostridium" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84 0
 "Paenisporosarcina" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 465 0
@@ -155,5 +155,5 @@
 "Pseudochrobactrum" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47 0
 "Tyzzerella" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 89 0
 "Vitreoscilla" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26 0
-"[Eubacterium] brachy group" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35
+"Eubacterium_brachy_group" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35
 "Gemella" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16

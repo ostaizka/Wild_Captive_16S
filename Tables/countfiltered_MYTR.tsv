@@ -1,7 +1,7 @@
 "D14213" "D14214" "D14215" "D14216" "D14217" "D14218" "D14219" "D14220" "D14221" "D14222" "D14223"
-"[Eubacterium] hallii group" 4 7 0 82 43 0 0 0 0 0 0
-"[Ruminococcus] gnavus group" 18 20 0 0 0 0 0 0 0 0 0
-"[Ruminococcus] torques group" 15 13 55 18 11 0 0 0 0 0 0
+"Eubacterium_hallii_group" 4 7 0 82 43 0 0 0 0 0 0
+"Ruminococcus_gnavus_group" 18 20 0 0 0 0 0 0 0 0 0
+"Ruminococcus_torques_group" 15 13 55 18 11 0 0 0 0 0 0
 "Acinetobacter" 44 54 3849 22 7 4873 3860 3748 93 0 27
 "Aeromonas" 23 7 8 0 0 0 0 0 0 0 0
 "Alloprevotella" 530 301 491 0 2 0 0 15 155 0 0
@@ -12,7 +12,7 @@
 "Butyricicoccus" 58 17 33 0 0 0 0 0 0 0 0
 "Catenibacterium" 13 7 0 194 162 0 0 0 0 0 0
 "Citrobacter" 57 0 0 0 4 0 0 0 0 0 0
-"Clostridium sensu stricto 1" 1615 1795 550 2284 1118 1159 23 565 1917 17 174
+"Clostridium_sensu_stricto_1" 1615 1795 550 2284 1118 1159 23 565 1917 17 174
 "Collinsella" 220 53 36 32 18 0 0 0 0 0 0
 "Dialister" 154 16 0 6 11 0 0 0 0 0 0
 "Diaphorobacter" 2 12 8 0 0 137 43 11 18 0 0
@@ -21,14 +21,14 @@
 "Enterobacter" 392 395 23 28 26 109 18 77 8 41 0
 "Enterococcus" 21 21 18 0 0 61 9 56 860 431 70
 "Erysipelatoclostridium" 65 53 30 0 0 0 7 0 0 0 0
-"Erysipelotrichaceae UCG-006" 38 40 55 220 133 0 0 0 0 0 0
+"Erysipelotrichaceae_UCG-006" 38 40 55 220 133 0 0 0 0 0 0
 "Escherichia-Shigella" 2156 2061 256 57 67 10 0 24 2980 184 13
 "Faecalibacterium" 14 43 322 35 57 0 0 0 0 0 0
 "Faecalitalea" 2 0 0 69 37 0 0 0 0 0 0
 "Hafnia-Obesumbacterium" 4 4 4 0 0 0 0 0 0 0 0
 "Holdemanella" 1341 1040 624 891 687 0 0 0 0 0 0
 "Lachnoclostridium" 59 22 369 12 7 0 0 16 0 6 0
-"Lachnospiraceae UCG-008" 150 214 15 525 355 0 5 11 0 130 0
+"Lachnospiraceae_UCG-008" 150 214 15 525 355 0 5 11 0 130 0
 "Lactobacillus" 4 4 0 35 65 0 0 0 0 0 0
 "Lactococcus" 232 195 230 223 109 17 211 38 1221 43 88
 "Leuconostoc" 3 0 0 15 0 0 0 0 0 0 0
@@ -45,17 +45,17 @@
 "Pedomicrobium" 3 0 0 0 0 0 0 0 0 0 0
 "Peptoclostridium" 722 638 61 2 0 0 0 0 0 0 0
 "Peptococcus" 44 70 23 166 113 0 0 0 0 0 0
-"Pir4 lineage" 3 0 0 0 0 0 0 0 0 0 0
-"Prevotella 2" 31 25 21 0 0 0 0 0 0 0 0
-"Prevotella 9" 41 351 171 839 554 0 0 0 0 0 0
+"Pir4_lineage" 3 0 0 0 0 0 0 0 0 0 0
+"Prevotella_2" 31 25 21 0 0 0 0 0 0 0 0
+"Prevotella_9" 41 351 171 839 554 0 0 0 0 0 0
 "Raoultella" 16 0 0 0 0 0 0 0 0 0 0
 "Reyranella" 3 0 4 0 0 0 0 0 0 0 0
-"Rikenellaceae RC9 gut group" 19 0 0 9 17 0 0 242 0 0 0
+"Rikenellaceae_RC9_gut_group" 19 0 0 9 17 0 0 242 0 0 0
 "Romboutsia" 446 595 78 169 103 1149 55 117 898 12 324
 "Rothia" 15 5 0 0 0 0 0 0 0 0 0
-"Ruminiclostridium 1" 4 0 0 0 0 0 195 0 0 0 0
-"Ruminococcaceae UCG-005" 28 12 6 21 2 0 9 1517 0 0 0
-"Ruminococcaceae UCG-014" 106 112 569 1799 1381 0 0 371 743 0 4
+"Ruminiclostridium_1" 4 0 0 0 0 0 195 0 0 0 0
+"Ruminococcaceae_UCG-005" 28 12 6 21 2 0 9 1517 0 0 0
+"Ruminococcaceae_UCG-014" 106 112 569 1799 1381 0 0 371 743 0 4
 "Sarcina" 90 91 0 10 18 0 0 0 0 0 0
 "Slackia" 5 0 0 0 0 0 0 0 0 0 0
 "Solobacterium" 56 29 83 644 380 0 0 0 0 0 0
@@ -63,10 +63,10 @@
 "Streptococcus" 5590 5602 1651 5822 3790 0 0 4 0 0 0
 "Subdoligranulum" 9 11 8 480 319 0 0 0 0 0 0
 "Terrisporobacter" 111 148 98 13 9 0 4 0 23 2 17
-"Treponema 2" 5 14 7 7 0 0 0 0 0 0 0
+"Treponema_2" 5 14 7 7 0 0 0 0 0 0 0
 "Turicibacter" 141 143 150 90 104 17 0 0 46 0 0
-"Tyzzerella 4" 8 0 138 0 0 4 0 24 18 0 0
-"[Eubacterium] eligens group" 0 10 34 14 7 0 0 0 0 0 0
+"Tyzzerella_4" 8 0 138 0 0 4 0 24 18 0 0
+"Eubacterium_eligens_group" 0 10 34 14 7 0 0 0 0 0 0
 "Agathobacter" 0 4 7 0 0 0 0 0 4 0 0
 "Alistipes" 0 4 15 0 0 0 53 67 16 0 0
 "Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium" 0 3 0 0 0 48 23 0 6 0 0
@@ -76,8 +76,8 @@
 "Brevundimonas" 0 2 0 2 0 2974 29 0 0 0 0
 "Cetobacterium" 0 8 864 0 0 0 0 0 0 0 0
 "Conexibacter" 0 2 0 0 0 6 0 0 30 0 48
-"Coprococcus 3" 0 5 144 91 32 0 0 7 0 0 2
-"Corynebacterium 1" 0 4 0 0 0 0 0 0 3 0 0
+"Coprococcus_3" 0 5 144 91 32 0 0 7 0 0 2
+"Corynebacterium_1" 0 4 0 0 0 0 0 0 3 0 0
 "Devosia" 0 2 0 0 0 120 44 0 0 0 0
 "Dongia" 0 2 0 0 0 0 0 0 0 0 0
 "Erysipelothrix" 0 2 0 0 0 10 0 51 0 0 431
@@ -86,22 +86,22 @@
 "Jeotgalibaca" 0 3 0 0 0 0 0 0 0 2 0
 "Kurthia" 0 13 4 35 13 0 0 36 6 9883 173
 "Lachnospira" 0 2 0 0 0 0 0 0 0 0 0
-"Lachnospiraceae UCG-001" 0 3 13 3 0 0 0 20 0 0 0
+"Lachnospiraceae_UCG-001" 0 3 13 3 0 0 0 20 0 0 0
 "Myroides" 0 8 3 0 0 286 0 0 0 0 0
 "Negativibacillus" 0 2 34 25 16 0 0 0 0 0 0
 "Oscillibacter" 0 3 335 8 8 0 0 11 0 0 0
 "Paraclostridium" 0 10 0 0 3 70 0 0 0 0 0
 "Paracoccus" 0 3 0 0 0 117 0 0 0 0 0
 "Pedobacter" 0 2 0 0 0 0 18 0 0 0 0
-"Prevotella 7" 0 53 0 4 0 0 0 0 0 0 0
-"Prevotellaceae NK3B31 group" 0 7 5 0 0 0 0 0 0 0 0
+"Prevotella_7" 0 53 0 4 0 0 0 0 0 0 0
+"Prevotellaceae_NK3B31_group" 0 7 5 0 0 0 0 0 0 0 0
 "Pseudolabrys" 0 5 0 0 0 0 0 0 0 0 0
 "Pseudomonas" 0 31 20 0 0 54 195 5 8 0 0
 "Psychrobacter" 0 16 6 0 0 0 0 0 0 0 0
 "Rhodopirellula" 0 2 0 0 0 0 11 0 0 0 0
 "Roseburia" 0 4 435 18 15 0 0 128 9 0 0
-"Ruminococcaceae UCG-002" 0 4 0 42 82 0 0 0 0 0 0
-"Ruminococcus 1" 0 10 62 22 27 0 0 80 0 0 0
+"Ruminococcaceae_UCG-002" 0 4 0 42 82 0 0 0 0 0 0
+"Ruminococcus_1" 0 10 62 22 27 0 0 80 0 0 0
 "Solibacillus" 0 32 13 0 3 176 0 0 67 211 12
 "Sphingobacterium" 0 2 0 15 5 1125 12 1281 88 0 43
 "Sphingomonas" 0 4 7 0 0 0 7 2 0 0 0
@@ -110,50 +110,50 @@
 "Sutterella" 0 3 93 0 0 0 0 0 0 0 0
 "Tyzzerella" 0 4 38 0 0 0 0 0 0 0 0
 "Ulvibacter" 0 33 7 0 0 0 0 0 0 0 0
-"[Acetivibrio] ethanolgignens group" 0 0 172 0 0 0 0 0 0 0 0
-"[Eubacterium] coprostanoligenes group" 0 0 211 162 161 0 0 11 300 0 0
-"[Eubacterium] fissicatena group" 0 0 11 0 0 0 3 2 0 245 0
-"[Eubacterium] nodatum group" 0 0 17 26 16 0 0 8 0 0 0
-"[Eubacterium] ruminantium group" 0 0 2 9 11 0 0 0 0 0 0
-"[Ruminococcus] gauvreauii group" 0 0 83 6 8 0 0 0 0 0 0
+"Acetivibrio_ethanolgignens_group" 0 0 172 0 0 0 0 0 0 0 0
+"Eubacterium_coprostanoligenes_group" 0 0 211 162 161 0 0 11 300 0 0
+"Eubacterium_fissicatena_group" 0 0 11 0 0 0 3 2 0 245 0
+"Eubacterium_nodatum_group" 0 0 17 26 16 0 0 8 0 0 0
+"Eubacterium_ruminantium_group" 0 0 2 9 11 0 0 0 0 0 0
+"Ruminococcus_gauvreauii_group" 0 0 83 6 8 0 0 0 0 0 0
 "Adhaeribacter" 0 0 2 0 0 0 0 0 0 0 0
 "Adlercreutzia" 0 0 2 0 0 0 0 0 0 0 0
 "Anaerosporobacter" 0 0 12 0 0 0 5 9 3 0 0
 "Anaerovorax" 0 0 24 0 0 0 10 0 0 0 0
 "Barnesiella" 0 0 23 0 0 0 0 0 0 0 0
 "Butyricimonas" 0 0 4 0 0 0 0 43 0 0 0
-"Candidatus Soleaferrea" 0 0 3 0 0 0 0 0 0 0 0
-"Candidatus Stoquefichus" 0 0 180 3 0 0 0 4 8 0 0
-"Christensenellaceae R-7 group" 0 0 15 41 32 0 27 149 0 0 0
+"Candidatus_Soleaferrea" 0 0 3 0 0 0 0 0 0 0 0
+"Candidatus_Stoquefichus" 0 0 180 3 0 0 0 4 8 0 0
+"Christensenellaceae_R-7_group" 0 0 15 41 32 0 27 149 0 0 0
 "Comamonas" 0 0 27 0 0 191 699 439 0 0 2542
-"Family XIII AD3011 group" 0 0 26 11 6 0 0 0 0 0 0
+"Family_XIII_AD3011_group" 0 0 26 11 6 0 0 0 0 0 0
 "Flavobacterium" 0 0 12 0 0 72 6819 1763 109 0 0
 "GCA-900066575" 0 0 84 0 0 0 0 0 0 0 0
 "Glutamicibacter" 0 0 6 4 0 74 0 0 0 466 44
 "Holdemania" 0 0 8 0 0 0 0 0 0 0 0
 "Intestinimonas" 0 0 7 0 0 0 0 0 0 0 0
-"Lachnoclostridium 5" 0 0 54 0 0 4 24 0 0 244 0
-"Lachnospiraceae FCS020 group" 0 0 76 8 0 0 0 107 0 0 0
-"Lachnospiraceae NC2004 group" 0 0 9 3 5 0 0 6 0 0 0
-"Lachnospiraceae NK4A136 group" 0 0 109 0 0 0 0 28 0 0 0
-"Lachnospiraceae UCG-004" 0 0 5 0 0 0 0 0 3 1195 0
+"Lachnoclostridium_5" 0 0 54 0 0 4 24 0 0 244 0
+"Lachnospiraceae_FCS020_group" 0 0 76 8 0 0 0 107 0 0 0
+"Lachnospiraceae_NC2004_group" 0 0 9 3 5 0 0 6 0 0 0
+"Lachnospiraceae_NK4A136_group" 0 0 109 0 0 0 0 28 0 0 0
+"Lachnospiraceae_UCG-004" 0 0 5 0 0 0 0 0 3 1195 0
 "Luteimonas" 0 0 8 0 0 0 0 0 0 0 0
 "Lysobacter" 0 0 14 0 0 0 0 0 0 0 0
 "mle1-7" 0 0 3 0 0 0 0 0 0 0 0
 "Morganella" 0 0 3 0 0 0 0 0 56 0 0
 "Nordella" 0 0 2 0 0 0 0 0 0 0 0
-"OM60(NOR5) clade" 0 0 2 0 0 0 0 0 0 0 0
+"OM60-NOR5-_clade" 0 0 2 0 0 0 0 0 0 0 0
 "Oscillospira" 0 0 64 0 0 0 0 0 0 0 0
 "Phascolarctobacterium" 0 0 93 0 0 0 0 109 55 0 0
 "Porphyromonas" 0 0 3 0 0 0 0 0 0 0 0
-"Prevotellaceae UCG-003" 0 0 13 0 6 0 0 12 0 0 0
+"Prevotellaceae_UCG-003" 0 0 13 0 6 0 0 12 0 0 0
 "Pseudorhodoplanes" 0 0 3 0 0 46 0 0 0 0 0
 "Pseudoxanthomonas" 0 0 2 0 0 0 0 0 0 0 0
-"Ruminiclostridium 5" 0 0 15 0 5 0 0 0 4 0 0
-"Ruminiclostridium 9" 0 0 12 8 2 0 0 3 0 0 0
-"Ruminococcaceae NK4A214 group" 0 0 26 25 24 0 2 16 3 0 0
-"Ruminococcaceae UCG-008" 0 0 4 11 8 0 0 0 0 0 0
-"Ruminococcaceae UCG-009" 0 0 18 0 0 0 0 2 0 0 0
+"Ruminiclostridium_5" 0 0 15 0 5 0 0 0 4 0 0
+"Ruminiclostridium_9" 0 0 12 8 2 0 0 3 0 0 0
+"Ruminococcaceae_NK4A214_group" 0 0 26 25 24 0 2 16 3 0 0
+"Ruminococcaceae_UCG-008" 0 0 4 11 8 0 0 0 0 0 0
+"Ruminococcaceae_UCG-009" 0 0 18 0 0 0 0 2 0 0 0
 "S5-A14a" 0 0 103 0 0 0 0 8 0 0 0
 "Sellimonas" 0 0 3 7 12 0 0 0 0 0 0
 "Shuttleworthia" 0 0 12 0 0 0 0 0 0 0 0
@@ -162,28 +162,28 @@
 "Trichococcus" 0 0 2 0 0 0 0 0 0 0 0
 "UBA1819" 0 0 14 22 13 0 0 0 0 0 0
 "Weissella" 0 0 12 0 0 0 32 0 0 10 0
-"[Eubacterium] xylanophilum group" 0 0 0 13 11 0 0 3 0 0 0
+"Eubacterium_xylanophilum_group" 0 0 0 13 11 0 0 3 0 0 0
 "Akkermansia" 0 0 0 5 0 0 0 0 0 0 0
 "Anaerostipes" 0 0 0 62 39 0 0 0 0 0 0
 "Catenisphaera" 0 0 0 7 2 0 0 0 0 0 0
-"Coprococcus 2" 0 0 0 72 82 0 0 0 0 0 0
+"Coprococcus_2" 0 0 0 72 82 0 0 0 0 0 0
 "Cronobacter" 0 0 0 3 4 0 0 0 12 0 0
 "Desulfovibrio" 0 0 0 4 0 0 0 0 0 0 0
-"Erysipelotrichaceae UCG-009" 0 0 0 31 18 0 0 0 0 0 0
+"Erysipelotrichaceae_UCG-009" 0 0 0 31 18 0 0 0 0 0 0
 "Falsochrobactrum" 0 0 0 6 0 0 15 0 0 0 0
 "GCA-900066225" 0 0 0 3 4 0 0 0 0 0 0
 "Helicobacter" 0 0 0 2 0 0 0 2 0 0 0
-"Lachnospiraceae ND3007 group" 0 0 0 2 0 0 0 0 0 0 0
-"Lachnospiraceae NK3A20 group" 0 0 0 139 100 0 0 0 0 0 0
-"Lachnospiraceae UCG-002" 0 0 0 3 0 0 0 0 0 0 0
+"Lachnospiraceae_ND3007_group" 0 0 0 2 0 0 0 0 0 0 0
+"Lachnospiraceae_NK3A20_group" 0 0 0 139 100 0 0 0 0 0 0
+"Lachnospiraceae_UCG-002" 0 0 0 3 0 0 0 0 0 0 0
 "Methanobrevibacter" 0 0 0 104 98 0 0 3 0 3 0
 "Methanosphaera" 0 0 0 30 40 0 0 0 0 0 0
 "Mogibacterium" 0 0 0 39 20 0 0 0 0 0 0
 "Ochrobactrum" 0 0 0 6 2 3952 0 0 61 0 0
 "Pediococcus" 0 0 0 16 10 0 2 0 0 0 0
-"Prevotella 1" 0 0 0 8 0 0 0 0 0 0 0
-"Ruminococcaceae UCG-013" 0 0 0 23 13 0 0 92 0 0 0
-"Ruminococcus 2" 0 0 0 6 0 0 0 0 0 0 0
+"Prevotella_1" 0 0 0 8 0 0 0 0 0 0 0
+"Ruminococcaceae_UCG-013" 0 0 0 23 13 0 0 92 0 0 0
+"Ruminococcus_2" 0 0 0 6 0 0 0 0 0 0 0
 "Viridibacillus" 0 0 0 2 0 0 0 0 0 0 0
 "Acetitomaculum" 0 0 0 0 6 0 0 0 0 0 0
 "Acidaminococcus" 0 0 0 0 6 0 0 0 0 0 0
@@ -208,16 +208,16 @@
 "Burkholderia-Caballeronia-Paraburkholderia" 0 0 0 0 0 6 0 0 0 0 0
 "Caldicoprobacter" 0 0 0 0 0 23 0 0 0 3 0
 "Camelimonas" 0 0 0 0 0 217 8 0 0 0 0
-"Candidatus Tokpelaia" 0 0 0 0 0 26 0 0 0 0 0
+"Candidatus_Tokpelaia" 0 0 0 0 0 26 0 0 0 0 0
 "Cellulomonas" 0 0 0 0 0 188 0 0 0 148 0
 "Cellulosimicrobium" 0 0 0 0 0 245 0 0 0 30 15
 "Chelatococcus" 0 0 0 0 0 23 0 0 0 0 0
 "Chthoniobacter" 0 0 0 0 0 6 3 0 0 0 0
 "Chungangia" 0 0 0 0 0 5 0 0 0 0 0
 "Cloacibacterium" 0 0 0 0 0 19 0 0 0 0 0
-"Clostridium sensu stricto 5" 0 0 0 0 0 104 4 269 16 15 81
-"Clostridium sensu stricto 8" 0 0 0 0 0 20 0 0 0 0 0
-"Clostridium sensu stricto 9" 0 0 0 0 0 3 5 0 0 0 0
+"Clostridium_sensu_stricto_5" 0 0 0 0 0 104 4 269 16 15 81
+"Clostridium_sensu_stricto_8" 0 0 0 0 0 20 0 0 0 0 0
+"Clostridium_sensu_stricto_9" 0 0 0 0 0 3 5 0 0 0 0
 "Cohnella" 0 0 0 0 0 159 3 0 0 0 5
 "Cupriavidus" 0 0 0 0 0 4 0 0 0 0 0
 "Desulfitobacterium" 0 0 0 0 0 32 20 0 0 83 0
@@ -291,8 +291,8 @@
 "Azospirillum" 0 0 0 0 0 0 87 0 0 0 0
 "Bdellovibrio" 0 0 0 0 0 0 30 0 0 0 0
 "Breznakia" 0 0 0 0 0 0 3 0 0 0 0
-"Clostridium sensu stricto 13" 0 0 0 0 0 0 11 0 0 0 4
-"Clostridium sensu stricto 7" 0 0 0 0 0 0 2 0 0 0 0
+"Clostridium_sensu_stricto_13" 0 0 0 0 0 0 11 0 0 0 4
+"Clostridium_sensu_stricto_7" 0 0 0 0 0 0 2 0 0 0 0
 "Defluviimonas" 0 0 0 0 0 0 8 0 0 0 0
 "DSSF69" 0 0 0 0 0 0 8 0 0 0 0
 "Gemmobacter" 0 0 0 0 0 0 27 0 0 0 0
@@ -312,7 +312,7 @@
 "Rummeliibacillus" 0 0 0 0 0 0 11 0 0 0 7
 "Soonwooa" 0 0 0 0 0 0 3 0 0 0 0
 "Taibaiella" 0 0 0 0 0 0 10 0 0 0 0
-"[Anaerorhabdus] furcosa group" 0 0 0 0 0 0 0 4 3 0 0
+"Anaerorhabdus_furcosa_group" 0 0 0 0 0 0 0 4 3 0 0
 "28-4" 0 0 0 0 0 0 0 22 0 0 0
 "Acidibacter" 0 0 0 0 0 0 0 5 37 0 0
 "Arcobacter" 0 0 0 0 0 0 0 15 0 0 0
@@ -323,24 +323,24 @@
 "Flavonifractor" 0 0 0 0 0 0 0 3 0 0 0
 "Ketogulonicigenium" 0 0 0 0 0 0 0 4 0 0 0
 "Methylocapsa" 0 0 0 0 0 0 0 2 0 0 0
-"possible genus Sk018" 0 0 0 0 0 0 0 5 0 0 0
-"Prevotellaceae UCG-001" 0 0 0 0 0 0 0 12 10 0 0
-"probable genus 10" 0 0 0 0 0 0 0 19 0 0 0
+"possible_genus_Sk018" 0 0 0 0 0 0 0 5 0 0 0
+"Prevotellaceae_UCG-001" 0 0 0 0 0 0 0 12 10 0 0
+"probable_genus_10" 0 0 0 0 0 0 0 19 0 0 0
 "Proteus" 0 0 0 0 0 0 0 16 0 0 0
 "Providencia" 0 0 0 0 0 0 0 9 0 0 0
-"Ruminococcaceae UCG-010" 0 0 0 0 0 0 0 25 0 0 0
+"Ruminococcaceae_UCG-010" 0 0 0 0 0 0 0 25 0 0 0
 "Sanguibacteroides" 0 0 0 0 0 0 0 26 0 0 0
 "Acidisphaera" 0 0 0 0 0 0 0 0 6 0 0
 "Acidothermus" 0 0 0 0 0 0 0 0 2 0 0
-"alphaI cluster" 0 0 0 0 0 0 0 0 3 0 0
+"alphaI_cluster" 0 0 0 0 0 0 0 0 3 0 0
 "Anaerobacillus" 0 0 0 0 0 0 0 0 9 0 0
 "Arsenophonus" 0 0 0 0 0 0 0 0 28 0 0
 "Bavariicoccus" 0 0 0 0 0 0 0 0 4 0 0
 "Brochothrix" 0 0 0 0 0 0 0 0 11 0 0
 "Bryobacter" 0 0 0 0 0 0 0 0 9 0 0
-"Candidatus Solibacter" 0 0 0 0 0 0 0 0 11 0 0
+"Candidatus_Solibacter" 0 0 0 0 0 0 0 0 11 0 0
 "Carnobacterium" 0 0 0 0 0 0 0 0 4 0 0
-"Coprococcus 1" 0 0 0 0 0 0 0 0 9 0 0
+"Coprococcus_1" 0 0 0 0 0 0 0 0 9 0 0
 "Methylovirgula" 0 0 0 0 0 0 0 0 11 0 0
 "Minicystis" 0 0 0 0 0 0 0 0 3 0 0
 "Occallatibacter" 0 0 0 0 0 0 0 0 5 0 0
@@ -351,8 +351,8 @@
 "Roseiarcus" 0 0 0 0 0 0 0 0 29 0 0
 "Tsukamurella" 0 0 0 0 0 0 0 0 4 0 0
 "ZOR0006" 0 0 0 0 0 0 0 0 25 0 0
-"Clostridium sensu stricto 16" 0 0 0 0 0 0 0 0 0 15 48
-"Lachnoclostridium 10" 0 0 0 0 0 0 0 0 0 3 0
+"Clostridium_sensu_stricto_16" 0 0 0 0 0 0 0 0 0 15 48
+"Lachnoclostridium_10" 0 0 0 0 0 0 0 0 0 3 0
 "Microbacterium" 0 0 0 0 0 0 0 0 0 10 0
 "Ornithinibacillus" 0 0 0 0 0 0 0 0 0 15 0
 "Pseudogracilibacillus" 0 0 0 0 0 0 0 0 0 116 94
