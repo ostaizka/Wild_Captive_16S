@@ -95,7 +95,7 @@ for (code in code.list){
 for (code in code.list){
   filtcov <- as.data.frame(depth_cov(get(paste("count.filtdepth.",code,sep="")),qvalue=0))
   count.filtcov <- get(paste("count.filtdepth.",code,sep=""))
-  count.filtcov <- count.filtcov[,rownames(filtcov[filtcov$Coverage > 98,])]
+  count.filtcov <- count.filtcov[,rownames(filtcov[filtcov$Coverage > 99,])]
   assign(paste("count.filtcov.",code,sep=""),get("count.filtcov"))
   write.table(get(paste("count.filtcov.",code,sep="")),paste("Tables/countfiltcov_",code,".tsv",sep=""))
 }
