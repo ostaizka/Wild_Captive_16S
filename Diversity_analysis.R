@@ -1,4 +1,5 @@
 #####
+# Supplementary code B
 # Diversity analysis pipeline v1
 # by Ostaizka Aizpurua and Antton Alberdi
 # ostaizka.aizpurua@sund.ku.dk, antton.alberdi@sund.ku.dk
@@ -94,7 +95,7 @@ for (code in code.list){
 for (code in code.list){
   filtcov <- as.data.frame(depth_cov(get(paste("count.filtdepth.",code,sep="")),qvalue=0))
   count.filtcov <- get(paste("count.filtdepth.",code,sep=""))
-  count.filtcov <- count.filtcov[,rownames(filtcov[filtcov$Coverage > 98,])]
+  count.filtcov <- count.filtcov[,rownames(filtcov[filtcov$Coverage > 99,])]
   assign(paste("count.filtcov.",code,sep=""),get("count.filtcov"))
   write.table(get(paste("count.filtcov.",code,sep="")),paste("Tables/countfiltcov_",code,".tsv",sep=""))
 }
@@ -434,6 +435,12 @@ for (code in code.list){
 }
 names(betadisR_results) <- code.list
 
+#Statistics
+mean(betadisR_results)
+sd(betadisR_results)
+max(betadisR_results)
+min(betadisR_results)
+
 ##
 ## B6.1) Diversity partitioning based on richness+eveness+homogeneity (REH)
 ##
@@ -459,6 +466,12 @@ for (code in code.list){
   betadisREH_results <- append(betadisREH_results,betadis.REH$CqN[2])
 }
 names(betadisREH_results) <- code.list
+
+#Statistics
+mean(betadisREH_results)
+sd(betadisREH_results)
+max(betadisREH_results)
+min(betadisREH_results)
 
 ###############
 # 7) COMPOSITIONAL DIFFERENCES (ANALYSIS OF VARIANCE)
