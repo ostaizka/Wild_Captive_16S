@@ -271,10 +271,10 @@ meta_R.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wil
                         hakn = TRUE,
                         prediction = TRUE,
                         sm = "SMD")
-saveRDS(meta_R.raw, "Results/RDS/meta_dR.RData")
+saveRDS(meta_R.raw, "Results/RDS/meta_dR.all.RData")
 
 #Forest plot dR
-meta_R.raw <- readRDS("Results/RDS/meta_dR.RData")
+meta_R.raw <- readRDS("Results/RDS/meta_dR.all.RData")
 pdf("Results/Plots/forest_dR.pdf", width=13, height=8)
 forest(meta_R.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect",
        rightlabs = c("g","95% CI","Weight"),leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),
@@ -300,10 +300,10 @@ meta_RER.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_w
                              hakn = TRUE,
                              prediction = TRUE,
                              sm = "SMD")
-saveRDS(meta_RER.raw, "Results/RDS/meta_dRER.RData")
+saveRDS(meta_RER.raw, "Results/RDS/meta_dRER.all.RData")
 
 #Forest plot dRER
-meta_RER.raw <- readRDS("Results/RDS/meta_dRER.RData")
+meta_RER.raw <- readRDS("Results/RDS/meta_dRER.all.RData")
 pdf("Results/Plots/forest_dRER.pdf",width=13, height=8)
 forest(meta_RER.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect",
        rightlabs = c("g","95% CI","Weight"),leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),
@@ -315,19 +315,18 @@ dev.off()
 ###############
 
 ##
-## B5.1) Meta-analysis of primates based on richness+eveness+homogeneity (REH)
+## B5.1) Meta-analysis of primates based on richness+eveness+homogeneity (dR)
 ##
 
 #Subset diversity table
-summary_R <- read.table("Results/summary_diversity_R.tsv")
+summary_dR <- read.table("Results/summary_diversity_dR.tsv")
 sublist <- c("RHBR","PYNE","PAAN","PATR","GOGO")
-summary_R.subset <- summary_R[rownames(summary_R) %in% sublist,]
+summary_dR.subset <- summary_dR[rownames(summary_dR) %in% sublist,]
 
 #Run meta-analysis
-meta_R_sub_ready <- tibble::rownames_to_column(summary_R.subset,"Author")
+meta_R_sub_ready <- tibble::rownames_to_column(summary_dR.subset,"Author")
 rownames(meta_R_sub_ready) <- meta_R_sub_ready$Author
-sp_sorted <- c("RHBR","PYNE","PAAN","PATR","GOGO")
-meta_R_sub_ready <- meta_R_sub_ready[sp_sorted,]
+meta_R_sub_ready <- meta_R_sub_ready[sublist,]
 meta_R_sub.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
                             data = meta_R_sub_ready,
                             studlab = paste(Author),
@@ -337,23 +336,31 @@ meta_R_sub.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd
                             hakn = TRUE,
                             prediction = TRUE,
                             sm = "SMD")
+saveRDS(meta_R_sub.raw,"Results/RDS/meta_dR.primates.RData")
+
+#Forest plot dR
+meta_R_sub.raw <- readRDS("Results/RDS/meta_dR.primates.RData")
+pdf("Results/Plots/forest_dR_primates.pdf", width=13, height=8)
+forest(meta_R_sub.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect",
+  rightlabs = c("g","95% CI","Weight"),leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),
+  lab.e = "Captivity",lab.c="Wild")
+dev.off()
 
 ##
-## B5.2) Meta-analysis of primates based on richness+eveness+homogeneity (REH)
+## B5.2) Meta-analysis of primates based on richness+eveness+homogeneity (dRER)
 ##
 
 #Subset diversity table
-summary_REH <- read.table("Results/summary_diversity_REH.tsv")
+summary_dRER <- read.table("Results/summary_diversity_dRER.tsv")
 sublist <- c("RHBR","PYNE","PAAN","PATR","GOGO")
-summary_REH.subset <- summary_REH[rownames(summary_REH) %in% sublist,]
+summary_dRER.subset <- summary_dRER[rownames(summary_dRER) %in% sublist,]
 
 #Run meta-analysis
-meta_REH_sub_ready <- tibble::rownames_to_column(summary_REH_sub,"Author")
-rownames(meta_REH_sub_ready) <- meta_REH_sub_ready$Author
-sp_sorted <- c("RHBR","PYNE","PAAN","PATR","GOGO")
-meta_REH_sub_ready <- meta_REH_sub_ready[sp_sorted,]
-meta_REH_sub_tree.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
-                                 data = meta_REH_sub_ready,
+meta_RER_sub_ready <- tibble::rownames_to_column(summary_dRER.subset,"Author")
+rownames(meta_RER_sub_ready) <- meta_RER_sub_ready$Author
+meta_RER_sub_ready <- meta_RER_sub_ready[sublist,]
+meta_RER_sub.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
+                                 data = meta_RER_sub_ready,
                                  studlab = paste(Author),
                                  comb.fixed = FALSE,
                                  comb.random = TRUE,
@@ -362,20 +369,29 @@ meta_REH_sub_tree.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_
                                  prediction = TRUE,
                                  sm = "SMD")
 
+saveRDS(meta_RER_sub.raw,"Results/RDS/meta_dRER.primates.RData")
+
+#Forest plot dR
+meta_RER_sub.raw <- readRDS("Results/RDS/meta_dRER.primates.RData")
+pdf("Results/Plots/forest_dRER_primates.pdf", width=13, height=8)
+forest(meta_RER_sub.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect",
+         rightlabs = c("g","95% CI","Weight"),leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),
+         lab.e = "Captivity",lab.c="Wild")
+dev.off()
+
 ##
 ## B5.3) Meta-analysis of cetartiodactylans based on richness (R)
 ##
 
 #Subset diversity table
-summary_R <- read.table("Results/summary_diversity_R.tsv")
+summary_dR <- read.table("Results/summary_diversity_dR.tsv")
 sublist <- c("TUTR","MOCH","BOGA","ELDA","CENI")
-summary_R.subset <- summary_R[rownames(summary_R) %in% sublist,]
+summary_dR.subset <- summary_dR[rownames(summary_dR) %in% sublist,]
 
 #Run meta-analysis
-meta_R_sub_ready <- tibble::rownames_to_column(summary_R.subset,"Author")
+meta_R_sub_ready <- tibble::rownames_to_column(summary_dR.subset,"Author")
 rownames(meta_R_sub_ready) <- meta_R_sub_ready$Author
-sp_sorted <- c("TUTR","MOCH","BOGA","ELDA","CENI")
-meta_R_sub_ready <- meta_R_sub_ready[sp_sorted,]
+meta_R_sub_ready <- meta_R_sub_ready[sublist,]
 meta_R_sub.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
                             data = meta_R_sub_ready,
                             studlab = paste(Author),
@@ -385,30 +401,48 @@ meta_R_sub.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd
                             hakn = TRUE,
                             prediction = TRUE,
                             sm = "SMD")
+saveRDS(meta_R_sub.raw,"Results/RDS/meta_dR.cetartiodactyla.RData")
+
+#Forest plot dR
+meta_R_sub.raw <- readRDS("Results/RDS/meta_dR.cetartiodactyla.RData")
+pdf("Results/Plots/forest_dR_cetartiodactyla.pdf", width=13, height=8)
+forest(meta_R_sub.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect",
+  rightlabs = c("g","95% CI","Weight"),leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),
+  lab.e = "Captivity",lab.c="Wild")
+dev.off()
 
 ##
 ## B5.4) Meta-analysis of cetartiodactylans based on richness+eveness+homogeneity (REH)
 ##
 
 #Subset diversity table
-summary_REH <- read.table("Results/summary_diversity_REH.tsv")
+summary_dRER <- read.table("Results/summary_diversity_dRER.tsv")
 sublist <- c("TUTR","MOCH","BOGA","ELDA","CENI")
-summary_REH.subset <- summary_REH[rownames(summary_REH) %in% sublist,]
+summary_dRER.subset <- summary_dRER[rownames(summary_dRER) %in% sublist,]
 
 #Run meta-analysis
-meta_REH_sub_ready <- tibble::rownames_to_column(summary_REH_sub,"Author")
-rownames(meta_REH_sub_ready) <- meta_REH_sub_ready$Author
-sp_sorted <- c("RHBR","PYNE","PAAN","PATR","GOGO")
-meta_REH_sub_ready <- meta_REH_sub_ready[sp_sorted,]
-meta_REH_sub_tree.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
-                         data = meta_REH_sub_ready,
-                         studlab = paste(Author),
-                         comb.fixed = FALSE,
-                         comb.random = TRUE,
-                         method.tau = "SJ",
-                         hakn = TRUE,
-                         prediction = TRUE,
-                         sm = "SMD")
+meta_RER_sub_ready <- tibble::rownames_to_column(summary_dRER.subset,"Author")
+rownames(meta_RER_sub_ready) <- meta_RER_sub_ready$Author
+meta_RER_sub_ready <- meta_RER_sub_ready[sublist,]
+meta_RER_sub.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
+                                 data = meta_RER_sub_ready,
+                                 studlab = paste(Author),
+                                 comb.fixed = FALSE,
+                                 comb.random = TRUE,
+                                 method.tau = "SJ",
+                                 hakn = TRUE,
+                                 prediction = TRUE,
+                                 sm = "SMD")
+
+saveRDS(meta_RER_sub.raw,"Results/RDS/meta_dRER.cetartiodactyla.RData")
+
+#Forest plot dR
+meta_RER_sub.raw <- readRDS("Results/RDS/meta_dRER.cetartiodactyla.RData")
+pdf("Results/Plots/forest_dRER_cetartiodactyla.pdf", width=13, height=8)
+forest(meta_RER_sub.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect",
+         rightlabs = c("g","95% CI","Weight"),leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),
+         lab.e = "Captivity",lab.c="Wild")
+dev.off()
 
 ###############
 # 6) COMPOSITIONAL DIFFERENCES (DIVERSITY PARTITIONING)
