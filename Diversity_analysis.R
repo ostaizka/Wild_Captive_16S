@@ -9,6 +9,8 @@
 #Load required libraries
 library(reshape2)
 library(gplots)
+library(ggplot2)
+library(ggrepel)
 library(purrr)
 library(hilldiv)
 library(ape)
@@ -607,16 +609,16 @@ colMeans(shared.taxa)
 #Pairwise dissimilarity matrix of wild individuals
 count.table.wild <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Wild","Sample"]]
 pair_dis_dR_wild <- pair_dis(count.table.wild,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Wild",c("Sample","Species")])
-saveRDS(pair_dis_dR_wild,"pairdis_dR_wild.RData")
+saveRDS(pair_dis_dR_wild,"pairdis_dR.wild.RData")
 
 #Pairwise dissimilarity matrix of captive individuals
 count.table.captive <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Captivity","Sample"]]
 pair_dis_dR_captive <- pair_dis(count.table.captive,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Captivity",c("Sample","Species")])
-saveRDS(pair_dis_dR_captive,"pairdis_dR_captive.RData")
+saveRDS(pair_dis_dR_captive,"pairdis_dR.captive.RData")
 
 #Load dissimilarity files
-pair_dis_dR_wild <- readRDS("Results/RDS/pairdis_dR_wild.RData")
-pair_dis_dR_captive <- readRDS("Results/RDS/pairdis_dR_captive.RData")
+pair_dis_dR_wild <- readRDS("Results/RDS/pairdis_dR.wild.RData")
+pair_dis_dR_captive <- readRDS("Results/RDS/pairdis_dR.captive.RData")
 
 #Prepare dissimilarity matrices
 pair_dis_dR_wild_L2_UqN <- pair_dis_dR_wild$L2_UqN
@@ -666,6 +668,7 @@ pairdis_dR.groups <- readRDS("Results/RDS/pairdis_dR.groups.RData")
 #Obtain distance matrix
 distmatrix <- pairdis_dR.groups$L2_UqN
 
+#Calculate position of the captive or wild counterpart
 vector <- c()
 for (g in as.character(unique(metadata.filtered$Group))){
 sp <- gsub("_.*","",g)
@@ -685,51 +688,122 @@ distmatrix_sub <- sort(distmatrix_sub)
 position <- which(names(distmatrix_sub) == ref)
 vector <- c(vector,position)
 }
+names(vector) <- as.character(unique(metadata.filtered$Group))
 
-names(vector) <- as.character(unique(hierarchy$Group))
+#Percentage of groups in which the wild or captive counterpart is the most similar group
+length(vector[vector == 1]) / length(vector) * 100
 
-length(vector[vector == 1]) / length(vector)
+#Percentage of groups in which the wild or captive counterpart is not the most similar group
+length(vector[vector > 1]) / length(vector) * 100
 
 ###############
 # 11) HIERARCHICAL CLUSTERING AND TOPOLOGICAL DIFFERENCES (only dR)
 ###############
 
 #Load dissimilarity files
-pair_dis_dR_wild <- readRDS("Results/RDS/pairdis_dR_wild.RData")
-pair_dis_dR_captive <- readRDS("Results/RDS/pairdis_dR_captive.RData")
-
-#Prepare dissimilarity matrices
-pair_dis_dR_wild_L2_UqN <- pair_dis_dR_wild$L2_UqN
-pair_dis_dR_wild_L2_UqN <- pair_dis_dR_wild_L2_UqN[!is.na(pair_dis_dR_wild_L2_UqN)]
-pair_dis_dR_captive_L2_UqN <- pair_dis_dR_captive$L2_UqN
-pair_dis_dR_captive_L2_UqN <- pair_dis_dR_captive_L2_UqN[!is.na(pair_dis_dR_captive_L2_UqN)]
+pair_dis_dR_wild <- readRDS("Results/RDS/pairdis_dR.wild.RData")
+pair_dis_dR_captive <- readRDS("Results/RDS/pairdis_dR.captive.RData")
 
 #Hierarchical clustering
-hclust_wild <- as.dendrogram(hclust(as.dist(pair_dis_dR_wild_L2_UqN), method="average"))
-hclust_captivity <- as.dendrogram(hclust(as.dist(pair_dis_dR_captive_L2_UqN),method="average"))
-host_tree_ultra <- as.dendrogram(force.ultrametric(host_tree))
+hclust_wild <- as.dendrogram(hclust(as.dist(pair_dis_dR_wild$L2_UqN), method="average"))
+hclust_captive <- as.dendrogram(hclust(as.dist(pair_dis_dR_captive$L2_UqN),method="average"))
 
 #Plot tanglegram
 pdf("Results/Plots/clustering_tanglegram_dR.pdf",width=8,height=6)
 tanglegram(untangle_labels(hclust_wild, hclust_captive,method="random"), highlight_distinct_edges = FALSE,highlight_branches_lwd = FALSE)
 dev.off()
 
-
 ###############
-# BX) PLOTS
+# 12) NMDS plot
 ###############
 
-#NMDS plots
+# 12.1) NMDS plot dR
 
-#Plot (to be moved down)
-pairdis.R.all <- readRDS("Results/RDS/pairdis_R_all.RData")
-u0n <- pairdis.R.all$L1_UqN
-dis_nmds(u0n,hierarchy=hierarchy[,c(1,19)], centroids=TRUE, runs=200)
+#Load pairwise dissimilarity file
+pairdis_dR.all <- readRDS("Results/RDS/pairdis_dR.all.RData")
 
-#Plot it (remove outlier D12719)
-pairdis.REH.all <- readRDS("Results/RDS/pairdis_REH_all.RData")
-u1n.tree <- pairdis.REH.all$L1_UqN
-dis_nmds(u1n.tree,hierarchy=hierarchy[,c(1,19)], centroids=TRUE, runs=200)
+#Extract dissimilarity matrix
+dismatrix <- pairdis_dR.all$L1_CqN
+
+#Generate NMDS object
+values.NMDS <- metaMDS(as.dist(dismatrix), k = 2, trymax = 200)
+NMDS=data.frame(x=values.NMDS$point[,1],y=values.NMDS$point[,2],Species=as.factor(metadata.filtered$Species),Origin=as.factor(metadata.filtered$Origin),Group=as.factor(paste(metadata.filtered$Species,metadata.filtered$Origin,sep="_")))
+NMDS$Sample <- rownames(NMDS)
+
+#Add colour
+sp_code <- read.table("Data/sp_code.txt")
+colnames(sp_code) <- c("Species","Description","Color")
+NMDS=merge(NMDS,sp_code[,c(1,3)],by="Species")
+
+#Find group centroids
+NMDS.centroids=aggregate(NMDS[,c("x","y")],by=list(NMDS$Group),FUN=mean)
+colnames(NMDS.centroids) <- c("Group","x_cen","y_cen")
+NMDS=merge(NMDS,NMDS.centroids,by="Group")
+
+#Find species centroids
+NMDS.centroids2=aggregate(NMDS[,c("x_cen","y_cen")],by=list(NMDS$Species),FUN=mean)
+colnames(NMDS.centroids2) <- c("Species","x_cen2","y_cen2")
+NMDS=merge(NMDS,NMDS.centroids2,by="Species")
+
+#Plot
+nmds.plot <- ggplot(NMDS, aes(x,y,colour=Species,shape=Origin)) +
+  #Centroids
+  geom_point(aes(x=x_cen,y=y_cen),size=3) +
+  #Lines between centroids and individuals
+  geom_segment(aes(x=x_cen, y=y_cen, xend=x, yend=y), alpha=0.2) +
+  #Centroid names
+  geom_text_repel(aes(x=x_cen,y=y_cen,label=Group),size=3,vjust=0,force=0) +
+  #Lines between centroids
+  geom_segment(aes(x=x_cen, y=y_cen, xend=x_cen2, yend=y_cen2), alpha=0.8) +
+  scale_colour_manual(values = as.character(sp_code[unique(NMDS$Species),3])) +
+  #Theme
+  theme(panel.background = element_rect(fill = 'white', colour = 'grey'))
+
+ggsave("Results/Plots/NMDS_dR.pdf",nmds.plot, width = 10, height = 6)
+
+# 12.2) NMDS plot dRER
+
+#Load pairwise dissimilarity file
+pairdis_dR.all <- readRDS("Results/RDS/pairdis_dRER.all.RData")
+
+#Extract dissimilarity matrix
+dismatrix <- pairdis_dR.all$L1_CqN
+
+#Generate NMDS object
+values.NMDS <- metaMDS(as.dist(dismatrix), k = 2, trymax = 200)
+NMDS=data.frame(x=values.NMDS$point[,1],y=values.NMDS$point[,2],Species=as.factor(metadata.filtered$Species),Origin=as.factor(metadata.filtered$Origin),Group=as.factor(paste(metadata.filtered$Species,metadata.filtered$Origin,sep="_")))
+NMDS$Sample <- rownames(NMDS)
+
+#Add colour
+sp_code <- read.table("Data/sp_code.txt")
+colnames(sp_code) <- c("Species","Description","Color")
+NMDS=merge(NMDS,sp_code[,c(1,3)],by="Species")
+
+#Find group centroids
+NMDS.centroids=aggregate(NMDS[,c("x","y")],by=list(NMDS$Group),FUN=mean)
+colnames(NMDS.centroids) <- c("Group","x_cen","y_cen")
+NMDS=merge(NMDS,NMDS.centroids,by="Group")
+
+#Find species centroids
+NMDS.centroids2=aggregate(NMDS[,c("x_cen","y_cen")],by=list(NMDS$Species),FUN=mean)
+colnames(NMDS.centroids2) <- c("Species","x_cen2","y_cen2")
+NMDS=merge(NMDS,NMDS.centroids2,by="Species")
+
+#Plot
+nmds.plot <- ggplot(NMDS, aes(x,y,colour=Species,shape=Origin)) +
+  #Centroids
+  geom_point(aes(x=x_cen,y=y_cen),size=3) +
+  #Lines between centroids and individuals
+  geom_segment(aes(x=x_cen, y=y_cen, xend=x, yend=y), alpha=0.2) +
+  #Centroid names
+  geom_text_repel(aes(x=x_cen,y=y_cen,label=Group),size=3,vjust=0,force=0) +
+  #Lines between centroids
+  geom_segment(aes(x=x_cen, y=y_cen, xend=x_cen2, yend=y_cen2), alpha=0.8) +
+  scale_colour_manual(values = as.character(sp_code[unique(NMDS$Species),3])) +
+  #Theme
+  theme(panel.background = element_rect(fill = 'white', colour = 'grey'))
+
+ggsave("Results/Plots/NMDS_dRER.pdf",nmds.plot, width = 10, height = 6)
 
 #####################################################################################
 
