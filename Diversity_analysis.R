@@ -12,6 +12,7 @@ library(gplots)
 library(purrr)
 library(hilldiv)
 library(ape)
+library(phytools)
 library("ggplot2")
 library(vegan)
 library("RColorBrewer")
@@ -19,6 +20,7 @@ library(tidyverse)
 library(metagenomeSeq)
 library(metagMisc)
 library(phytools)
+library(plyr)
 library(dplyr)
 library("ggpubr")
 library(dmetar)
@@ -558,7 +560,7 @@ saveRDS(permanovaRER_results,paste("Results/permanova_dRER.RData",sep=""))
 saveRDS(permutestRER_results,paste("Results/permutest_dRER.RData",sep=""))
 
 ###############
-# 8) Distribution of the origin of the detected genera
+# 8) DISTRIBUTION OF THE ORIGIN OF THE DETECTED GENERA
 ###############
 
 shared.taxa <- c()
@@ -593,6 +595,61 @@ for (code in code.list){
 colnames(shared.taxa) <- c("wild_only", "both", "captive_only","wild_only_per", "both_per", "captive_only_per")
 rownames(shared.taxa) <- code.list
 write.table(shared.taxa,"Results/shared_taxa.tsv")
+
+#Mean stats
+colMeans(shared.taxa)
+
+###############
+# 9) PAIRWISE DISSIMILARITY CORRELATION BETWEEN WILD AND CAPTIVE
+###############
+
+#Pairwise dissimilarity matrix of wild individuals
+count.table.wild <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Wild","Sample"]]
+pair_dis_q0_wild <- pair_dis(count.table.wild,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Wild",c("Sample","Species")])
+saveRDS(pair_dis_q0_wild,"pairdis_dR_wild.RData")
+
+#Pairwise dissimilarity matrix of captive individuals
+count.table.captive <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Captivity","Sample"]]
+pair_dis_q0_captive <- pair_dis(count.table.captive,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Captivity",c("Sample","Species")])
+saveRDS(pair_dis_q0_captive,"pairdis_dR_captive.RData")
+
+#Load dissimilarity files
+pair_dis_q0_wild <- readRDS("Results/RDS/pairdis_dR_wild.RData")
+pair_dis_q0_captive <- readRDS("Results/RDS/pairdis_dR_captive.RData")
+
+#Prepare dissimilarity matrices
+pair_dis_q0_wild_L2_UqN <- pair_dis_q0_wild$L2_UqN
+pair_dis_q0_wild_L2_UqN <- pair_dis_q0_wild_L2_UqN[!is.na(pair_dis_q0_wild_L2_UqN)]
+pair_dis_q0_captive_L2_UqN <- pair_dis_q0_captive$L2_UqN
+pair_dis_q0_captive_L2_UqN <- pair_dis_q0_captive_L2_UqN[!is.na(pair_dis_q0_captive_L2_UqN)]
+
+#Load host phylogeny
+host_tree <- read.tree("Data/host_phylogeny.tre")
+
+#Load host species code
+sp_code <- read.table("Data/sp_code.txt")
+sp_code[,1] <- as.character(sp_code[,1])
+sp_code[,2] <- as.character(sp_code[,2])
+
+#Convert tree trip names into species codes
+host_tree$tip.label <- mapvalues(host_tree$tip.label, sp_code[,2],sp_code[,1])
+
+#Obtain TMRCA and sort data
+myr_split <- cophenetic.phylo(host_tree)/2
+myr_split <- myr_split[colnames(pair_dis_q0_wild$L2_UqN),rownames(pair_dis_q0_wild$L2_UqN)]
+myr_split_vector <- myr_split[lower.tri(myr_split, diag = FALSE)]
+
+#Correlation plot
+cortable <- as.data.frame(cbind(pair_dis_q0_wild_L2_UqN,pair_dis_q0_captive_L2_UqN,myr_split_vector))
+colnames(cortable) <- c("Y","X","D")
+
+corplot <- ggplot(cortable, aes(x=X, y=Y, color=D)) +
+  geom_point() +
+  scale_color_gradient(low="#009bb4", high="#efcf00") +
+  geom_smooth(method=lm , color="#cc2b7c", fill="#cc2b7c", se=TRUE) +
+  theme(panel.background = element_rect(fill = 'white', colour = 'grey'))
+ggsave("Results/Plots/correlation_plot.pdf",corplot)
+
 
 ###############
 # BX) PLOTS
