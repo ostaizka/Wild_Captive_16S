@@ -253,12 +253,12 @@ write.table(summary_dRER, "Results/summary_diversity_dRER.tsv")
 ###############
 
 ##
-## B4.1) Meta-analysis based on richness (R)
+## B4.1) Meta-analysis based on richness (dR)
 ##
 
-summary_R <- read.table("Results/summary_diversity_R.tsv")
-ssummary_R <- as.data.frame(summary_R)
-meta_R_ready <- tibble::rownames_to_column(summary_R,"Author")
+summary_dR <- read.table("Results/summary_diversity_dR.tsv")
+summary_dR <- as.data.frame(summary_dR)
+meta_R_ready <- tibble::rownames_to_column(summary_dR,"Author")
 rownames(meta_R_ready) <- meta_R_ready$Author
 sp_sorted <- c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","GOGO","PEMA","PELE","TUTR","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT")
 meta_R_ready <- meta_R_ready[sp_sorted,]
@@ -271,26 +271,28 @@ meta_R.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wil
                         hakn = TRUE,
                         prediction = TRUE,
                         sm = "SMD")
-saveRDS(meta_R.raw, "Results/RDS/metanalysis_R.RData")
+saveRDS(meta_R.raw, "Results/RDS/meta_dR.RData")
 
-pdf("Results/Plots/forest_R.pdf", width=13, height=8)
+#Forest plot dR
+meta_R.raw <- readRDS("Results/RDS/meta_dR.RData")
+pdf("Results/Plots/forest_dR.pdf", width=13, height=8)
 forest(meta_R.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect",
        rightlabs = c("g","95% CI","Weight"),leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),
        lab.e = "Captivity",lab.c="Wild")
 dev.off()
 
 ##
-## B4.2) Meta-analysis based on richness+eveness+homogeneity (REH)
+## B4.2) Meta-analysis based on richness+eveness+homogeneity (dRER)
 ##
 
-summary_REH <- read.table("Results/summary_diversity_REH.tsv")
-summary_REH <- as.data.frame(summary_REH)
-meta_REH_ready <- tibble::rownames_to_column(summary_REH,"Author")
-rownames(meta_REH_ready) <- meta_REH_ready$Author
+summary_dRER <- read.table("Results/summary_diversity_dRER.tsv")
+summary_dRER <- as.data.frame(summary_dRER)
+meta_RER_ready <- tibble::rownames_to_column(summary_dRER,"Author")
+rownames(meta_RER_ready) <- meta_RER_ready$Author
 sp_sorted <- c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","GOGO","PEMA","PELE","TUTR","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT")
-meta_REH_ready <- meta_REH_ready[sp_sorted,]
-meta_REH.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
-                             data = meta_REH_ready,
+meta_RER_ready <- meta_RER_ready[sp_sorted,]
+meta_RER.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
+                             data = meta_RER_ready,
                              studlab = paste(Author),
                              comb.fixed = FALSE,
                              comb.random = TRUE,
@@ -298,10 +300,12 @@ meta_REH.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_w
                              hakn = TRUE,
                              prediction = TRUE,
                              sm = "SMD")
-saveRDS(meta_REH.raw, "Results/RDS/metanalysis_REH.RData")
+saveRDS(meta_RER.raw, "Results/RDS/meta_dRER.RData")
 
-pdf("Results/Plots/forest_REH.pdf",width=13, height=8)
-forest(meta_REH.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect",
+#Forest plot dRER
+meta_RER.raw <- readRDS("Results/RDS/meta_dRER.RData")
+pdf("Results/Plots/forest_dRER.pdf",width=13, height=8)
+forest(meta_RER.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect",
        rightlabs = c("g","95% CI","Weight"),leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),
        lab.e = "Captivity",lab.c="Wild")
 dev.off()
