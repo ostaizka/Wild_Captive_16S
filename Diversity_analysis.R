@@ -28,8 +28,7 @@ library(meta)
 setwd("~/github/Wild_Captive_16S")
 
 #### Load the metadata and create hierarchy table for diversity analyses ####
-metadata <- read.table("Data/metadata.tsv", sep =";")
-hierarchy_all <- tibble::rownames_to_column(metadata, "Samples")
+metadata <- read.table("Data/metadata.tsv", sep =";",row.names=1)
 
 ###############
 # B1) PREPARE WORKING ABUNDANCE-TABLES
@@ -143,21 +142,21 @@ write.table(count.table.all.g, "Tables/count_Genus_all.tsv")
 
 # Load overall genus-abundance table and prepare hierarchy table
 count.table.all.g <- read.table("Tables/count_Genus_all.tsv")
-hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(count.table.all.g)),]
+hierarchy <- metadata[which(metadata[,"Sample"] %in% colnames(count.table.all.g)),]
 
 ##
 ## B2.1) Alpha diversity differences across species
 ##
 
 #R
-divR.all <- div_test(count.table.all.g,qvalue=0,hierarchy=hierarchy[,c(1,3)])
-saveRDS(divR.all,"Results/RDS/divR.all.tree.RData")
+div_dR.all <- div_test(count.table.all.g,qvalue=0,hierarchy=hierarchy[,c("Sample","Species")])
+saveRDS(div_dR.all,"Results/RDS/div_dR.all.RData")
 
-#REH
+#dRER
 capwild.tree <- read.tree("Data/genustree.tre")
 tree_filtered <- match_data(count.table.all.g,capwild.tree,output="tree")
-divREH.all <- div_test(count.table.all.g,qvalue=1,hierarchy=hierarchy[,c(1,3)],tree = tree_filtered)
-saveRDS(divREH.all,"Results/RDS/divREH.all.tree.RData")
+div_dRER.all <- div_test(count.table.all.g,qvalue=1,hierarchy=hierarchy[,c("Sample","Species")],tree = tree_filtered)
+saveRDS(div_dRER.all,"Results/RDS/div_dRER.all.RData")
 
 ##
 ## B2.2) Compositional differences across species
