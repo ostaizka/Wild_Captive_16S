@@ -569,31 +569,30 @@ for (code in code.list){
   filtered.pecent <- tss(final.table)*100
   filtered.pecent.t <- as.data.frame(t(as.matrix(filtered.pecent)))
   table.W <- tibble::rownames_to_column(filtered.pecent.t, "Sample")
+  #Wild taxa
   wild.capt <- merge(table.W,metadata.filtered.subset,by="Sample")
   wild.capt <- wild.capt[,-c(1)]
   wild <- wild.capt[wild.capt$Origin == "Wild",]
   wild <- wild[,-ncol(wild)]
   wild <- wild[,colSums(wild) > 0]
   wild.taxa <- colnames(wild)
+  #Captive taxa
   captive <- wild.capt[wild.capt$Origin == "Captivity",]
   captive <- captive[,-ncol(captive)]
   captive <- captive[,colSums(captive) > 0]
   captive.taxa <- colnames(captive)
+  #Distribution
   both.taxa <- intersect(wild.taxa,captive.taxa)
   wildonly.taxa <- wild.taxa[!wild.taxa %in% captive.taxa]
   captiveonly.taxa <- captive.taxa[! captive.taxa %in% wild.taxa]
-  shared <- cbind(length(wildonly.taxa),length(both.taxa),length(captiveonly.taxa))
+  alltaxa <- c(both.taxa,wildonly.taxa,captiveonly.taxa)
+  #Vector
+  shared <- cbind(length(wildonly.taxa),length(both.taxa),length(captiveonly.taxa),length(wildonly.taxa)/length(alltaxa)*100,length(both.taxa)/length(alltaxa)*100,length(captiveonly.taxa)/length(alltaxa)*100)
   shared.taxa <- rbind(shared.taxa,shared)
 }
-colnames(shared.taxa) <- c("wild_only", "both", "captive_only")
+colnames(shared.taxa) <- c("wild_only", "both", "captive_only","wild_only_per", "both_per", "captive_only_per")
 rownames(shared.taxa) <- code.list
 write.table(shared.taxa,"Results/shared_taxa.tsv")
-
-#Change to percentages
-shared.taxa.per <- apply(shared.taxa,1,function(x){x / rowSums(shared.taxa) * 100})
-
-
-
 
 ###############
 # BX) PLOTS
