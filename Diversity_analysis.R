@@ -163,15 +163,15 @@ saveRDS(div_dRER.all,"Results/RDS/div_dRER.all.RData")
 ##
 
 samples.kept <- colnames(count.table.all.g)
-metadata.filtered <- metadata[rownames(metadata) %in% samples.kept,]
+metadata.filtered <- metadata[metadata$Sample %in% samples.kept,]
 
 #R
-pairdis.R.all <- pair_dis(count.table.all.g,qvalue=0,hierarchy=hierarchy[,c(1,3)])
-saveRDS(pairdis.R.all,"Results/RDS/pairdis_R_all.RData")
-pairdis.R.all <- readRDS("Results/RDS/pairdis_R_all.RData")
-u0n <- pairdis.R.all$L1_UqN
+pairdis_dR.all <- pair_dis(count.table.all.g,qvalue=0,hierarchy=hierarchy[,c("Sample","Species")])
+saveRDS(pairdis_dR.all,"Results/RDS/pairdis_dR.all.RData")
+pairdis_dR.all <- readRDS("Results/RDS/pairdis_dR.all.RData")
+u0n <- pairdis_dR.all$L1_UqN
 u0n.dist <- as.dist(u0n)
-ps.disper.u0n.species <- betadisper(u0n.dist, metadata.filtered$Species)
+ps.disper.u0n.species <- betadisper(u0n.dist, metadata.filtered$Species) # ERROR!
 permutest(ps.disper.u0n.species, pairwise = TRUE)
 adonis(u0n.dist ~ Species, data =metadata.filtered, permutations = 999)
 
