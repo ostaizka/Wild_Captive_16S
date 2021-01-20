@@ -218,7 +218,7 @@ rownames(summary_dR) <- code.list
 write.table(summary_dR, "Results/summary_diversity_dR.tsv")
 
 ##
-## B3.2) Summary of diversity values based on richness+eveness+homogeneity (REH)
+## B3.2) Summary of diversity values based on richness+eveness+regularity (REH)
 ##
 
 capwild.tree <- read.tree("Data/genustree.tre")
@@ -282,7 +282,7 @@ forest(meta_R.raw,col.diamond = "blue",col.diamond.lines = "black",text.random =
 dev.off()
 
 ##
-## B4.2) Meta-analysis based on richness+eveness+homogeneity (dRER)
+## B4.2) Meta-analysis based on richness+eveness+regularity (dRER)
 ##
 
 summary_dRER <- read.table("Results/summary_diversity_dRER.tsv")
@@ -315,7 +315,7 @@ dev.off()
 ###############
 
 ##
-## B5.1) Meta-analysis of primates based on richness+eveness+homogeneity (dR)
+## B5.1) Meta-analysis of primates based on richness+eveness+regularity (dR)
 ##
 
 #Subset diversity table
@@ -347,7 +347,7 @@ forest(meta_R_sub.raw,col.diamond = "blue",col.diamond.lines = "black",text.rand
 dev.off()
 
 ##
-## B5.2) Meta-analysis of primates based on richness+eveness+homogeneity (dRER)
+## B5.2) Meta-analysis of primates based on richness+eveness+regularity (dRER)
 ##
 
 #Subset diversity table
@@ -412,7 +412,7 @@ forest(meta_R_sub.raw,col.diamond = "blue",col.diamond.lines = "black",text.rand
 dev.off()
 
 ##
-## B5.4) Meta-analysis of cetartiodactylans based on richness+eveness+homogeneity (REH)
+## B5.4) Meta-analysis of cetartiodactylans based on richness+eveness+regularity (REH)
 ##
 
 #Subset diversity table
@@ -445,68 +445,57 @@ forest(meta_RER_sub.raw,col.diamond = "blue",col.diamond.lines = "black",text.ra
 dev.off()
 
 ###############
-# 6) COMPOSITIONAL DIFFERENCES (DIVERSITY PARTITIONING)
+# 6) COMPOSITIONAL DIFFERENCES BETWEEN WILD AND CAPTIVE ANIMALS (DIVERSITY PARTITIONING)
 ###############
 
 ##
-## B6.1) Diversity partitioning based on richness (R)
+## B6.1) Diversity partitioning based on richness (dR)
 ##
 
-betadisR_results <- c()
+betadis_dR_results <- c()
 for (code in code.list){
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-  ##Filter the hierarchy
-  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
-  #Check whether both lists are identical
-  identical(sort(colnames(final.table)),sort(as.character(hierarchy[,1])))
   ##Filter the metadata
-  samples.kept <- colnames(final.table)
-  metadata.filtered <- metadata[rownames(metadata) %in% samples.kept,]
-  metadata.filtered1 <- tibble::rownames_to_column(metadata.filtered, "Code")
-  row.names(metadata.filtered1) <- metadata.filtered1$Datafiles
-  divpart.R <- div_part(final.table,qvalue=0,hierarchy=hierarchy[,c(1,5)])
-  betadis.R <- beta_dis(divpart.R)
-  betadisR_results <- append(betadisR_results,betadis.R$CqN[2])
+  metadata.filtered.subset <- metadata.filtered[which(metadata.filtered[,1] %in% colnames(final.table)),]
+  #Check whether both lists are identical
+  identical(sort(colnames(final.table)),sort(as.character(metadata.filtered.subset[,"Sample"])))
+  divpart.dR <- div_part(final.table,qvalue=0,hierarchy=metadata.filtered.subset[,c("Sample","Origin")])
+  betadis.dR <- beta_dis(divpart.dR)
+  betadis_dR_results <- append(betadis_dR_results,betadis.dR$CqN[2])
 }
-names(betadisR_results) <- code.list
+names(betadis_dR_results) <- code.list
 
 #Statistics
-mean(betadisR_results)
-sd(betadisR_results)
-max(betadisR_results)
-min(betadisR_results)
+mean(betadis_dR_results)
+sd(betadis_dR_results)
+max(betadis_dR_results)
+min(betadis_dR_results)
 
 ##
-## B6.1) Diversity partitioning based on richness+eveness+homogeneity (REH)
+## B6.1) Diversity partitioning based on richness+eveness+regularity (dRER)
 ##
 
 capwild.tree <- read.tree("Data/genustree.tre")
 
-betadisREH_results <- c()
+betadis_dRER_results <- c()
 for (code in code.list){
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-  ##Filter the hierarchy
-  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
-  #Check whether both lists are identical
-  identical(sort(colnames(final.table)),sort(as.character(hierarchy[,1])))
   ##Filter the metadata
-  samples.kept <- colnames(final.table)
-  metadata.filtered <- metadata[rownames(metadata) %in% samples.kept,]
-  metadata.filtered1 <- tibble::rownames_to_column(metadata.filtered, "Code")
-  row.names(metadata.filtered1) <- metadata.filtered1$Datafiles
-  capwild.tree <- read.tree("Data/genustree.tre")
+  metadata.filtered.subset <- metadata.filtered[which(metadata.filtered[,1] %in% colnames(final.table)),]
+  #Check whether both lists are identical
+  identical(sort(colnames(final.table)),sort(as.character(metadata.filtered.subset[,"Sample"])))
   tree_filtered <- match_data(final.table,capwild.tree,output="tree")
-  divpart.REH <- div_part(final.table,qvalue=1,hierarchy=hierarchy[,c(1,5)],tree=tree_filtered)
-  betadis.REH <- beta_dis(divpart.REH)
-  betadisREH_results <- append(betadisREH_results,betadis.REH$CqN[2])
+  divpart.dRER <- div_part(final.table,qvalue=1,hierarchy=metadata.filtered.subset[,c("Sample","Origin")],tree=tree_filtered)
+  betadis.dRER <- beta_dis(divpart.dRER)
+  betadis_dRER_results <- append(betadis_dRER_results,betadis.dRER$CqN[2])
 }
-names(betadisREH_results) <- code.list
+names(betadis_dRER_results) <- code.list
 
 #Statistics
-mean(betadisREH_results)
-sd(betadisREH_results)
-max(betadisREH_results)
-min(betadisREH_results)
+mean(betadis_dRER_results)
+sd(betadis_dRER_results)
+max(betadis_dRER_results)
+min(betadis_dRER_results)
 
 ###############
 # 7) COMPOSITIONAL DIFFERENCES (ANALYSIS OF VARIANCE)
@@ -520,58 +509,58 @@ permanovaR_results <- c()
 permutestR_results <- c()
 for (code in code.list){
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-  ##Filter the hierarchy
-  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
-  #Check whether both lists are identical
-  identical(sort(colnames(final.table)),sort(as.character(hierarchy[,1])))
   ##Filter the metadata
-  samples.kept <- colnames(final.table)
-  metadata.filtered <- metadata[rownames(metadata) %in% samples.kept,]
-  metadata.filtered1 <- tibble::rownames_to_column(metadata.filtered, "Code")
-  row.names(metadata.filtered1) <- metadata.filtered1$Datafiles
-  pairdis.R <- pair_dis(final.table,qvalue=0,hierarchy=hierarchy[,c(1,5)])
+  metadata.filtered.subset <- metadata.filtered[which(metadata.filtered[,1] %in% colnames(final.table)),]
+  #Check whether both lists are identical
+  identical(sort(colnames(final.table)),sort(as.character(metadata.filtered.subset[,"Sample"])))
+  pairdis.R <- pair_dis(final.table,qvalue=0,hierarchy=metadata.filtered.subset[,c("Sample","Origin")])
   u0n <- pairdis.R$L1_UqN
   u0n.dist <- as.dist(u0n)
-  ps.disper.u0n.origin <- betadisper(u0n.dist, metadata.filtered1$Origin)
+  ps.disper.u0n.origin <- betadisper(u0n.dist, metadata.filtered.subset$Origin)
   permutestR <- permutest(ps.disper.u0n.origin, pairwise = TRUE)
   permutestR_results <- append(permutestR_results,permutestR[1])
-  permanovaR <- adonis(u0n.dist ~ Origin, data =metadata.filtered1, permutations = 999)
+  permanovaR <- adonis(u0n.dist ~ Origin, data = metadata.filtered.subset, permutations = 999)
   print(code)
   permanovaR_results <- append(permanovaR_results,permanovaR[1])
 }
 names(permanovaR_results) <- code.list
 names(permutestR_results) <- code.list
-saveRDS(permanovaR_results, "Results/RDS/permanova_R.RData")
-saveRDS(permutestR_results, "Results/RDS/permutest_R.RData")
+saveRDS(permanovaR_results, "Results/RDS/permanova_dR.RData")
+saveRDS(permutestR_results, "Results/RDS/permutest_dR.RData")
 
 ##
-## B7.2) Permutational analysis of variance based on richness+eveness+homogeneity (REH)
+## B7.2) Permutational analysis of variance based on richness+eveness+regularity (REH)
 ##
 
 capwild.tree <- read.tree("Data/genustree.tre")
-permanovaREH_results <- c()
-permutestREH_results <- c()
+permanovaRER_results <- c()
+permutestRER_results <- c()
 for (code in code.list){
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
   tree_filtered <- match_data(final.table,capwild.tree,output="tree")
-  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
-  samples.kept <- colnames(final.table)
-  metadata.filtered <- metadata[rownames(metadata) %in% samples.kept,]
-  metadata.filtered1 <- tibble::rownames_to_column(metadata.filtered, "Code")
-  row.names(metadata.filtered1) <- metadata.filtered1$Datafiles
-  pairdis.REH <- pair_dis(final.table,qvalue=1,hierarchy=hierarchy[,c(1,5)], tree=tree_filtered)
-  u1n <- pairdis.REH$L1_UqN
+  ##Filter the metadata
+  metadata.filtered.subset <- metadata.filtered[which(metadata.filtered[,1] %in% colnames(final.table)),]
+  #Check whether both lists are identical
+  identical(sort(colnames(final.table)),sort(as.character(metadata.filtered.subset[,"Sample"])))
+
+  pairdis.RER <- pair_dis(final.table,qvalue=1,hierarchy=metadata.filtered.subset[,c("Sample","Origin")], tree=tree_filtered)
+  u1n <- pairdis.RER$L1_UqN
   u1n.dist <- as.dist(u1n)
-  ps.disper.u1n.origin <- betadisper(u1n.dist, metadata.filtered1$Origin)
-  permutestREH <- permutest(ps.disper.u1n.origin, pairwise = TRUE)
-  permutestREH_results <- append(permutestREH_results,permutestREH[1])
-  permanovaREH <- adonis(u1n.dist ~ Origin, data =metadata.filtered1, permutations = 999)
-  permanovaREH_results <- append(permanovaREH_results,permanovaREH[1])
+  ps.disper.u1n.origin <- betadisper(u1n.dist, metadata.filtered.subset$Origin)
+  permutestRER <- permutest(ps.disper.u1n.origin, pairwise = TRUE)
+  permutestRER_results <- append(permutestRER_results,permutestRER[1])
+  permanovaRER <- adonis(u1n.dist ~ Origin, data =metadata.filtered.subset, permutations = 999)
+  permanovaRER_results <- append(permanovaRER_results,permanovaRER[1])
 }
-names(permanovaREH_results) <- code.list
-names(permutestREH_results) <- code.list
-saveRDS(permanovaREH_results,paste("Results/permanova_REH.RData",sep=""))
-saveRDS(permutestREH_results,paste("Results/permutest_REH.RData",sep=""))
+names(permanovaRER_results) <- code.list
+names(permutestRER_results) <- code.list
+saveRDS(permanovaRER_results,paste("Results/permanova_dRER.RData",sep=""))
+saveRDS(permutestRER_results,paste("Results/permutest_dRER.RData",sep=""))
+
+
+
+
+
 
 
 
