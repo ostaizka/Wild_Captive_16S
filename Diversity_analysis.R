@@ -22,6 +22,7 @@ library(metagMisc)
 library(phytools)
 library(plyr)
 library(dplyr)
+library(dendextend)
 library("ggpubr")
 library(dmetar)
 library(meta)
@@ -556,8 +557,8 @@ for (code in code.list){
 }
 names(permanovaRER_results) <- code.list
 names(permutestRER_results) <- code.list
-saveRDS(permanovaRER_results,paste("Results/permanova_dRER.RData",sep=""))
-saveRDS(permutestRER_results,paste("Results/permutest_dRER.RData",sep=""))
+saveRDS(permanovaRER_results,paste("Results/RDS/permanova_dRER.RData",sep=""))
+saveRDS(permutestRER_results,paste("Results/RDS/permutest_dRER.RData",sep=""))
 
 ###############
 # 8) DISTRIBUTION OF THE ORIGIN OF THE DETECTED GENERA
@@ -605,23 +606,23 @@ colMeans(shared.taxa)
 
 #Pairwise dissimilarity matrix of wild individuals
 count.table.wild <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Wild","Sample"]]
-pair_dis_q0_wild <- pair_dis(count.table.wild,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Wild",c("Sample","Species")])
-saveRDS(pair_dis_q0_wild,"pairdis_dR_wild.RData")
+pair_dis_dR_wild <- pair_dis(count.table.wild,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Wild",c("Sample","Species")])
+saveRDS(pair_dis_dR_wild,"pairdis_dR_wild.RData")
 
 #Pairwise dissimilarity matrix of captive individuals
 count.table.captive <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Captivity","Sample"]]
-pair_dis_q0_captive <- pair_dis(count.table.captive,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Captivity",c("Sample","Species")])
-saveRDS(pair_dis_q0_captive,"pairdis_dR_captive.RData")
+pair_dis_dR_captive <- pair_dis(count.table.captive,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Captivity",c("Sample","Species")])
+saveRDS(pair_dis_dR_captive,"pairdis_dR_captive.RData")
 
 #Load dissimilarity files
-pair_dis_q0_wild <- readRDS("Results/RDS/pairdis_dR_wild.RData")
-pair_dis_q0_captive <- readRDS("Results/RDS/pairdis_dR_captive.RData")
+pair_dis_dR_wild <- readRDS("Results/RDS/pairdis_dR_wild.RData")
+pair_dis_dR_captive <- readRDS("Results/RDS/pairdis_dR_captive.RData")
 
 #Prepare dissimilarity matrices
-pair_dis_q0_wild_L2_UqN <- pair_dis_q0_wild$L2_UqN
-pair_dis_q0_wild_L2_UqN <- pair_dis_q0_wild_L2_UqN[!is.na(pair_dis_q0_wild_L2_UqN)]
-pair_dis_q0_captive_L2_UqN <- pair_dis_q0_captive$L2_UqN
-pair_dis_q0_captive_L2_UqN <- pair_dis_q0_captive_L2_UqN[!is.na(pair_dis_q0_captive_L2_UqN)]
+pair_dis_dR_wild_L2_UqN <- pair_dis_dR_wild$L2_UqN
+pair_dis_dR_wild_L2_UqN <- pair_dis_dR_wild_L2_UqN[!is.na(pair_dis_dR_wild_L2_UqN)]
+pair_dis_dR_captive_L2_UqN <- pair_dis_dR_captive$L2_UqN
+pair_dis_dR_captive_L2_UqN <- pair_dis_dR_captive_L2_UqN[!is.na(pair_dis_dR_captive_L2_UqN)]
 
 #Load host phylogeny
 host_tree <- read.tree("Data/host_phylogeny.tre")
@@ -636,11 +637,11 @@ host_tree$tip.label <- mapvalues(host_tree$tip.label, sp_code[,2],sp_code[,1])
 
 #Obtain TMRCA and sort data
 myr_split <- cophenetic.phylo(host_tree)/2
-myr_split <- myr_split[colnames(pair_dis_q0_wild$L2_UqN),rownames(pair_dis_q0_wild$L2_UqN)]
+myr_split <- myr_split[colnames(pair_dis_dR_wild$L2_UqN),rownames(pair_dis_dR_wild$L2_UqN)]
 myr_split_vector <- myr_split[lower.tri(myr_split, diag = FALSE)]
 
 #Correlation plot
-cortable <- as.data.frame(cbind(pair_dis_q0_wild_L2_UqN,pair_dis_q0_captive_L2_UqN,myr_split_vector))
+cortable <- as.data.frame(cbind(pair_dis_dR_wild_L2_UqN,pair_dis_dR_captive_L2_UqN,myr_split_vector))
 colnames(cortable) <- c("Y","X","D")
 
 corplot <- ggplot(cortable, aes(x=X, y=Y, color=D)) +
@@ -648,7 +649,70 @@ corplot <- ggplot(cortable, aes(x=X, y=Y, color=D)) +
   scale_color_gradient(low="#009bb4", high="#efcf00") +
   geom_smooth(method=lm , color="#cc2b7c", fill="#cc2b7c", se=TRUE) +
   theme(panel.background = element_rect(fill = 'white', colour = 'grey'))
-ggsave("Results/Plots/correlation_plot.pdf",corplot)
+ggsave("Results/Plots/dissimilarity_correlation_dR.pdf",corplot)
+
+###############
+# 10) NEAREST DATASET (only dR)
+###############
+
+#Add group variable to the metadata matrix by combining species and origin
+metadata.filtered$Group <- paste(metadata.filtered$Species,metadata.filtered$Origin,sep="_")
+
+#Compute pairwise dissimilarities
+pair_dis_dR.groups <- pair_dis(count.table.all.g,qvalue=0,hierarchy=metadata.filtered[,c("Sample","Group")])
+saveRDS(pair_dis_dR.groups,"Results/RDS/pairdis_dR.groups.RData")
+pairdis_dR.groups <- readRDS("Results/RDS/pairdis_dR.groups.RData")
+
+#Obtain distance matrix
+distmatrix <- pairdis_dR.groups$L2_UqN
+
+vector <- c()
+for (g in as.character(unique(metadata.filtered$Group))){
+sp <- gsub("_.*","",g)
+origin <- gsub(".*_","",g)
+
+if (origin == "Wild") {
+ref=paste(sp,"Captivity",sep="_")
+}
+
+if (origin == "Captivity") {
+ref=paste(sp,"Wild",sep="_")
+}
+
+distmatrix_sub <- c(distmatrix[,g],distmatrix[g,])
+distmatrix_sub <- distmatrix_sub[!is.na(distmatrix_sub)]
+distmatrix_sub <- sort(distmatrix_sub)
+position <- which(names(distmatrix_sub) == ref)
+vector <- c(vector,position)
+}
+
+names(vector) <- as.character(unique(hierarchy$Group))
+
+length(vector[vector == 1]) / length(vector)
+
+###############
+# 11) HIERARCHICAL CLUSTERING AND TOPOLOGICAL DIFFERENCES (only dR)
+###############
+
+#Load dissimilarity files
+pair_dis_dR_wild <- readRDS("Results/RDS/pairdis_dR_wild.RData")
+pair_dis_dR_captive <- readRDS("Results/RDS/pairdis_dR_captive.RData")
+
+#Prepare dissimilarity matrices
+pair_dis_dR_wild_L2_UqN <- pair_dis_dR_wild$L2_UqN
+pair_dis_dR_wild_L2_UqN <- pair_dis_dR_wild_L2_UqN[!is.na(pair_dis_dR_wild_L2_UqN)]
+pair_dis_dR_captive_L2_UqN <- pair_dis_dR_captive$L2_UqN
+pair_dis_dR_captive_L2_UqN <- pair_dis_dR_captive_L2_UqN[!is.na(pair_dis_dR_captive_L2_UqN)]
+
+#Hierarchical clustering
+hclust_wild <- as.dendrogram(hclust(as.dist(pair_dis_dR_wild_L2_UqN), method="average"))
+hclust_captivity <- as.dendrogram(hclust(as.dist(pair_dis_dR_captive_L2_UqN),method="average"))
+host_tree_ultra <- as.dendrogram(force.ultrametric(host_tree))
+
+#Plot tanglegram
+pdf("Results/Plots/clustering_tanglegram_dR.pdf",width=8,height=6)
+tanglegram(untangle_labels(hclust_wild, hclust_captive,method="random"), highlight_distinct_edges = FALSE,highlight_branches_lwd = FALSE)
+dev.off()
 
 
 ###############
