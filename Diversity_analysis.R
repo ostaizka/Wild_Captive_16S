@@ -502,7 +502,7 @@ min(betadis_dRER_results)
 ###############
 
 ##
-## B7.1) Permutational analysis of variance based on richness (R)
+## B7.1) Permutational analysis of variance based on richness (dR)
 ##
 
 permanovaR_results <- c()
@@ -529,7 +529,7 @@ saveRDS(permanovaR_results, "Results/RDS/permanova_dR.RData")
 saveRDS(permutestR_results, "Results/RDS/permutest_dR.RData")
 
 ##
-## B7.2) Permutational analysis of variance based on richness+eveness+regularity (REH)
+## B7.2) Permutational analysis of variance based on richness+eveness+regularity (dRER)
 ##
 
 capwild.tree <- read.tree("Data/genustree.tre")
@@ -557,9 +557,40 @@ names(permutestRER_results) <- code.list
 saveRDS(permanovaRER_results,paste("Results/permanova_dRER.RData",sep=""))
 saveRDS(permutestRER_results,paste("Results/permutest_dRER.RData",sep=""))
 
+###############
+# 8) Distribution of the origin of the detected genera
+###############
 
+shared.taxa <- c()
+for (code in code.list){
+  final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
+  ##Filter the metadata
+  metadata.filtered.subset <- metadata.filtered[which(metadata.filtered[,1] %in% colnames(final.table)),c("Sample","Origin")]
+  filtered.pecent <- tss(final.table)*100
+  filtered.pecent.t <- as.data.frame(t(as.matrix(filtered.pecent)))
+  table.W <- tibble::rownames_to_column(filtered.pecent.t, "Sample")
+  wild.capt <- merge(table.W,metadata.filtered.subset,by="Sample")
+  wild.capt <- wild.capt[,-c(1)]
+  wild <- wild.capt[wild.capt$Origin == "Wild",]
+  wild <- wild[,-ncol(wild)]
+  wild <- wild[,colSums(wild) > 0]
+  wild.taxa <- colnames(wild)
+  captive <- wild.capt[wild.capt$Origin == "Captivity",]
+  captive <- captive[,-ncol(captive)]
+  captive <- captive[,colSums(captive) > 0]
+  captive.taxa <- colnames(captive)
+  both.taxa <- intersect(wild.taxa,captive.taxa)
+  wildonly.taxa <- wild.taxa[!wild.taxa %in% captive.taxa]
+  captiveonly.taxa <- captive.taxa[! captive.taxa %in% wild.taxa]
+  shared <- cbind(length(wildonly.taxa),length(both.taxa),length(captiveonly.taxa))
+  shared.taxa <- rbind(shared.taxa,shared)
+}
+colnames(shared.taxa) <- c("wild_only", "both", "captive_only")
+rownames(shared.taxa) <- code.list
+write.table(shared.taxa,"Results/shared_taxa.tsv")
 
-
+#Change to percentages
+shared.taxa.per <- apply(shared.taxa,1,function(x){x / rowSums(shared.taxa) * 100})
 
 
 
