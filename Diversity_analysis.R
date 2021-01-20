@@ -142,46 +142,44 @@ write.table(count.table.all.g, "Tables/count_Genus_all.tsv")
 
 # Load overall genus-abundance table and prepare hierarchy table
 count.table.all.g <- read.table("Tables/count_Genus_all.tsv")
-hierarchy <- metadata[which(metadata[,"Sample"] %in% colnames(count.table.all.g)),]
+metadata.filtered <- metadata[which(metadata[,"Sample"] %in% colnames(count.table.all.g)),]
 
 ##
 ## B2.1) Alpha diversity differences across species
 ##
 
 #R
-div_dR.all <- div_test(count.table.all.g,qvalue=0,hierarchy=hierarchy[,c("Sample","Species")])
+div_dR.all <- div_test(count.table.all.g,qvalue=0,hierarchy=metadata.filtered[,c("Sample","Species")])
 saveRDS(div_dR.all,"Results/RDS/div_dR.all.RData")
 
 #dRER
 capwild.tree <- read.tree("Data/genustree.tre")
 tree_filtered <- match_data(count.table.all.g,capwild.tree,output="tree")
-div_dRER.all <- div_test(count.table.all.g,qvalue=1,hierarchy=hierarchy[,c("Sample","Species")],tree = tree_filtered)
+div_dRER.all <- div_test(count.table.all.g,qvalue=1,hierarchy=metadata.filtered[,c("Sample","Species")],tree = tree_filtered)
 saveRDS(div_dRER.all,"Results/RDS/div_dRER.all.RData")
 
 ##
 ## B2.2) Compositional differences across species
 ##
 
-samples.kept <- colnames(count.table.all.g)
-metadata.filtered <- metadata[metadata$Sample %in% samples.kept,]
-
-#R
-pairdis_dR.all <- pair_dis(count.table.all.g,qvalue=0,hierarchy=hierarchy[,c("Sample","Species")])
+# dR
+pairdis_dR.all <- pair_dis(count.table.all.g,qvalue=0,hierarchy=metadata.filtered[,c("Sample","Species")])
 saveRDS(pairdis_dR.all,"Results/RDS/pairdis_dR.all.RData")
 pairdis_dR.all <- readRDS("Results/RDS/pairdis_dR.all.RData")
 u0n <- pairdis_dR.all$L1_UqN
 u0n.dist <- as.dist(u0n)
-ps.disper.u0n.species <- betadisper(u0n.dist, metadata.filtered$Species) # ERROR!
+ps.disper.u0n.species <- betadisper(u0n.dist, metadata.filtered$Species)
 permutest(ps.disper.u0n.species, pairwise = TRUE)
 adonis(u0n.dist ~ Species, data =metadata.filtered, permutations = 999)
 
-#REH - note this step may take multiple days
+# dRER
 capwild.tree <- read.tree("Data/genustree.tre")
 tree_filtered <- match_data(count.table.all.g,capwild.tree,output="tree")
-pairdis.REH.all <- pair_dis(count.table.all.g,qvalue=1,hierarchy=hierarchy[,c(1,3)], tree = tree_filtered)
-saveRDS(pairdis.REH.all,"Results/RDS/pairdis_REH_all.RData")
-pairdis.REH.all <- readRDS("Results/RDS/pairdis.REH.all")
-u1n.tree <- pairdis.REH.all$L1_UqN
+ #Note the next step may take multiple days to be completed
+pairdis_dRER.all <- pair_dis(count.table.all.g,qvalue=1,hierarchy=metadata.filtered[,c("Sample","Species")], tree = tree_filtered)
+saveRDS(pairdis_dRER.all,"Results/RDS/pairdis_dRER.all.RData")
+pairdis_dRER.all <- readRDS("Results/RDS/pairdis_dRER.all.RData")
+u1n.tree <- pairdis_dRER.all$L1_UqN
 u1n.dist.tree <- as.dist(u1n.tree)
 ps.disper.u1n.tree <- betadisper(u1n.dist.tree, metadata.filtered$Species)
 permutest(ps.disper.u1n.tree, pairwise = TRUE)
@@ -195,11 +193,11 @@ adonis(u1n.dist.tree ~ Species, data = metadata.filtered, permutations = 999)
 ## B3.1) Summary of diversity values based on richness (R)
 ##
 
-summary_R <- c()
+summary_dR <- c()
 for (code in code.list){
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
-  divqR <- div_test(final.table,qvalue=0,hierarchy=hierarchy[,c(1,5)])
+  metadata.filtered.subset <- metadata.filtered[which(metadata.filtered[,1] %in% colnames(final.table)),]
+  divqR <- div_test(final.table,qvalue=0,hierarchy=metadata.filtered.subset[,c("Sample","Origin")])
   divqR_table <- divqR$data
   n <- nrow(divqR_table)
   mean <- mean(divqR_table[,c("Value")])
@@ -212,12 +210,12 @@ for (code in code.list){
   n_captive <- nrow(divqR_captive)
   mean_captive <- mean(divqR_captive[,c("Value")])
   sd_captive <- sd(divqR_captive[,c("Value")])
-  summary_R <- rbind(summary_R,c(n,mean,sd,n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
+  summary_dR <- rbind(summary_dR,c(n,mean,sd,n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
 }
 
-colnames(summary_R) <- c("n","mean","sd","n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
-rownames(summary_R) <- code.list
-write.table(summary_R, "Results/summary_diversity_R.tsv")
+colnames(summary_dR) <- c("n","mean","sd","n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
+rownames(summary_dR) <- code.list
+write.table(summary_dR, "Results/summary_diversity_dR.tsv")
 
 ##
 ## B3.2) Summary of diversity values based on richness+eveness+homogeneity (REH)
@@ -225,13 +223,13 @@ write.table(summary_R, "Results/summary_diversity_R.tsv")
 
 capwild.tree <- read.tree("Data/genustree.tre")
 
-summary_REH <- c()
+summary_dRER <- c()
 for (code in code.list){
   print(code)
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
-  hierarchy <- hierarchy_all[which(hierarchy_all[,1] %in% colnames(final.table)),]
+  metadata.filtered.subset <- metadata.filtered[which(metadata.filtered[,1] %in% colnames(final.table)),]
   tree_filtered <- match_data(final.table,capwild.tree,output="tree")
-  divqREH <- div_test(final.table,qvalue=1,hierarchy=hierarchy[,c(1,5)], tree=tree_filtered)
+  divqREH <- div_test(final.table,qvalue=1,hierarchy=metadata.filtered.subset[,c("Sample","Origin")], tree=tree_filtered)
   divqREH_table <- divqREH$data
   n <- nrow(divqREH_table)
   mean <- mean(divqREH_table[,c("Value")])
@@ -244,11 +242,11 @@ for (code in code.list){
   n_captive <- nrow(divqREH_captive)
   mean_captive <- mean(divqREH_captive[,c("Value")])
   sd_captive <- sd(divqREH_captive[,c("Value")])
-  summary_REH <- rbind(summary_REH,c(n,mean,sd,n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
+  summary_dRER <- rbind(summary_dRER,c(n,mean,sd,n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
 }
-colnames(summary_REH) <- c("n","mean","sd","n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
-rownames(summary_REH) <- code.list
-write.table(summary_REH, "Results/summary_diversity_REH.tsv")
+colnames(summary_dRER) <- c("n","mean","sd","n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
+rownames(summary_dRER) <- code.list
+write.table(summary_dRER, "Results/summary_diversity_dRER.tsv")
 
 ###############
 # 4) OVERALL WILD vs CAPTIVE DIVERSITY META-ANALYSES
