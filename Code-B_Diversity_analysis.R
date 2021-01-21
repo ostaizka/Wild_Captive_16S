@@ -30,8 +30,22 @@ library(metafor)
 #Set working directory
 setwd("~/github/Wild_Captive_16S")
 
-#### Load the metadata and create hierarchy table for diversity analyses ####
-metadata <- read.table("Data/metadata.tsv", sep =";",row.names=1)
+###############
+# INDEX
+###############
+
+# B1) PREPARE WORKING ABUNDANCE-TABLES
+# B2) ACROSS-SPECIES DIFFERENCES
+# B3) DIVERSITY SUMMARIES
+# B4) OVERALL WILD vs CAPTIVE DIVERSITY META-ANALYSES
+# B5) TAXON-SPECIFIC DIVERSITY META-ANALYSES
+# B6) COMPOSITIONAL DIFFERENCES BETWEEN WILD AND CAPTIVE ANIMALS (DIVERSITY PARTITIONING)
+# B7) COMPOSITIONAL DIFFERENCES (ANALYSIS OF VARIANCE)
+# B8) DISTRIBUTION OF THE ORIGIN OF THE DETECTED GENERA
+# B9) PAIRWISE DISSIMILARITY CORRELATION BETWEEN WILD AND CAPTIVE
+# B10) NEAREST DATASET (only dR)
+# B11) HIERARCHICAL CLUSTERING AND TOPOLOGICAL DIFFERENCES (only dR)
+# B12) NMDS plot
 
 ###############
 # B1) PREPARE WORKING ABUNDANCE-TABLES
@@ -51,7 +65,7 @@ list.dirs <- function(path="Species", pattern=NULL, all.dirs=FALSE,
     return(basename(dirs))
 }
 
-code.list <- list.dirs()
+code.list <- as.character(read.table("Data/sp_code.txt")[,1])
 
 ##
 ## B1.1) Generate genus-level read-abundance tables for each dataset
@@ -139,13 +153,19 @@ count.table.all.g <- count.table.all.g[,colnames(count.table.all.g) != "taxa"]
 count.table.all.g[is.na(count.table.all.g)] <- 0
 write.table(count.table.all.g, "Tables/count_Genus_all.tsv")
 
+#Filter metadata
+metadata <- read.table("Data/metadata.csv", sep =";",row.names=1)
+metadata.filtered <- metadata[which(metadata[,"Sample"] %in% colnames(count.table.all.g)),]
+write.table(metadata.filtered, "Data/metadata.filtered.csv",sep=";")
+
 ###############
 # B2) ACROSS-SPECIES DIFFERENCES
 ###############
 
-# Load overall genus-abundance table and prepare hierarchy table
+# Load required data
 count.table.all.g <- read.table("Tables/count_Genus_all.tsv")
-metadata.filtered <- metadata[which(metadata[,"Sample"] %in% colnames(count.table.all.g)),]
+metadata.filtered <- read.table("Data/metadata.filtered.csv", sep =";",row.names=1)
+code.list <- as.character(read.table("Data/sp_code.txt")[,1])
 
 ##
 ## B2.1) Alpha diversity differences across species
@@ -192,6 +212,12 @@ adonis(dRER.dist ~ Species, data = metadata.filtered, permutations = 999)
 # B3) DIVERSITY SUMMARIES
 ###############
 
+# Load required data
+count.table.all.g <- read.table("Tables/count_Genus_all.tsv")
+metadata.filtered <- read.table("Data/metadata.filtered.csv", sep =";",row.names=1)
+code.list <- as.character(read.table("Data/sp_code.txt")[,1])
+capwild.tree <- read.tree("Data/genustree.tre")
+
 ##
 ## B3.1) Summary of diversity values based on richness (R)
 ##
@@ -224,8 +250,6 @@ write.table(summary_dR, "Results/summary_diversity_dR.tsv")
 ## B3.2) Summary of diversity values based on richness+eveness+regularity (REH)
 ##
 
-capwild.tree <- read.tree("Data/genustree.tre")
-
 summary_dRER <- c()
 for (code in code.list){
   print(code)
@@ -252,7 +276,7 @@ rownames(summary_dRER) <- code.list
 write.table(summary_dRER, "Results/summary_diversity_dRER.tsv")
 
 ###############
-# 4) OVERALL WILD vs CAPTIVE DIVERSITY META-ANALYSES
+# B4) OVERALL WILD vs CAPTIVE DIVERSITY META-ANALYSES
 ###############
 
 ##
@@ -413,7 +437,7 @@ meta_dRER.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_
 
 
 ###############
-# 5) TAXON-SPECIFIC DIVERSITY META-ANALYSES
+# B5) TAXON-SPECIFIC DIVERSITY META-ANALYSES
 ###############
 
 ##
@@ -516,8 +540,13 @@ meta_RER_sub2.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild
 saveRDS(meta_RER_sub2.raw,"Results/RDS/meta_dRER.cetartiodactyla.RData")
 
 ###############
-# 6) COMPOSITIONAL DIFFERENCES BETWEEN WILD AND CAPTIVE ANIMALS (DIVERSITY PARTITIONING)
+# B6) COMPOSITIONAL DIFFERENCES BETWEEN WILD AND CAPTIVE ANIMALS (DIVERSITY PARTITIONING)
 ###############
+
+# Load required data
+metadata.filtered <- read.table("Data/metadata.filtered.csv", sep =";",row.names=1)
+code.list <- as.character(read.table("Data/sp_code.txt")[,1])
+capwild.tree <- read.tree("Data/genustree.tre")
 
 ##
 ## B6.1) Diversity partitioning based on richness (dR)
@@ -546,8 +575,6 @@ min(betadis_dR_results)
 ## B6.1) Diversity partitioning based on richness+eveness+regularity (dRER)
 ##
 
-capwild.tree <- read.tree("Data/genustree.tre")
-
 betadis_dRER_results <- c()
 for (code in code.list){
   final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
@@ -569,8 +596,13 @@ max(betadis_dRER_results)
 min(betadis_dRER_results)
 
 ###############
-# 7) COMPOSITIONAL DIFFERENCES (ANALYSIS OF VARIANCE)
+# B7) COMPOSITIONAL DIFFERENCES (ANALYSIS OF VARIANCE)
 ###############
+
+# Load required data
+metadata.filtered <- read.table("Data/metadata.filtered.csv", sep =";",row.names=1)
+code.list <- as.character(read.table("Data/sp_code.txt")[,1])
+capwild.tree <- read.tree("Data/genustree.tre")
 
 ##
 ## B7.1) Permutational analysis of variance based on richness (dR)
@@ -603,7 +635,6 @@ saveRDS(permutestR_results, "Results/RDS/permutest_dR.RData")
 ## B7.2) Permutational analysis of variance based on richness+eveness+regularity (dRER)
 ##
 
-capwild.tree <- read.tree("Data/genustree.tre")
 permanovaRER_results <- c()
 permutestRER_results <- c()
 for (code in code.list){
@@ -629,8 +660,12 @@ saveRDS(permanovaRER_results,paste("Results/RDS/permanova_dRER.RData",sep=""))
 saveRDS(permutestRER_results,paste("Results/RDS/permutest_dRER.RData",sep=""))
 
 ###############
-# 8) DISTRIBUTION OF THE ORIGIN OF THE DETECTED GENERA
+# B8) DISTRIBUTION OF THE ORIGIN OF THE DETECTED GENERA
 ###############
+
+# Load required data
+metadata.filtered <- read.table("Data/metadata.filtered.csv", sep =";",row.names=1)
+code.list <- as.character(read.table("Data/sp_code.txt")[,1])
 
 shared.taxa <- c()
 for (code in code.list){
@@ -669,8 +704,14 @@ write.table(shared.taxa,"Results/shared_taxa.tsv")
 colMeans(shared.taxa)
 
 ###############
-# 9) PAIRWISE DISSIMILARITY CORRELATION BETWEEN WILD AND CAPTIVE
+# B9) PAIRWISE DISSIMILARITY CORRELATION BETWEEN WILD AND CAPTIVE
 ###############
+
+# Load required data
+count.table.all.g <- read.table("Tables/count_Genus_all.tsv")
+metadata.filtered <- read.table("Data/metadata.filtered.csv", sep =";",row.names=1)
+host_tree <- read.tree("Data/host_phylogeny.tre")
+sp_code <- read.table("Data/sp_code.txt")
 
 #Pairwise dissimilarity matrix of wild individuals
 count.table.wild <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Wild","Sample"]]
@@ -692,15 +733,9 @@ pair_dis_dR_wild_L2_UqN <- pair_dis_dR_wild_L2_UqN[!is.na(pair_dis_dR_wild_L2_Uq
 pair_dis_dR_captive_L2_UqN <- pair_dis_dR_captive$L2_UqN
 pair_dis_dR_captive_L2_UqN <- pair_dis_dR_captive_L2_UqN[!is.na(pair_dis_dR_captive_L2_UqN)]
 
-#Load host phylogeny
-host_tree <- read.tree("Data/host_phylogeny.tre")
-
-#Load host species code
-sp_code <- read.table("Data/sp_code.txt")
+#Convert tree trip names into species codes
 sp_code[,1] <- as.character(sp_code[,1])
 sp_code[,2] <- as.character(sp_code[,2])
-
-#Convert tree trip names into species codes
 host_tree$tip.label <- mapvalues(host_tree$tip.label, sp_code[,2],sp_code[,1])
 
 #Obtain TMRCA and sort data
@@ -720,8 +755,12 @@ corplot <- ggplot(cortable, aes(x=X, y=Y, color=D)) +
 ggsave("Results/Plots/dissimilarity_correlation_dR.pdf",corplot)
 
 ###############
-# 10) NEAREST DATASET (only dR)
+# B10) NEAREST DATASET (only dR)
 ###############
+
+# Load required data
+count.table.all.g <- read.table("Tables/count_Genus_all.tsv")
+metadata.filtered <- read.table("Data/metadata.filtered.csv", sep =";",row.names=1)
 
 #Add group variable to the metadata matrix by combining species and origin
 metadata.filtered$Group <- paste(metadata.filtered$Species,metadata.filtered$Origin,sep="_")
@@ -763,7 +802,7 @@ length(vector[vector == 1]) / length(vector) * 100
 length(vector[vector > 1]) / length(vector) * 100
 
 ###############
-# 11) HIERARCHICAL CLUSTERING AND TOPOLOGICAL DIFFERENCES (only dR)
+# B11) HIERARCHICAL CLUSTERING AND TOPOLOGICAL DIFFERENCES (only dR)
 ###############
 
 #Load dissimilarity files
@@ -780,8 +819,11 @@ tanglegram(untangle_labels(hclust_wild, hclust_captive,method="random"), highlig
 dev.off()
 
 ###############
-# 12) NMDS plot
+# B12) NMDS plot
 ###############
+
+# Load required data
+metadata.filtered <- read.table("Data/metadata.filtered.csv", sep =";",row.names=1)
 
 # 12.1) NMDS plot dR
 

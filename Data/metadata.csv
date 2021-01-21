@@ -1,4 +1,4 @@
-Sample;Individual;Species;Study;Origin;Sample_type;S_region;Platform;Type;Read_length;F_Primer;R_Primer;Archived_S;Class;Diet;Mobility
+Sample;Individual;Species;Study;Origin;Sample_type;S_region;Platform;Type;Read_length;F_Primer;R_Primer;Accession;Class;Diet;Mobility
 1;D00344;I00313;CHMY;Campos2018;Wild;Scat;V1,V2,V3;Illumina MiSeq;Preprocessed (fastq);530;27f;519r;SRR5883413;Reptilia;Omnivorous;Aquatic
 2;D00345;I00314;CHMY;Campos2018;Wild;Scat;V1,V2,V3;Illumina MiSeq;Preprocessed (fastq);530;27f;519r;SRR5883412;Reptilia;Omnivorous;Aquatic
 3;D00346;I00315;CHMY;Campos2018;Wild;Scat;V1,V2,V3;Illumina MiSeq;Preprocessed (fastq);530;27f;519r;SRR5883411;Reptilia;Omnivorous;Aquatic
