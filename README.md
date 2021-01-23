@@ -4,17 +4,17 @@ Meta-analysis of gut microbiota features of captive and wild specimens
 ## Supplementary code A
 ### Bioinformatic processing pipeline
 
-1) data input
-2) transfer files from repository to server
-3) get data properties
-4) check whether the file contains primers
-5) quality-filter and collapse
-6) remove primers
-7) convert to fasta
-8) add sample name
-9) calculate minimum cutoff value
-10) dereplicate
-11) denoise
-12) create zotu table
-13) assign taxonomy
-14) aggregate taxonomy
+1) Data input
+2) Transfer files from repository to server
+3) Get data properties
+4) Check whether the file contains primers
+5) Quality-filter and collapse
+6) Remove primers
+7) Convert to fasta
+8) Add sample name
+9) Calculate minimum cutoff value
+10) Dereplicate
+11) Denoise
+12) Create zotu table
+13) Assign taxonomy
+14) Aggregate taxonomy
