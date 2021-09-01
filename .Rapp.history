@@ -1,0 +1,568 @@
+install.packages("phylotools")
+library(phylotools)
+tree.ultra <- force.ultrametric(tree, method=c("nnls"))
+library(phytools)
+install.packages("phytools")
+library(phytools)
+tree.ultra <- force.ultrametric(tree, method=c("nnls"))
+plot(tree.ultra)
+write.tree(tree.ultra,""~/Google Drive/Bioinformatics/Fishing_bats_MB/ASVs_parsimony.ultra.tree")
+write.tree(tree.ultra,"~/Google Drive/Bioinformatics/Fishing_bats_MB/ASVs_parsimony.ultra.tree")
+library(devtools)
+devtools::install_github("USCBiostats/rphyloxml")
+library(rphyloxml)#
+library(ape)#
+library(xml2)
+install.packages("rphyloxml")
+install_github("USCBiostats/rphyloxml")
+system('defaults write org.R-project.R force.LANG en_US.UTF-8')
+sd <- c(0.18,0.339,0.015,0.02,0.106,0.019)
+var <- sd^2
+var
+sqrt(sum(var))
+sqrt(mean(var))
+sd <- c(0.01,0.004,0.1,0.215,0.026,0.003)
+var <- sd^2
+sqrt(mean(var))
+sd <- c(0.077,1.548,3.711,0.339,0.021)
+var <- sd^2
+sqrt(mean(var))
+sd <- c(0.014,0.049,0.011,0.002,0.024,0.005)
+var <- sd^2
+sqrt(mean(var))
+sd <- c(0.169,0.019,0.05,0.0002,0,0.109,0.072)
+var <- sd^2
+sqrt(mean(var))
+sd <- c(0.005,0.011,0.019,0.008,0.019,0.072,0.055,0.029,0.009,0.044,0.004,0.009)
+var <- sd^2
+sqrt(mean(var))
+sd <- c(0.146,0.008,0.004,0,0.019,0.01,0.009)
+var <- sd^2
+sqrt(mean(var))
+APAM <- cbind(Predator1=c(10,0,20,30),Predator2=c(10,0,10,0),Predator3=c(20,25,20,5))#
+rownames(APAM) <- c("Prey1","Prey2","Prey3","Prey4")#
+APAM
+APOM <- APAM#
+APOM[APOM != 0] <- 1
+APOM
+NPAM <- apply(APAM,2,function(x){x/colSums(x)})
+NPAM <- apply(APAM,2,function(x){x/sum(x)})
+NPAM
+NPOM <- apply(APOM,2,function(x){x/sum(x)})#
+NPOM
+APAMsums <- rowSums(APAM)#
+RPA <- APAMsums / sum(APAMsums)
+RPA
+APOMsums <- rowSums(APOM)#
+RPO <- APOMsums / sum(APOMsums)#
+RPO
+NPAMsums <- rowSums(NPAM)#
+nRPA <- NPAMsums / sum(NPAMsums)#
+nRPA
+NPOMsums <- rowSums(NPOM)#
+nRPO <- NPOMsums / sum(NPOMsums)#
+nRPO
+NPAM
+q=0#
+if(q=1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- NPAM[,1]#
+pi.q <- pi^q#
+basicsum <- sum(pi.q)#
+basicsum^(1/(1-q))
+if(q == 1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- NPAM[,1]#
+pi.q <- pi^q#
+basicsum <- sum(pi.q)#
+basicsum^(1/(1-q))
+q=1#
+if(q == 1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- NPAM[,1]#
+pi.q <- pi^q#
+basicsum <- sum(pi.q)#
+basicsum^(1/(1-q))
+q=2#
+if(q == 1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- NPAM[,1]#
+pi.q <- pi^q#
+basicsum <- sum(pi.q)#
+basicsum^(1/(1-q))
+predator="Predator1"#
+q=1#
+if(q == 1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- NPAM[,predator]#
+pi.q <- pi^q#
+basicsum <- sum(pi.q)#
+basicsum^(1/(1-q))
+library(hilldiv)#
+hill_div(NPAM,qvalue=1)
+gamma_div
+evenweight=c(1/3,1/3,1/3)#
+pi <- NPAM#
+pi.w <- sweep(pi, 2, evenweight, "*")
+pi.w
+evenweight=c(1/3,1/3,1/3)#
+q=1 #Can be changed to 0, 2 or any other positive value#
+if(q == 1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- NPAM#
+pi.w <- sweep(pi, 2, evenweight, "*")#
+pi.w.sum <- rowSums(pi.w)#
+pi.w.sum.q <- pi.w.sum^q#
+basicsum <- sum(pi.w.sum.q)#
+basicsum^(1/(1-q))
+evenweight=c(1/3,1/3,1/3)#
+q=2 #Can be changed to 0, 2 or any other positive value#
+if(q == 1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- NPAM#
+pi.w <- sweep(pi, 2, evenweight, "*")#
+pi.w.sum <- rowSums(pi.w)#
+pi.w.sum.q <- pi.w.sum^q#
+basicsum <- sum(pi.w.sum.q)#
+basicsum^(1/(1-q))
+gamma_div(NPAM,qvalue=1)
+gamma_div(NPAM,qvalue=1,weights=evenweight)
+gamma_div(NPAM,qvalue=1,weight=evenweight)
+colSums(APAM) / sum(colSums(APAM))
+seqdepthweight <- colSums(APAM) / sum(colSums(APAM))#
+q=2 #Can be changed to 0, 2 or any other positive value#
+if(q == 1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- NPAM#
+pi.w <- sweep(pi, 2, evenweight, "*")#
+pi.w.sum <- rowSums(pi.w)#
+pi.w.sum.q <- pi.w.sum^q#
+basicsum <- sum(pi.w.sum.q)#
+basicsum^(1/(1-q))
+seqdepthweight <- colSums(APAM) / sum(colSums(APAM))#
+q=2 #Can be changed to 0, 2 or any other positive value#
+if(q == 1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- NPAM#
+pi.w <- sweep(pi, 2, seqdepthweight, "*")#
+pi.w.sum <- rowSums(pi.w)#
+pi.w.sum.q <- pi.w.sum^q#
+basicsum <- sum(pi.w.sum.q)#
+basicsum^(1/(1-q))
+gamma_div(NPAM,qvalue=1,weight=seqdepthweight)
+q=1 #Can be changed to 0, 2 or any other positive value#
+if(q == 1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- NPAM#
+pi.w <- sweep(pi, 2, seqdepthweight, "*")#
+pi.w.sum <- rowSums(pi.w)#
+pi.w.sum.q <- pi.w.sum^q#
+basicsum <- sum(pi.w.sum.q)#
+basicsum^(1/(1-q))
+basicsum
+pi.w.sum
+RPA
+pi <- rowSums(NPOM)
+pi
+q=1 #Can be changed to 0, 2 or any other positive value#
+if(q == 1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- RPO#
+pi.q <- pi^q#
+basicsum <- sum(pi.q)#
+basicsum^(1/(1-q))
+q=2 #Can be changed to 0, 2 or any other positive value#
+if(q == 1){q=0.999999999} # Because the function is not defined for the unity#
+pi <- RPO#
+pi.q <- pi^q#
+basicsum <- sum(pi.q)#
+basicsum^(1/(1-q))
+hill_div(to.incidence(APAM),qvalue=1)
+hill_div(to.incidence(APAM),qvalue=2)
+hill_div(RPO,qvalue=1)
+hill_div(RPO,qvalue=2)
+APAMsums <- rowSums(APAM)#
+RPA <- APAMsums / sum(APAMsums)#
+RPA
+RPA
+APAMsums / sum(APAM)
+weights <- read.csv(~/Desktop/chichen_weight.csv)
+weights <- read.csv(""~/Desktop/chichen_weight.csv")
+weights <- read.csv("~/Desktop/chichen_weight.csv")
+weights
+weights <- read.csv("~/Desktop/chichen_weight.csv",header=FALSE)
+head(weights)
+boxplot(V2~V1)
+boxplot(V2 ~ V1, data=weights)
+library(optparse)#
+library(dada2)
+bold_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ.tax.final-1.tsv",header=TRUE, row.names=1, sep="\t")#
+ncbi_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ_nt.tax.final-1.tsv",header=TRUE, row.names=1, sep="\t")
+head(bold_table)
+ncbi_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ_nt.tax.final-1.tsv",header=TRUE, row.names=1, sep="\t")
+ncbi_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ_nt.tax.final-1.tsv",header=TRUE, sep="\t")
+head(ncbi_table)
+duplicates(ncbi_table)
+duplicated(ncbi_table)
+duplicated(ncbi_table[,1])
+nrow(ncbi_table)
+ncbi_table <- ncbi_table[duplicated(ncbi_table),]
+nrow(ncbi_table)
+ncbi_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ_nt.tax.final-1.tsv",header=TRUE, sep="\t")
+ncbi_table <- ncbi_table[!duplicated(ncbi_table),]
+nrow(ncbi_table)
+bold_table <- bold_table[duplicated(bold_table),]
+nrow(bold_table)
+c(bold_table[,1],ncbi_table[,1])
+#Load tables#
+bold_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ.tax.final-1.tsv",header=TRUE, sep="\t")#
+ncbi_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ_nt.tax.final-1.tsv",header=TRUE, sep="\t")#
+#
+#Remove duplicates#
+bold_table <- bold_table[duplicated(bold_table),]#
+ncbi_table <- ncbi_table[!duplicated(ncbi_table),]
+head(bold_table)
+bold_table <- bold_table[!duplicated(bold_table),]
+head(bold_table)
+bold_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ.tax.final-1.tsv",header=TRUE, sep="\t")#
+ncbi_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ_nt.tax.final-1.tsv",header=TRUE, sep="\t")#
+#
+#Remove duplicates#
+bold_table <- bold_table[!duplicated(bold_table),]#
+ncbi_table <- ncbi_table[!duplicated(ncbi_table),]
+head(bold_table)
+c(bold_table[,1],ncbi_table[,1])
+c(as.character(bold_table[,1]),as.character(ncbi_table[,1]))
+asvlist <- mixedsort(c(as.character(bold_table[,1]),as.character(ncbi_table[,1])))
+library(gtools)
+asvlist <- mixedsort(c(as.character(bold_table[,1]),as.character(ncbi_table[,1])))
+asvlist
+nrow(asvlist)
+length(asvlist)
+asvlist <- mixedsort(unique(c(as.character(bold_table[,1]),as.character(ncbi_table[,1]))))
+length(asvlist)
+nrow(bold_table)
+nrow(ncbi_table)
+head(bold_table)
+asv="Zotu3317"
+bold_table[bold_table$OTU == asv,]
+bold_asv <- bold_table[bold_table$OTU == asv,]#
+  ncbi_asv <- ncbi_table[ncbi_table$OTU == asv,]
+bold_asv
+ncbi_asv
+bold_asv == ncbi_asv
+all(bold_asv == ncbi_asv)
+bold_asv
+all(bold_asv[c(3:8)] == ncbi_asv[c(3:8)])
+bold_asv[,2]
+bold_asv[,2] > ncbi_asv[,2]
+asv="Zotu2"
+bold_asv <- bold_table[bold_table$OTU == asv,]#
+  ncbi_asv <- ncbi_table[ncbi_table$OTU == asv,]
+bold_asv
+ncbi_asv
+length(bold_asv)
+length(ncbi_asv)
+class(bold_asv)
+length(c(bold_asv))
+c(bold_asv)
+c(bold_asv[1,])
+bold_asv[1,]
+sum(!complete.cases(bold_asv))
+sum(complete.cases(bold_asv)
+)
+complete.cases(bold_asv)
+sum(bold_asv =="")
+sum(ncbi_asv =="")
+asv="X"
+bold_asv <- bold_table[bold_table$OTU == asv,]
+bold_asv
+nrow(bold_asv)
+nrow(ncbi_asv)
+#Load tables#
+bold_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ.tax.final-1.tsv",header=TRUE, sep="\t")#
+ncbi_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ_nt.tax.final-1.tsv",header=TRUE, sep="\t")#
+#
+#Remove duplicates#
+bold_table <- bold_table[!duplicated(bold_table),]#
+ncbi_table <- ncbi_table[!duplicated(ncbi_table),]
+#Identify ASVs and sort them#
+asvlist <- mixedsort(unique(c(as.character(bold_table[,1]),as.character(ncbi_table[,1]))))#
+#
+#Iterate across ASVs#
+for (asv in asvlist){#
+  #Subset table#
+  bold_asv <- bold_table[bold_table$OTU == asv,]#
+  ncbi_asv <- ncbi_table[ncbi_table$OTU == asv,]#
+#
+  #If BOLD is empty use NCBI#
+  if(nrow(bold_asv) == 0){#
+  output_asv <- ncbi_asv#
+  #If NCBI is empty use BOLD#
+  }else if(nrow(ncbi_asv) == 0){#
+  output_asv <- bold_asv#
+  }else{#
+  #If both taxonomies are present:#
+    #If taxonomies are identical just print one#
+    if(all(bold_asv[c(3:8)] == ncbi_asv[c(3:8)])){#
+    output_asv <- bold_asv#
+    }else{#
+      #If taxonomies are different select the one with highest identity#
+      if(bold_asv[,2] > ncbi_asv[,2]){#
+      output_asv <- bold_asv#
+      }else if(bold_asv[,2] < ncbi_asv[,2]){#
+      output_asv <- ncbi_asv#
+      }else{#
+        #If the identities are identical, select the most complete taxonomy#
+        if(sum(bold_asv=="") < sum(ncbi_asv=="")){#
+        output_asv <- bold_asv#
+        }else if(sum(bold_asv=="") > sum(ncbi_asv=="")){#
+        output_asv <- ncbi_asv#
+      }else{#
+        #If the criteria cannot choose any preferred taxonomy, use BOLD for being better curated#
+        output_asv <- bold_asv#
+      }#
+    }#
+  }#
+  }#
+}
+#Load tables#
+bold_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ.tax.final-1.tsv",header=TRUE, sep="\t")#
+ncbi_table <- read.table("/Users/anttonalberdi/Downloads/ZBJ_nt.tax.final-1.tsv",header=TRUE, sep="\t")#
+#
+#Remove duplicates#
+bold_table <- bold_table[!duplicated(bold_table),]#
+ncbi_table <- ncbi_table[!duplicated(ncbi_table),]#
+#
+#Identify ASVs and sort them#
+asvlist <- mixedsort(unique(c(as.character(bold_table[,1]),as.character(ncbi_table[,1]))))#
+#
+merged_taxonomy <- c()#
+#Iterate across ASVs#
+for (asv in asvlist){#
+  #Subset table#
+  bold_asv <- bold_table[bold_table$OTU == asv,]#
+  ncbi_asv <- ncbi_table[ncbi_table$OTU == asv,]#
+#
+  #If BOLD is empty use NCBI#
+  if(nrow(bold_asv) == 0){#
+  output_asv <- ncbi_asv#
+  #If NCBI is empty use BOLD#
+  }else if(nrow(ncbi_asv) == 0){#
+  output_asv <- bold_asv#
+  }else{#
+  #If both taxonomies are present:#
+    #If taxonomies are identical just print one#
+    if(all(bold_asv[c(3:8)] == ncbi_asv[c(3:8)])){#
+    output_asv <- bold_asv#
+    }else{#
+      #If taxonomies are different select the one with highest identity#
+      if(bold_asv[,2] > ncbi_asv[,2]){#
+      output_asv <- bold_asv#
+      }else if(bold_asv[,2] < ncbi_asv[,2]){#
+      output_asv <- ncbi_asv#
+      }else{#
+        #If the identities are identical, select the most complete taxonomy#
+        if(sum(bold_asv=="") < sum(ncbi_asv=="")){#
+        output_asv <- bold_asv#
+        }else if(sum(bold_asv=="") > sum(ncbi_asv=="")){#
+        output_asv <- ncbi_asv#
+      }else{#
+        #If the criteria cannot choose any preferred taxonomy, use BOLD for being better curated#
+        output_asv <- bold_asv#
+      }#
+    }#
+  }#
+  }#
+merged_taxonomy <- rbind(merged_taxonomy,output_asv)#
+}
+head(merged_taxonomy)
+head(merged_taxonomy,50)
+write.table(merged_taxonomy,"/Users/anttonalberdi/Downloads/ZBJ.merged.tax.tsv")
+write.table(merged_taxonomy,"/Users/anttonalberdi/Downloads/ZBJ.merged.tax.tsv",quotes=FALSE)
+write.table(merged_taxonomy,"/Users/anttonalberdi/Downloads/ZBJ.merged.tax.tsv",quote=FALSE)
+write.table(merged_taxonomy,"/Users/anttonalberdi/Downloads/ZBJ.merged.tax.tsv",quote=FALSE,sep="\t")
+write.table(merged_taxonomy,"/Users/anttonalberdi/Downloads/ZBJ.merged.tax.tsv",quote=FALSE,sep="\t",rownames=TRUE,colnames=TRUE)
+write.table(merged_taxonomy,"/Users/anttonalberdi/Downloads/ZBJ.merged.tax.tsv",quote=FALSE,sep="\t",row.names=TRUE,col.names=TRUE)
+head(merged_taxonomy)
+write.table(merged_taxonomy,"/Users/anttonalberdi/Downloads/ZBJ.merged.tax.tsv",quote=FALSE,sep="\t",row.names=FALSE,col.names=TRUE)
+#Load tables#
+bold_table <- read.table("/Users/anttonalberdi/Downloads/ANML.tax.final-1.tsv",header=TRUE, sep="\t")#
+ncbi_table <- read.table("/Users/anttonalberdi/Downloads/ANML_nt.tax.final-1.tsv",header=TRUE, sep="\t")#
+#
+#Remove duplicates#
+bold_table <- bold_table[!duplicated(bold_table),]#
+ncbi_table <- ncbi_table[!duplicated(ncbi_table),]#
+#
+#Identify ASVs and sort them#
+asvlist <- mixedsort(unique(c(as.character(bold_table[,1]),as.character(ncbi_table[,1]))))#
+#
+merged_taxonomy <- c()#
+#Iterate across ASVs#
+for (asv in asvlist){#
+  #Subset table#
+  bold_asv <- bold_table[bold_table$OTU == asv,]#
+  ncbi_asv <- ncbi_table[ncbi_table$OTU == asv,]#
+#
+  #If BOLD is empty use NCBI#
+  if(nrow(bold_asv) == 0){#
+  output_asv <- ncbi_asv#
+  #If NCBI is empty use BOLD#
+  }else if(nrow(ncbi_asv) == 0){#
+  output_asv <- bold_asv#
+  }else{#
+  #If both taxonomies are present:#
+    #If taxonomies are identical just print one#
+    if(all(bold_asv[c(3:8)] == ncbi_asv[c(3:8)])){#
+    output_asv <- bold_asv#
+    }else{#
+      #If taxonomies are different select the one with highest identity#
+      if(bold_asv[,2] > ncbi_asv[,2]){#
+      output_asv <- bold_asv#
+      }else if(bold_asv[,2] < ncbi_asv[,2]){#
+      output_asv <- ncbi_asv#
+      }else{#
+        #If the identities are identical, select the most complete taxonomy#
+        if(sum(bold_asv=="") < sum(ncbi_asv=="")){#
+        output_asv <- bold_asv#
+        }else if(sum(bold_asv=="") > sum(ncbi_asv=="")){#
+        output_asv <- ncbi_asv#
+      }else{#
+        #If the criteria cannot choose any preferred taxonomy, use BOLD for being better curated#
+        output_asv <- bold_asv#
+      }#
+    }#
+  }#
+  }#
+merged_taxonomy <- rbind(merged_taxonomy,output_asv)#
+}
+write.table("/Users/anttonalberdi/Downloads/ANML.merged.tax.tsv",opt$o,quote=FALSE,sep="\t",row.names=FALSE,col.names=TRUE)
+write.table("/Users/anttonalberdi/Downloads/ANML.merged.tax.tsv",quote=FALSE,sep="\t",row.names=FALSE,col.names=TRUE)
+write.table(merged_taxonomy,"/Users/anttonalberdi/Downloads/ANML.merged.tax.tsv",quote=FALSE,sep="\t",row.names=FALSE,col.names=TRUE)
+~dirFCM1_18.csvdir=
+dir="/cliptest/2-Filtered/A/"
+filtFs_list <- gsub("_1.fastq","",list.files(path = dir, pattern = "_1.fastq", full.names=TRUE))#
+filtRs_list <- gsub("_2.fastq","",list.files(path = dir, pattern = "_2.fastq", full.names=TRUE))#
+filtFs_rev_list <- gsub("_1.rev.fastq","",list.files(path = dir, pattern = "_1.rev.fastq", full.names=TRUE))#
+filtRs_rev_list <- gsub("_2.rev.fastq","",list.files(path = dir, pattern = "_2.rev.fastq", full.names=TRUE))
+filtRs_rev_list
+filtFs_list
+dir
+filtFs_list <- gsub("_1.fastq","",list.files(path = dir, pattern = "_1.fastq", full.names=TRUE))
+filtFs_list
+list.files(path = dir, pattern = "_1.fastq", full.names=TRUE)
+dir
+dir="/Users/anttonalberdi/cliptest/2-Filtered/A/"
+filtFs_list <- gsub("_1.fastq","",list.files(path = dir, pattern = "_1.fastq", full.names=TRUE))
+filtFs_list
+filtFs_rev_list <- gsub("_1.rev.fastq","",list.files(path = dir, pattern = "_1.rev.fastq", full.names=TRUE))
+filtFs_rev_list
+if (setequal(filtFs_list, filtRs_list) == TRUE){#
+  filtFs <- paste(filtFs_list,"_1.fastq",sep="")#
+  filtRs <- paste(filtFs_list,"_2.fastq",sep="")#
+}else if(setequal(filtFs_rev_list, filtRs_rev_list) == TRUE){#
+  filtFs <- c(filtFs,paste(filtFs_rev_list,"_1.rev.fastq",sep=""))#
+  filtRs <- c(filtRs,paste(filtRs_rev_list,"_1.rev.fastq",sep=""))#
+}else{#
+  write("ERROR! The forward and reverse reads do not match",file=statsfile,append=TRUE)#
+  print("ERROR! The forward and reverse reads do not match")#
+}
+filtFs <- paste(filtFs_list,"_1.fastq",sep="")#
+  filtRs <- paste(filtFs_list,"_2.fastq",sep="")
+filtFs <- c(filtFs,paste(filtFs_rev_list,"_1.rev.fastq",sep=""))#
+  filtRs <- c(filtRs,paste(filtRs_rev_list,"_1.rev.fastq",sep=""))
+filtFs
+pattern="fastq"
+filtFs_list <- gsub(paste("_1.",pattern,sep=""),"",list.files(path = dir, pattern = paste("_1.",pattern,sep=""), full.names=TRUE))
+filtFs_list
+filtFs <- paste(filtFs_list,paste("_1.",pattern,sep=""),sep="")
+filtFs
+filtRs <- paste(filtFs_list,paste("_2.",pattern,sep=""),sep="")
+filtRs
+setequal(filtFs_list, filtRs_list)
+filtFs_list <- gsub(paste("_1.",pattern,sep=""),"",list.files(path = dir, pattern = paste("_1.",pattern,sep=""), full.names=TRUE))#
+filtRs_list <- gsub(paste("_2.",pattern,sep=""),"",list.files(path = dir, pattern = paste("_2.",pattern,sep=""), full.names=TRUE))
+filtFs_list
+filtRs_list
+setequal(filtFs_list, filtRs_list)
+dir
+filtFs_list <- gsub(paste("_1.",pattern,sep=""),"",list.files(path = dir, pattern = paste("_1.",pattern,sep=""), full.names=TRUE))#
+filtRs_list <- gsub(paste("_2.",pattern,sep=""),"",list.files(path = dir, pattern = paste("_2.",pattern,sep=""), full.names=TRUE))
+filtFs_list
+filtRs_list
+if (setequal(filtFs_list, filtRs_list) == TRUE){#
+  filtFs <- paste(filtFs_list,paste("_1.",pattern,sep=""),sep="")#
+  filtRs <- paste(filtFs_list,paste("_2.",pattern,sep=""),sep="")#
+}else{#
+  print("ERROR! The forward and reverse reads do not match")#
+}
+filtFs
+filtRs
+paste("_1.",pattern,sep="")
+dir="/Users/anttonalberdi/cliptest/3-DADA2"
+filelist <- list.files(path = dir, pattern = ".rds", full.names=TRUE)#
+SequenceTableList <- lapply(filelist,readRDS)
+library(dada2)
+trimtablist <- c("A.rev.csv","B.rev.csv","C.csv")
+trimtablist[!grepl("rev.csv",trimtablist)]
+table <- read.csv("~/Downloads/exercise.csv")
+table
+table <- read.csv("~/Downloads/exercise.csv",row.names=1,header=TRUE)
+table
+library(g)
+library(hilldiv)
+hill_div(table,qvalue=0)
+hill_div(table,qvalue=1)
+hill_div(table,qvalue=2)
+table <- read.csv("~/Downloads/exercise.csv",row.names=1,header=TRUE)
+table
+library(hilldiv)
+hill_div(table,qvalue=0)
+hill_div(table,qvalue=1)
+hill_div(table,qvalue=2)
+hill_div(table,qvalue=0.5)
+hill_div(table,qvalue=0)
+hill_div(table,qvalue=0.1)
+hill_div(table,qvalue=0.2)
+hill_div(table,qvalue=0.32)
+hill_div(table,qvalue=0.4)
+hill_div(table,qvalue=0.5)
+hill_div(table,qvalue=1)
+hill_div(table,qvalue=2)
+#Load required libraries#
+library(reshape2)#
+library(gplots)#
+library(ggplot2)#
+library(ggrepel)#
+library(purrr)#
+library(hilldiv)#
+library(ape)#
+library(phytools)#
+library(phylobase)#
+library(phylosignal)#
+library("ggplot2")#
+library(vegan)#
+library(tidyverse)#
+library(phytools)#
+library(plyr)#
+library(dplyr)#
+library(dendextend)#
+library("ggpubr")#
+library(dmetar)#
+library(meta)#
+library(metafor)#
+library(TreeDist)#
+#
+#Set working directory#
+setwd("~/github/Wild_Captive_16S")
+summary_dRE <- read.table("Results/summary_diversity_dRE.tsv")#
+summary_dRE <- as.data.frame(summary_dRE)#
+meta_dRE_ready <- tibble::rownames_to_column(summary_dRE,"Author")#
+rownames(meta_dRE_ready) <- meta_dRE_ready$Author#
+sp_sorted <- c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","GOGO","PEMA","PELE","TUTR","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT")#
+meta_dRE_ready <- meta_dRE_ready[sp_sorted,]#
+meta_dRE.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,#
+                      data = meta_dRE_ready,#
+                      studlab = paste(Author),#
+                      comb.fixed = FALSE,#
+                      comb.random = TRUE,#
+                      method.tau = "SJ",#
+                      hakn = TRUE,#
+                      prediction = TRUE,#
+                      sm = "SMD")#
+saveRDS(meta_dRE.raw, "Results/RDS/meta_dRE.all.RData")#
+#
+#Forest plot dR#
+meta_dRE.raw <- readRDS("Results/RDS/meta_dRE.all.RData")#
+pdf("Results/Plots/forest_dRE.pdf", width=13, height=8)#
+forest(meta_dRE.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect", leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),lab.e = "Captivity",lab.c="Wild")#
+dev.off()

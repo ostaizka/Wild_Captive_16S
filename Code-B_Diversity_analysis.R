@@ -15,17 +15,20 @@ library(purrr)
 library(hilldiv)
 library(ape)
 library(phytools)
-library("ggplot2")
+library(phylobase)
+library(phylosignal)
+library(ggplot2)
 library(vegan)
 library(tidyverse)
 library(phytools)
 library(plyr)
 library(dplyr)
 library(dendextend)
-library("ggpubr")
+library(ggpubr)
 library(dmetar)
 library(meta)
 library(metafor)
+library(TreeDist)
 
 #Set working directory
 setwd("~/github/Wild_Captive_16S")
@@ -40,12 +43,16 @@ setwd("~/github/Wild_Captive_16S")
 # B4) OVERALL WILD vs CAPTIVE DIVERSITY META-ANALYSES
 # B5) TAXON-SPECIFIC DIVERSITY META-ANALYSES
 # B6) COMPOSITIONAL DIFFERENCES BETWEEN WILD AND CAPTIVE ANIMALS (DIVERSITY PARTITIONING)
-# B7) COMPOSITIONAL DIFFERENCES (ANALYSIS OF VARIANCE)
-# B8) DISTRIBUTION OF THE ORIGIN OF THE DETECTED GENERA
-# B9) PAIRWISE DISSIMILARITY CORRELATION BETWEEN WILD AND CAPTIVE
-# B10) NEAREST DATASET (only dR)
-# B11) HIERARCHICAL CLUSTERING AND TOPOLOGICAL DIFFERENCES (only dR)
-# B12) NMDS plot
+# B7) PHYLOGENETIC SIGNAL
+# B8) COMPOSITIONAL DIFFERENCES (ANALYSIS OF VARIANCE)
+# B9) NULL MODELS
+# B10) APROXIMATE BAYESIAN COMPUTATION
+# B11) DISTRIBUTION OF THE ORIGIN OF THE DETECTED GENERA
+# B12) PAIRWISE DISSIMILARITY CORRELATION BETWEEN WILD AND CAPTIVE
+# B13) NEAREST DATASET
+# B14) HIERARCHICAL CLUSTERING AND TOPOLOGICAL DIFFERENCES
+# B15) TAXONOMIC ENRICHMENT ANALYSIS
+# B16) NMDS plot
 
 ###############
 # B1) PREPARE WORKING ABUNDANCE-TABLES
@@ -132,6 +139,18 @@ for (code in code.list){
   write.table(get(paste("count.filtered.",code,sep="")),paste("Tables/countfiltered_",code,".tsv",sep=""))
 }
 
+# Calculate read percentage of unclassified
+
+for (code in code.list){
+  count.filtdepth <- read.table(paste("Tables/countfiltcov_",code,".tsv",sep=""))
+  count.filtdepth.sums <- colSums(count.filtdepth)
+  count.filtered <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
+  count.filtered.sums <- colSums(count.filtered)
+  unclassified <- mean(100 - (count.filtered.sums / count.filtdepth.sums * 100))
+  print(code)
+  print(unclassified)
+}
+
 ##
 ## B1.3) Merge all species-specific tables into a single table
 ##
@@ -171,9 +190,13 @@ code.list <- as.character(read.table("Data/sp_code.txt")[,1])
 ## B2.1) Alpha diversity differences across species
 ##
 
-#R
+#dR
 div_dR.all <- div_test(count.table.all.g,qvalue=0,hierarchy=metadata.filtered[,c("Sample","Species")])
 saveRDS(div_dR.all,"Results/RDS/div_dR.all.RData")
+
+#dRE
+div_dRE.all <- div_test(count.table.all.g,qvalue=1,hierarchy=metadata.filtered[,c("Sample","Species")])
+saveRDS(div_dRE.all,"Results/RDS/div_dRE.all.RData")
 
 #dRER
 capwild.tree <- read.tree("Data/genustree.tre")
@@ -193,7 +216,17 @@ dR.data <- pairdis_dR.all$L1_UqN
 dR.dist <- as.dist(dR.data)
 ps.disper.dR.species <- betadisper(dR.dist, metadata.filtered$Species)
 permutest(ps.disper.dR.species, pairwise = TRUE)
-adonis(u0n.dist ~ Species, data =metadata.filtered, permutations = 999)
+adonis(dR.dist ~ Species, data =metadata.filtered, permutations = 999)
+
+# dRE
+pairdis_dRE.all <- pair_dis(count.table.all.g,qvalue=1,hierarchy=metadata.filtered[,c("Sample","Species")])
+saveRDS(pairdis_dRE.all,"Results/RDS/pairdis_dRE.all.RData")
+pairdis_dRE.all <- readRDS("Results/RDS/pairdis_dRE.all.RData")
+dRE.data <- pairdis_dRE.all$L1_UqN
+dRE.dist <- as.dist(dRE.data)
+ps.disper.dRE.species <- betadisper(dRE.dist, metadata.filtered$Species)
+permutest(ps.disper.dRE.species, pairwise = TRUE)
+adonis(dRE.dist ~ Species, data = metadata.filtered, permutations = 999)
 
 # dRER
 capwild.tree <- read.tree("Data/genustree.tre")
@@ -239,7 +272,7 @@ for (code in code.list){
   n_captive <- nrow(divqR_captive)
   mean_captive <- mean(divqR_captive[,c("Value")])
   sd_captive <- sd(divqR_captive[,c("Value")])
-  summary_dR <- rbind(summary_dR,c(n,mean,sd,n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
+  summary_dR <- rbind(summary_dR,c(n,round(mean,3),round(sd,3),round(n_wild,3),round(mean_wild,3),round(sd_wild,3),round(n_captive,3),round(mean_captive,3),round(sd_captive,3)))
 }
 
 colnames(summary_dR) <- c("n","mean","sd","n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
@@ -247,7 +280,35 @@ rownames(summary_dR) <- code.list
 write.table(summary_dR, "Results/summary_diversity_dR.tsv")
 
 ##
-## B3.2) Summary of diversity values based on richness+eveness+regularity (REH)
+## B3.1) Summary of diversity values based on richness (R)
+##
+
+summary_dRE <- c()
+for (code in code.list){
+  final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
+  metadata.filtered.subset <- metadata.filtered[which(metadata.filtered[,1] %in% colnames(final.table)),]
+  divqRE <- div_test(final.table,qvalue=1,hierarchy=metadata.filtered.subset[,c("Sample","Origin")])
+  divqRE_table <- divqRE$data
+  n <- nrow(divqRE_table)
+  mean <- mean(divqRE_table[,c("Value")])
+  sd <- sd(divqRE_table[,c("Value")])
+  divqRE_wild <- divqRE_table[divqRE_table$Group == "Wild",]
+  n_wild <- nrow(divqRE_wild)
+  mean_wild <- mean(divqRE_wild[,c("Value")])
+  sd_wild <- sd(divqRE_wild[,c("Value")])
+  divqRE_captive <- divqRE_table[divqRE_table$Group == "Captivity",]
+  n_captive <- nrow(divqRE_captive)
+  mean_captive <- mean(divqRE_captive[,c("Value")])
+  sd_captive <- sd(divqRE_captive[,c("Value")])
+  summary_dRE <- rbind(summary_dRE,c(n,round(mean,3),round(sd,3),round(n_wild,3),round(mean_wild,3),round(sd_wild,3),round(n_captive,3),round(mean_captive,3),round(sd_captive,3)))
+}
+
+colnames(summary_dRE) <- c("n","mean","sd","n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
+rownames(summary_dRE) <- code.list
+write.table(summary_dRE, "Results/summary_diversity_dRE.tsv")
+
+##
+## B3.3) Summary of diversity values based on richness+eveness+regularity (REH)
 ##
 
 summary_dRER <- c()
@@ -269,7 +330,7 @@ for (code in code.list){
   n_captive <- nrow(divqRER_captive)
   mean_captive <- mean(divqRER_captive[,c("Value")])
   sd_captive <- sd(divqRER_captive[,c("Value")])
-  summary_dRER <- rbind(summary_dRER,c(n,mean,sd,n_wild,mean_wild,sd_wild,n_captive,mean_captive,sd_captive))
+  summary_dRER <- rbind(summary_dRER,c(n,round(mean,3),round(sd,3),round(n_wild,3),round(mean_wild,3),round(sd_wild,3),round(n_captive,3),round(mean_captive,3),round(sd_captive,3)))
 }
 colnames(summary_dRER) <- c("n","mean","sd","n_wild", "mean_wild", "sd_wild","n_captive", "mean_captive", "sd_captive")
 rownames(summary_dRER) <- code.list
@@ -359,7 +420,87 @@ meta_dR.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wi
                        exclude = c(3,11,12,15,22))#Species to be excluded from the meta-analysis
 
 ##
-## B4.2) Meta-analysis based on richness+eveness+regularity (dRER)
+## B4.2) Meta-analysis based on richness+eveness (dRE)
+##
+
+summary_dRE <- read.table("Results/summary_diversity_dRE.tsv")
+summary_dRE <- as.data.frame(summary_dRE)
+meta_dRE_ready <- tibble::rownames_to_column(summary_dRE,"Author")
+rownames(meta_dRE_ready) <- meta_dRE_ready$Author
+sp_sorted <- c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","GOGO","PEMA","PELE","TUTR","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT")
+meta_dRE_ready <- meta_dRE_ready[sp_sorted,]
+meta_dRE.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
+                      data = meta_dRE_ready,
+                      studlab = paste(Author),
+                      comb.fixed = FALSE,
+                      comb.random = TRUE,
+                      method.tau = "SJ",
+                      hakn = TRUE,
+                      prediction = TRUE,
+                      sm = "SMD")
+saveRDS(meta_dRE.raw, "Results/RDS/meta_dRE.all.RData")
+
+#Forest plot dR
+meta_dRE.raw <- readRDS("Results/RDS/meta_dRE.all.RData")
+pdf("Results/Plots/forest_dRE.pdf", width=13, height=8)
+forest(meta_dRE.raw,col.diamond = "blue",col.diamond.lines = "black",text.random = "Overall effect", leftlabs = c("Species", "N","Mean","SD","N","Mean","SD"),lab.e = "Captivity",lab.c="Wild")
+dev.off()
+
+#Finding outliers
+meta_dRE.raw <- readRDS("Results/RDS/meta_dRE.all.RData")
+find.outliers(meta_dRE.raw)
+
+#Sensitivity analysis
+summary_dRE <- read.table("Results/summary_diversity_dRE.tsv")
+summary_dRE_outlier <- summary_dRE[-c(9,17,24),]
+summary_dRE_outlier_ready <- tibble::rownames_to_column(summary_dRE_outlier,"Author")
+rownames(summary_dRE_outlier_ready) <- summary_dRE_outlier_ready$Author
+sp_sorted <- c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","PELE","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT")
+summary_dRE_outlier_ready <- summary_dRE_outlier_ready[sp_sorted,]
+summary_dRE_outlier_ready.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
+                                            data = summary_dRE_outlier_ready,
+                                            studlab = paste(Author),
+                                            comb.fixed = FALSE,
+                                            comb.random = TRUE,
+                                            method.tau = "SJ",
+                                            hakn = TRUE,
+                                            prediction = TRUE,
+                                            sm = "SMD")
+
+#GOSH Plot Analysis
+meta_dRE.raw <- readRDS("Results/RDS/meta_dRE.all.RData")
+m.rma.dRE <- rma(yi = meta_dRE.raw$TE,
+             sei = meta_dRE.raw$seTE,
+             method = meta_dRE.raw$method.tau,
+             test = "knha")
+
+#GOSH plot dR
+dat.gosh.dRE <- gosh(m.rma.dRE)
+plot(dat.gosh.dRE, alpha= 0.1, col = "blue")
+
+#Clusters detection in the GOSH plot data
+gosh.diagnostics(dat.gosh.dRE)
+#Re-run the meta-analysis without the species identified in the GLOSH plot analysis
+summary_dRE <- read.table("Results/summary_diversity_dRE.tsv")
+summary_dRE <- as.data.frame(summary_dRE)
+meta_dRE_ready <- tibble::rownames_to_column(summary_dRE,"Author")
+rownames(meta_dRE_ready) <- meta_dRE_ready$Author
+sp_sorted <- c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","GOGO","PEMA","PELE","TUTR","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT")
+meta_dRE_ready <- meta_dRE_ready[sp_sorted,]
+meta_dRE.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
+                         data = meta_dRE_ready,
+                         studlab = paste(Author),
+                         comb.fixed = FALSE,
+                          comb.random = TRUE,
+                          method.tau = "SJ",
+                          hakn = TRUE,
+                          prediction = TRUE,
+                          sm = "SMD",
+                          exclude = c(3,11,12,15,22))#Species to be excluded from the meta-analysis
+
+
+##
+## B4.3) Meta-analysis based on richness+eveness+regularity (dRER)
 ##
 
 summary_dRER <- read.table("Results/summary_diversity_dRER.tsv")
@@ -464,9 +605,33 @@ meta_dR_sub1.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,
                             sm = "SMD")
 saveRDS(meta_dR_sub1.raw,"Results/RDS/meta_dR.primates.RData")
 
+##
+## B5.2) Meta-analysis of primates based on richness+eveness (dRE)
+##
+
+#Subset diversity table
+summary_dRER <- read.table("Results/summary_diversity_dRE.tsv")
+sublist1 <- c("RHBR","PYNE","PAAN","PATR","GOGO")
+summary_dRER.subset1 <- summary_dRER[rownames(summary_dRER) %in% sublist1,]
+
+#Run meta-analysis
+meta_dRER_sub1_ready <- tibble::rownames_to_column(summary_dRER.subset1,"Author")
+rownames(meta_dRER_sub1_ready) <- meta_dRER_sub1_ready$Author
+meta_dRER_sub1_ready <- meta_dRER_sub1_ready[sublist1,]
+meta_dRER_sub1.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
+                                 data = meta_dRER_sub1_ready,
+                                 studlab = paste(Author),
+                                 comb.fixed = FALSE,
+                                 comb.random = TRUE,
+                                 method.tau = "SJ",
+                                 hakn = TRUE,
+                                 prediction = TRUE,
+                                 sm = "SMD")
+
+saveRDS(meta_dRER_sub1.raw,"Results/RDS/meta_dRE.primates.RData")
 
 ##
-## B5.2) Meta-analysis of primates based on richness+eveness+regularity (dRER)
+## B5.3) Meta-analysis of primates based on richness+eveness+regularity (dRER)
 ##
 
 #Subset diversity table
@@ -491,7 +656,7 @@ meta_dRER_sub1.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wil
 saveRDS(meta_dRER_sub1.raw,"Results/RDS/meta_dRER.primates.RData")
 
 ##
-## B5.3) Meta-analysis of cetartiodactylans based on richness (dR)
+## B5.4) Meta-analysis of cetartiodactylans based on richness (dR)
 ##
 
 #Subset diversity table
@@ -515,7 +680,33 @@ meta_dR_sub2.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,
 saveRDS(meta_dR_sub2.raw,"Results/RDS/meta_dR.cetartiodactyla.RData")
 
 ##
-## B5.4) Meta-analysis of cetartiodactylans based on richness+eveness+regularity (dRER)
+## B5.5) Meta-analysis of cetartiodactylans based on richness+eveness (dRE)
+##
+
+#Subset diversity table
+summary_dRER <- read.table("Results/summary_diversity_dRE.tsv")
+sublist2 <- c("TUTR","MOCH","BOGA","ELDA","CENI")
+summary_dRER.subset2 <- summary_dRER[rownames(summary_dRER) %in% sublist2,]
+
+#Run meta-analysis
+meta_RER_sub2_ready <- tibble::rownames_to_column(summary_dRER.subset2,"Author")
+rownames(meta_RER_sub2_ready) <- meta_RER_sub2_ready$Author
+meta_RER_sub2_ready <- meta_RER_sub2_ready[sublist2,]
+meta_RER_sub2.raw <- metacont(n_captive,mean_captive,sd_captive,n_wild,mean_wild,sd_wild,
+                                 data = meta_RER_sub2_ready,
+                                 studlab = paste(Author),
+                                 comb.fixed = FALSE,
+                                 comb.random = TRUE,
+                                 method.tau = "SJ",
+                                 hakn = TRUE,
+                                 prediction = TRUE,
+                                 sm = "SMD")
+
+saveRDS(meta_RER_sub2.raw,"Results/RDS/meta_dRE.cetartiodactyla.RData")
+
+
+##
+## B5.6) Meta-analysis of cetartiodactylans based on richness+eveness+regularity (dRER)
 ##
 
 #Subset diversity table
@@ -561,7 +752,7 @@ for (code in code.list){
   identical(sort(colnames(final.table)),sort(as.character(metadata.filtered.subset[,"Sample"])))
   divpart.dR <- div_part(final.table,qvalue=0,hierarchy=metadata.filtered.subset[,c("Sample","Origin")])
   betadis.dR <- beta_dis(divpart.dR)
-  betadis_dR_results <- append(betadis_dR_results,betadis.dR$CqN[2])
+  betadis_dR_results <- append(betadis_dR_results,betadis.dR$UqN[2])
 }
 names(betadis_dR_results) <- code.list
 
@@ -572,7 +763,30 @@ max(betadis_dR_results)
 min(betadis_dR_results)
 
 ##
-## B6.1) Diversity partitioning based on richness+eveness+regularity (dRER)
+## B6.2) Diversity partitioning based on richness+eveness (dRE)
+##
+
+betadis_dRE_results <- c()
+for (code in code.list){
+  final.table <- read.table(paste("Tables/countfiltered_",code,".tsv",sep=""))
+  ##Filter the metadata
+  metadata.filtered.subset <- metadata.filtered[which(metadata.filtered[,1] %in% colnames(final.table)),]
+  #Check whether both lists are identical
+  identical(sort(colnames(final.table)),sort(as.character(metadata.filtered.subset[,"Sample"])))
+  divpart.dRE <- div_part(final.table,qvalue=1,hierarchy=metadata.filtered.subset[,c("Sample","Origin")])
+  betadis.dRE <- beta_dis(divpart.dRE)
+  betadis_dRE_results <- append(betadis_dRE_results,betadis.dRE$UqN[2])
+}
+names(betadis_dRE_results) <- code.list
+
+#Statistics
+mean(betadis_dRE_results)
+sd(betadis_dRE_results)
+max(betadis_dRE_results)
+min(betadis_dRE_results)
+
+##
+## B6.3) Diversity partitioning based on richness+eveness+regularity (dRER)
 ##
 
 betadis_dRER_results <- c()
@@ -585,7 +799,7 @@ for (code in code.list){
   tree_filtered <- match_data(final.table,capwild.tree,output="tree")
   divpart.dRER <- div_part(final.table,qvalue=1,hierarchy=metadata.filtered.subset[,c("Sample","Origin")],tree=tree_filtered)
   betadis.dRER <- beta_dis(divpart.dRER)
-  betadis_dRER_results <- append(betadis_dRER_results,betadis.dRER$CqN[2])
+  betadis_dRER_results <- append(betadis_dRER_results,betadis.dRER$UqN[2])
 }
 names(betadis_dRER_results) <- code.list
 
@@ -595,8 +809,52 @@ sd(betadis_dRER_results)
 max(betadis_dRER_results)
 min(betadis_dRER_results)
 
+#Join results
+betadis_results <- cbind(betadis_dR_results,betadis_dRE_results,betadis_dRER_results)
+write.table(betadis_results,"Results/summary_betadis.tsv",sep="\t")
+
 ###############
-# B7) COMPOSITIONAL DIFFERENCES (ANALYSIS OF VARIANCE)
+# B7) PHYLOGENETIC SIGNAL
+###############
+
+##
+## B7.1) Diversity
+##
+
+#Load host phylogeny
+host_tree <- read.tree("Data/host_phylogeny.tre")
+
+#Load diversity data
+meta_dR.raw <- readRDS("Results/RDS/meta_dR.all.RData")
+meta_dRE.raw <- readRDS("Results/RDS/meta_dRE.all.RData")
+meta_dRER.raw <- readRDS("Results/RDS/meta_dRER.all.RData")
+results <- data.frame(dR=meta_dR.raw$TE,dRE=meta_dRE.raw$TE,dRER=meta_dRER.raw$TE)
+rownames(results) <- meta_dR.raw$studlab
+
+#Create phylo4d object
+tree4d <-phylo4d(host_tree, tip.data = results)
+
+#Run phylogenetic signal analysis
+phyloSignal(tree4d, methods = "Cmean", reps = 9999, W = NULL)
+
+##
+## B7.2) Composition
+##
+
+#Load host phylogeny
+host_tree <- read.tree("Data/host_phylogeny.tre")
+
+#Load compositional data
+results <- read.table("Results/summary_betadis.tsv")
+
+#Create phylo4d object
+tree4d <-phylo4d(host_tree, tip.data = results)
+
+#Run phylogenetic signal analysis
+phyloSignal(tree4d, methods = "Cmean", reps = 9999, W = NULL)
+
+###############
+# B8) COMPOSITIONAL DIFFERENCES (ANALYSIS OF VARIANCE)
 ###############
 
 # Load required data
@@ -605,7 +863,7 @@ code.list <- as.character(read.table("Data/sp_code.txt")[,1])
 capwild.tree <- read.tree("Data/genustree.tre")
 
 ##
-## B7.1) Permutational analysis of variance based on richness (dR)
+## B8.1) Permutational analysis of variance based on richness (dR)
 ##
 
 permanovaR_results <- c()
@@ -632,7 +890,7 @@ saveRDS(permanovaR_results, "Results/RDS/permanova_dR.RData")
 saveRDS(permutestR_results, "Results/RDS/permutest_dR.RData")
 
 ##
-## B7.2) Permutational analysis of variance based on richness+eveness+regularity (dRER)
+## B8.2) Permutational analysis of variance based on richness+eveness+regularity (dRER)
 ##
 
 permanovaRER_results <- c()
@@ -660,7 +918,172 @@ saveRDS(permanovaRER_results,paste("Results/RDS/permanova_dRER.RData",sep=""))
 saveRDS(permutestRER_results,paste("Results/RDS/permutest_dRER.RData",sep=""))
 
 ###############
-# B8) DISTRIBUTION OF THE ORIGIN OF THE DETECTED GENERA
+# B9) NULL MODELS (python)
+###############
+
+countdata <- read.csv("genustable.csv",row.names=1)
+countdata <- tss(countdata)
+metadata <- read.csv("metadata.csv")
+
+#Get lis of studies
+study_list <- as.character(unique(metadata$Study))
+
+#Subset per species
+for (study in study_list){
+
+#Aggregate wild
+wild_samples <- as.character(metadata[metadata$Study == study & metadata$Sample.type == "Wild","Individual"])
+wild <- rowMeans(countdata[,wild_samples])
+
+#Aggregate captivity
+captivity_samples <- as.character(metadata[metadata$Study == study & metadata$Sample.type == "Captivity","Individual"])
+captivity <- rowMeans(countdata[,captivity_samples])
+
+study_table <- data.frame(wild,captivity)
+study_table <- round(study_table * 10000)
+write.csv(study_table,paste0("data/nullmodels",study,".csv"))
+}
+
+#In python
+
+conda activate qdiv_env
+
+import qdiv
+from qdiv import stats
+from qdiv import null
+import pandas as pd
+import numpy as np
+import matplotlib
+
+study='VAHI' #iterate across studies
+tab='data/nullmodels'+study+'.csv'
+
+#load files
+obj = qdiv.files.load(path="data/nullmodels", tab=tab, fasta='None', tree='genustree.tre', sep=',', addTaxonPrefix=False, orderSeqs=True)
+# Raup-Crick dR
+dR=null.rcq(obj, randomization='frequency', iterations=999, divType='Jaccard', q=0)
+# Raup-Crick dRE
+dRE=null.rcq(obj, randomization='frequency', iterations=999, divType='Jaccard', q=1)
+# Raup-Crick dRER
+dRER=null.rcq(obj, randomization='frequency', iterations=999, divType='phyl', q=1)
+
+print(study)
+print(dR)
+print(dRE)
+print(dRER)
+
+###############
+# B10) APROXIMATE BAYESIAN COMPUTATION
+###############
+
+# Specify the mean vector and variances for the multinormal distribution
+
+SVD <- function(mu,sigma) {
+  n <- dim(sigma)[1]
+  s <- svd((sigma + t(sigma))/2) # Guarantees symmetry
+  s$d <- abs(zapsmall(s$d))
+  m <- sum(s$d > 0)
+
+  # Generate normals in the lower dimension
+  n.sample <- 100   # Number of realizations
+  x <- matrix(rnorm(m*n.sample),nrow=m)
+
+  # Embed in the higher dimension and apply square root
+  # of sigma obtained from its SVD
+  x <- rbind(x, matrix(0, nrow=n-m, ncol=n.sample))
+  y <- s$u %*% diag(sqrt(s$d)) %*% x + mu
+  t <- t(y)
+  colnames(t) <- c("W","S","C")
+  return(t)
+}
+
+
+#Scenario A
+mu <- c(55,35,10)
+sigma <- matrix(c(40,-20,-20,-20,40,-20,-20,-20,40),3,3)
+A_scenario <- SVD(mu,sigma)
+
+#Scenario B
+mu <- c(10,35,55)
+sigma <- matrix(c(40,-20,-20,-20,40,-20,-20,-20,40),3,3)
+B_scenario <- SVD(mu,sigma)
+
+#Scenario C
+mu <- c(10,80,10)
+sigma <- matrix(c(40,-20,-20,-20,40,-20,-20,-20,40),3,3)
+C_scenario <- SVD(mu,sigma)
+
+#Scenario D
+mu <- c(30,40,30)
+sigma <- matrix(c(40,-20,-20,-20,40,-20,-20,-20,40),3,3)
+D_scenario <- SVD(mu,sigma)
+
+#Scenario E
+mu <- c(45,10,45)
+sigma <- matrix(c(40,-20,-20,-20,40,-20,-20,-20,40),3,3)
+E_scenario <- SVD(mu,sigma)
+
+#Concatenate all scenarios
+values <- rbind(A_scenario,B_scenario,C_scenario,D_scenario,E_scenario)
+scenarios <- c(rep("A",100),rep("B",100),rep("C",100),rep("D",100),rep("E",100))
+origin <- read.csv("origin.csv",row.names=1)
+
+# Plot density plot
+##########
+# Plot densities of the three components for a given scenario (example C)
+all <- as.data.frame(cbind(c(C_scenario[,1],C_scenario[,2],C_scenario[,3]),c(rep("W",100),rep("S",100),rep("C",100))))
+colnames(all) <- c("values","group")
+all[,1] <- as.numeric(as.character(all[,1]))
+all[,2] <- as.factor(all[,2])
+ggplot(all, aes(values, fill = group)) + geom_density(alpha = 0.9)
+
+# Plot simulated and observed data
+##########
+
+allvalues <- rbind(A_scenario,B_scenario,C_scenario,D_scenario,E_scenario,round(origin,0))
+allgroups <- c(rep("A",100),rep("B",100),rep("C",100),rep("D",100),rep("E",100),rownames(origin))
+allvalues$G <- allgroups
+allvalues$Size <- c(rep(1,100),rep(1,100),rep(1,100),rep(1,100),rep(1,100),rep(2,25))
+
+col = c("#e5e5e5","#5d4d72","#72845c","#417491","#c5c5c5","#a45d6d","#747474","#a47273","#97cd6b","#4f4f4f","#333333","#847f7c","#a18381","#fec689","#a94422","#b39186","#949599","#f9c160","#7358a5","#b69e2e","#f26549","#f69779","#c48b56","#cdc774","#c6c176","#927452","#938f60","#c5db6e","#6169a7","#71c4ee")
+pca_res <- prcomp(allvalues[,c(1:3)], scale. = TRUE)
+pca_res2 <- data.frame(pca_res$x,Group=as.character(allvalues$G),Size=as.numeric(allvalues$Size))
+
+pdf("pca.pdf",width=8,height=5)
+ggplot(pca_res2,aes(x=PC1,y=PC2,col=Group,size=Size))+
+   geom_point(alpha=0.8)+
+   scale_color_manual(values = col)+
+   theme_classic()
+dev.off()
+
+# Perform ABC
+##########
+
+sp_sorted <- c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","GOGO","PEMA","PELE","TUTR","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT")
+
+modtable <- c()
+for (sp in sp_sorted){
+modsel <- postpr(origin[sp,], scenarios, values, tol=.8, method="mnlogistic")
+modtable <-rbind(modtable,modsel$pred)
+}
+rownames(modtable) <- sp_sorted
+round(modtable,3)
+modtable
+
+# Plot heatmap of posterior probabilities
+coul <- colorRampPalette(brewer.pal(8, "YlOrBr"))(25)
+pdf("heatmap.pdf",width=8,height=5)
+heatmap(round(modtable,3),Colv=NA, col = coul)
+dev.off()
+
+#
+res.gfit.bott=gfit(target=origin["VAHI",], sumstat=values[scenarios=="C",], statistic=mean, nb.replicate=100)
+plot(res.gfit.bott, main="Histogram under H0")
+
+gfitpca(target=origin["VAHI",], sumstat=values, index=scenarios, cprob=.05)
+
+###############
+# B11) DISTRIBUTION OF THE ORIGIN OF THE DETECTED GENERA
 ###############
 
 # Load required data
@@ -704,8 +1127,12 @@ write.table(shared.taxa,"Results/shared_taxa.tsv")
 colMeans(shared.taxa)
 
 ###############
-# B9) PAIRWISE DISSIMILARITY CORRELATION BETWEEN WILD AND CAPTIVE
+# B12) PAIRWISE DISSIMILARITY CORRELATION BETWEEN WILD AND CAPTIVE
 ###############
+
+##
+## B10.1) dR
+##
 
 # Load required data
 count.table.all.g <- read.table("Tables/count_Genus_all.tsv")
@@ -715,13 +1142,13 @@ sp_code <- read.table("Data/sp_code.txt")
 
 #Pairwise dissimilarity matrix of wild individuals
 count.table.wild <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Wild","Sample"]]
-pair_dis_dR_wild <- pair_dis(count.table.wild,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Wild",c("Sample","Species")])
-saveRDS(pair_dis_dR_wild,"pairdis_dR.wild.RData")
+pair_dis_dR_wild <- pair_dis(count.table.wild,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Wild",c("Sample","Species")], tree = tree_filtered))
+saveRDS(pair_dis_dR_wild,"Results/RDS/pairdis_dR.wild.RData")
 
 #Pairwise dissimilarity matrix of captive individuals
 count.table.captive <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Captivity","Sample"]]
-pair_dis_dR_captive <- pair_dis(count.table.captive,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Captivity",c("Sample","Species")])
-saveRDS(pair_dis_dR_captive,"pairdis_dR.captive.RData")
+pair_dis_dR_captive <- pair_dis(count.table.captive,qvalue=0,hierarchy=metadata.filtered[metadata.filtered$Origin == "Captivity",c("Sample","Species")], tree = tree_filtered))
+saveRDS(pair_dis_dR_captive,"Results/RDS/pairdis_dR.captive.RData")
 
 #Load dissimilarity files
 pair_dis_dR_wild <- readRDS("Results/RDS/pairdis_dR.wild.RData")
@@ -733,20 +1160,19 @@ pair_dis_dR_wild_L2_UqN <- pair_dis_dR_wild_L2_UqN[!is.na(pair_dis_dR_wild_L2_Uq
 pair_dis_dR_captive_L2_UqN <- pair_dis_dR_captive$L2_UqN
 pair_dis_dR_captive_L2_UqN <- pair_dis_dR_captive_L2_UqN[!is.na(pair_dis_dR_captive_L2_UqN)]
 
-#Convert tree trip names into species codes
-sp_code[,1] <- as.character(sp_code[,1])
-sp_code[,2] <- as.character(sp_code[,2])
-host_tree$tip.label <- mapvalues(host_tree$tip.label, sp_code[,2],sp_code[,1])
-
 #Obtain TMRCA and sort data
 myr_split <- cophenetic.phylo(host_tree)/2
 myr_split <- myr_split[colnames(pair_dis_dR_wild$L2_UqN),rownames(pair_dis_dR_wild$L2_UqN)]
 myr_split_vector <- myr_split[lower.tri(myr_split, diag = FALSE)]
 
-#Correlation plot
+#Correlation table
 cortable <- as.data.frame(cbind(pair_dis_dR_wild_L2_UqN,pair_dis_dR_captive_L2_UqN,myr_split_vector))
 colnames(cortable) <- c("Y","X","D")
 
+#Correlation test
+cor.test(cortable$Y,cortable$X)
+
+#Correlation plot
 corplot <- ggplot(cortable, aes(x=X, y=Y, color=D)) +
   geom_point() +
   scale_color_gradient(low="#009bb4", high="#efcf00") +
@@ -754,8 +1180,112 @@ corplot <- ggplot(cortable, aes(x=X, y=Y, color=D)) +
   theme(panel.background = element_rect(fill = 'white', colour = 'grey'))
 ggsave("Results/Plots/dissimilarity_correlation_dR.pdf",corplot)
 
+##
+## B12.2) dRE
+##
+
+# Load required data
+count.table.all.g <- read.table("Tables/count_Genus_all.tsv")
+metadata.filtered <- read.table("Data/metadata.filtered.csv", sep =";",row.names=1)
+host_tree <- read.tree("Data/host_phylogeny.tre")
+sp_code <- read.table("Data/sp_code.txt")
+
+#Pairwise dissimilarity matrix of wild individuals
+count.table.wild <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Wild","Sample"]]
+pair_dis_dRE_wild <- pair_dis(count.table.wild,qvalue=1,hierarchy=metadata.filtered[metadata.filtered$Origin == "Wild",c("Sample","Species")])
+saveRDS(pair_dis_dRE_wild,"Results/RDS/pairdis_dRE.wild.RData")
+
+#Pairwise dissimilarity matrix of captive individuals
+count.table.captive <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Captivity","Sample"]]
+pair_dis_dRE_captive <- pair_dis(count.table.captive,qvalue=1,hierarchy=metadata.filtered[metadata.filtered$Origin == "Captivity",c("Sample","Species")])
+saveRDS(pair_dis_dRE_captive,"Results/RDS/pairdis_dRE.captive.RData")
+
+#Load dissimilarity files
+pair_dis_dRE_wild <- readRDS("Results/RDS/pairdis_dRE.wild.RData")
+pair_dis_dRE_captive <- readRDS("Results/RDS/pairdis_dRE.captive.RData")
+
+#Prepare dissimilarity matrices
+pair_dis_dRE_wild_L2_UqN <- pair_dis_dRE_wild$L2_UqN
+pair_dis_dRE_wild_L2_UqN <- pair_dis_dRE_wild_L2_UqN[!is.na(pair_dis_dRE_wild_L2_UqN)]
+pair_dis_dRE_captive_L2_UqN <- pair_dis_dRE_captive$L2_UqN
+pair_dis_dRE_captive_L2_UqN <- pair_dis_dRE_captive_L2_UqN[!is.na(pair_dis_dRE_captive_L2_UqN)]
+
+#Obtain TMRCA and sort data
+myr_split <- cophenetic.phylo(host_tree)/2
+myr_split <- myr_split[colnames(pair_dis_dRE_wild$L2_UqN),rownames(pair_dis_dRE_wild$L2_UqN)]
+myr_split_vector <- myr_split[lower.tri(myr_split, diag = FALSE)]
+
+#Correlation table
+cortable <- as.data.frame(cbind(pair_dis_dRE_wild_L2_UqN,pair_dis_dRE_captive_L2_UqN,myr_split_vector))
+colnames(cortable) <- c("Y","X","D")
+
+#Correlation test
+cor.test(cortable$Y,cortable$X)
+
+#Correlation plot
+corplot <- ggplot(cortable, aes(x=X, y=Y, color=D)) +
+  geom_point() +
+  scale_color_gradient(low="#009bb4", high="#efcf00") +
+  geom_smooth(method=lm , color="#cc2b7c", fill="#cc2b7c", se=TRUE) +
+  theme(panel.background = element_rect(fill = 'white', colour = 'grey'))
+ggsave("Results/Plots/dissimilarity_correlation_dRE.pdf",corplot)
+
+##
+## B12.2) dRER
+##
+
+# Load required data
+count.table.all.g <- read.table("Tables/count_Genus_all.tsv")
+metadata.filtered <- read.table("Data/metadata.filtered.csv", sep =";",row.names=1)
+host_tree <- read.tree("Data/host_phylogeny.tre")
+sp_code <- read.table("Data/sp_code.txt")
+capwild.tree <- read.tree("Data/genustree.tre")
+
+#Pairwise dissimilarity matrix of wild individuals
+count.table.wild <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Wild","Sample"]]
+tree_filtered <- match_data(count.table.wild,capwild.tree,output="tree")
+pair_dis_dRER_wild <- pair_dis(count.table.wild,qvalue=1,hierarchy=metadata.filtered[metadata.filtered$Origin == "Wild",c("Sample","Species")],tree=tree_filtered)
+saveRDS(pair_dis_dRER_wild,"Results/RDS/pairdis_dRER.wild.RData")
+
+#Pairwise dissimilarity matrix of captive individuals
+count.table.captive <- count.table.all.g[,colnames(count.table.all.g) %in% metadata.filtered[metadata.filtered$Origin == "Captivity","Sample"]]
+tree_filtered <- match_data(count.table.captive,capwild.tree,output="tree")
+pair_dis_dRER_captive <- pair_dis(count.table.captive,qvalue=1,hierarchy=metadata.filtered[metadata.filtered$Origin == "Captivity",c("Sample","Species")],tree=tree_filtered)
+saveRDS(pair_dis_dRER_captive,"Results/RDS/pairdis_dRER.captive.RData")
+
+#Load dissimilarity files
+pair_dis_dRER_wild <- readRDS("Results/RDS/pairdis_dRER.wild.RData")
+pair_dis_dRER_captive <- readRDS("Results/RDS/pairdis_dRER.captive.RData")
+
+#Prepare dissimilarity matrices
+pair_dis_dRER_wild_L2_UqN <- pair_dis_dRER_wild$L2_UqN
+pair_dis_dRER_wild_L2_UqN <- pair_dis_dRER_wild_L2_UqN[!is.na(pair_dis_dRER_wild_L2_UqN)]
+pair_dis_dRER_captive_L2_UqN <- pair_dis_dRER_captive$L2_UqN
+pair_dis_dRER_captive_L2_UqN <- pair_dis_dRER_captive_L2_UqN[!is.na(pair_dis_dRER_captive_L2_UqN)]
+
+#Obtain TMRCA and sort data
+myr_split <- cophenetic.phylo(host_tree)/2
+myr_split <- myr_split[colnames(pair_dis_dRER_wild$L2_UqN),rownames(pair_dis_dRER_wild$L2_UqN)]
+myr_split_vector <- myr_split[lower.tri(myr_split, diag = FALSE)]
+
+#Correlation table
+cortable <- as.data.frame(cbind(pair_dis_dRER_wild_L2_UqN,pair_dis_dRER_captive_L2_UqN,myr_split_vector))
+colnames(cortable) <- c("Y","X","D")
+
+#Correlation test
+cor.test(cortable$Y,cortable$X)
+
+#Correlation plot
+corplot <- ggplot(cortable, aes(x=X, y=Y, color=D)) +
+  geom_point() +
+  scale_color_gradient(low="#009bb4", high="#efcf00") +
+  geom_smooth(method=lm , color="#cc2b7c", fill="#cc2b7c", se=TRUE) +
+  theme(panel.background = element_rect(fill = 'white', colour = 'grey'))
+ggsave("Results/Plots/dissimilarity_correlation_dRER.pdf",corplot)
+
+
 ###############
-# B10) NEAREST DATASET (only dR)
+# B13) NEAREST DATASET (only dR)
 ###############
 
 # Load required data
@@ -802,30 +1332,281 @@ length(vector[vector == 1]) / length(vector) * 100
 length(vector[vector > 1]) / length(vector) * 100
 
 ###############
-# B11) HIERARCHICAL CLUSTERING AND TOPOLOGICAL DIFFERENCES (only dR)
+# B14) HIERARCHICAL CLUSTERING AND TOPOLOGICAL DIFFERENCES
 ###############
+
+##
+## B14.1) dR
+##
 
 #Load dissimilarity files
 pair_dis_dR_wild <- readRDS("Results/RDS/pairdis_dR.wild.RData")
 pair_dis_dR_captive <- readRDS("Results/RDS/pairdis_dR.captive.RData")
 
+#Load host phylogeny
+host_tree <- read.tree("Data/host_phylogeny.tre")
+
 #Hierarchical clustering
-hclust_wild <- as.dendrogram(hclust(as.dist(pair_dis_dR_wild$L2_UqN), method="average"))
-hclust_captive <- as.dendrogram(hclust(as.dist(pair_dis_dR_captive$L2_UqN),method="average"))
+hclust_wild <- as.phylo(hclust(as.dist(pair_dis_dR_wild$L2_UqN), method="average"))
+hclust_captive <- as.phylo(hclust(as.dist(pair_dis_dR_captive$L2_UqN),method="average"))
+
+#Calculate tree dissimilarities
+JaccardRobinsonFoulds(hclust_wild, hclust_captive)
+JaccardRobinsonFoulds(host_tree, hclust_wild)
+JaccardRobinsonFoulds(host_tree, hclust_captive)
+
+# Phylosymbiosis effect size comparison
+study_list <- host_tree$tip.label
+
+valuetable <- c()
+for (i in c(1:100)){
+selected <- study_list[sample(c(1:25),10)]
+host_tree_selected <- keep.tip(host_tree,selected)
+hclust_wild_selected <- keep.tip(hclust_wild,selected)
+hclust_captive_selected <- keep.tip(hclust_captive,selected)
+row <- c(WC=JaccardRobinsonFoulds(hclust_wild_selected, hclust_captive_selected),HW=JaccardRobinsonFoulds(host_tree_selected, hclust_wild_selected),HC=JaccardRobinsonFoulds(host_tree_selected, hclust_captive_selected))
+valuetable <- rbind(valuetable,row)
+}
+
+boxplot(valuetable)
+t.test(valuetable[,2],valuetable[,3])
 
 #Plot tanglegram
 pdf("Results/Plots/clustering_tanglegram_dR.pdf",width=8,height=6)
 tanglegram(untangle_labels(hclust_wild, hclust_captive,method="random"), highlight_distinct_edges = FALSE,highlight_branches_lwd = FALSE)
 dev.off()
 
+##
+## B14.2) dRE
+##
+
+# Load dissimilarity files
+pair_dis_dRE_wild <- readRDS("Results/RDS/pairdis_dRE.wild.RData")
+pair_dis_dRE_captive <- readRDS("Results/RDS/pairdis_dRE.captive.RData")
+
+# Load host phylogeny
+host_tree <- read.tree("Data/host_phylogeny.tre")
+
+# Hierarchical clustering
+hclust_wild <- as.phylo(hclust(as.dist(pair_dis_dRE_wild$L2_UqN), method="average"))
+hclust_captive <- as.phylo(hclust(as.dist(pair_dis_dRE_captive$L2_UqN),method="average"))
+
+# Calculate tree dissimilarities
+JaccardRobinsonFoulds(hclust_wild, hclust_captive)
+JaccardRobinsonFoulds(host_tree, hclust_wild)
+JaccardRobinsonFoulds(host_tree, hclust_captive)
+
+# Phylosymbiosis effect size comparison
+study_list <- host_tree$tip.label
+
+valuetable <- c()
+for (i in c(1:100)){
+selected <- study_list[sample(c(1:25),10)]
+host_tree_selected <- keep.tip(host_tree,selected)
+hclust_wild_selected <- keep.tip(hclust_wild,selected)
+hclust_captive_selected <- keep.tip(hclust_captive,selected)
+row <- c(WC=JaccardRobinsonFoulds(hclust_wild_selected, hclust_captive_selected),HW=JaccardRobinsonFoulds(host_tree_selected, hclust_wild_selected),HC=JaccardRobinsonFoulds(host_tree_selected, hclust_captive_selected))
+valuetable <- rbind(valuetable,row)
+}
+
+boxplot(valuetable)
+t.test(valuetable[,2],valuetable[,3])
+
+#Plot tanglegram
+pdf("Results/Plots/clustering_tanglegram_dRE.pdf",width=8,height=6)
+tanglegram(untangle_labels(hclust_wild, hclust_captive,method="random"), highlight_distinct_edges = FALSE,highlight_branches_lwd = FALSE)
+dev.off()
+
+##
+## B14.3) dRER
+##
+
+#Load dissimilarity files
+pair_dis_dRER_wild <- readRDS("Results/RDS/pairdis_dRER.wild.RData")
+pair_dis_dRER_captive <- readRDS("Results/RDS/pairdis_dRER.captive.RData")
+
+#Load host phylogeny
+host_tree <- read.tree("Data/host_phylogeny.tre")
+
+# Hierarchical clustering
+hclust_wild <- as.phylo(hclust(as.dist(pair_dis_dRER_wild$L2_UqN), method="average"))
+hclust_captive <- as.phylo(hclust(as.dist(pair_dis_dRER_captive$L2_UqN),method="average"))
+
+# Calculate tree dissimilarities
+JaccardRobinsonFoulds(hclust_wild, hclust_captive)
+JaccardRobinsonFoulds(host_tree, hclust_wild)
+JaccardRobinsonFoulds(host_tree, hclust_captive)
+
+# Phylosymbiosis effect size comparison
+study_list <- host_tree$tip.label
+
+valuetable <- c()
+for (i in c(1:100)){
+selected <- study_list[sample(c(1:25),10)]
+host_tree_selected <- keep.tip(host_tree,selected)
+hclust_wild_selected <- keep.tip(hclust_wild,selected)
+hclust_captive_selected <- keep.tip(hclust_captive,selected)
+row <- c(WC=JaccardRobinsonFoulds(hclust_wild_selected, hclust_captive_selected),HW=JaccardRobinsonFoulds(host_tree_selected, hclust_wild_selected),HC=JaccardRobinsonFoulds(host_tree_selected, hclust_captive_selected))
+valuetable <- rbind(valuetable,row)
+}
+
+boxplot(valuetable)
+t.test(valuetable[,2],valuetable[,3])
+
+#Plot tanglegram
+pdf("Results/Plots/clustering_tanglegram_dRE.pdf",width=8,height=6)
+tanglegram(untangle_labels(hclust_wild, hclust_captive,method="random"), highlight_distinct_edges = FALSE,highlight_branches_lwd = FALSE)
+dev.off()
+
 ###############
-# B12) NMDS plot
+# B15) TAXONOMIC ENRICHMENT ANALYSIS
+###############
+
+countdata <- read.csv("genustable.csv",row.names=1)
+countdata <- tss(countdata)
+metadata <- read.csv("metadata.csv")
+colourcodes <- read.table("sp_code.txt", header=TRUE)
+
+#Modify taxonomy names to input to metamicrobiomeR
+rownames(countdata) <- gsub("^","k__",rownames(countdata))
+
+#Merge count data and metadata
+alldata <- merge(metadata[,c("Sample","Species","Sample.type","Origin")],t(countdata),by.x=1,by.y=0)
+
+colnames(alldata) <- gsub(" ","-",colnames(alldata))
+alldata$Origin <- as.factor(alldata$Origin)
+
+#Run enrichment analysis in each study and add to column
+studylist <- unique(metadata$Species)
+
+taxacompare_all <- c()
+for (Study in studylist){
+  studydata <- alldata[alldata$Species == Study,]
+  taxacompare <- taxa.compare(taxtab=studydata, propmed.rel="gamlss", comvar="Origin", adjustvar="Origin", longitudinal="no")
+  taxacompare$study <- Study
+  taxacompare_all <- rbind.fill(taxacompare_all,taxacompare)
+}
+
+#Run differetial abundance meta-analysis
+metataxa <- meta.taxa(taxcomdat = taxacompare_all, summary.measure = "RR", pool.var = "id", studylab = "study", backtransform = FALSE, percent.meta = 0.33, p.adjust.method = "fdr")
+
+#Color test
+oribacterium <- countdata["k__Roseburia",]
+oribacterium2 <- merge(t(oribacterium),metadata[,c("Sample","Species","Sample.type","Origin")],by.x=0,by.y=1)
+aggregate(oribacterium2[,2],by=list(oribacterium2[,5]),FUN=mean)
+
+# Histogram
+#####
+taxonsubset <- metataxa$random$OriginWild$id
+studylist <- c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","GOGO","PEMA","PELE","TUTR","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT")
+
+allestimates <- c()
+for(taxon in taxonsubset){
+taxoncompare <- taxacompare_all[taxacompare_all$id == taxon,]
+  for(study in studylist){
+    estimate <- taxoncompare[taxoncompare$study == study,"Estimate.OriginWild"]
+    if(length(estimate)==0){estimate=0}
+    row <- c(taxon,study,estimate)
+    allestimates <- rbind(allestimates,row)
+  }
+}
+
+allestimates <- as.data.frame(allestimates)
+colnames(allestimates) <- c("Taxon","Study","Estimate")
+
+#Order factors
+taxonorder <- gsub("k__","",taxonsubset)
+
+allestimates$Taxon <- gsub("k__","",allestimates$Taxon)
+allestimates$Taxon <- factor(allestimates$Taxon, levels = rev(taxonorder))
+allestimates$Study <- factor(allestimates$Study, levels = c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","GOGO","PEMA","PELE","TUTR","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT"))
+allestimates$Estimate <- as.numeric(allestimates$Estimate)
+
+#Plot
+pdf("heatmap.pdf",width=8,height=7)
+my_colours <- colorRampPalette(c("#854292","#ffffff","#cc2b7c"))(11)
+ggplot(allestimates, aes(Study, Taxon, fill= Estimate)) +
+  geom_tile() +
+  scale_fill_gradientn(colours = my_colours, limits=c(-6, 6)) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))
+dev.off()
+
+# Forest plot
+#####
+
+metaestimates <- metataxa$random$OriginWild
+#Color code
+metaestimates$enrichment <- metaestimates$estimate
+metaestimates$enrichment[metaestimates$enrichment < 0] <- "Captivity"
+metaestimates$enrichment[metaestimates$enrichment != "Captivity"] <- "Wild"
+metaestimates$enrichment <- as.factor(metaestimates$enrichment)
+#Alpha code
+metaestimates$significance <- metaestimates$p.adjust
+metaestimates$significance[metaestimates$significance < 0.05] <- 2
+metaestimates$significance[metaestimates$significance < 0.1] <- 1
+metaestimates$significance[metaestimates$significance < 1] <- 0
+metaestimates$significance[metaestimates$significance == 0] <- 0.5
+metaestimates$significance[metaestimates$significance == 1] <- 0.7
+metaestimates$significance[metaestimates$significance == 2] <- 1
+#Other adjustments
+metaestimates$id <- gsub("k__","",metaestimates$id)
+#Set order
+rownames(metaestimates) <- metaestimates$id
+metaestimates <- metaestimates[rev(taxonorder),]
+metaestimates$id <- factor(metaestimates$id, levels = rev(taxonorder))
+
+pdf("forest.pdf",width=4,height=7)
+ggplot(metaestimates) +
+  geom_errorbar(data=metaestimates, mapping=aes(y=id, xmin=ll, xmax=ul, col=enrichment, alpha=significance), width=0.2, size=1) +
+  scale_alpha_identity() +
+  scale_color_manual("enrichment", values=c("#854292", "#cc2b7c")) +
+  geom_point(data=metaestimates, mapping=aes(x=estimate, y=id, fill=enrichment), size=2, shape=21) +
+  scale_fill_manual("enrichment", values=c("#854292", "#cc2b7c")) +
+  theme_minimal()
+dev.off()
+
+# Relative abundances
+#####
+
+taxonsubset <- metataxa$random$OriginWild$id
+studylist <- c("VAHI","APIB","RADY","CHMY","ALGI","SHCR","RHBR","PYNE","PAAN","PATR","GOGO","PEMA","PELE","TUTR","MOCH","BOGA","ELDA","CENI","EQKI","AIME","PATI","MYTR","SAHA1","SAHA2","LALT")
+
+allabundances <- c()
+for(taxon in taxonsubset){
+  for(study in studylist){
+    value <- sum(alldata[alldata$Species == study,taxon])
+    row <- c(taxon,study,value)
+    allabundances <- rbind(allabundances,row)
+  }
+}
+
+allabundances <- as.data.frame(allabundances)
+colnames(allabundances) <- c("Taxon","Study","Abundance")
+allabundances$Taxon <- gsub("k__","",allabundances$Taxon)
+allabundances$Abundance <- as.numeric(allabundances$Abundance)
+allabundances$Abundance <- allabundances$Abundance / 25
+allabundances$Taxon <- factor(allabundances$Taxon, levels = rev(taxonorder))
+
+pdf("barplot.pdf",width=7,height=7)
+ggplot(allabundances, aes(fill=Study, y=Abundance, x=Taxon)) +
+    geom_bar(position="stack", stat="identity") +
+    scale_fill_manual("Study", values=c(colourcodes[,3]))+
+    coord_flip() +
+    theme_minimal()
+dev.off()
+
+#Total values
+aggregate(allabundances$Abundance,by=list(allabundances$Taxon),FUN=sum)
+aggregate(allabundances$Abundance,by=list(allabundances$Taxon),function(x) sum(x != 0))
+
+###############
+# B16) NMDS plot
 ###############
 
 # Load required data
 metadata.filtered <- read.table("Data/metadata.filtered.csv", sep =";",row.names=1)
 
-# 12.1) NMDS plot dR
+# B16.1) NMDS plot dR
 
 #Load pairwise dissimilarity file
 pairdis_dR.all <- readRDS("Results/RDS/pairdis_dR.all.RData")
@@ -869,7 +1650,7 @@ nmds.plot <- ggplot(NMDS, aes(x,y,colour=Species,shape=Origin)) +
 
 ggsave("Results/Plots/NMDS_dR.pdf",nmds.plot, width = 10, height = 6)
 
-# 12.2) NMDS plot dRER
+# B16.2) NMDS plot dRER
 
 #Load pairwise dissimilarity file
 pairdis_dR.all <- readRDS("Results/RDS/pairdis_dRER.all.RData")
