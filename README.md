@@ -1,5 +1,9 @@
-# Captivity systematically alters the composition yet not the diversity of vertebrate gut microbiomes
+# Diversity and compositional changes in the gut microbiota of wild and captive vertebrates: a meta-analysis
 This repository contains the bioinformatic resources related to the meta-analysis of gut microbiota features of captive and wild specimens
+
+## Raw data
+
+Accession numbers to the raw sequencing data can be found in the column "Accession" of the file Data/metadata.filtered.csv.
 
 ## Supplementary code A
 ### Bioinformatic processing pipeline
