@@ -1,6 +1,9 @@
 # Diversity and compositional changes in the gut microbiota of wild and captive vertebrates: a meta-analysis
 This repository contains the bioinformatic resources related to the meta-analysis of gut microbiota features of captive and wild specimens
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5594740.svg)](https://doi.org/10.5281/zenodo.5594740)
+
+
 ## Raw data
 
 Accession numbers to the raw sequencing data can be found in the column "Accession" of the file Data/metadata.filtered.csv.
